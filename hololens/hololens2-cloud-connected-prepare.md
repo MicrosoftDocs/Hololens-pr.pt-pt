@@ -1,0 +1,81 @@
+---
+title: Guia de implementação - Implantação hololens 2 ligada à nuvem em escala com assistência remota - Prepare
+description: Saiba como se preparar para inscrever dispositivos HoloLens através de uma rede Cloud Connected utilizando diretório ativo azul e gestão de identidade.
+keywords: HoloLens, gestão, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
+author: evmill
+ms.author: v-evmill
+ms.reviewer: aboeger
+ms.date: 12/04/2020
+ms.prod: hololens
+ms.topic: article
+ms.sitesec: library
+ms.localizationpriority: medium
+audience: HoloLens
+manager: yannisle
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "111378545"
+---
+# <a name="prepare---cloud-connected-guide"></a>Preparar - Guia ligado à nuvem
+
+No final deste artigo terá configurado Azure AD, MDM, e entender mais sobre a utilização de contas AD AZure e requisitos de rede. Esta secção do guia irá ajudá-lo e a sua organização a preparar-se para implantar HoloLens 2 na nuvem e utilizar o Dynamics 365 Remote Assist. Irá superar a importância de cada peça da sua infraestrutura, bem como fornecer links para guias para ajudá-lo a configurar essas peças conforme necessário.
+
+## <a name="infrastructure-essentials"></a>Infraestruturas Essenciais
+
+Para cenários de implementação pessoal e corporativo, um sistema MDM é a infraestrutura essencial necessária para implementar e gerir dispositivos Holográficos windows 10. Uma subscrição premium Azure É recomendada como um fornecedor de identidade e necessária para suportar determinadas capacidades.
+
+### <a name="azure-active-directory"></a>Azure Active Directory
+
+Azure AD é um serviço de diretório baseado na nuvem que fornece gestão de identidade e acesso. As organizações que utilizam o Microsoft Office 365 ou o Intune já estão a utilizar o Azure AD, que tem três edições: Grátis, Premium P1 e Premium P2 (ver [edições do Azure Ative Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions).) Todas as edições suportam o registo do dispositivo Azure AD, mas o Premium P1 é necessário para permitir a inscrição automática do MDM que iremos utilizar neste guia mais tarde.
+
+> [!IMPORTANT]
+> É essencial ter um Diretório Ativo Azure, uma vez que os dispositivos HoloLens não suportam a ad join no local. Se você não&#39;já tem um Diretório Ativo Azure, siga as instruções neste link para começar e [Criar um novo inquilino em Azure Ative Diretório](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+
+## <a name="identity-management"></a>Gestão de Identidades
+
+Os colaboradores podem usar apenas uma conta para inicializar um dispositivo, pelo que&#39;é imperativo que a sua organização controle qual a conta ativada primeiro. A conta escolhida determinará quem controla o dispositivo e influencia as suas capacidades de gestão.
+
+Neste guia escolhemos que para a [Identidade](https://docs.microsoft.com/hololens/hololens-identity) utilizada utilizaremos contas AD da Azure ou contas do Azure Ative Directory. Existem vários benefícios para as contas AD Azure que gostaríamos de usar, tais como:
+
+- Os colaboradores utilizam a sua conta Azure AD para registar o dispositivo em Azure AD e matriculam-no automaticamente na organização&#39;solução MDM (Azure AD+MDM – requer Azure AD Premium).
+- As contas AD da AZure suportam [o Signo Único .](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) Quando um utilizador assinar no Remote Assist, a sua Identidade a partir do utilizador AD assinado no Azure será reconhecida e o utilizador será assinado na app para uma experiência simplificada.
+- As contas AD da Azure têm opções de [autenticação](https://docs.microsoft.com/hololens/hololens-identity) adicionais através [do Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Além do login da Iris, os utilizadores podem iniciar sessão a partir de outro dispositivo ou utilizar as teclas de segurança FIDO.
+
+### <a name="mobile-device-management"></a>Gestão de Dispositivos Móveis
+
+O Microsoft [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), parte da Enterprise Mobility + Security, é um sistema MDM baseado na nuvem que gere dispositivos ligados ao seu inquilino. Tal como o Office 365, a Intune utiliza a Azure AD para gestão de identidade, pelo que os colaboradores usam as mesmas credenciais para inscrever dispositivos no Intune que usam para assinar no Office 365. A Intune também suporta dispositivos que executam outros sistemas operativos, como iOS e Android, para fornecer uma solução DEDM completa. Para efeitos deste guia,&#39;vamos focar-nos na utilização do Intune para permitir uma implantação em nuvem em escala com hololens 2.
+
+> [!IMPORTANT]
+> É essencial ter Gestão de Dispositivos Móveis. Se você não&#39;já não o tenha configurado siga este guia e [começar com Intune](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up).
+
+> [!NOTE]
+> Vários sistemas MDM suportam o Windows 10 e a maioria suporta cenários de implementação de dispositivos pessoais e corporativos. Os fornecedores de MDM que suportam o Windows 10 Holographic incluem atualmente: AirWatch, MobileIron, entre outros. A maioria dos fornecedores de MDM líderes da indústria já apoiam a integração com a Azure AD. Pode encontrar os fornecedores de MDM que suportam a Azure AD no [Azure Marketplace.](https://azure.microsoft.com/marketplace/)
+
+## <a name="network"></a>Rede
+
+Nesta configuração, antecipamos que os dispositivos HoloLens 2 se liguem à Internet a partir de qualquer rede de Wi-Fi aberta disponível. Uma vez que um utilizador poderia ter de alterar a ligação de rede com base na localização, eles devem aprender a [ligar os dispositivos HoloLens ao Wi-Fi.](https://docs.microsoft.com/hololens/hololens-network)
+
+Para a Dynamics 365 Remote Assist existem uma variedade de condições de rede, incluindo largura de banda, latência, nervosismo e perda de pacotes, que podem afetar a sua experiência de chamada de vídeo. Embora as chamadas de áudio e vídeo possam ser possíveis em ambientes com largura de banda reduzida, poderá experimentar uma degradação de recursos. Ao utilizar o Dynamics 365 Remote Assist em HoloLens aqui são os requisitos da rede a ter em mente:
+
+**Mínimo** : 1,5 Mbps para cima/para baixo é necessário para a chamada de vídeo de qualidade HD peer-to-peer com resolução de HD 1080p a 30 fps.
+
+**Ideal:** Para a chamada de vídeo de qualidade hd peer-to-peer com resolução de HD 1080p, 4-5 Mbps para cima/para baixo deve ser esperado.
+
+Mais Informações:
+
+- [Requisitos de rede](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)
+- [Recomendações de otimização de rede](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)
+
+### <a name="optional-connect-your-hololens-to-vpn"></a>Opcional: Ligue os hololens à VPN
+
+Os dispositivos que estão a ser ligados a este guia vão ligar-se à rede através da rede e da rede de nuvem externa. Pode ser que para aceder aos recursos da empresa que&#39;terá de ligar os seus dispositivos através da VPN. Existem várias formas diferentes de ligar os seus dispositivos à VPN, tanto onde o utilizador final pode ligar-se através da UI do dispositivo, ou os dispositivos podem ser geridos e receber o perfil VPN de um PPKG ou MDM. Como configurar a VPN ganhou&#39;não ser abrangida neste artigo, por isso, se&#39;gostaria de saber mais sobre os diferentes protocolos ou formas de gerir a VPN, visite [estes guias para obter informações sobre HoloLens e VPN.](https://docs.microsoft.com/hololens/hololens-network#vpn)
+
+## <a name="next-step"></a>Passo seguinte
+
+> [!div class="nextstepaction"]
+> [Implementação ligada à nuvem - Configure](hololens2-cloud-connected-configure.md)
