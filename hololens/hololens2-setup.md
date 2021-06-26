@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9a1d9eaccb212474f47fd277c77fb41784f9ddc5
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379823"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924439"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Tenha os hololens 2 prontos a usar
 
@@ -34,7 +34,7 @@ A velocidade e a velocidade de carregamento podem variar consoante o ambiente em
 - Quando apenas uma das cinco luzes está acesa, o nível da bateria está abaixo dos 20%.
 - Se o nível da bateria estiver criticamente baixo e tentar ligar o dispositivo, uma luz piscará brevemente e apagar-se-á.
 
-Todos os [detalhes sobre o carregamento do dispositivo podem ser lidos aqui](hololens-recovery.md#charge-the-device) se forem necessárias mais informações. 
+Todos os [detalhes sobre o carregamento do dispositivo podem ser lidos aqui](hololens2-charging.md#charging-the-device) se forem necessárias mais informações. 
 
 ## <a name="adjust-fit"></a>Ajuste o ajuste
 
@@ -69,7 +69,7 @@ Para ligar os HoloLens 2, prima o botão De alimentação.  Os LEDs abaixo do bo
 | Para dormir | Pressione um único botão. | Todas as cinco luzes acendem-se e depois desaparecem uma de cada vez. Depois de as luzes se apagarem, um som reproduz-se e o ecrã exibe "Adeus". |
 | Para acordar do sono | Pressione um único botão. | Todas as cinco luzes acendem-se e depois mudam para indicar o nível da bateria. Um som toca imediatamente. |
 | Para desligar | Pressione e espere por 5s. |  Todas as cinco luzes acendem-se e depois desaparecem uma de cada vez. Depois de as luzes se apagarem, um som reproduz-se e o ecrã exibe "Adeus". |
-| Para forçar os Hololens a recomeçar se não responder | Pressione e espere por 10. | Todas as cinco luzes acendem-se e depois desaparecem uma de cada vez. Depois que as luzes se apagarem. |
+| Para forçar os HoloLens a reiniciar se não responder | Pressione e espere por 10. | Todas as cinco luzes acendem-se e depois desaparecem uma de cada vez. Depois que as luzes se apagarem. |
 
 ## <a name="hololens-behavior-reference"></a>Referência de comportamento hololens
 
@@ -125,4 +125,4 @@ Mantenha as suas primeiras sessões com holoLens breves e certifique-se de fazer
 Consulte [as advertências e instruções de segurança do produto](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
-> [Comece e configuure os hololens 2](hololens2-start.md)
+> [Configurar os seus HoloLens 2](hololens2-start.md)

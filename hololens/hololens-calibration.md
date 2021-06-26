@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: calibração, conforto, visuais, qualidade, ipd, HoloLens, Windows Mixed Reality, auscultadores VR
-ms.openlocfilehash: e975e2ccd978d4ec6b5331af0ae566af116711c5
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379843"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924150"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Melhorar a qualidade visual e o conforto
 
@@ -50,7 +50,7 @@ Durante este processo, você vai olhar para um conjunto de alvos (gemas). Tudo b
 
 ![Ajuste rápido de calibração.](./images/09-et-adjusting.png)
 
-Se a calibração foi bem sucedida, verá um ecrã de sucesso.  Caso contrário, leia mais sobre [o diagnóstico de falhas de calibração](#troubleshooting-hololens-2-calibration).
+Se a calibração foi bem sucedida, verá um ecrã de sucesso.  Caso contrário, leia mais sobre [o diagnóstico de falhas de calibração](hololens2-display.md#troubleshooting).
 
 ![Calibração pronta sucesso.](./images/10-et-success.png)
 
@@ -93,34 +93,6 @@ Com a posição auto-olho, o diálogo de calibração de rastreio de olhos é ad
 2.  Apresenta ao utilizador uma forma de recusar ter os olhos calibrados.
 
 Se o utilizador optar por lançar a Calibração de Rastreio de Olhos, o foco deve voltar à aplicação original após a conclusão da calibração. 
-
-### <a name="troubleshooting-hololens-2-calibration"></a>Resolução de problemas Da calibração hololens 2
-
-A calibração deve funcionar para a maioria das pessoas, mas há casos em que a calibração falha.
-  
-Algumas razões potenciais para a falha de calibração incluem:
-
-- Distrair-se e não seguir os objetivos de calibração
-- Visor de dispositivo sujo ou riscado não posicionado corretamente
-- Óculos sujos ou riscados
-- Certos tipos de lentes de contacto e óculos (lentes de contacto coloridas, algumas lentes de contacto toric, óculos de bloqueio de INFRAVERMELHOS, alguns óculos de prescrição elevada, óculos de sol ou similares)
-- Maquilhagem mais pronunciada e algumas extensões de pestanas
-- Cabelo ou molduras de vidro grosso se estiverem bloqueando o dispositivo de ver os seus olhos
-- Certas fisiologia ocular, condições oculares ou cirurgia ocular, tais como olhos estreitos, pestanas longas, amblyopia, nystagmus, alguns casos de LASIK ou outras cirurgias oculares
-
-Se a calibração não for bem sucedida, tente:
-
-- Limpeza da viseira do dispositivo
-- Limpando os óculos
-- Empurrando a viseira do dispositivo o mais próximo possível dos olhos
-- Movendo objetos na sua viseira para fora do caminho (como o cabelo)
-- Acendendo uma luz no seu quarto ou saindo da luz direta do sol
-
-Se seguir todas as diretrizes e a calibração continuar a falhar, pode desativar a indicação de calibração em Definições. Informe-nos também ao arquivar feedback no [Feedback Hub.](hololens-feedback.md)
-
-Consulte também informações relacionadas para [a cor da imagem ou resolução de problemas de luminosidade.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
-
-A definição de IPD não é aplicável para hololens 2, uma vez que as posições oculares são calculadas pelo sistema. 
 
 ### <a name="calibration-data-and-security"></a>Dados de calibração e segurança
 

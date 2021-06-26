@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 33382edfdd1f15a165921a3495290b85913cf445
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379887"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924592"
 ---
 # <a name="getting-around-hololens-2"></a>Introdução ao HoloLens 2
 
@@ -226,3 +226,5 @@ Agora pode configurar os seus HoloLens 2 para atender às suas necessidades espe
 
 > [!TIP]
 > Experimente a [aplicação DesignIng Holograms.](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab)
+
+Se você é um administrador de TI, reveja os [Cenários de Implementação Comum](hololens-requirements.md) para ajudar na implantação de HoloLens 2 para a sua organização.

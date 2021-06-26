@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: jarrettr
-ms.openlocfilehash: 9625f3fd1cd6a928f6bd20ba809c750c625143cf
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 10a577cf77a5c6faf0e7e07fa2fd5ad8603ec5ae
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379947"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923657"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -312,13 +312,6 @@ A OOBE aguardará indefinidamente o download do perfil do Piloto Automático e s
 - Ao configurar o Autopilot através do Wi-Fi, pode haver um caso em que o perfil autopiloto não é descarregado quando a ligação à Internet é estabelecida pela primeira vez. Neste caso, o Contrato de Licença do Utilizador Final (EULA) é apresentado e o utilizador tem a opção de prosseguir com a experiência de configuração não-Piloto. Para voltar a tentar configurar com o Autopilot, coloque o dispositivo para dormir e, em seguida, ligue o dispositivo, ou reinicie o dispositivo e deixe-o tentar novamente.
 - A função "Converter todos os dispositivos direcionados para o Autopilot" não é suportada no HoloLens neste momento.  
 
-### <a name="troubleshooting"></a>Resolução de problemas
-
-Os seguintes artigos podem ser um recurso útil para você aprender mais informações e resolver problemas de piloto automático Problemas, no entanto, esteja ciente de que estes artigos são baseados no Windows 10 Desktop e nem todas as informações podem aplicar-se a HoloLens:
-
-- [Windows Autopilot - problemas conhecidos](https://docs.microsoft.com/mem/autopilot/known-issues)
-- [Problemas de inscrição de dispositivos Windows na Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
-- [Windows Autopilot - Conflitos Políticos](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
 
 ## <a name="feedback-and-support-for-autopilot"></a>Feedback e suporte para Autopilot
 

@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5779ffa1de1700b4fcd17fc17b8ae3a82a45c22
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: d28994d911532a940d82756aa45609571ee80ac3
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379893"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924337"
 ---
 # <a name="page-settings-visibility"></a>Visibilidade de Definições de Página
 
@@ -136,7 +136,7 @@ Os dispositivos HoloLens e dispositivos Windows 10 têm uma seleção diferente 
 | Volume > de aplicações de som e preferência do dispositivo <sup>2</sup>           | `ms-settings:apps-volume`<br>|
 | Sound > Gerir dispositivos de som <sup>2</sup>           | `ms-settings:sound-devices`<br>|
 | Armazenamento            | `ms-settings:storagesense`           |
-| Armazenamento > Configue Storage Sense <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
+| Armazenamento > Configure Armazenamento Sense <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
 
 ### <a name="time--language"></a>Linguagem & tempo
 | Página de definições | URI                                           |
@@ -158,11 +158,11 @@ Os dispositivos HoloLens e dispositivos Windows 10 têm uma seleção diferente 
 | Atualização do Windows - Verifica as atualizações | `ms-settings:windowsupdate-action`          |
 
 
->  <sup>1</sup> Para versões anteriores ao Windows Holographic, versão 21H1, os dois URIs seguintes não o levam realmente às **opções avançadas** ou páginas **opções;** apenas bloquearão ou mostrarão a página principal do Windows Update.
-> - ms-settings:windowsupdate-opções
-> - ms-settings:windowsupdate-restartoptions
- 
-> <sup>2</sup> - Disponível no Windows Holographic 21H1 ou superior.
+- <sup>1</sup> - Para versões anteriores ao Windows Holographic, versão 21H1, os dois URIs seguintes não o levam realmente às **opções avançadas** ou páginas **opções;** apenas bloquearão ou mostrarão a página principal do Windows Update.
+  -  ms-settings:windowsupdate-opções
+  -  ms-settings:windowsupdate-restartoptions
+
+- <sup>2</sup> - Disponível no Windows Holographic 21H1 ou superior.
 
 
 Para obter uma lista completa dos URIs de Definições do Windows 10, visite a documentação das [definições de lançamento.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

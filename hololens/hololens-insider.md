@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8545b5f23dc81c194b68ea8b40feb83e525dfdf7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378606"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924371"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização insider para Microsoft HoloLens
 
@@ -31,30 +31,47 @@ Bem-vindos às mais recentes construções insider preview para HoloLens! É sim
 
 Estamos entusiasmados por voltar a voar novas funcionalidades para o Windows Insiders. Novas construções serão voadas para os Canais Dev e Beta para as últimas atualizações. Continuaremos a atualizar esta página à medida que adicionamos mais funcionalidades e atualizações às nossas construções do Windows Insider. Fique animado e pronto para misturar estas atualizações na sua realidade. 
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive para trabalho ou escola Camera Roll upload
+### <a name="csp-changes-on-hololens"></a>Alterações no CSP nos HoloLens
+ 
+- Introduzido na construção do Windows Insider, 20348.1403
 
-*Introduzido na construção 20346.1402*
+#### <a name="devdetail-csp"></a>DevDetail CSP
 
-Adicionámos uma nova funcionalidade à aplicação HoloLens 2 Settings, que permite aos clientes carregarem automaticamente fotos e vídeos de realidade mista a partir da pasta Pictures > Camera Roll do dispositivo para o OneDrive correspondente para trabalho ou pasta escolar. Esta funcionalidade aborda uma [lacuna de funcionalidades dentro da aplicação OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) no HoloLens 2, que suporta apenas o upload automático do Camera Roll para a conta pessoal da Microsoft (e não para o seu trabalho ou conta escolar).
+O DevDetail CSP também reporta espaço de armazenamento gratuito no dispositivo HoloLens. Isto deve corresponder aproximadamente ao valor mostrado na página de Armazenamento da App de Definições. Segue-se o nó específico que contém esta informação.
 
-**Como funciona**
+- ./DevDetail/Ext/Microsoft/FreeStorage (apenas operação GET)
 
-- Visite **Definições > Sistema > Câmara de Realidade Mista** para permitir o "upload da câmara".
-- Ao definir esta função para a posição **On,** quaisquer fotografias ou vídeos de realidade mista capturados no seu dispositivo serão automaticamente enviados para o upload para a pasta De rolo de câmara > imagens do seu OneDrive para trabalho ou conta escolar.
-    >[!NOTE]
-    >As fotos e vídeos capturados antes de ativar esta funcionalidade *não serão* enviados para upload e ainda terão de ser carregados manualmente.
-- Uma mensagem de estado na página Definições mostrará o número de ficheiros pendentes de upload (ou lerá "OneDrive está atualizado" quando todos os ficheiros pendentes tiverem sido carregados).
-- Se estiver preocupado com a largura de banda ou quiser "fazer uma pausa" no upload por qualquer motivo, pode mudar a função para a posição **Off.** Desativar temporariamente a funcionalidade garante que a fila de upload continuará a aumentar à medida que adiciona novos ficheiros à pasta Do Rolo da Câmara, mas os ficheiros não serão carregados até que volte a ativar a funcionalidade.
-- Os ficheiros mais recentes serão carregados primeiro (o último a entrar, o primeiro a sair).
-- Se a sua conta OneDrive tiver problemas (por exemplo, após a alteração da palavra-passe), aparecerá na página 'Definições' um botão **'Corrigir'.**
-- Não existe o tamanho máximo do ficheiro, mas note que os ficheiros grandes demorarão mais tempo a ser carregados (especialmente se a largura de banda do upload estiver limitada). Se "parar" ou desligar o upload enquanto um ficheiro grande está a ser carregado, ele cancelará imediatamente o upload. O upload recomeçará quando voltar a ativar a funcionalidade; não perderá nenhum ficheiro, mas o upload parcial será descartado.
+#### <a name="devicestatus-csp"></a>DeviceStatus CSP
 
-**Questões e ressalvas conhecidas**
+DeviceStatus CSP agora também reporta SSID e BSSID da rede Wifi com a qual holoLens está ativamente conectado. Seguem-se os nós específicos que contêm esta informação.
 
-- Esta definição não tem nenhuma configuração construída em estrangulamento com base no uso atual da largura de banda. Se precisar de maximizar a largura de banda para outro cenário, desligue a definição manualmente. O upload será interrompido, mas a funcionalidade continuará a monitorizar ficheiros recém-adicionados para o Camera Roll. Re-activar o upload quando estiver pronto para continuar.
-- Esta funcionalidade deve ser ativada para cada conta de utilizador no dispositivo, e apenas pode fazer upload de ficheiros para o utilizador que se encontra atualmente inscrito no dispositivo.
-- Se estiver a tirar fotografias ou vídeos enquanto vê a contagem de upload na página Definições em tempo real, note que a contagem de ficheiros pendentes pode não ser alterada até que o ficheiro atual tenha concluído o upload.
-- O upload fará uma pausa se o seu dispositivo adormecer ou estiver desligado. Para garantir que os uploads pendentes estão completos, utilize ativamente o dispositivo até que a página Definições leia "OneDrive está atualizado" ou ajuste as definições **de & de alimentação.**
+- ./Fornecedor/MSFT/DeviceStatus/NetworkIdentifiers/mac *address do adaptador de Wi-Fi*/SSID
+- ./Fornecedor/MSFT/DeviceStatus/NetworkIdentifiers/mac *address do adaptador Wi-Fi*/BSSID
+
+Blob de sincronização de exemplo (para fornecedores de MDM) para consulta para NetworkIdentifiers
+
+```xml
+<SyncML>
+<SyncBody>
+    <Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+            </LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### <a name="fixes-and-improvements"></a>Correções e melhorias:
+
+- Corrigiu um [problema conhecido para o Portal do Dispositivo onde não havia qualquer solicitação de descarregamento de ficheiros bloqueados.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Corrigi um [problema conhecido para o Portal do Dispositivo com upload de ficheiros e descarregamento de tempo.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 
 ## <a name="start-receiving-insider-builds"></a>Comece a receber construções insider
 > [!NOTE]
@@ -94,7 +111,7 @@ Por favor, use [a aplicação Feedback Hub](hololens-feedback.md) nos seus HoloL
 ## <a name="stop-receiving-insider-builds"></a>Pare de receber builds Insider
 Se já não pretender receber as construções insider do Windows Holographic, pode optar por sair quando os hololes estiverem a executar uma produção, ou pode recuperar o [seu dispositivo](hololens-recovery.md) utilizando o Advanced Recovery Companion para recuperar o seu dispositivo para uma versão não-Insider do Windows Holographic.
 > [!CAUTION]
-> Existe um problema conhecido em que os utilizadores que não se matriculam no Insider Preview constroem depois de reinstalarem manualmente uma nova construção de pré-visualização experimentariam um ecrã azul. Depois, devem recuperar manualmente o seu dispositivo. Para mais detalhes sobre se você seria impactado ou não, por favor, veja mais sobre esta [Edição Conhecida.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Existe um problema conhecido em que os utilizadores que não se matriculam no Insider Preview constroem depois de reinstalarem manualmente uma nova construção de pré-visualização experimentariam um ecrã azul. Depois, devem recuperar manualmente o seu dispositivo. Para mais detalhes sobre se você seria impactado ou não, por favor, veja mais sobre esta [Edição Conhecida.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 Para verificar se os seus HoloLens estão a executar uma construção de produção:
 1. Vá a **Definições > System > Sobre**, e encontre o número de construção.
 1. [Consulte as notas de lançamento para os números de construção de produção](hololens-release-notes.md).

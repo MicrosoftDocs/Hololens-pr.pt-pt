@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ffae65a6e1c096242ae7a28c488896c65df1c62d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379923"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924184"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Ligue-se a dispositivos Bluetooth e USB-C
 
@@ -44,7 +44,7 @@ HoloLens (1º gêger) suporta as seguintes classes de dispositivos Bluetooth:
 - [Clicker HoloLens (1ª gen)](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> Outros tipos de dispositivos Bluetooth, tais como altifalantes, auscultadores, smartphones e almofadas de jogo, podem estar listados como disponíveis nas definições de HoloLens. No entanto, estes dispositivos não são suportados em HoloLens (1ª geração). Para obter mais informações, consulte [holoLens Settings lista os dispositivos como estão disponíveis, mas os dispositivos não funcionam](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
+> Outros tipos de dispositivos Bluetooth, tais como altifalantes, auscultadores, smartphones e almofadas de jogo, podem estar listados como disponíveis nas definições de HoloLens. No entanto, estes dispositivos não são suportados em HoloLens (1ª geração). Para obter mais informações, consulte [holoLens Settings lista os dispositivos como estão disponíveis, mas os dispositivos não funcionam](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work).
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Emparelhar um teclado ou rato Bluetooth
 
@@ -112,13 +112,6 @@ Abra a aplicação **Definições** e selecione **System**  >  **Sound**.
 
 Infelizmente, os microfones Bluetooth ainda não estão suportados no HoloLens 2.
 
-#### <a name="troubleshooting-usb-c-microphones"></a>Resolução de problemas dos microfones USB-C
-
-Esteja ciente de que alguns microfones USB-C se reportam incorretamente como um microfone *e* um altifalante. Isto é um problema com o microfone e não com os HoloLens. Ao ligar um destes microfones aos HoloLens, o som pode perder-se. Felizmente, há uma solução simples.  
-
-No Som do Sistema **de Definições,**  ->    ->  coloque explicitamente os altifalantes incorporados **(Controlador de áudio de recurso analógico)** como o **dispositivo Predefinido**. Os HoloLens devem lembrar-se desta definição mesmo que o microfone seja removido e reconectado mais tarde.
-
-![Resolução de problemas dos microfones USB-C](images/usbc-mic-4.png)
 ### <a name="usb-c-hubs"></a>USB-C Hubs
 
 Alguns utilizadores podem precisar de ligar vários dispositivos ao mesmo tempo. Para os utilizadores que gostariam de utilizar um [microfone USB-C](#usb-c-external-microphone-support) juntamente com outro dispositivo conectado, os hubs USB-C podem corresponder às necessidades do cliente. A Microsoft não testou estes dispositivos, nem podemos recomendar marcas específicas.

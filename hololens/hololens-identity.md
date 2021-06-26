@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: fbef357053900f6495cb59f52cba8669f0d0a3db
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378662"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924422"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gerir a identidade do utilizador e iniciar s-in para holoLens
 
@@ -36,20 +36,22 @@ HoloLens suporta vários tipos de identidades de utilizador. Pode utilizar uma o
 
 | Tipo de identidade | Contas por dispositivo | Opções de autenticação |
 | --- | --- | --- |
-| [Azure Ative Directy](https://docs.microsoft.com/azure/active-directory/) (requer Azure AD Premium) | 64 | <ul><li>Fornecedor de credenciais web Azure</li><li>App autenticador Azure</li><li>&ndash;HoloLens biométricos (Íris) HoloLens 2 apenas<sup>1</sup> </li><li>PIN &ndash; Opcional para HoloLens (1ª gen), necessário para HoloLens 2</li><li>Palavra-passe</li></ul> |
+| [Diretório Ativo Azure](https://docs.microsoft.com/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Fornecedor de credenciais web Azure</li><li>App autenticador Azure</li><li>&ndash;HoloLens biométricos (Íris) HoloLens 2 apenas<sup>2</sup> </li><li>PIN &ndash; Opcional para HoloLens (1ª gen), necessário para HoloLens 2</li><li>Palavra-passe</li></ul> |
 | [Conta Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>&ndash;HoloLens biométricos (Íris) Apenas HoloLens</li><li>PIN &ndash; Opcional para HoloLens (1ª gen), necessário para HoloLens 2</li><li>Palavra-passe</li></ul> |
 | [Conta local](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Palavra-passe |
 
 As contas ligadas à nuvem (Azure AD e MSA) oferecem mais funcionalidades porque podem usar os serviços Azure.  
+> [!IMPORTANT]
+> 1 - O Azure AD Premium não é obrigado a entrar no dispositivo. No entanto, é necessário para outras funcionalidades de uma implementação baseada em nuvem de baixo toque, como a inscrição automática e o Autopilot.
 
 > [!NOTE]
-> 1 - Enquanto um dispositivo HoloLens 2 pode suportar até 64 contas AZure AD, apenas 10 dessas contas podem inscrever-se na Autenticação iris. Isto está alinhado com outras [opções de autenticação biométrica para o Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
+> 2 - Enquanto um dispositivo HoloLens 2 pode suportar até 64 contas AZure AD, apenas 10 dessas contas podem inscrever-se na Autenticação iris. Isto está alinhado com outras [opções de autenticação biométrica para o Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
 ## <a name="setting-up-users"></a>Criação de utilizadores
 
 A forma mais comum de configurar um novo utilizador é durante a experiência HoloLens fora da caixa (OOBE). Durante a configuração, o HoloLens solicita a um utilizador que entre a fazer o seu sôm. Esta conta pode ser uma conta de consumo microsoft ou uma conta empresarial que foi configurada em Azure. Consulte a configuração dos seus [HoloLens (1º gênero)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
 
-Tal como o Windows noutros dispositivos, a sessão de sessão durante a configuração cria um perfil de utilizador no dispositivo. O perfil do utilizador armazena aplicações e dados. A mesma conta também fornece O Único Sign-on para apps como Edge ou Skype, utilizando as APIs do Gestor de Contas do Windows.  
+Tal como o Windows noutros dispositivos, a sessão de sessão durante a configuração cria um perfil de utilizador no dispositivo. O perfil do utilizador armazena aplicações e dados. A mesma conta também fornece O Único Sign-on para aplicações, como edge ou a Microsoft Store, utilizando as APIs do Gestor de Contas do Windows.  
 
 Se utilizar uma conta empresarial ou organizacional para iniciar scontabilidade na HoloLens, a HoloLens inscreve-se na infraestrutura de TI da organização. Esta inscrição permite que o seu Administrador de TI configuure a Gestão de Dispositivos Móveis (MDM) para enviar políticas de grupo para os seus HoloLens.
 

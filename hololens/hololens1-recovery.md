@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378556"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923521"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Reiniciar, reiniciar ou recuperar HoloLens (1ª Gen)
 
 Se estiver a ter problemas com os hololens, pode querer reiniciar ou reiniciar ou mesmo relançar o dispositivo utilizando a recuperação do dispositivo. Este artigo guia-o através dos passos de recuperação recomendados em ordem.
 
-Se procura recuperar um HoloLens 2, veja [a Recuperação de um HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery), uma vez que esse processo difere.
+Se procura recuperar um HoloLens 2, veja [a Recuperação de um HoloLens 2](hololens-recovery.md), uma vez que esse processo difere.
 
 > [!NOTE]
 > Este artigo centra-se no dispositivo e software HoloLens. Se os seus hologramas não parecerem **[adequados, consulte considerações ambientais do HoloLens](hololens-environment-considerations.md)** para obter informações sobre fatores que melhorem a qualidade do holograma.
@@ -79,6 +79,27 @@ Se os métodos anteriores não reiniciarem os hololens, forcem um recomeço. Est
 1. Solte o botão e aguarde 2-3 segundos.
 1. Pressione e segure o botão **de alimentação** durante 1 segundo.
 1. Se ainda tiver problemas, prima o botão **de alimentação** durante 4 segundos, até que todos os indicadores da bateria se desvaneçam e o ecrã deixe de exibir hologramas. Aguarde 1 minuto e, em seguida, prima novamente o botão **de alimentação** para ligar o dispositivo.
+
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Volte para uma versão anterior - HoloLens (1ª Gen)
+
+Em alguns casos, talvez queira voltar a uma versão anterior do software HoloLens. Pode fazê-lo utilizando a Ferramenta de Recuperação de Dispositivos do Windows para redefinir os HoloLens para a versão anterior.
+
+> [!NOTE]
+> Voltar a uma versão anterior elimina os seus ficheiros e configurações pessoais.
+
+Para voltar a uma versão anterior do HoloLens 1, siga estes passos:
+
+1. Certifique-se de que não tem telefones ou dispositivos Windows ligados ao seu PC.
+1. No seu PC, descarregue a [Ferramenta de Recuperação de Dispositivos windows (WDRT)](https://support.microsoft.com/help/12379).
+1. Descarregue o pacote de recuperação da [Atualização de Aniversário holoLens](https://aka.ms/hololensrecovery).
+1. Quando os downloads terminarem, abra o **Explorador de**  >  **Ficheiros Downloads**. Clique com o botão direito na pasta com fecho que acabou de descarregar e **selecione Extrair todo** o  >  **Extrato** para desapertá-la.
+1. Ligue os HoloLens ao seu PC utilizando o cabo micro-USB que ele veio. (Mesmo que tenha usado outros cabos para ligar os hololens, este funciona melhor.)
+1. O WDRT detetará automaticamente os seus HoloLens. Selecione o azulejo **microsoft HoloLens.**
+1. No ecrã seguinte, selecione **Manual** e escolha o ficheiro de instalação contido na pasta que abriu no passo 4. (Procure um ficheiro com a extensão .ffu.)
+1. **Selecione Instalar o software** e seguir as instruções.
+
+> [!NOTE]
+> Se o WDRT não detetar os hololens, tente reiniciar o seu PC. Se isso não funcionar, selecione **O meu dispositivo não foi detetado**, selecione Microsoft **HoloLens** e, em seguida, siga as instruções.
 
 ## <a name="reset-to-factory-settings"></a>Reset para as definições de fábrica
 

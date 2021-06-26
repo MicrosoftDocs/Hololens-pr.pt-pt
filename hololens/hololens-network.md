@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: d68c75dcb2249a67f2e07c77cb1b69997eb0ae72
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379908"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923606"
 ---
 # <a name="connect-hololens-to-a-network"></a>Ligue hololens a uma rede
 
@@ -47,16 +47,10 @@ Para confirmar que está ligado a uma rede Wi-Fi, verifique o estado Wi-Fi no me
 1. Olhe para o lado superior esquerdo do menu **Iniciar** para Wi-Fi estado. O estado de Wi-Fi e o SSID da rede conectada serão mostrados.
 
 > [!TIP]
-> Se Wi-Fi não estiver disponível, também pode [ligar-se às redes Cellular e 5G.](https://docs.microsoft.com/hololens/hololens-cellular)
+> Se Wi-Fi não estiver disponível, também pode [ligar-se às redes Cellular e 5G.](hololens-cellular.md)
 
 > [!IMPORTANT]
 > Por design, os utilizadores não podem afinar o comportamento de roaming Wi-Fi dos HoloLens 2 - **a única maneira de refrescar a lista de Wi-Fi é alternar o Wi-Fi Off and On**. Isto evita muitos problemas, como quando um dispositivo pode permanecer "preso" a um AP uma vez que está fora de alcance.
-
-## <a name="troubleshooting-your-connection-to-wi-fi"></a>Resolução de problemas da sua ligação com Wi-Fi
-
-Se tiver problemas de ligação ao Wi-Fi, veja [se não consigo ligar-me ao Wi-Fi.](./hololens-faq.md#i-cant-connect-to-wi-fi)
-
-Quando você assina uma conta empresarial ou organizacional no dispositivo, também pode aplicar a política de Gestão de Dispositivos Móveis (MDM), se a política for configurada pelo seu administrador de TI.
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>Ligue hololens à Enterprise Wi-Fi Network
 
@@ -133,23 +127,7 @@ Recursos adicionais:
 - WLANv1Profile Schema: [[MS-GPWL]: Perfil de LAN sem fios v1 Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS Schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-## <a name="eap-troubleshooting"></a>Resolução de problemas da EAP
-> [!TIP]
-> A maioria dos problemas de rede são o resultado de uma das 3 definições abaixo do 3 estar incorreta no perfil Wi-FI. 
-1. Verifique duas vezes Wi-Fi perfil tem as definições certas:
-   1. O tipo EAP é configurado corretamente, tipos comuns de EAP: EAP-TLS (13), EAP-TTLS (21) e PEAP (25).
-   1. Wi-Fi nome SSID é certo e coincide com a cadeia HEX.
-   1. Para o EAP-TLS, o TrustedRootCA contém o hash SHA-1 do servidor&#39;certificado de CA de raiz fidedigna. No Windows &quot; PC,certutil.exe comando de nome de ficheiro cert de despejo \_ \_ &quot; mostrará um certificado&#39;cadeia de hash SHA-1 do Windows PC.
-
-2. Colete a captura de pacotes de rede nos registos do Access Point ou do Controlador ou do servidor AAA para saber onde a sessão EAP falha.
-   1. Se a identidade EAP fornecida pela HoloLens não for esperada, verifique se a identidade foi corretamente fornecida através de Wi-Fi perfil ou certificado de cliente.
-   1. Se o servidor rejeitar o certificado de cliente HoloLens, verifique se o certificado de cliente exigido foi a provisionado no dispositivo.
-   1. Se o HoloLens rejeitar o certificado do servidor, verifique se o certificado de CA raiz do servidor foi a provisionado no HoloLens.
-1. Se o perfil da empresa for a provisionado através de Wi-Fi pacote de provisionamento, considere aplicar o pacote de provisionamento num PC windows 10. Se também falhar no PC do Windows 10, siga o [guia de resolução de problemas de autenticação do cliente Windows 802.1X](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
-1. Desaponte a sua telemetria para Full ou Optional (dependendo da sua construção) e, em seguida, envie-nos feedback através [do Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
-
-### <a name="additional-resources"></a>Recursos adicionais:
-- [Exportar definições de Wi-Fi a partir de um dispositivo Windows](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+Consulte a nossa página [de resolução de problemas](hololens2-enterprise-troubleshooting.md#) se tiver problemas de ligação ao seu Wi-Fi.
 
 ## <a name="configure-network-proxy"></a>Configure Rede Proxy
 
@@ -195,7 +173,7 @@ Há três formas de providenciar proxies:
     1. Introduza o SSID da sua rede de Wi-Fi e clique em Adicionar.
     1. Selecione a sua rede Wi-Fi na janela esquerda e introduza as personalizações desejadas. As personalizações ativadas aparecerão em negrito no menu esquerdo.
     1. Clique em Guardar e Sair.
-    1. [Aplique](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) o pacote de provisionamento aos HoloLens.
+    1. [Aplique](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) o pacote de provisionamento aos HoloLens.
 
 [Os CSPs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) estão por detrás de muitas das tarefas e políticas de gestão do Windows 10, tanto no Microsoft Intune como em prestadores de serviços não-Microsoft MDM. Também pode utilizar [o Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) para criar um pacote de [provisionamento](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) e aplicá-lo no HoloLens 2.
 Os CSPs mais prováveis que serão aplicados aos seus HoloLens 2 são:

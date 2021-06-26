@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Displays
+title: HoloLens 2 Display Troubleshooting
 description: Expectativas para hololens 2 exibe. Orientação para configurar os ecrãs para uma melhor qualidade de imagem.
 author: BrandonBray
 ms.author: branbray
@@ -12,25 +12,26 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 71dff00ff75feea4408979d2ce69fb14bf9bf3b7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379945"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923623"
 ---
-# <a name="hololens-2-display"></a>HoloLens 2 Display
+# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 Display Troubleshooting
 
+## <a name="overview"></a>Descrição Geral
 O ecrã HoloLens 2 é uma combinação de guias de onda e projetores de luz. Os utilizadores olham através das guias de onda - as lentes dentro da viseira - quando usam o auricular. Os projetores de luz estão dentro do recinto acima da testa. HoloLens 2 utiliza luz laser para iluminar o visor.
 
 ## <a name="troubleshooting"></a>Resolução de problemas
 
-Para hololens 2, tome as seguintes medidas para garantir a mais alta qualidade visual dos hologramas apresentados em ecrãs:
+Tome as seguintes medidas para garantir a maior qualidade visual dos hologramas apresentados nos ecrãs:
 
-* **Aumente o brilho do visor.** Os hologramas ficam melhor quando o ecrã está no seu nível mais brilhante.
+* **Aumente o brilho do visor.** Os hologramas ficam melhor quando o ecrã está no seu nível mais brilhante. Ao usar os HoloLens, os botões de brilho estão no lado esquerdo da viseira perto do seu templo.
 * **Aproxime-se dos seus olhos.** Balance a viseira para a posição mais próxima dos seus olhos.
 * **Visor de turno para baixo.** Tente mover a almofada da testa para baixo, o que fará com que a viseira se aproxime mais do nariz.
-* **Executar a calibração dos olhos.** O visor utiliza a distância interpupilar (IPD) e o olhar para otimizar as imagens no visor. Se não fizer a calibração dos olhos, a qualidade da imagem pode ser pior. Para executar a calibração dos **olhos,** vá a Definições  >  **de** Calibração do Sistema  >    >  **Calibração Calibração dos olhos**.
+* **[Executar a calibração dos olhos.](hololens-calibration.md#calibrating-your-hololens-2)** O visor utiliza a distância interpupilar (IPD) e o olhar para otimizar as imagens no visor. Se não fizer a calibração dos olhos, a qualidade da imagem pode ser pior. Para executar a calibração dos **olhos,** vá a Definições  >  **de** Calibração do Sistema  >    >  **Calibração Calibração dos olhos**.
 * **Executar a calibração da cor do ecrã**. No [Windows Holographic, versão 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e em diante, pode **selecionar um perfil de cores alternativo** para o seu ecrã HoloLens 2. Isto pode ajudar as cores a parecerem mais precisas, especialmente em níveis de luminosidade de ecrã mais baixos. A calibração de cores do ecrã pode ser encontrada na aplicação **Definições,** na página **de calibração system >.**
 
     > [!NOTE]

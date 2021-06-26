@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dfa3096f40dab02357409b05c1fc4c0d44a46a6d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379824"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923504"
 ---
 # <a name="compare-hololens-2-options"></a>Comparar HoloLens 2 Opções
 
@@ -87,10 +87,10 @@ Explore estas soluções adicionais construídas para dispositivos de realidade 
 
 ## <a name="next-steps"></a>Passos seguintes
 
-Para os utilizadores finais do dispositivo, consulte a [visão geral do Uso Básico](hololens2-setup.md) para começar.
+Para os utilizadores finais do dispositivo, consulte o [Get your HoloLens 2 pronto a usar para](hololens2-setup.md) começar.
 
 > [!div class="nextstepaction"]
-> [Visão geral do uso básico](hololens2-setup.md)
+> [Tenha os hololens 2 prontos a usar](hololens2-setup.md)
 
 Para os administradores de TI, a implantação de dispositivos para a sua organização desbloqueia poderosas experiências de realidade mista. Começa por rever os requisitos e cenários de implantação do HoloLens 2 através de uma série de configurações de infraestruturas de TI.
 

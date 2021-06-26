@@ -13,12 +13,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 83e5a746b6900c547778c71a0855426563458032
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378685"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924065"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>Use o clicker HoloLens (1º gênero)
 
@@ -75,6 +75,15 @@ Os gestos do clicker são pequenas rotações do pulso, não os movimentos maior
 > [!TIP]
 > Para fazer zoom dentro ou fora quando utilizar o Microsoft Edge, olhe para uma página e clique duas vezes.
 
+## <a name="im-having-problems-using-the-hololens-clicker"></a>Estou a ter problemas em usar o clicker HoloLens.
+
+Utilize o [clicker](hololens1-clicker.md) para selecionar, deslocar, mover e redimensionar hologramas. As aplicações individuais podem suportar gestos adicionais de clicker.
+
+Se tiver problemas em usar o clicker, certifique-se de que é carregado e emparelhado com os hololens. Se a bateria estiver fraca, a luz indicadora pisca âmbar. Para verificar se o clicker está emparelhado, vá aos **Dispositivos de Definições**  >   e veja se aparece lá. Para obter mais informações, consulte [Emparelhar o clicker](hololens1-clicker.md).
+
+Se o clicker for carregado e emparelhado e ainda tiver problemas, reinicie-o premindo o botão principal e o botão de emparelhamento durante 15 segundos. Em seguida, emparelhar o clicker com os seus HoloLens novamente.
+
+Se a reposição do clicker não ajudar, consulte [Reiniciar ou recuperar o clicker HoloLens](hololens1-clicker.md#restart-or-recover-the-clicker).
 ## <a name="restart-or-recover-the-clicker"></a>Reiniciar ou recuperar o clicker
 
 Aqui estão algumas coisas para tentar se o clicker HoloLens não responde ou não está a funcionar bem.
@@ -100,3 +109,4 @@ Para recuperar o clicker:
 1. Executar a Ferramenta de Recuperação do Dispositivo Do Windows e seguir as instruções.
 
 Se o clicker não for detetado automaticamente, selecione **O meu dispositivo não foi detetado** e siga as instruções para colocar o seu dispositivo no modo de recuperação.
+

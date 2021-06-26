@@ -2,7 +2,7 @@
 title: Configurar os seus HoloLens 2
 description: Saiba como configurar o seu HoloLens 2 pela primeira vez em Wi-Fi rede com uma conta Microsoft (MSA) ou Azure Ative Directory (AAD).
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
-ms.date: 9/17/2019
+ms.date: 6/09/2021
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d46deaf4048e6a649345dc1676a7f8b94d3ad2fc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379930"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923787"
 ---
 # <a name="set-up-your-hololens-2"></a>Configurar os seus HoloLens 2
 
 A primeira vez que ligar os HoloLens, será guiado através da configuração do seu dispositivo, da sessão com uma conta de utilizador e da calibração dos HoloLens para os seus olhos.  Esta secção percorre a experiência inicial de configuração hololens 2.
 
-Na próxima secção, aprenderás a trabalhar com hololens e a interagir com hologramas. Para antecipar o artigo, consulte [Começar com hololens 2](hololens2-basic-usage.md).
+Na próxima secção, aprenderás a trabalhar com hololens e a interagir com hologramas. Para antecipar o artigo, consulte [Getting around HoloLens 2](hololens2-basic-usage.md).
 
 ## <a name="before-you-start"></a>Antes de começar
 
@@ -53,13 +53,19 @@ HoloLens 2 irá acompanhá-lo através dos seguintes passos:
 
     ![Selecione região](images/05-region.png)
 
-1. Calibra holoLens aos teus olhos.  Se optar por saltar a calibração, será solicitado da próxima vez que iniciar sessão.
+1. Calibra holoLens aos teus olhos.  Se optar por saltar a calibração, será solicitado da próxima vez que iniciar sessão. 
 
-    Para calibrar, você vai olhar para um conjunto de alvos (referidos como pedras preciosas). Tudo bem se piscar ou fechar os olhos durante a calibração, mas tente não olhar para outros objetos na sala ou no espaço físico. HoloLens usa este processo para aprender sobre a sua posição ocular para que possa tornar melhor o seu mundo holográfico. Após a calibração, os hologramas aparecerão corretamente, mesmo quando a viseira se desloca na sua cabeça.
+    1. Primeiro, vai ajustar a sua viseira.
+    
+        ![Tela de seleção de calibração](images/06-et-corners.png)
 
-    As informações de calibração são armazenadas localmente no dispositivo e não estão associadas a nenhuma informação da conta. Para obter mais informações, consulte [os dados de calibração e segurança.](hololens-calibration.md#calibration-data-and-security)
+    2. Para calibrar, você vai olhar para um conjunto de alvos (referidos como pedras preciosas). Tudo bem se piscar ou fechar os olhos durante a calibração, mas tente não olhar para outros objetos na sala ou no espaço físico. HoloLens usa este processo para aprender sobre a sua posição ocular para que possa tornar melhor o seu mundo holográfico. 
 
-    ![Tela de seleção de calibração](images/06-et-corners.png)
+        ![Ajuste-se para os seus olhos](images/07-adjust-eyes.png)
+
+        Após a calibração, os hologramas aparecerão corretamente, mesmo quando a viseira se desloca na sua cabeça. As informações de calibração são armazenadas localmente no dispositivo e não estão associadas a nenhuma informação da conta. Para obter mais informações, consulte [os dados de calibração e segurança.](hololens-calibration.md#calibration-data-and-security)
+
+        ![A calibração está completa](images/calibration-complete.png)
 
 1. Ligue-se à internet (selecione Wi-Fi ou a sua ligação ethernet).
 
@@ -71,6 +77,14 @@ HoloLens 2 irá acompanhá-lo através dos seguintes passos:
     > Se progredir para além do passo Wi-Fi e mais tarde precisar de mudar para uma rede diferente enquanto ainda estiver configurado, pode premir simultaneamente os botões **Volume Down** e **Power** para voltar a este passo se estiver a executar uma versão SO a partir de outubro de 2019 ou mais tarde. Para versões anteriores, poderá ser necessário [reiniciar o dispositivo](hololens-recovery.md) ou reiniciá-lo num local onde a rede Wi-Fi não esteja disponível para evitar a sua ligação automática.
     > 
     > Note também que durante a configuração hololes, há uma pausa de credencial de dois minutos. O nome de utilizador/palavra-passe tem de ser introduzido dentro de dois minutos, caso contrário o campo do nome de utilizador será automaticamente limpo.
+
+1. HoloLens 2 procurará e aplicará um perfil autopiloto se existir. Não é necessária nenhuma ação neste ecrã.
+ 
+    ![Pesquisa de perfil de piloto automático](images/autopilot-profile-search.png) 
+
+1. Clique em **Aceitar** no ecrã de licenciamento.
+
+    ![Contrato de licença do Windows](images/windows-license-agreement.png)
 
 1. Inscreva-se na sua conta de utilizador. Vais escolher entre **o meu trabalho ou a minha escola** e eu sou o **dono.**
 
@@ -88,17 +102,36 @@ HoloLens 2 irá acompanhá-lo através dos seguintes passos:
 
     ![Definir utilizador](images/13-device-owner.png)
 
-1. Selecione se deve ativar a fala no HoloLens 2 e se deve enviar telemetria de diagnóstico.
+1. Configurar o sinal de iris selecionando em **seguida**. Você vai passar por uma experiência semelhante à calibração dos olhos. Selecione **Feito** quando a varredura estiver completa. Também pode selecionar **Skip** para contornar este passo.
+    
+    ![Conclusão da ](images/setup-iris.png) ![ configuração da Íris Iris](images/iris-setup-complete.png) 
+     
+  
+1. Irá configurar um PIN para iniciar sessão no dispositivo. Este PIN é específico do dispositivo. 
+
+    ![Configuração Windows Olá](images/setup-windows-hello.png)
+
+    ![Configuração Windows Hello PIN](images/windows-hello-pin.png)
+
+    ![Windows Hello Setup bem sucedido](images/windows-hello-successful.png) 
+    
+1. Selecione se ativar a fala no HoloLens 2.
 
     ![Ativar cortana](images/22-do-more-with-voice.png)
 
-1. Selecione o seu nível de telemetria. Se puder, por favor, ative a telemetria Completa. Esta informação realmente ajuda a equipa de engenharia hololens.
+1. Selecione se ativa a localização no HoloLens 2.
+    
+    ![Ativar serviços de localização](images/setup-location-services.png)
+
+1. Selecione o seu nível de telemetria. Se puder, por favor, ative a telemetria opcional. Esta informação realmente ajuda a equipa de engenharia hololens.
 
      ![Nível de telemetria](images/24-telemetry.png)
 
 1. Aprenda a usar o gesto inicial no HoloLens 2.
 
-     ![Aprenda a usar o gesto inicial, imagem 1 ](images/26-01-startmenu-learning.png) ![ Aprenda a usar o gesto de partida, imagem 2](images/26-02-startmenu-learning.png)
+     ![Aprenda a usar o gesto inicial, imagem 1](images/26-01-startmenu-learning.png)
+
+     ![Aprenda a usar o gesto inicial, imagem 2](images/26-02-startmenu-learning.png)
 
 Parabéns!  A configuração está completa e está pronto para usar HoloLens!
 
@@ -109,4 +142,4 @@ Parabéns!  A configuração está completa e está pronto para usar HoloLens!
 1. Clique abaixo para continuar a ler sobre como contornar HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Começa com o HoloLens 2](hololens2-basic-usage.md)
+> [Introdução ao HoloLens 2](hololens2-basic-usage.md)

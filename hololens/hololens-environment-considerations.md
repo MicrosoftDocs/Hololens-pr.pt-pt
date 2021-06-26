@@ -10,12 +10,12 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
 keywords: quadro holográfico, campo de visão, fov, calibração, espaços, ambiente, como-a-fazer, HoloLens, realidade mista, auscultadores de realidade mista
-ms.openlocfilehash: f4d3feb379a1f9815b940614fcd4b29b062f5cdc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379918"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924354"
 ---
 # <a name="hololens-environment-considerations"></a>Considerações ambientais hololens
 
@@ -129,7 +129,14 @@ Aqui ficam algumas diretrizes a seguir ao utilizar o seu dispositivo:
 1. Utilize o dispositivo num ambiente dentro do intervalo de temperatura.
 1. Utilize o dispositivo dentro de casa.
 1. Utilizar o dispositivo à sombra; mesmo dentro de casa evitar a luz solar direta embora janelas ou claraboias.
-1. Se seguir as diretrizes acima, mas experimentar problemas de sobreaquecimento inesperados, certifique-se de que a telemetria completa /opcional está ativada antes de enviar [feedback](hololens-feedback.md). A telemetria completa / opcional será necessária para investigar quaisquer problemas de sobreaquecimento.
+1. Se seguir as diretrizes acima, mas experimentar problemas inesperados de sobreaquecimento, siga os passos abaixo para submeter [feedback](hololens-feedback.md). 
+    1. Certifique-se de que a telemetria **completa** ou **opcional** está ativada no seu aparelho. Se não for, ative-o. 
+    >[!CAUTION]
+    > A telemetria não é retroativa para eventos térmicos - deve ser ativada durante o sobreaquecimento ou os dados necessários não serão capturados.
+    
+    2. Reproduza a questão do aquecimento.
+    3. Inclua a data e a hora do sobreaquecimento.
+    4. Enviar [feedback](hololens-feedback.md).
 
 ## <a name="see-also"></a>Ver também
 

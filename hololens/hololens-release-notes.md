@@ -8,23 +8,98 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 554dc796ee793a3f7e81108c6eb614a9555f10d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 16aec0e60fde40f0a2bffefa871a7a3774b1eb2e
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378646"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924541"
 ---
 # <a name="hololens-2-release-notes"></a>Notas de lançamento holoLens 2
 
 Para garantir que tem uma experiência produtiva com os seus dispositivos HoloLens, continuamos a lançar funcionalidades, bugs e atualizações de segurança. Nesta página, pode ver as novidades dos HoloLens todos os meses. Para obter a mais recente atualização HoloLens 2, pode [verificar se há atualizações e atualizações manuais](hololens-update-hololens.md#check-for-updates-and-manually-update) ou obter a Atualização Flash Completa (FFU) para [piscar o seu dispositivo através do Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). O [download](https://aka.ms/hololens2download) é mantido atualizado e fornece a mais recente construção geralmente disponível.
+
+> [!NOTE]
+> O recente anúncio do Windows 11 foi focado na versão para PC do Windows. Lançamos recentemente uma [grande atualização de SO](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) para HoloLens 2 em maio de 2021, e estamos a trabalhar num próximo lançamento baseado no feedback do cliente para este outono.
+
+> [!IMPORTANT]
+> Devido a um [problema conhecido na nossa construção de 21H1 que está a afetar os utilizadores do Remote Assist](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), estamos neste momento a interromper a oferta de atualizações do Windows Holographic, versão 21H1. Também alterámos a construção padrão do Advanced Recovery Companion para ser o [Windows Holographic, versão 20H2 – June 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), que é o mais recente lançamento de 20H2.
+>
+> Embora reduzamos a disponibilidade de 21H1 para mitigar o impacto deste problema, entendemos que alguns clientes ainda podem querer atualizar para 21H1. Para clientes que desejem atualizar para 21H1 existem dois caminhos diferentes disponíveis:
+>
+> - [Inscreva os seus dispositivos como Windows Insiders](hololens-insider.md#start-receiving-insider-builds) e selecione o **Canal Beta,** isto permitirá que esses dispositivos atualização para 21H1 e tenham construções fiáveis.
+> - [Descarregue a mais recente FFU no seu PC](https://aka.ms/hololens2download) e, em seguida, [flash o seu dispositivo através do Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
+
+## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographic, versão 21H1 - junho 2021 Atualização
+- Construção 20348.1007
+
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive para trabalho ou escola Camera Roll upload
+
+Adicionámos uma nova funcionalidade à aplicação HoloLens 2 Settings, que permite aos clientes carregarem automaticamente fotos e vídeos de realidade mista a partir da pasta Pictures > Camera Roll do dispositivo para o OneDrive correspondente para trabalho ou pasta escolar. Esta funcionalidade aborda uma [lacuna de funcionalidades dentro da aplicação OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) no HoloLens 2, que suporta apenas o upload automático do Camera Roll para a conta pessoal da Microsoft (e não para o seu trabalho ou conta escolar).
+
+**Como funciona**
+
+- Visite **Definições > Sistema > Câmara de Realidade Mista** para permitir o "upload da câmara".
+- Ao definir esta função para a posição **On,** quaisquer fotografias ou vídeos de realidade mista capturados no seu dispositivo serão automaticamente enviados para o upload para a pasta De rolo de câmara > imagens do seu OneDrive para trabalho ou conta escolar.
+    >[!NOTE]
+    >As fotos e vídeos capturados antes de ativar esta funcionalidade *não serão* enviados para upload e ainda terão de ser carregados manualmente.
+- Uma mensagem de estado na página Definições mostrará o número de ficheiros pendentes de upload (ou lerá "OneDrive está atualizado" quando todos os ficheiros pendentes tiverem sido carregados).
+- Se estiver preocupado com a largura de banda ou quiser "fazer uma pausa" no upload por qualquer motivo, pode mudar a função para a posição **Off.** Desativar temporariamente a funcionalidade garante que a fila de upload continuará a aumentar à medida que adiciona novos ficheiros à pasta Do Rolo da Câmara, mas os ficheiros não serão carregados até que volte a ativar a funcionalidade.
+- Os ficheiros mais recentes serão carregados primeiro (o último a entrar, o primeiro a sair).
+- Se a sua conta OneDrive tiver problemas (por exemplo, após a alteração da palavra-passe), aparecerá na página 'Definições' um botão **'Corrigir'.**
+- Não existe o tamanho máximo do ficheiro, mas note que os ficheiros grandes demorarão mais tempo a ser carregados (especialmente se a largura de banda do upload estiver limitada). Se "parar" ou desligar o upload enquanto um ficheiro grande está a ser carregado, o upload parcial será preservado. Se o upload for re-activado dentro de várias horas após ser "pausado" ou desligado, o upload continuará de onde parou. No entanto, se o upload for re-activado após várias horas, o upload do grande ficheiro recomeçará desde o início.
+
+**Questões e ressalvas conhecidas**
+
+- Esta definição não tem nenhuma configuração construída em estrangulamento com base no uso atual da largura de banda. Se precisar de maximizar a largura de banda para outro cenário, desligue a definição manualmente. O upload será interrompido, mas a funcionalidade continuará a monitorizar ficheiros recém-adicionados para o Camera Roll. Re-activar o upload quando estiver pronto para continuar.
+- Esta funcionalidade deve ser ativada para cada conta de utilizador no dispositivo, e apenas pode fazer upload de ficheiros para o utilizador que se encontra atualmente inscrito no dispositivo.
+- Se estiver a tirar fotografias ou vídeos enquanto vê a contagem de upload na página Definições em tempo real, note que a contagem de ficheiros pendentes pode não ser alterada até que o ficheiro atual tenha concluído o upload.
+- O upload fará uma pausa se o seu dispositivo adormecer ou estiver desligado. Para garantir que os uploads pendentes estão completos, utilize ativamente o dispositivo até que a página Definições leia "OneDrive está atualizado" ou ajuste as definições **de & de alimentação.**
+### <a name="added-support-for-some-telemetry-policies"></a>Apoio adicional a algumas políticas de telemetria
+
+As seguintes políticas de telemetria são agora apoiadas nos HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- PermitirDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Tanto o Sistema\AllowTelemetry e System\ConfigureTelemetryOptInSettingsUx devem ser utilizados em conjunto para ter controlo total sobre a Telemetria e o comportamento na aplicação Definições.
+
+Melhorias e correções na atualização:
+- Corrige a grande corrupção de vídeo com a calibração de cores.
+- Aborda um problema em que o texto pode ser truncado no menu Power.
+- Permite o suporte para a política RequerPrivateStoreOnly.
+
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holographic, versão 20H2 - junho 2021 Atualização
+- Construção 19041.1154
+
+### <a name="added-support-for-some-telemetry-policies"></a>Apoio adicional a algumas políticas de telemetria
+
+As seguintes políticas de telemetria são agora apoiadas nos HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- PermitirDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Tanto o Sistema\AllowTelemetry e System\ConfigureTelemetryOptInSettingsUx devem ser utilizados em conjunto para ter controlo total sobre a Telemetria e o comportamento na aplicação Definições.
+
+Encorajamo-lo a experimentar a nossa mais recente construção, Windows Holographic, versão 21H1.
+
+## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holographic, versão 1903 - junho 2021 Atualização
+- Construção 18362.1116
+
+Melhorias e correções na atualização:
+- Esta atualização mensal de qualidade não contém quaisquer alterações notáveis, encorajamos-te a experimentar a nossa mais recente construção, o Windows Holographic, versão 21H1.
+
+>[!IMPORTANT]
+> Esta construção deixará de ser servida.
 
 ## <a name="windows-holographic-version-21h1"></a>Windows Holographic, versão 21H1
 - Construção 20346.1002
@@ -309,9 +384,9 @@ Se escolher "Always" mas mais tarde quiser alterar qual a aplicação que lida c
 
 Agora, nesta construção do Windows, os utilizadores podem ajustar manualmente o nível de volume de cada aplicação. Isto permite que os utilizadores se concentrem melhor nas apps que precisam, ou melhor ouvir quando usam várias apps. Como a necessidade de diminuir o volume de uma aplicação enquanto chama outra pessoa para assistência remota noutra.
 
-Para definir o volume de uma aplicação individual navegue para **Settings**  ->  **System**  ->  **Sound**, e em opções de som avançadas selecione **volume de aplicação e preferências do dispositivo**.
+Para definir o volume de uma aplicação individual navegue para **Settings**  ->  **System**  ->  **Sound**, e em opções de som avançadas selecione **volume de aplicação e preferências do dispositivo**.<br/><br/>
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### <a name="swipe-to-type"></a>Passe para escrever
 
@@ -327,13 +402,13 @@ Um novo menu que permite ao utilizador assinar, desligar e reiniciar o dispositi
 
 1. Abra o ecrã Iniciar HoloLens utilizando o [gesto Iniciar](hololens2-basic-usage.md#start-gesture) ou dizendo "Vai para começar".
 
-2. Note o ícone de elipsis (...) ao lado da imagem do perfil do utilizador:
+2. Note o ícone de elipsis (...) ao lado da imagem do perfil do utilizador:<br/><br/>
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Selecione a imagem do perfil do utilizador utilizando as mãos ou o comando de voz "Power".
 
-4. Um menu aparece com opções para iniciar, reiniciar ou desligar o dispositivo:
+4. Um menu aparece com opções para iniciar, reiniciar ou desligar o dispositivo:<br/><br/>
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 

@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 6c9d1551b2a3348a6ff9962180c2d5552eb100f1
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: faa6bb2b095d69c3538063b1c042c5ce5e215d33
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379897"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924082"
 ---
 # <a name="manage-hololens-updates"></a>Gerir atualizações hololens
 
@@ -77,7 +77,7 @@ Para configurar como e quando as atualizações são aplicadas, utilize as segui
   - Valor predefinido: **0** (todos os dias)
 - [Atualização/Hora de Instalação Programada](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - Valores: 0-23 (0 = meia-noite, 23 = 23 pm)
-  - Valor predefinido: 3 PM
+  - Valor predefinido: 3 am
 
 #### <a name="configure-active-hours"></a>Configure horas ativas
 Começando pelo [Windows Holographic, a versão 20H2](hololens-release-notes.md#windows-holographic-version-20h2) um Administrador DE TI pode especificar a gama de horas ativas para dispositivos HoloLens 2.
@@ -137,7 +137,7 @@ Pode configurar diferentes diferimentos para atualizações de funcionalidades e
 
 #### <a name="pause-updates-via-device"></a>Pausa atualizações via dispositivo
 
-Se um utilizador não tiver acesso ao MDM, pode fazer uma pausa individualmente durante 35 dias manualmente num dispositivo HoloLens 2 na construção [do Windows Holographic, versão 2004](hololens-release-notes.md#windows-holographic-version-2004) ou posterior. Os utilizadores podem chegar a esta definição navegando para **Definições -> Atualização & Opções avançadas de segurança ->** deslocar-se para **atualizações de pausa** e selecionar a data até à qual irão interromper as atualizações. Uma vez que um utilizador atingiu o limite de pausa, o dispositivo terá de receber novas atualizações, uma vez que pode voltar a fazer uma pausa. 
+Se um utilizador não tiver acesso ao MDM, pode fazer uma pausa individualmente durante 35 dias manualmente num dispositivo HoloLens 2 na construção [do Windows Holographic, versão 2004](hololens-release-notes.md#windows-holographic-version-2004) ou posterior. Os utilizadores podem chegar a esta definição navegando para **Definições > atualização & opções avançadas de segurança >** desloque-se para **atualizações de pausa** e selecione a data até à qual irão interromper as atualizações. Uma vez que um utilizador atingiu o limite de pausa, o dispositivo terá de obter novas atualizações antes de poder parar novamente. 
 
 A partir do [Windows Holographic, versão 20H2,](hololens-release-notes.md#windows-holographic-version-20h2)esta função de atualizações de pausa pode ser gerida para dispositivos HoloLens 2. 
 - [Atualização/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).

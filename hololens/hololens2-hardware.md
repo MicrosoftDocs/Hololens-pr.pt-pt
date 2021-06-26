@@ -12,18 +12,23 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 75e30960717502fb6cfb3234742bae799dc6f19d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379885"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924524"
 ---
 # <a name="about-hololens-2"></a>Sobre hololens 2
 
 ![HoloLens 2 vista lateral](images/hololens2-breakdown.png)
 
-O Microsoft HoloLens 2 é um computador holográfico sem amarras.  Refina a jornada de computação holográfica iniciada pela HoloLens (1ª geração) para proporcionar uma experiência mais confortável e imersiva, emparelhada com mais opções para colaborar na realidade mista. É necessária uma conta de utilizador para utilizar hololens 2.
+O Microsoft HoloLens 2 é um computador holográfico sem amarras.  Refina a jornada de computação holográfica iniciada pela HoloLens (1ª geração) para proporcionar uma experiência mais confortável e imersiva, emparelhada com mais opções para colaborar na realidade mista. O HoloLens 2 funciona no [Sistema Operativo Holográfico do Windows](hololens-release-notes.md), que se baseia num "sabor" do Windows 10, que fornece aos utilizadores, administradores e desenvolvedores uma plataforma robusta, performante e segura. 
+
+> [!NOTE]
+> O recente anúncio do Windows 11 foi focado na versão para PC do Windows. Lançamos recentemente uma [grande atualização de SO](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) para HoloLens 2 em maio de 2021, e estamos a trabalhar num próximo lançamento baseado no feedback do cliente para este outono.
+
+É necessária uma conta de utilizador para utilizar hololens 2.
 
 ## <a name="hololens-components"></a>Componentes HoloLens
 
@@ -133,7 +138,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 |   |   |
 | - | - |
-| Sistema Operativo Holográfico do Windows | Com o Windows Holographic, os utilizadores do Windows 10 poderão utilizar algumas das suas aplicações e jogos num ambiente de realidade mista através do HoloLens 2.
+| Sistema Operativo Holográfico do Windows | Com [o Windows Holographic OS](hololens-release-notes.md), os utilizadores do Windows 10 poderão utilizar algumas das suas aplicações e jogos num ambiente de realidade mista através do HoloLens 2.
 | Espectador 3D | [O 3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) permite-lhe ver facilmente modelos e animações 3D em tempo real.|
 | Cortana | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)o seu assistente de produtividade pessoal, ajuda-o a manter-se a cargo do que importa e a poupar tempo para encontrar o que precisa.  |
 | Dinâmica 365 Guias |  [A Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ajudará os colaboradores a aprenderem novas habilidades mais rapidamente nos dispositivos HoloLens. |
@@ -208,7 +213,10 @@ O número de série também pode ser encontrado através de um PC conectado:
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## <a name="next-step"></a>Passo seguinte
+## <a name="next-steps"></a>Próximo passo(s)
+
+> [!div class="nextstepaction"]
+> [Compare HoloLens 2 Edições](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 > [Configurar e iniciar os seus HoloLens 2](hololens2-setup.md)
