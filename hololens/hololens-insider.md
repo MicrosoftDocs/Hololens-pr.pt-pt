@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924371"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977239"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização insider para Microsoft HoloLens
 
@@ -29,10 +29,14 @@ Bem-vindos às mais recentes construções insider preview para HoloLens! É sim
 
 ## <a name="windows-insider-release-notes"></a>Notas de lançamento do Windows Insider
 
-Estamos entusiasmados por voltar a voar novas funcionalidades para o Windows Insiders. Novas construções serão voadas para os Canais Dev e Beta para as últimas atualizações. Continuaremos a atualizar esta página à medida que adicionamos mais funcionalidades e atualizações às nossas construções do Windows Insider. Fique animado e pronto para misturar estas atualizações na sua realidade. 
+Estamos entusiasmados por voltar a voar novas funcionalidades para o Windows Insiders. Novas construções serão voadas para os Canais Dev e Beta para as últimas atualizações. Continuaremos a atualizar esta página à medida que adicionamos mais funcionalidades e atualizações às nossas construções do Windows Insider. Fique animado e pronto para misturar estas atualizações na sua realidade.
+
+| Funcionalidade                 | Descrição                | Utilizadores-alvo | Construção introduzida |
+|-------------------------|----------------------------|--------------|------------------|
+| Alterações do CSP nos HoloLens | Novos CSPs para consulta de dados | Administradores de TI    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>Alterações no CSP nos HoloLens
- 
+
 - Introduzido na construção do Windows Insider, 20348.1403
 
 #### <a name="devdetail-csp"></a>DevDetail CSP
