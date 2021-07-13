@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 73d89619498c61f2809702d788ffafc532afa67e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1de9687174bf9c1de2e2b15ee03aa841254b0b82
+ms.sourcegitcommit: 2988afb1d7792c9e4bae15485cd52d6eff7e27c8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640054"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113685053"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -31,6 +31,27 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 
 > [!IMPORTANT]
 > Devido a um problema agora resolvido [conhecido na nossa construção 21H1 que estava a afetar os utilizadores do Remote Assist](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), interrompemos temporalmente a oferta de Windows atualizações Holográficas, versão 21H1. Também tínhamos alterado a construção padrão do Advanced Recovery Companion (ARC) para o [Windows Holographic, versão 20H2 – junho 2021 Atualização](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). A construção do ARC vai agora retomar a 21H1.
+
+## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows Holográfico, versão 21H1 - julho 2021 Atualização
+- Construção 20348.1010
+
+Melhorias e correções na atualização:
+
+- O Portal do Dispositivo tem métodos melhorados de notificar o cliente quando o Explorador de Ficheiros encontra problemas de abertura de ficheiros bloqueados.
+- Ao utilizar o HoloLens 2 Emulator num PC com adaptadores gráficos integrados e discretos, o emulador será agora capaz de permitir a aceleração de gráficos de hardware, embora possa utilizar o adaptador integrado menos potente.  Anteriormente, a aceleração do hardware não podia ser ativada, reportando frequentemente uma falha gráfica com o Código 43.  Em alguns casos, o emulador não arrancaria com sucesso, mas agora vai.
+- O upload de ficheiros, o download, o renomeamento e a eliminação são agora corrigidos quando se utilizam https em todos os navegadores suportados.
+- Problema fixo em que Wi-Fi proxy não pode ser salvo quando Wi-Fi propriedades UI é lançado a partir de **Definições -> Rede & Internet -> Status -> Properties**.
+- Abordou um problema em torno da remoção dos certificados eSIM através de atualizações do SISTEMA. Esta correção garante que os certificados eSIM e componentes conexos sejam removidos ao atualizar a versão 21H1.
+- Corrigi um problema com impacto em aplicações pré-instaladas em resets de SISTEMA. 
+- Desempenho de carregamento da bateria sintonizado para aumentar o tempo de funcionaamento ao carregar com um maior carregamento de CPU.
+
+## <a name="windows-holographic-version-20h2--july-2021-update"></a>Windows Holográfico, versão 20H2 - Atualização julho 2021
+- Construção 19041.1157
+
+Melhorias e correções na atualização:
+- O Portal do Dispositivo tem métodos melhorados de notificar o cliente quando o Explorador de Ficheiros encontra problemas de abertura de ficheiros bloqueados. 
+- Ao utilizar o HoloLens 2 Emulator num PC com adaptadores gráficos integrados e discretos, o emulador será agora capaz de permitir a aceleração de gráficos de hardware, embora possa utilizar o adaptador integrado menos potente.  Anteriormente, a aceleração do hardware não podia ser ativada, reportando frequentemente uma falha gráfica com o Código 43.  Em alguns casos, o emulador não arrancaria com sucesso, mas agora vai.
+- O upload de ficheiros, o download, o renomeamento e a eliminação são agora corrigidos quando se utilizam https em todos os navegadores suportados.
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holográfico, versão 21H1 - junho 2021 Atualização
 - Construção 20348.1007
@@ -485,7 +506,7 @@ O início de sísmis do Visitor Auto pode ser gerido através da política [pers
 
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| Política  | Description   | Configurações  |
+| Política  | Descrição   | Configurações  |
 |---|---|---|
 | Realidade Mista/VisitanteAutoLogon  | Permite um visitante a passar por um quiosque   | 1 (Sim), 0 (Não, padrão.)  |
 
@@ -975,7 +996,7 @@ Anteriormente, ao encontrar falhas na aplicação do modo quiosque, HoloLens usa
 
 Foram criadas novas políticas de realidade mista para HoloLens 2 dispositivos na versão holográfica 20H2 Windows. As novas definições controláveis incluem: luminosidade de definição, volume de definição, gravação de áudio incapacitante em capturas de realidade mista, definição quando os diagnósticos podem ser recolhidos e cache de membro do grupo AAD.  
 
-| Política de nova HoloLens                                | Description                                                                               | Notas                                                                |
+| Política de nova HoloLens                                | Descrição                                                                               | Notas                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | Realidade Mista\BrightnessButtonDisabled              | Permite que os botões de luminosidade sejam desativados de modo a premir, não altere o brilho.       | 1 Sim, 0 Não (padrão)                                                |
 | Realidade Mista\VolumeButtonDisabled                  | Permite que os botões de volume sejam desativados de modo a que a pressão não altere o volume.               | 1 Sim, 0 Não (padrão)                                                |
