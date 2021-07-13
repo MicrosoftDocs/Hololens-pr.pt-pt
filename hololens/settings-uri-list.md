@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637171"
+ms.locfileid: "113639238"
 ---
 # <a name="page-settings-visibility"></a>Página Definições Visibilidade
 
-Uma das funcionalidades geríveis para dispositivos HoloLens é utilizar a [política Definições/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) para restringir as páginas vistas dentro da aplicação Definições. PageVisibilityList é uma política que permite que os administradores de TI impeçam que páginas específicas no Sistema Definições aplicação sejam visíveis ou acessíveis, ou que o façam para todas as páginas, exceto as especificadas.
+Uma das funcionalidades geríveis para dispositivos HoloLens é utilizar a [política Definições/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) para restringir as páginas vistas dentro da aplicação Definições. PageVisibilityList é uma política que permite que os administradores de TI impeçam que páginas específicas no Sistema Definições aplicação sejam visíveis ou acessíveis, ou que o façam para todas as páginas, exceto as especificadas.
 
 > [!NOTE]
 > Esta funcionalidade é apenas avaliável em [Windows Holographic, versão 20H2](hololens-release-notes.md#windows-holographic-version-20h2) ou superior para HoloLens 2 dispositivos. Certifique-se de que os dispositivos para os seguintes são atualizados.
@@ -189,4 +189,4 @@ HoloLens dispositivos e dispositivos Windows 10 têm uma seleção diferente de 
 - <sup>2</sup> - Disponível em Windows Holographic 21H1 ou superior.
 
 
-Para obter uma lista completa de WINDOWS 10 DEFINIÇÕES URIs, visite a documentação de [definições de lançamento.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Para obter uma lista completa de WINDOWS 10 DEFINIÇÕES URIs, visite a documentação de [definições de lançamento.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

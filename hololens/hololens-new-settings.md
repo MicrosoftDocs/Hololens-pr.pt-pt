@@ -1,6 +1,6 @@
 ---
-title: Introduzindo a nova app Definições
-description: Conheça a nova aplicação Definições
+title: Apresentamos a nova app Definições
+description: Conheça a nova app Definições
 author: joyjaz
 ms.author: v-jjaswinski
 keywords: HoloLens, configurações, picker de aplicativos, volume
@@ -9,30 +9,30 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379978"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640173"
 ---
-# <a name="new-settings-app"></a>App Novas Definições
+# <a name="new-settings-app"></a>App New Definições
 
-Com [o Windows Holographic, versão 21H1, estamos](hololens-release-notes.md#windows-holographic-version-21h1)a introduzir uma nova versão da aplicação Definições. A nova aplicação Definições inclui novas funcionalidades e definições expandidas para HoloLens 2 nas seguintes áreas: Som, Energia & sono, Rede & Internet, Apps, Contas, Facilidade de Acesso e muito mais.
+Com [Windows Holographic, versão 21H1, estamos](hololens-release-notes.md#windows-holographic-version-21h1)a introduzir uma nova versão da aplicação Definições. A nova aplicação Definições inclui novas funcionalidades e configurações expandidas para HoloLens 2 nas seguintes áreas: Som, Energia & sono, Rede & Internet, Apps, Contas, Facilidade de Acesso e muito mais.
 
 > [!NOTE]
-> Uma vez que a nova aplicação Definições é distinta da aplicação Definições antigas, quaisquer janelas de Definições que tenha colocado anteriormente em torno do seu ambiente serão removidas após a atualização.
+> Uma vez que a nova aplicação Definições é distinta da aplicação legacy Definições, qualquer Definições janelas que tenha colocado anteriormente em torno do seu ambiente será removida após a atualização.
 
-![Página inicial da aplicação De Novas Definições](images/new-settings-app.png)
+![Página inicial da aplicação new Definições](images/new-settings-app.png)
 
 **Novas funcionalidades e configurações**
-- Pesquisa de definições: procure definições a partir da página inicial de Definições utilizando palavras-chave ou o nome da definição.
+- Definições pesquisa: procure configurações a partir da página inicial Definições usando palavras-chave ou o nome da definição.
 - Calibração de [cor](hololens2-display.md#how-to-use-display-color-calibration) > sistema
     - Selecione um perfil de cores alternativo para o seu ecrã HoloLens 2.
 - Som > do sistema:
   - Dispositivos de áudio de entrada e saída: escolha independentemente os seus dispositivos de áudio de entrada e saída (por exemplo, ouça áudio através de auscultadores Bluetooth ou utilize um microfone USB-C para entrada de áudio).
     > [!NOTE]
-    > Os microfones Bluetooth não são suportados pelos HoloLens 2.
+    > Bluetooth microfones não são suportados por HoloLens 2.
   - Volume de aplicação: ajuste de forma independente o volume de cada aplicação. Consulte [por controlo de volume de aplicação](holographic-home.md#per-app-volume-control).
 - Sistema > O & o sono: escolha quando o dispositivo deve ir dormir após um período de inatividade.
 - Sistema > Bateria: ativar manualmente o modo de poupança de bateria ou definir um limiar de bateria em que o modo de poupança de bateria se liga automaticamente.
@@ -46,8 +46,8 @@ Com [o Windows Holographic, versão 21H1, estamos](hololens-release-notes.md#win
 - Facilidade de acesso: alterar o tamanho do texto e alguns efeitos visuais.
 
 **Problemas conhecidos**
-- As janelas de definições previamente colocadas serão removidas (ver nota acima).
-- Já não é possível mudar o nome do seu dispositivo com a aplicação Definições. Os administradores de TI podem renomear os dispositivos utilizando o modelo de nome do dispositivo [Windows Autopilot para HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) ou o nó MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
+- As janelas Definições previamente colocadas serão removidas (ver nota acima).
+- Já não é possível mudar o nome do seu dispositivo com a aplicação Definições. Os administradores de TI podem renomear os dispositivos utilizando o Windows Autopilot para HoloLens modelo de nome do dispositivo [2](hololens2-autopilot.md) ou o nó [DEDSP CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName DOM.
 - A página Ethernet mostra sempre um dispositivo Ethernet virtual ("UsbNcm") em todos os momentos.
-- A utilização da bateria para o novo Microsoft Edge pode não ser exata, devido à sua natureza como uma aplicação de ambiente de trabalho Win32 suportada por uma camada de adaptador UWP (nenhuma correção prevista para breve).
+- O uso da bateria para o novo Microsoft Edge pode não ser exato, devido à sua natureza como uma aplicação de ambiente de trabalho Win32 suportada por uma camada de adaptador UWP (nenhuma correção antecipada em breve).
 

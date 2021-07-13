@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e0dd7d02ad923438134f2a45812db67f73fdcd8d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 73d89619498c61f2809702d788ffafc532afa67e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637188"
+ms.locfileid: "113640054"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -136,9 +136,9 @@ Esta atualização contém funcionalidades para dois públicos-alvo; funcionalid
 
 Confira as notas de lançamento relacionadas:
 
-- [Visite o arquivo HoloLens Emulator](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)
-- [Dinâmico 365 Assistência Remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
-- [Dinâmica 365 Guias](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+- [Visite o arquivo HoloLens Emulator](/windows/mixed-reality/hololens-emulator-archive)
+- [Dinâmico 365 Assistência Remota](/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
+- [Dinâmica 365 Guias](/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
 
 ### <a name="introducing-the-new-microsoft-edge"></a>Apresentamos o novo Microsoft Edge
 
@@ -164,13 +164,13 @@ O novo Microsoft Edge oferece aos administradores de TI um conjunto muito mais a
 
 Aqui estão alguns recursos úteis para aprender mais sobre a gestão de configurações políticas para o novo Microsoft Edge:
 
-- [Configurar as definições de política Microsoft Edge com Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Microsoft Edge Legado para Microsoft Edge mapeamento de políticas](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome para Microsoft Edge mapeamento de políticas](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
-- Documentação completa [da empresa Microsoft Edge](https://docs.microsoft.com/deployedge/)
+- [Configurar as definições de política Microsoft Edge com Microsoft Intune](/deployedge/configure-edge-with-intune)
+- [Microsoft Edge Legado para Microsoft Edge mapeamento de políticas](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome para Microsoft Edge mapeamento de políticas](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- Documentação completa [da empresa Microsoft Edge](/deployedge/)
 
 > [!IMPORTANT]
-> Devido ao volume de políticas de navegador suportadas pelo novo Microsoft Edge, a nossa equipa não consegue garantir que cada nova política funcione no HoloLens 2. No entanto, testámos e confirmamos que o novo equivalente Microsoft Edge de cada legado Microsoft Edge política anteriormente apoiada no trabalho de HoloLens 2, como esperado. Consulte [Microsoft Edge Legado para Microsoft Edge mapeamento de políticas](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) para encontrar o novo equivalente Microsoft Edge de cada legado Microsoft Edge política de navegador que você estava usando com HoloLens 2.
+> Devido ao volume de políticas de navegador suportadas pelo novo Microsoft Edge, a nossa equipa não consegue garantir que cada nova política funcione no HoloLens 2. No entanto, testámos e confirmamos que o novo equivalente Microsoft Edge de cada legado Microsoft Edge política anteriormente apoiada no trabalho de HoloLens 2, como esperado. Consulte [Microsoft Edge Legado para Microsoft Edge mapeamento de políticas](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) para encontrar o novo equivalente Microsoft Edge de cada legado Microsoft Edge política de navegador que você estava usando com HoloLens 2.
 >
 > Há pelo menos duas novas políticas Microsoft Edge que sabemos que *não funcionarão* com HoloLens 2:
 > - EnterpriseModeSiteList
@@ -222,12 +222,12 @@ Existem alguns métodos disponíveis para instalar Microsoft Edge canais Insider
   1. Selecione o botão **Instalar.**
   1. Após a instalação com sucesso, encontrará Microsoft Edge Beta, Dev ou Canário como uma entrada separada na lista de **aplicações de Todas** as aplicações da menu Iniciar.
 
-**Instale via PC com Windows Portal do Dispositivo (requer [que o modo de desenvolvimento](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) seja ativado no HoloLens 2)**
+**Instale via PC com Windows Portal do Dispositivo (requer [que o modo de desenvolvimento](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) seja ativado no HoloLens 2)**
   1. No seu PC, visite a [página de descarregamento edge insider](https://www.microsoftedgeinsider.com/download).
   1. Selecione o **botão de seta para baixo** ao lado do botão "Descarregue para Windows 10" para o canal Edge Insider que pretende instalar.
   1. Selecione **HoloLens 2** no menu suspenso.
   1. Guarde o ficheiro .msix para a pasta "Downloads" do seu PC (ou outra pasta que possa encontrar facilmente).
-  1. Utilize [Windows Portal do Dispositivo](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) no seu PC para instalar o ficheiro .msix descarregado no HoloLens 2.
+  1. Utilize [Windows Portal do Dispositivo](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) no seu PC para instalar o ficheiro .msix descarregado no HoloLens 2.
   1. Após a instalação com sucesso, encontrará Microsoft Edge Beta, Dev ou Canário como uma entrada separada na lista de **aplicações de Todas** as aplicações da menu Iniciar.
 
 #### <a name="using-wdac-to-block-new-microsoft-edge"></a>Usar o WDAC para bloquear novas Microsoft Edge
@@ -238,7 +238,7 @@ Para os Administradores de TI que pretendam atualizar a sua [política WDAC](win
 
 #### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Gerir pontos finais para o novo Microsoft Edge
 
-Alguns ambientes podem ter restrições de rede para explicar como uma consideração. Para garantir uma experiência suave com o novo Edge, por [favor, ative estes pontos finais da Microsoft.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+Alguns ambientes podem ter restrições de rede para explicar como uma consideração. Para garantir uma experiência suave com o novo Edge, por [favor, ative estes pontos finais da Microsoft.](/deployedge/microsoft-edge-security-endpoints)
 
 Leia mais sobre os [pontos finais](hololens-offline.md)atualmente disponíveis para HoloLens .
 
@@ -322,7 +322,7 @@ Com este lançamento, estamos a introduzir uma nova versão da aplicação Defin
 
 **Problemas conhecidos**
 - As janelas Definições previamente colocadas serão removidas (ver nota acima).
-- Já não é possível mudar o nome do seu dispositivo com a aplicação Definições. Os administradores de TI podem renomear os dispositivos utilizando o Windows Autopilot para HoloLens modelo de nome do dispositivo [2](https://docs.microsoft.com/hololens/hololens2-autopilot) ou o nó [DEDSP CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName DOM.
+- Já não é possível mudar o nome do seu dispositivo com a aplicação Definições. Os administradores de TI podem renomear os dispositivos utilizando o Windows Autopilot para HoloLens modelo de nome do dispositivo [2](hololens2-autopilot.md) ou o nó [DEDSP CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName DOM.
 - A página Ethernet mostra sempre um dispositivo Ethernet virtual ("UsbNcm") em todos os momentos.
 - O uso da bateria para o novo Microsoft Edge pode não ser exato, devido à sua natureza como uma aplicação de ambiente de trabalho Win32 suportada por uma camada de adaptador UWP (nenhuma correção antecipada em breve).
 
@@ -481,7 +481,7 @@ Para uma configuração não-AAD, para configurar um dispositivo para o visitant
 
 Para uma configuração AAD, os utilizadores podem alcançar algo semelhante a isso hoje sem esta alteração. Os dispositivos de aad configurados para o modo quiosque podem assinar numa conta do Visitante com um único toque de botão a partir do sinal no ecrã. Uma vez iniciado na conta do visitante, o dispositivo não solicitará novamente o início até que o Visitante seja explicitamente assinado a partir do menu inicial ou o dispositivo seja reiniciado.
 
-O início de sísmis do Visitor Auto pode ser gerido através da política [personalizada OMA-URI:](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+O início de sísmis do Visitor Auto pode ser gerido através da política [personalizada OMA-URI:](/mem/intune/configuration/custom-settings-windows-10)
 
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
@@ -504,13 +504,13 @@ Ao modificar um quiosque para incluir as novas aplicações, recomendamos adicio
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Mudanças de comportamento no modo quiosque para lidar com falhas
 
-Em construções mais antigas, se um dispositivo tivesse uma configuração de quiosque, que é uma combinação de acesso global atribuído e membro do grupo AAD atribuído acesso, se determinar a adesão ao grupo AAD falhou, o utilizador veria "[nada mostrado no](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)menu inicial ".
+Em construções mais antigas, se um dispositivo tivesse uma configuração de quiosque, que é uma combinação de acesso global atribuído e membro do grupo AAD atribuído acesso, se determinar a adesão ao grupo AAD falhou, o utilizador veria "[nada mostrado no](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)menu inicial ".
 
 A partir deste Windows lançamento, a experiência do quiosque irá recorrer à configuração global do quiosque (se presente) em caso de falhas durante o modo quiosque do grupo AAD.
 
 ### <a name="new-settings-uris-for-page-settings-visibility"></a>UrIs de nova Definições para visibilidade Definições página
 
-Em [Windows Holographic, versão 20H2](hololens-release-notes.md#windows-holographic-version-20h2) adicionamos a [política Definições/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) para restringir as páginas vistas dentro da aplicação Definições. PageVisibilityList é uma política que permite que os administradores de TI impeçam que páginas específicas no Sistema Definições aplicação sejam visíveis ou acessíveis, ou que o façam para todas as páginas, exceto as especificadas.
+Em [Windows Holographic, versão 20H2](hololens-release-notes.md#windows-holographic-version-20h2) adicionamos a [política Definições/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) para restringir as páginas vistas dentro da aplicação Definições. PageVisibilityList é uma política que permite que os administradores de TI impeçam que páginas específicas no Sistema Definições aplicação sejam visíveis ou acessíveis, ou que o façam para todas as páginas, exceto as especificadas.
 
 Se visitar [a Página Definições Visibilidade,](settings-uri-list.md)pode encontrar instruções para utilizar este CSP e a lista de URIs disponíveis em versões anteriores.
 
@@ -567,7 +567,7 @@ Agora, na Definições App, um utilizador pode configurar o comportamento do [Di
 
 Partilhe coisas com dispositivos de Windows 10 próximos, incluindo computadores e outros dispositivos HoloLens 2. Pode experimentá-lo em **Definições**  ->    ->  **Experiências Partilhadas** do Sistema para partilhar ficheiros ou URLs de uma HoloLens para um PC. Para mais detalhes, leia mais sobre como [partilhar as coisas com dispositivos próximos em Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
-Esta funcionalidade pode ser gerida através [da Conectividade/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
+Esta funcionalidade pode ser gerida através [da Conectividade/AllowConnectedDevices](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
 
 ### <a name="new-os-diagnostic-traces"></a>Novos vestígios de diagnóstico de SO
 
@@ -575,26 +575,26 @@ Além dos anteriores troubleshooters dentro da aplicação Definições, foi adi
 
 ### <a name="delivery-optimization-preview"></a>Pré-visualização da otimização de entregas
 
-Com esta HoloLens atualização, Windows Holographic for Business permite configurações de otimização de entrega para reduzir o consumo de largura de banda para downloads de vários dispositivos HoloLens. Uma descrição mais completa desta funcionalidade juntamente com a configuração recomendada da rede está disponível aqui: [Otimização de Entrega para atualizações Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
+Com esta HoloLens atualização, Windows Holographic for Business permite configurações de otimização de entrega para reduzir o consumo de largura de banda para downloads de vários dispositivos HoloLens. Uma descrição mais completa desta funcionalidade juntamente com a configuração recomendada da rede está disponível aqui: [Otimização de Entrega para atualizações Windows 10](/windows/deployment/update/waas-delivery-optimization).
 
-As seguintes definições são ativadas como parte da superfície de gestão e [podem ser configuradas a partir de Intune](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings):
+As seguintes definições são ativadas como parte da superfície de gestão e [podem ser configuradas a partir de Intune](/mem/intune/configuration/delivery-optimization-settings):
 
-- [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
-- [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
-- [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
-- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
-- [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
-- [DOMaxBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
-- [DOMaxForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
-- [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
-- [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
-- [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+- [DOCacheHost](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
+- [DOCacheHostSource](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
+- [DODelayCacheServerFallbackBackground](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
+- [DODelayCacheServerFallbackForeground](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
+- [DODownloadMode](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
+- [DOMaxBackgroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
+- [DOMaxForegroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
+- [DOPercentageMaxBackgroundBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+- [DOPercentageMaxForegroundBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+- [DOSetHoursToLimitForegroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+- [DOSetHoursToLimitBackgroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 
 Algumas ressalvas sobre esta oferta de pré-visualização:
 
 - HoloLens suporte é limitado apenas nesta pré-visualização às atualizações do SO.
-- Windows Holographic for Business suporta apenas os modos de descarregamento HTTP e downloads a partir de um ponto final da [Cache Conectada microsoft](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); os modos de descarregamento peer-to-peer e as atribuições de grupo não são suportados para dispositivos HoloLens neste momento.
+- Windows Holographic for Business suporta apenas os modos de descarregamento HTTP e downloads a partir de um ponto final da [Cache Conectada microsoft](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); os modos de descarregamento peer-to-peer e as atribuições de grupo não são suportados para dispositivos HoloLens neste momento.
 - HoloLens não suporta a otimização de implementação ou entrega para Windows Server Update Services pontos finais.
 - A resolução de problemas requer diagnósticos no servidor Cache Conectado ou a recolha de vestígios de HoloLens no HoloLens através **de Definições**  >  **Atualização &**  >   **resolução de problemas de** segurança  >   **Windows Update**.
 
@@ -715,7 +715,7 @@ Esta atualização mensal de qualidade não contém quaisquer alterações notá
 Melhorias e correções na atualização:
 
 - Melhor desempenho durante o arranque, currículo e comutação do utilizador quando há muitos utilizadores no dispositivo.
-- Apoio arm32 adicionado para [modo de investigação.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)
+- Apoio arm32 adicionado para [modo de investigação.](/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)
 
 ## <a name="windows-holographic-version-1903---january-2021-update"></a>Windows Holográfico, versão 1903 - janeiro 2021 Atualização
 - Construção 18362.1091
@@ -734,7 +734,7 @@ Um dispositivo é considerado "gerido" se **algum** dos seguintes for verdadeiro
 - Configurado com [pacote de provisionamento](hololens-provisioning.md)
 - [Identidade](hololens-identity.md) do utilizador é Azure AD
 
-Agora é possível instalar apps sem necessidade de ativar o Modo de Desenvolvimento ou de utilizar o Portal do Dispositivo.  Basta baixar (através de USB ou através do Edge) o Pacote Appx para o seu dispositivo e navegar para o Pacote Appx no Explorador de Ficheiros para ser solicitado para iniciar a instalação.  Em alternativa, [inicie uma instalação a partir de uma página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Tal como as aplicações que instala a partir do Microsoft Store ou sideload utilizando a capacidade de implementação da App LOB do MDM, as aplicações precisam de ser assinadas digitalmente com a [Ferramenta de Sinais](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e o [certificado utilizado para assinar deve ser confiável](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) pelo dispositivo HoloLens antes de a aplicação poder ser implementada.
+Agora é possível instalar apps sem necessidade de ativar o Modo de Desenvolvimento ou de utilizar o Portal do Dispositivo.  Basta baixar (através de USB ou através do Edge) o Pacote Appx para o seu dispositivo e navegar para o Pacote Appx no Explorador de Ficheiros para ser solicitado para iniciar a instalação.  Em alternativa, [inicie uma instalação a partir de uma página web](/windows/msix/app-installer/installing-windows10-apps-web).  Tal como as aplicações que instala a partir do Microsoft Store ou sideload utilizando a capacidade de implementação da App LOB do MDM, as aplicações precisam de ser assinadas digitalmente com a [Ferramenta de Sinais](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e o [certificado utilizado para assinar deve ser confiável](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) pelo dispositivo HoloLens antes de a aplicação poder ser implementada.
 
 **Instruções de instalação da aplicação.**
 
@@ -756,7 +756,7 @@ Leia sobre o processo completo de instalação de [apps no HoloLens 2 com o Inst
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Melhorias e correções na atualização:
 
-- O rastreio manual mantém-se agora a acompanhar em muitos casos novos onde a mão anteriormente teria sido perdida.  Em alguns destes novos casos, apenas a posição da palma da mão continua a ser atualizada com base na mão real do utilizador, enquanto as outras articulações são deduzidas com base numa pose anterior.  Esta mudança ajuda a melhorar a consistência do rastreio em movimentos como bater, atirar, colher e bater palmas.  Também ajuda nos casos em que a mão está perto de uma superfície ou segurando um objeto.  Quando as articulações das mãos estiverem a ser inferidas, o valor [de precisão por articulação](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) será definido como "Aproximado" em vez de "Alto".
+- O rastreio manual mantém-se agora a acompanhar em muitos casos novos onde a mão anteriormente teria sido perdida.  Em alguns destes novos casos, apenas a posição da palma da mão continua a ser atualizada com base na mão real do utilizador, enquanto as outras articulações são deduzidas com base numa pose anterior.  Esta mudança ajuda a melhorar a consistência do rastreio em movimentos como bater, atirar, colher e bater palmas.  Também ajuda nos casos em que a mão está perto de uma superfície ou segurando um objeto.  Quando as articulações das mãos estiverem a ser inferidas, o valor [de precisão por articulação](/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) será definido como "Aproximado" em vez de "Alto".
 - Corrigiu um problema em que o RESET PIN para as contas AZure AD mostraria um erro "Algo correu mal.
 - Os utilizadores devem ver muito menos falhas pós-boot OOBE ao lançar ET, Iris a partir de configurações app, novo utilizador ou torrada de notificação.
 - Os utilizadores devem ter um fuso horário correto proveniente do OOBE.
@@ -772,7 +772,7 @@ Esta atualização mensal de qualidade não contém quaisquer alterações notá
 
 Windows Holográfico, a versão 20H2 já está disponível e traz um grande conjunto de novas funcionalidades para HoloLens 2 utilizadores e profissionais de TI. Desde o Posicionamento Auto Eye, ao Gestor de Certificados em Definições, à melhoria da funcionalidade do Modo Quiosque e às novas capacidades de configuração do Autopilot. Esta nova atualização permite que as equipas de TI tomem mais controlo granular para configurar e gerir dispositivos HoloLens, e oferece aos utilizadores experiências holográficas ainda mais perfeitas. 
 
-Esta última versão é uma atualização mensal para a versão de 2004, mas desta vez estamos a incluir novas funcionalidades. O maior número de construção permanecerá o mesmo e Windows Update indicará um lançamento mensal para a versão 2004 (build 19041). Pode ver o seu Número de Construção no seu Definições > Sobre o ecrã para confirmar que está na mais recente construção disponível 19041.1128+. Para atualizar para a versão mais recente, abra a aplicação Definições, aceda a Update & Security e toque em Check for Updates. Para obter mais informações sobre como gerir HoloLens atualizações, visite [esta página](https://docs.microsoft.com/hololens/hololens-updates).
+Esta última versão é uma atualização mensal para a versão de 2004, mas desta vez estamos a incluir novas funcionalidades. O maior número de construção permanecerá o mesmo e Windows Update indicará um lançamento mensal para a versão 2004 (build 19041). Pode ver o seu Número de Construção no seu Definições > Sobre o ecrã para confirmar que está na mais recente construção disponível 19041.1128+. Para atualizar para a versão mais recente, abra a aplicação Definições, aceda a Update & Security e toque em Check for Updates. Para obter mais informações sobre como gerir HoloLens atualizações, visite [Gerir HoloLens atualizações](hololens-updates.md).
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>Novidades em Windows Holographic, versão 20H2  
 
@@ -903,7 +903,7 @@ Agora, durante o OOBE, uma vez que conecte HoloLens 2 com Wi-Fi, o OOBE verifica
 
 HoloLens 2 dispositivos suportam agora o TenantLockdown CSP a partir da [versão holográfica 20H2 da Windows](hololens-release-notes.md#windows-holographic-version-20h2). 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) A CSP permite que HoloLens 2 estejam ligados à inscrição de MDM usando apenas o Autopilot. Uma vez que o nó requere de CSP do TenantLockdown CSP é definido para o valor verdadeiro ou falso (inicialmente definido) no HoloLens 2, esse valor permanece no dispositivo apesar de re-piscar, atualizações de SO, etc. 
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) A CSP permite que HoloLens 2 estejam ligados à inscrição de MDM usando apenas o Autopilot. Uma vez que o nó requere de CSP do TenantLockdown CSP é definido para o valor verdadeiro ou falso (inicialmente definido) no HoloLens 2, esse valor permanece no dispositivo apesar de re-piscar, atualizações de SO, etc. 
 
 Uma vez que o nó requere de CSPs do TenantLockdown CSPs É definido como verdadeiro no HoloLens 2, o OOBE espera indefinidamente para que o perfil do Piloto Automático seja descarregado e aplicado com sucesso, após a conectividade da rede. 
 
@@ -1011,15 +1011,15 @@ Medidas para utilizar corretamente esta política:
 - Permite que os utilizadores gerem políticas específicas de gestão de dispositivos, tais como bloquear a adição ou remoção de pacotes de provisionamento.
 
 Políticas recentemente ativadas que permitem mais opções de gestão de HoloLens 2 dispositivos. 
-- [Permitir a Embalagem deProvisão](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
-- [Permitir a Embalagem deProvisão deRemove](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [Permitir a Embalagem deProvisão](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [Permitir a Embalagem deProvisão deRemove](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](/windows/client-management/mdm/remotelock-csp)
 
 Estas duas novas polícias para AllowAddProvisioningPackage e AllowRemoveProvisioningPackage estão a ser adicionadas às [nossas Restrições Comuns de Dispositivos](hololens-common-device-restrictions.md).
 
 > [!NOTE]
-> No que diz respeito ao [RemoteLock,](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)HoloLens apenas suportam a configuração ./Fornecedor/MSFT/RemoteLock/Lock. As configurações que lidam com PIN como reset e recuperação não são suportadas.
+> No que diz respeito ao [RemoteLock,](/windows/client-management/mdm/remotelock-csp)HoloLens apenas suportam a configuração ./Fornecedor/MSFT/RemoteLock/Lock. As configurações que lidam com PIN como reset e recuperação não são suportadas.
 
 ### <a name="new-power-policies-for-hololens-2"></a>Novas políticas de poder para HoloLens 2
 - Mais opções para quando HoloLens dorme ou bloqueia através de políticas de energia. 
@@ -1028,26 +1028,26 @@ Estas novas políticas adicionais permitem que os administradores controlem esta
 
 |     Ligação de documentação de política                |     Notas                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Valor de exemplo a utilizar no Windows Configuration Designer, ou seja, 100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja, 100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+|     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Valor de exemplo a utilizar no Windows Configuration Designer, ou seja, 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja, 100                                                                          |
+|     [StandbyTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valor de exemplo a utilizar no Windows Configuration Designer, ou seja,`<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
 Estas duas novas polícias para displayOffTimeoutOnBattery e DisplayOffTimeoutPluggedIn estão a ser adicionadas às [nossas Restrições Comuns de Dispositivos](hololens-common-device-restrictions.md).
 
 > [!NOTE]
-> Para uma experiência consistente no HoloLens 2, certifique-se de que os valores tanto para o DisplayOffTimeoutOnBattery como para o StandbyTimeoutOnBattery são definidos como o mesmo valor. O mesmo se aplica ao DisplayOffTimeoutPluggedIn e ao StandbyTimeoutPluggedIn. Consulte os [temporizadores display, sleep e hibernar](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) para obter mais detalhes sobre o moderno standby.
+> Para uma experiência consistente no HoloLens 2, certifique-se de que os valores tanto para o DisplayOffTimeoutOnBattery como para o StandbyTimeoutOnBattery são definidos como o mesmo valor. O mesmo se aplica ao DisplayOffTimeoutPluggedIn e ao StandbyTimeoutPluggedIn. Consulte os [temporizadores display, sleep e hibernar](/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) para obter mais detalhes sobre o moderno standby.
 
 ### <a name="newly-enabled-update-policies-for-hololens"></a>Políticas de atualização recentemente ativadas para HoloLens
 - Mais opções para quando as atualizações são instaladas ou desativando o botão 'Atualizações de Pausa' para garantir atualizações.
 
 Estas políticas de atualização estão agora ativadas em HoloLens 2 dispositivos:
--   [Atualização/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Atualização/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Atualização/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Atualização/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+-   [Atualização/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Atualização/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Atualização/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Atualização/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 Todos os detalhes sobre estas políticas de atualização e como usá-las para HoloLens dispositivos podem ser lidos aqui em [Gerir HoloLens atualizações](hololens-updates.md).
 
@@ -1056,7 +1056,7 @@ Todos os detalhes sobre estas políticas de atualização e como usá-las para H
 
 Agora permitimos que uma política que permite aos administradores de TI impedir que páginas específicas no Sistema Definições aplicação sejam visíveis ou acessíveis, ou para fazê-lo para todas as páginas, exceto as especificadas. Para aprender a personalizar totalmente esta funcionalidade clique no link abaixo.
 
-- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+- [PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
 
 Para saber quais as definições de página que pode personalizar no HoloLens 2, visite a nossa [página uris Definições](settings-uri-list.md). 
  
@@ -1069,7 +1069,7 @@ Enquanto em Modo de Investigação, o HoloLens 2 torna-se uma ferramenta potente
 
 Os investigadores têm agora a opção de permitir que o Modo de Investigação nos seus HoloLens dispositivos acedam a todos estes fluxos de sensores de imagem cruas externos. O modo de pesquisa para HoloLens 2 também fornece acesso ao acelerómetro, giroscópio e leituras magnetómetro. Para proteger a privacidade dos utilizadores, as imagens de câmaras de rastreio de olhos crus não estão disponíveis através do Modo de Pesquisa, mas a direção do olhar dos olhos está disponível através das APIs existentes.
 
-Consulte a documentação do [Modo de Investigação](https://docs.microsoft.com/windows/mixed-reality/research-mode) para mais detalhes técnicos.
+Consulte a documentação do [Modo de Investigação](/windows/mixed-reality/research-mode) para mais detalhes técnicos.
 
 ### <a name="recording-length-increased"></a>O comprimento da gravação aumentou
 Devido ao feedback do cliente, aumentámos o comprimento de gravação das capturas de [realidade mista.](holographic-photos-and-videos.md) As capturas de realidade mista deixarão de ser limitadas a 5 minutos por padrão, mas calcularão o comprimento máximo de gravação com base no espaço disponível do disco. O dispositivo estimará a duração máxima da gravação de vídeo com base no espaço disponível do disco até 80% do espaço total do disco.
@@ -1087,7 +1087,7 @@ Pode encontrar todos os requisitos na documentação [de fotos e vídeos hologr�
 - Abordou uma questão em que os utilizadores não podiam prever perfis VPN através de pacotes de provisionamento.
 - Problema de configuração de procuração fixo para ligação VPN.
 - Política atualizada para desativar a enumeração das funções USB através do MDM para NCM para AllowUsbConnection.
-- Abordou um problema que impediu que um dispositivo HoloLens aparecesse no File Explorer over Media Transfer Protocol (MTP) quando o dispositivo é configurado como um [quiosque de uma única aplicação](hololens-kiosk.md). Note que a ligação MTP (e a ligação USB em geral) ainda podem ser desativadas utilizando a política [AllowUSBConnection.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+- Abordou um problema que impediu que um dispositivo HoloLens aparecesse no File Explorer over Media Transfer Protocol (MTP) quando o dispositivo é configurado como um [quiosque de uma única aplicação](hololens-kiosk.md). Note que a ligação MTP (e a ligação USB em geral) ainda podem ser desativadas utilizando a política [AllowUSBConnection.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
 - Corrigiu um problema em que os ícones da menu Iniciar foram dimensionado corretamente no modo quiosque.
 - Corrigiu um problema devido à interferência de caching HTTP com o modo quiosque direcionado para os grupos AD Azure.
 - Corrigiu um problema em que os utilizadores não podiam utilizar o botão Par depois de permitirem o modo desenvolvedor com pacotes de provisionamento, a menos que desativem e reativem o modo developer.
@@ -1233,7 +1233,7 @@ Depois de um utilizador iniciar o processo de auto-implantação do Autopilot, o
 1. A provisione o dispositivo.
 1. Apresente o ecrã de inscrição ao utilizador.
 
-Saiba mais com o [Windows Autopilot para HoloLens guia de avaliação 2](https://docs.microsoft.com/hololens/hololens2-autopilot).
+Saiba mais com o [Windows Autopilot para HoloLens guia de avaliação 2](hololens2-autopilot.md).
 
 *Contacte o seu Gestor de Conta para se juntar à pré-visualização do AutoPilot agora. Os dispositivos prontos para o piloto automático começarão a ser enviados em breve.*
 
@@ -1243,7 +1243,7 @@ Alguns utilizadores partilham um dispositivo HoloLens com outros em ambiente de 
 
 As chaves de segurança FIDO2 são um método de autenticação sem palavras-passe "infishable" baseado em padrões que pode vir em qualquer fator de forma. O FIDO é um padrão aberto para a autenticação sem palavras-passe. Permite que utilizadores e organizações inscrevam-se nos seus recursos sem nome de utilizador ou senha. Em vez disso, usam uma chave de segurança externa ou uma chave de plataforma incorporada num dispositivo.
 
-Para começar, consulte [Ativar o início do sôming da chave de segurança sem palavras-passe](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key).
+Para começar, consulte [Ativar o início do sôming da chave de segurança sem palavras-passe](/azure/active-directory/authentication/howto-authentication-passwordless-security-key).
 
 ### <a name="improved-mdm-enrollment-via-provisioning-package"></a>Melhor inscrição do MDM através de pacote de provisionamento
 
@@ -1262,13 +1262,13 @@ A implementação e gestão de aplicações de MDM para aplicações de linha de
 
 ### <a name="additional-csps-and-policies"></a>CSPs adicionais e políticas
 
-Um [fornecedor de serviços de configuração (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) é uma interface para ler, definir, modificar ou eliminar definições de configuração num dispositivo. Nesta versão, adicionamos suporte a mais políticas para aumentar os administradores de controlo que têm sobressaem HoloLens dispositivos. Para a lista de CSPs apoiados por HoloLens, consulte [NetworkQoSPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp).
+Um [fornecedor de serviços de configuração (CSP)](/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) é uma interface para ler, definir, modificar ou eliminar definições de configuração num dispositivo. Nesta versão, adicionamos suporte a mais políticas para aumentar os administradores de controlo que têm sobressaem HoloLens dispositivos. Para a lista de CSPs apoiados por HoloLens, consulte [NetworkQoSPolicy CSP](/windows/client-management/mdm/networkqospolicy-csp).
 
 Novidades neste lançamento:
 
 **Política CSP** 
 
-O prestador de serviços de configuração de política permite à empresa configurar políticas em dispositivos Windows. Neste comunicado, adicionámos novas políticas para HoloLens, que estão listadas aqui. Para saber mais, consulte [os CSPs de Política apoiados por HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2).  
+O prestador de serviços de configuração de política permite à empresa configurar políticas em dispositivos Windows. Neste comunicado, adicionámos novas políticas para HoloLens, que estão listadas aqui. Para saber mais, consulte [os CSPs de Política apoiados por HoloLens 2](/windows/client-management/mdm/policies-supported-by-hololens2).  
 
 - LetAppsAccessCamera_ForceAllowTheseApps  
 - LetAppsAccessCamera_ForceDenyTheseApps  
@@ -1284,11 +1284,11 @@ O prestador de serviços de configuração de política permite à empresa confi
 
 **NetworkQoSPolicy CSP**
 
-O prestador de serviços de configuração NetworkQoSPolicy cria políticas de qualidade de serviço de rede (QoS). Uma política QoS executa um conjunto de ações no tráfego de rede com base num conjunto de condições de correspondência. Para saber mais, consulte [NetworkQoSPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp).
+O prestador de serviços de configuração NetworkQoSPolicy cria políticas de qualidade de serviço de rede (QoS). Uma política QoS executa um conjunto de ações no tráfego de rede com base num conjunto de condições de correspondência. Para saber mais, consulte [NetworkQoSPolicy CSP](/windows/client-management/mdm/networkqospolicy-csp).
 
 ### <a name="expanded-usb-ethernet-support-for-5glte-tethered-devices"></a>Suporte USB Ethernet expandido para dispositivos amarrados 5G/LTE
 
-O suporte foi adicionado para permitir certos dispositivos de banda larga móvel, como telefones 5G/LTE e hotspots Wi-Fi, quando estão ligados ao HoloLens 2 via USB. Estes dispositivos são agora apresentados nas **definições de rede** como outra ligação Ethernet. (Os dispositivos de banda larga móveis que requerem um condutor externo não são suportados.) Esta funcionalidade permite ligações de alta largura de banda quando Wi-Fi não está disponível e Wi-Fi a amarra não é suficientemente executante. Para saber mais sobre dispositivos USB suportados, consulte [Ligação para dispositivos Bluetooth e USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+O suporte foi adicionado para permitir certos dispositivos de banda larga móvel, como telefones 5G/LTE e hotspots Wi-Fi, quando estão ligados ao HoloLens 2 via USB. Estes dispositivos são agora apresentados nas **definições de rede** como outra ligação Ethernet. (Os dispositivos de banda larga móveis que requerem um condutor externo não são suportados.) Esta funcionalidade permite ligações de alta largura de banda quando Wi-Fi não está disponível e Wi-Fi a amarra não é suficientemente executante. Para saber mais sobre dispositivos USB suportados, consulte [Ligação para dispositivos Bluetooth e USB-C](hololens-connect-devices.md).  
 
 ### <a name="hand-tracking-improvements"></a>Melhorias no rastreio de mãos
 
@@ -1321,7 +1321,7 @@ Estas aplicações "in-box" suportam o modo escuro:
 
 ### <a name="system-voice-commands"></a>Comandos de voz do sistema
 
-Agora pode utilizar comandos de voz com qualquer aplicação no dispositivo. Para obter mais informações, consulte [use a sua voz para operar HoloLens](https://docs.microsoft.com/hololens/hololens-cortana). Consulte também [as línguas suportadas para HoloLens 2](https://docs.microsoft.com/hololens/hololens2-language-support).  
+Agora pode utilizar comandos de voz com qualquer aplicação no dispositivo. Para obter mais informações, consulte [use a sua voz para operar HoloLens](hololens-cortana.md). Consulte também [as línguas suportadas para HoloLens 2](hololens2-language-support.md).  
 
 ### <a name="cortana-updates"></a>Atualizações Cortana
 
@@ -1331,7 +1331,7 @@ A aplicação atualizada integra-se com Microsoft 365 para ajudá-lo a fazer mai
 
 Melhorias e correções também na atualização:  
 - Introduziu um sistema de calibração de ecrã ativo. Esta funcionalidade melhora a estabilidade e o alinhamento dos hologramas. Agora ficam no lugar quando se move a cabeça de um lado para o outro.
-- Corrigiu um bug onde Wi-Fi o streaming para HoloLens foi interrompido periodicamente. Se uma aplicação indicar que necessita de um streaming de latência baixa, implemente a correção chamando a [função SetSocketMediaStreamingMode](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
+- Corrigiu um bug onde Wi-Fi o streaming para HoloLens foi interrompido periodicamente. Se uma aplicação indicar que necessita de um streaming de latência baixa, implemente a correção chamando a [função SetSocketMediaStreamingMode](/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
 - Fixou um dispositivo pendurado que ocorreu durante o streaming em modo de pesquisa.
 - Corrigiu um bug onde, em alguns casos, o utilizador certo não seria apresentado no ecrã de inscrição ao retomar uma sessão.
 - Corrigiu um problema em que os utilizadores não podiam exportar registos de MDM através **de Definições**.

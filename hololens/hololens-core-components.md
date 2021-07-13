@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2fb58345f623a0b70c1fda10b9fb550de70f4c6d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 43162389eae82bc09135c62acd40d71048d14db1
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635794"
+ms.locfileid: "113639085"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planeamento HoloLens 2 implantação em ambiente comercial
 
 ## <a name="overview"></a>Descrição Geral
+
 > [!NOTE]
 > Esta visão geral destina-se a ajudar os profissionais de TI a compreender considerações para implementar e gerir Microsoft HoloLens 2 dispositivos dentro de uma organização. Para os utilizadores finais do dispositivo, consulte [obter o seu HoloLens 2 pronto a usar para](hololens2-setup.md) começar.
 
@@ -29,7 +30,7 @@ HoloLens 2 funciona em Windows 10 Holographic que fornece às organizações tec
 
 Os seguintes passos e vídeo podem ajudá-lo a guiá-lo através do processo de adoção de HoloLens 2 dentro da sua organização.
 
-| | |
+| &nbsp; | &nbsp; |
 |--|--|
 | ![Passo 1](images/1green.png)| <br/> **[Cenários de implantação comuns](hololens-requirements.md)**: Compreenda os cenários de implantação e explore os componentes centrais necessários para implantar HoloLens 2 dispositivos. |
 | ![Passo 2](images/2green.png)| <br/> **[Preparar](#prepare)**: Familiarize-se com os elementos essenciais da infraestrutura necessários para HoloLens 2. |
@@ -37,11 +38,13 @@ Os seguintes passos e vídeo podem ajudá-lo a guiá-lo através do processo de 
 | ![Passo 4](images/4green.png) | <br/> **[Implementar](#deploy)**: Descubra como implantar os seus dispositivos e distribuir as suas aplicações de forma segura e eficiente. |
 | ![Passo 5](images/5green.png) | <br/> **[Manter](#maintain)**: Descubra o que é necessário para manter corretamente o estado dos seus HoloLens 2 dispositivos e garantir o cumprimento da política corporativa. |
 
+<br/>
+
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
 ## <a name="prepare"></a>Preparação
 
-Conheça os serviços essenciais de infraestrutura necessários para suportar todo o conjunto de capacidades HoloLens 2. 
+Conheça os serviços essenciais de infraestrutura necessários para suportar todo o conjunto de capacidades HoloLens 2.
 
 | Componente | Descrição |
 |-----------|------------|

@@ -2,7 +2,7 @@
 title: HoloLens 2 Assistência Remota
 description: Saiba mais sobre HoloLens 2 Remote Assist e o que fazer depois de obter um dos seus.
 keywords: HoloLens 2 opções de compra, opções de HoloLens, Assistência Remota
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a9f04315c59fba72aaae1545a02f16f1068433b4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636270"
+ms.locfileid: "113639476"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 com Assistência Remota
 

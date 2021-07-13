@@ -2,7 +2,7 @@
 title: apenas HoloLens dispositivo 2
 description: Saiba apenas sobre HoloLens dispositivo 2 e o que fazer depois de obter um dos seus.
 keywords: HoloLens 2 opções de compra, opções de HoloLens, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c2ef3c71ad7c67da66391c68f302983e876cef4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636287"
+ms.locfileid: "113639612"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens edição só para dispositivos
 

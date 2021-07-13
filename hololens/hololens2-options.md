@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5bb534020fe037576ce1caa3d9cee978dac778d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636304"
+ms.locfileid: "113640479"
 ---
 # <a name="compare-hololens-2-options"></a>Comparar HoloLens 2 Opções
 
@@ -31,17 +31,17 @@ Quer seja um [profissional de TI](https://www.microsoft.com/hololens/apps) à pr
 
 |                                                      | HoloLens 2 | HoloLens 2 com Assistência Remota | HoloLens 2 Edição Industrial | HoloLens 2 Edição Industrial com Assistência Remota | Trimble XR10 com HoloLens 2 | HoloLens 2 Edição de Desenvolvimento |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 dispositivo (um dispositivo)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dinâmica 365 Assistência Remota (um assento)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| Classificação da sala limpa ISO 14644-1 Classe 5           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| Ul Classe I, Divisão 2-Grupos A, B, C e D HAZLOC                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Hard hat integrado (PPE em conformidade com mais de 40 países) |            |                               |                               |                                                  |               ✔️              |                                |
-| Saída de áudio de cancelamento de ruído                        |            |                               |                               |                                                  |               ✔️              |                                |
-| Direitos do desenvolvedor <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| Programa de Substituição Rápida <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| Direitos de utilização comercial                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [Garantia](hololens2-hardware.md#warranty-information)                                             |   1 Ano   |             1 Ano            |             2 anos            |                      2 anos                      |            1 Ano <sup>3</sup>            |             1 Ano             |
-| Limite de compra do dispositivo                                |    Nenhuma    |              Nenhuma             |              Nenhuma             |                       Nenhuma                       |             Nenhuma             |       Um por transação      |
+| **HoloLens 2 dispositivo (um dispositivo)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dinâmica 365 Assistência Remota (um assento)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **Classificação da sala limpa ISO 14644-1 Classe 5**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Ul Classe I, Divisão 2-Grupos A, B, C e D HAZLOC**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **Hard hat integrado (PPE em conformidade com mais de 40 países)** |            |                               |                               |                                                  |               ✔️              |                                |
+| **Saída de áudio de cancelamento de ruído**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **Direitos do desenvolvedor <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **Programa de Substituição Rápida <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Direitos de utilização comercial**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**Garantia**](hololens2-hardware.md#warranty-information)                                             |   1 Ano   |             1 Ano            |             2 anos            |                      2 anos                      |            1 Ano <sup>3</sup>            |             1 Ano             |
+| **Limite de compra do dispositivo**                                |    Nenhuma    |              Nenhuma             |              Nenhuma             |                       Nenhuma                       |             Nenhuma             |       Um por transação      |
 
 - <sup>1</sup> - Inclui crédito azure de $500 e ensaios de 3 meses para a Unidade Pro e Pixyz Plugin.
 - <sup>2</sup> - Receba um dispositivo de substituição durante a noite ou transporte expedito (mais rápido das opções disponíveis) antes de o dispositivo defeituoso ser recebido pela Microsoft.

@@ -2,7 +2,7 @@
 title: HoloLens 2 Edição Industrial
 description: Saiba mais sobre HoloLens 2 Edição Industrial e o que fazer depois de obter um dos seus.
 keywords: HoloLens 2 opções de compra, opções de HoloLens, Edição Industrial
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a1b204cdc51ef55230c94d8f71a362549daf6ef4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636338"
+ms.locfileid: "113639578"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Edição Industrial
 

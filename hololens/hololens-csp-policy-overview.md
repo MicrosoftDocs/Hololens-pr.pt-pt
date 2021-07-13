@@ -13,19 +13,19 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378629"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640462"
 ---
 # <a name="configure-csps-and-device-management-overview"></a>Configure CSPs e visão geral da gestão de dispositivos
 
-Os administradores de TI podem definir e implementar definições de política no HoloLens 2. Que configurações utilizas diferirá com base no cenário de implementação, e os dispositivos corporativos oferecerão à TI a maior gama de controlo. No Windows 10, os Fornecedores de Serviços de Configuração (CSP) são uma interface para ler, definir, modificar ou eliminar definições de configuração no dispositivo. Estas definições mapeiam para obter chaves ou ficheiros de registo. Alguns fornecedores de serviços de configuração suportam o formato WAP, alguns suportam o SyncML e alguns suportem ambos.
+Os administradores de TI podem definir e implementar definições de política no HoloLens 2. Que configurações utilizas diferirá com base no cenário de implementação, e os dispositivos corporativos oferecerão à TI a maior gama de controlo. Em Windows 10, os Fornecedores de Serviços de Configuração (CSP) são uma interface para ler, definir, modificar ou eliminar configurações de configuração no dispositivo. Estas definições mapeiam para obter chaves ou ficheiros de registo. Alguns fornecedores de serviços de configuração suportam o formato WAP, alguns suportam o SyncML e alguns suportem ambos.
 
-Para obter mais informações sobre os CSPs de gestão de dispositivos Holográficos do Windows 10, consulte a lista completa de [CSPs suportados em dispositivos HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
-Os administradores de TI também podem gerir a Política CSP em dispositivos, ver a lista completa de [CSPs de política suportados por HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2).
+Para obter mais informações sobre Windows 10 Holographic CSPs de gestão de dispositivos, consulte a lista completa de [CSPs suportados em dispositivos HoloLens](/windows/client-management/mdm/configuration-service-provider-reference#hololens).
+Os administradores de TI também podem gerir a Política CSP em dispositivos, ver a lista completa de [CSPs de política suportada por HoloLens 2](/windows/client-management/mdm/policy-csps-supported-by-hololens2).
 
 ## <a name="configuration-methods"></a>Métodos de configuração
 
@@ -35,7 +35,7 @@ Os CSPs e Políticas podem ser facilmente geridos em qualquer dispositivo pessoa
 
 ### <a name="configure-with-provisioning-packages"></a>Configure com pacotes de provisionamento
 
-O HoloLens 2 também suporta a definição de um conjunto limitado de configurações CSP para dispositivos HoloLens 2 através de pacotes de provisionamento personalizados. Os pacotes de provisionamento são normalmente alavancados para dispositivos não geridos por MDM e exigem ser aplicados manualmente a cada dispositivo. Leia informações sobre a construção [de pacotes de provisionamento personalizados para HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning).
+HoloLens 2 também suporta a definição de um conjunto limitado de configurações CSP para HoloLens 2 dispositivos através de pacotes de provisionamento personalizados. Os pacotes de provisionamento são normalmente alavancados para dispositivos não geridos por MDM e exigem ser aplicados manualmente a cada dispositivo. Leia informações sobre a construção [de pacotes de provisionamento personalizados para HoloLens](hololens-provisioning.md).
 
 ## <a name="configurations"></a>Configurações
 
@@ -49,9 +49,9 @@ Utilize o modo Quiosque para controlar quais identidades têm acesso às quais a
 
 ### <a name="settings-page-visibility"></a>Definições Visibilidade da página
 
-Use a política de aplicações de Definições para controlar quais identidades têm acesso a definições por padrão. Utilizando esta política, a aplicação Definições pode ser configurada para mostrar apenas as páginas selecionadas ou ocultar todas as páginas selecionadas. [Leia sobre como configurar as páginas disponíveis](settings-uri-list.md).
+Utilize Definições política de aplicações para controlar quais identidades têm acesso a definições por padrão. Utilizando esta política, a aplicação Definições pode ser configurada para mostrar apenas as páginas selecionadas ou esconder todas as páginas selecionadas. [Leia sobre como configurar as páginas disponíveis](settings-uri-list.md).
 
-Atualmente, esta funcionalidade só está disponível nas [construções do Windows Insider.](hololens-insider.md) Certifique-se de que os dispositivos para os seguintes a utilizar estão na construção 19041.1349+.
+Atualmente, esta funcionalidade só está disponível em [Windows builds Insider.](hololens-insider.md) Certifique-se de que os dispositivos para os seguintes a utilizar estão na construção 19041.1349+.
 
 ### <a name="wdac"></a>WDAC
 

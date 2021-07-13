@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cfe4206790b12d77a7f5be4267387cdd0299c3fe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636865"
+ms.locfileid: "113639748"
 ---
 # <a name="about-hololens-2"></a>Cerca de HoloLens 2
 
@@ -58,22 +58,22 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="display"></a>Apresentar
 
-|   |   |
-| - | - |
-| Ótica | Lentes holográficas ver-through (guias de onda) |
-| Resolução holográfica | Motores ligeiros 2k 3:2 |
-| Densidade holográfica | >2,5 k radiantes (pontos de luz por radian) |
-| Renderização baseada nos olhos | Otimização do ecrã para posição 3D do olho |
+|   | &nbsp; |
+|---|---|
+| **Ótica** | Lentes holográficas ver-through (guias de onda) |
+| **Resolução holográfica** | Motores ligeiros 2k 3:2 |
+| **Densidade holográfica** | >2,5 k radiantes (pontos de luz por radian) |
+| **Renderização baseada nos olhos** | Otimização do ecrã para posição 3D do olho |
 
 ### <a name="sensors"></a>Sensores
 
-|   |   |
-| - | - |
-| Rastreio de cabeça | 4 câmaras de luz visíveis |
-| Rastreio de olhos | 2 Câmaras de infravermelhos (IR) |
-| Profundidade | Sensor de profundidade de tempo de voo de 1 MP |
-| Unidade de medição por inércia (IMU) | Acelerómetro, giroscópio, magnetómetro |
-| Câmara | Alambiques de 8 MP, vídeo de 1080p30 |
+|   | &nbsp; |
+|---|---|
+| **Rastreio de cabeça** | 4 câmaras de luz visíveis |
+| **Rastreio de olhos** | 2 Câmaras de infravermelhos (IR) |
+| **Profundidade** | Sensor de profundidade de tempo de voo de 1 MP |
+| **Unidade de medição por inércia (IMU)** | Acelerómetro, giroscópio, magnetómetro |
+| **Câmara** | Alambiques de 8 MP, vídeo de 1080p30 |
 
 ![HoloLens 2 Sensores](images/hololens2-front-view.png)
 
@@ -82,77 +82,77 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="audio-and-speech"></a>Áudio e fala
 
-|   |   |
-| - | - |
-| Matriz de microfone | 5 canais |
-| Altifalantes | Som espacial incorporado |
+|   | &nbsp; |
+|---|---|
+| **Matriz de microfone** | 5 canais |
+| **Altifalantes** | Som espacial incorporado |
 
 ### <a name="compute-and-connectivity"></a>Computação e conectividade
 
-|   |   |
-| - | - |
-| Sistema no chip | Qualcomm Snapdragon 850 Compute Platform [detalhes](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
-| Unidade de processamento holográfico | Unidade de processamento holográfico personalizado de segunda geração |
-| Memória | 4-GB SISTEMA LPDDR4x DRAM |
-| Armazenamento | 64-GB UFS 2.1 |
-| Wi-Fi | 802.11ac 2x2 |
-| Bluetooth | 5.0 |
-| USB | USB Type-C DRP |
+|   | &nbsp; |
+|---|---|
+| **Sistema no chip** | Qualcomm Snapdragon 850 Compute Platform [detalhes](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
+| **Unidade de processamento holográfico** | Unidade de processamento holográfico personalizado de segunda geração |
+| **Memória** | 4-GB SISTEMA LPDDR4x DRAM |
+| **Armazenamento** | 64-GB UFS 2.1 |
+| **Wi-Fi** | 802.11ac 2x2 |
+| **Bluetooth** | 5.0 |
+| **USB** | USB Type-C DRP |
 
 ### <a name="power"></a>Energia
 
-|   |   |
-| - | - |
-| Duração da bateria | 2-3 horas de utilização ativa. Até duas semanas de espera. |
-| Tecnologia de baterias | [Baterias de lítio](https://www.microsoft.com/download/details.aspx?id=43388) |
-| Comportamento de cobrança | Totalmente funcional ao carregar |
-| Tipo de arrefecimento | Passivamente arrefecido (sem fãs) |
-| Tomada de energia | Para manter/adiantar a percentagem de carga interna da bateria durante o funcionamento do dispositivo, deve ser ligado no mínimo a um carregador de 15W. |
+|   | &nbsp; |
+|---|---|
+| **Duração da bateria** | 2-3 horas de utilização ativa. Até duas semanas de espera. |
+| **Tecnologia de baterias** | [Baterias de lítio](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **Comportamento de cobrança** | Totalmente funcional ao carregar |
+| **Tipo de arrefecimento** | Passivamente arrefecido (sem fãs) |
+| **Tomada de energia** | Para manter/adiantar a percentagem de carga interna da bateria durante o funcionamento do dispositivo, deve ser ligado no mínimo a um carregador de 15W. |
 
 ### <a name="fit"></a>Ajustar
 
-|   |   |
-| - | - |
-| Dimensionamento | Tamanho único com banda ajustável.  Encaixa sobre óculos |
-| Peso | 566 gramas |
+|   | &nbsp; |
+|---|---|
+| **Dimensionamento** | Tamanho único com banda ajustável.  Encaixa sobre óculos |
+| **Peso** | 566 gramas |
 
 ## <a name="device-capabilities"></a>Capacidades do dispositivo
 
 ### <a name="human-understanding"></a>Compreensão humana
 
-|   |   |
-| - | - |
-| Rastreio de mãos | Modelo articulado com duas mãos, manipulação direta |
-| Rastreio de olhos | Rastreio em tempo real |
-| Voz | Comando e controlo no dispositivo; Cortana linguagem natural com conectividade internet |
+|   | &nbsp; |
+|---|---|
+| **Rastreio de mãos** | Modelo articulado com duas mãos, manipulação direta |
+| **Rastreio de olhos** | Rastreio em tempo real |
+| **Voz** | Comando e controlo no dispositivo; Cortana linguagem natural com conectividade internet |
 
 ### <a name="environment-understanding"></a>Compreensão ambiental
 
-|   |   |
-| - | - |
-| Rastreio de Seis Graus de Liberdade (6DoF) | Rastreio posicional à escala mundial |
-| Mapeamento espacial | Malha ambiente em tempo real |
-| Captura de realidade mista | Fotos e vídeos de holograma e ambiente físico mistos |
+|   | &nbsp; |
+|---|---|
+| **Rastreio de Seis Graus de Liberdade (6DoF)** | Rastreio posicional à escala mundial |
+| **Mapeamento espacial** | Malha ambiente em tempo real |
+| **Captura de realidade mista** | Fotos e vídeos de holograma e ambiente físico mistos |
 
 ## <a name="pre-installed-software"></a>Software pré-instalado
 
-|   |   |
-| - | - |
-| Windows Sistema Operativo Holográfico | Com [Windows OS Holográfico](hololens-release-notes.md), Windows 10 os utilizadores poderão utilizar algumas das suas apps e jogos num ambiente de realidade mista através do HoloLens 2.
-| Espectador 3D | [O 3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) permite-lhe ver facilmente modelos e animações 3D em tempo real.|
-| Cortana | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)o seu assistente de produtividade pessoal, ajuda-o a manter-se a cargo do que importa e a poupar tempo para encontrar o que precisa.  |
-| Dinâmica 365 Guias |  [A Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ajudará os colaboradores a aprenderem mais rapidamente novas habilidades em dispositivos HoloLens. |
-| Dinâmico 365 Assistência Remota | [O Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) capacita os técnicos a colaborar e resolver problemas com colaboradores remotos utilizando Microsoft Teams ou Dinâmico 365 Remote Assist.  |
-| Centro de Feedback | [O Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) permite-lhe fornecer feedback sobre Windows e aplicações, partilhando as suas sugestões ou problemas.  |
-| Explorador de Ficheiros | O File Explorer fornece uma interface gráfica do utilizador para aceder aos sistemas de ficheiros. |
-| Correio e Calendário | As aplicações [Mail e Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) ajudam-no a manter-se atualizado no seu email, a gerir a sua agenda e a manter-se em contacto com os seus contactos. |
-| Microsoft Edge | Microsoft Edge dá-lhe um desempenho de classe mundial com mais privacidade, mais produtividade e mais valor enquanto navega. |
-| Loja Microsoft | O [Microsoft Store](https://www.microsoft.com) é a sua fonte de aplicações e jogos que funcionam com HoloLens.|
-| Filmes & TV | [Filmes & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) traz-lhe o mais recente entretenimento em uma aplicação simples, rápida e elegante. |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) permite-lhe aceder e editar os seus ficheiros de todos os seus dispositivos em qualquer lugar.  |
-| Fotografias | [As fotos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) permitem-lhe ver e editar as suas fotos e vídeos, fazer filmes e criar álbuns.  |
-| Definições | A aplicação Definições é o local onde você personaliza como Windows Holographic funciona em detalhe.  |
-| Sugestões | [Sugestões](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) permite-lhe dominar coisas surpreendentes e menos conhecidas que pode fazer em Windows Holographic. |
+| &nbsp; | &nbsp; |
+|---|---|
+| **Windows Sistema Operativo Holográfico** | Com [Windows OS Holográfico](hololens-release-notes.md), Windows 10 os utilizadores poderão utilizar algumas das suas apps e jogos num ambiente de realidade mista através do HoloLens 2.
+| **Espectador 3D** | [O 3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) permite-lhe ver facilmente modelos e animações 3D em tempo real.|
+| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)o seu assistente de produtividade pessoal, ajuda-o a manter-se a cargo do que importa e a poupar tempo para encontrar o que precisa.  |
+| **Dinâmica 365 Guias** |  [A Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ajudará os colaboradores a aprenderem mais rapidamente novas habilidades em dispositivos HoloLens. |
+| **Dinâmico 365 Assistência Remota** | [O Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) capacita os técnicos a colaborar e resolver problemas com colaboradores remotos utilizando Microsoft Teams ou Dinâmico 365 Remote Assist.  |
+| **Centro de Feedback** | [O Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) permite-lhe fornecer feedback sobre Windows e aplicações, partilhando as suas sugestões ou problemas.  |
+| **Explorador de Ficheiros** | O File Explorer fornece uma interface gráfica do utilizador para aceder aos sistemas de ficheiros. |
+| **Correio e Calendário** | As aplicações [Mail e Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) ajudam-no a manter-se atualizado no seu email, a gerir a sua agenda e a manter-se em contacto com os seus contactos. |
+| **Microsoft Edge** | Microsoft Edge dá-lhe um desempenho de classe mundial com mais privacidade, mais produtividade e mais valor enquanto navega. |
+| **Loja Microsoft** | O [Microsoft Store](https://www.microsoft.com) é a sua fonte de aplicações e jogos que funcionam com HoloLens.|
+| **Filmes & TV** | [Filmes & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) traz-lhe o mais recente entretenimento em uma aplicação simples, rápida e elegante. |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) permite-lhe aceder e editar os seus ficheiros de todos os seus dispositivos em qualquer lugar.  |
+| **Fotografias** | [As fotos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) permitem-lhe ver e editar as suas fotos e vídeos, fazer filmes e criar álbuns.  |
+| **Definições** | A aplicação Definições é o local onde você personaliza como Windows Holographic funciona em detalhe.  |
+| **Sugestões** | [Sugestões](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) permite-lhe dominar coisas surpreendentes e menos conhecidas que pode fazer em Windows Holographic. |
 
 ## <a name="device-certifications"></a>Certificações de dispositivos
 
@@ -202,7 +202,7 @@ O número de série dos HoloLens 2 dispositivos está impresso debaixo da viseir
 1. Olhe perto da almofada de sobrancelhas.
 1. Pode encontrar o número de série localizado perto da dobradiça.
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 O número de série também pode ser encontrado através de um PC conectado:
 
@@ -211,7 +211,7 @@ O número de série também pode ser encontrado através de um PC conectado:
 1. Clique à direita e selecione **propriedades** do dispositivo HoloLens
 1. Isto mostrará o número da série do dispositivo, como mostra a imagem abaixo.
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## <a name="next-steps"></a>Próximo passo(s)
 

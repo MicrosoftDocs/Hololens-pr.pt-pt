@@ -13,27 +13,27 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d0d8aa648df7901dec8636942e43aa549e626d7e
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635896"
+ms.locfileid: "113640288"
 ---
 # <a name="license-requirements"></a>Requisitos de licença
 
 ## <a name="hololens-2-device-managed"></a>HoloLens 2 Dispositivo (gerido)
 
-[Conta Azure AD](https://docs.microsoft.com/azure/active-directory/)
+[Conta Azure AD](/azure/active-directory/)
 
 > [!IMPORTANT]
 > O Ative Directory (AD) não pode ser utilizado para gerir HoloLens dispositivos.
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) ou outro MDM.
+[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ou outro MDM.
 - [Windows Autopilot para HoloLens 2](hololens2-autopilot.md)- simplifica a experiência de fornecimento tanto para administradores de TI como para utilizadores finais. Os administradores de TI podem pré-configurar HoloLens 2 políticas, e após o primeiro arranque, os dispositivos serão implantados em estado de preparação para o negócio com zero interação do utilizador final. 
 
   > [!NOTE]
-  > Windows O piloto automático requer que [o Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) e a [inscrição automática](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) sejam configurados primeiro para o fluxo de piloto automático de baixo toque e para a implementação do dispositivo. 
+  > Windows O piloto automático requer que [o Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) e a [inscrição automática](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) sejam configurados primeiro para o fluxo de piloto automático de baixo toque e para a implementação do dispositivo. 
 
 ### <a name="business-use-case"></a>Caso de utilização de negócios: 
 
@@ -45,11 +45,11 @@ ms.locfileid: "113635896"
 
 Ao utilizar uma conta Microsoft (MSA) ou uma conta local não são necessárias licenças adicionais para estas contas.
 
-[Conta Local](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
+[Conta Local](/windows/security/identity-protection/access-control/local-accounts)
 
 - Esta conta deve ser [disponibilizada](hololens-provisioning.md#provisioning-package-hololens-wizard) com antecedência com Windows Designer de Configuração (WCD).
 
-[Conta Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
+[Conta Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
 
 > [!WARNING]
 > Vários utilizadores não são suportados por um dispositivo que utilize qualquer uma destas contas.
@@ -65,7 +65,7 @@ Ao utilizar uma conta Microsoft (MSA) ou uma conta local não são necessárias 
 #### <a name="admin"></a>Admin
 
 - Conta AZURE AD (necessária para a aquisição da subscrição e atribuição de licenças)
-- [Subscrição de Assistência Remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [Ensaio de Assistência Remota)](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- [Subscrição de Assistência Remota](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [Ensaio de Assistência Remota)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist utilizador
 
@@ -86,14 +86,14 @@ Ao utilizar uma conta Microsoft (MSA) ou uma conta local não são necessárias 
 
 - Conectividade de rede
 
-Se planeia implementar este [cenário de inquilinos cruzados,](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)poderá necessitar de uma licença de Barreiras de Informação. Consulte [este artigo](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) para determinar se é necessária uma Licença de Barreira de Informação.
+Se planeia implementar este [cenário de inquilinos cruzados,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)poderá necessitar de uma licença de Barreiras de Informação. Consulte [este artigo](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) para determinar se é necessária uma Licença de Barreira de Informação.
 
 ### <a name="dynamics-365-guides"></a>Dinâmica 365 Guias 
 
 #### <a name="admin"></a>Admin
 
 - Conta AZURE AD (necessária para a aquisição da subscrição e atribuição de licenças)
-- Subscrição de [Guias Dinâmicos](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one) 365 ou teste gratuito
+- Subscrição de [Guias Dinâmicos](/dynamics365/mixed-reality/guides/setup-step-one) 365 ou teste gratuito
 
 #### <a name="guides-author"></a>Autor de Guias
 

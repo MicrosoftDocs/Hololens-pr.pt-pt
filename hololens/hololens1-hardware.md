@@ -1,6 +1,6 @@
 ---
-title: Hardware HoloLens (1º gênero)
-description: Conheça os componentes que compõem o Microsoft HoloLens (1º género), a mais recente evolução de um computador holográfico não ligado da Microsoft que executa o Windows 10.
+title: hardware HoloLens (1ª geração)
+description: Conheça os componentes que compõem o Microsoft HoloLens (1º género), a mais recente evolução de um computador holográfico não ligado da Microsoft a funcionar Windows 10.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
@@ -13,30 +13,30 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f2c1add9e30467f62833640ea212eb2fcd72ce13
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 02496d90f2dee320e62a99e07527f32b7a209a69
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378673"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639969"
 ---
-# <a name="hololens-1st-gen-hardware"></a>Hardware HoloLens (1º gênero)
+# <a name="hololens-1st-gen-hardware"></a>hardware HoloLens (1ª geração)
 
 ![Microsoft HoloLens (1ª geração)](images/see-through-400px.jpg)
 
-Microsoft HoloLens (1º gênero) é o primeiro computador holográfico totalmente sem amarras do mundo. HoloLens redefine a computação pessoal através de experiências holográficas para capacitá-lo de novas formas. HoloLens mistura ótica de ponta e sensores para entregar hologramas 3D presos ao mundo real que o rodeia.
+Microsoft HoloLens (1ª geração) é o primeiro computador holográfico totalmente sem amarras do mundo. HoloLens redefine a computação pessoal através de experiências holográficas para capacitá-lo de novas formas. HoloLens mistura ótica de ponta e sensores para entregar hologramas 3D presos ao mundo real à sua volta.
 
-## <a name="hololens-components"></a>Componentes HoloLens
+## <a name="hololens-components"></a>componentes HoloLens
 
 ![Imagem que mostra o conteúdo da caixa](images/hololens-box-contents.png)
 
-Os seus HoloLens incluem as seguintes funcionalidades:
+O seu HoloLens inclui as seguintes funcionalidades:
 
-- **Viseira.** Contém os sensores e ecrãs HoloLens. Pode rodar a viseira enquanto estiver a usar os HoloLens.
-- **Fita na cabeça.** Para colocar os HoloLens, utilize a roda de regulação para expandir a fita da cabeça. Com os HoloLens no lugar, aperte a roda de regulação até que a fita da cabeça fique confortável.
-- **Botões de brilho**. Quando estiveres a usar os HoloLens, os botões de brilho estão no lado esquerdo do dispositivo.
-- **Botões de volume**. Quando estiveres a usar os HoloLens, os botões de volume estão no lado direito do dispositivo.
-- **Braços do dispositivo**. Quando pegar, colocar ou tirar os HoloLens, agarre-o sempre ou segure-o pelos braços do dispositivo.
+- **Viseira.** Contém os sensores e ecrãs HoloLens. Pode rodar a viseira enquanto estiver a usar o HoloLens.
+- **Fita na cabeça.** Para colocar a HoloLens, utilize a roda de regulação para expandir a fita da cabeça. Com a HoloLens no lugar, aperte a roda de regulação até que a fita da cabeça fique confortável.
+- **Botões de brilho**. Quando se está a usar o HoloLens, os botões de luminosidade estão no lado esquerdo do dispositivo.
+- **Botões de volume**. Quando estiver a usar o HoloLens, os botões de volume estão no lado direito do dispositivo.
+- **Braços do dispositivo**. Quando pegar, colocar ou tirar a HoloLens, agarre-a sempre ou segure-a pelos braços do dispositivo.
 
 ## <a name="in-the-box"></a>Na caixa
 
@@ -45,10 +45,10 @@ Os seus HoloLens incluem as seguintes funcionalidades:
 A caixa HoloLens contém os seguintes itens:
 
 - **Almofadas para o nariz.** Selecione uma almofada para o nariz que se ajuste à forma do seu nariz e acomode os seus óculos.
-- **Correia aérea**. Quando estiver a usar os HoloLens enquanto se desloca, use a correia superior para ajudar a manter o dispositivo no lugar. Além disso, se estiver a usar os HoloLens por longos períodos, a utilização da correia superior pode tornar o dispositivo mais confortável de usar.
-- **Cabo Micro USB**. Utilize o cabo micro-USB para ligar os HoloLens à fonte de alimentação para carregamento ou utilize-o para ligar os HoloLens ao computador.
+- **Correia aérea**. Quando estiver a usar o HoloLens enquanto se desloca, use a correia superior para ajudar a manter o dispositivo no lugar. Além disso, se estiver a usar o HoloLens por longos períodos, a utilização da correia superior pode tornar o dispositivo mais confortável de usar.
+- **Cabo Micro USB**. Utilize o cabo micro-USB para ligar o seu HoloLens à fonte de alimentação para carregamento ou utilize-o para ligar a sua HoloLens ao computador.
 - **Alimentação** elétrica . Liga-se a uma tomada de corrente.
-- **Pano de microfibra.** Use o pano para limpar a viseira HoloLens.
+- **Pano de microfibra.** Utilize o pano para limpar a viseira HoloLens.
 
 >[!TIP]
 >O [clicker](hololens1-clicker.md) envia com HoloLens (1ª Gen), numa caixa separada.
@@ -67,8 +67,8 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ![HoloLens tem lentes holográficas ver-through](images/displays-400px.jpg)
 
-|   |   |
-| - | - |
+| &nbsp; | &nbsp; |
+|---|---|
 | **Ótica** | Lentes holográficas ver-through (guias de onda) |
 | **Resolução holográfica** | 2 MOTORES ligeiros HD 16:9 produzindo pontos de luz totais de 2,3M |
 | **Densidade holográfica** | \>2,5 k radiantes (pontos de luz por radian) |
@@ -76,7 +76,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="sensors"></a>Sensores
 
-![HoloLens tem sensores para entender o seu ambiente e ações do utilizador](images/sensor-bar-400px.jpg)
+![HoloLens tem sensores para compreender o seu ambiente e as ações dos utilizadores](images/sensor-bar-400px.jpg)
 
 - 1 unidade de medição por inércia (IMU)
 - 4 câmaras de compreensão ambiental
@@ -108,7 +108,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="processors"></a>Processadores
 
-![A placa-mãe do Microsoft HoloLens](images/motherboard-400px.jpg)
+![A placa-mãe para Microsoft HoloLens](images/motherboard-400px.jpg)
 
 - Intel arquitetura de 32 bits com suporte TPM 2.0
 - Unidade de Processamento Holográfico microsoft personalizada (HPU 1.0)
@@ -120,8 +120,8 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="fit"></a>Ajustar
 
-|   |   |
-| - | - |
+|   | &nbsp; |
+|---|---|
 | **Dimensionamento** | Tamanho único com banda ajustável. Encaixa sobre copos |
 | **Peso** | 579 gramas |
 
@@ -153,18 +153,18 @@ Utilizando o seguinte para compreender o ambiente:
 
 ### <a name="safety"></a>Segurança
 
-Os HoloLens foram testados e considerados conformes aos requisitos básicos de proteção contra o impacto de ANSI Z87.1, CSA Z94.3 e EN 166.
+HoloLens foi testada e encontrada em conformidade com os requisitos básicos de proteção contra o impacto de ANSI Z87.1, CSA Z94.3 e EN 166.
 - [Informação SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## <a name="care-and-cleaning"></a>Cuidados e limpeza
 
-Manuseie os HoloLens com cuidado. Para levantar, transportar e ajustar os HoloLens, use os braços do dispositivo &mdash; e não a correia superior. Para manter a viseira livre de pó e impressões digitais e evite tocá-la. Uma limpeza repetida pode danificar a viseira, por isso tente manter o aparelho limpo.
+Manuseie o HoloLens com cuidado. Para levantar, transportar e ajustar o HoloLens, use os braços do dispositivo &mdash; e não a correia superior. Para manter a viseira livre de pó e impressões digitais e evite tocá-la. Uma limpeza repetida pode danificar a viseira, por isso tente manter o aparelho limpo.
 
-Não utilize produtos de limpeza ou solventes nos seus HoloLens, e não o mergulhe em água nem aplique água diretamente.
+Não utilize produtos de limpeza ou solventes no seu HoloLens, e não o mergulhe em água nem aplique água diretamente.
 
 Para limpar a viseira, retire qualquer pó com uma escova de lentes de camelo ou de cabra ou um ventilador de lentes de forma de bolbo. Humedeça ligeiramente o pano de microfibra com uma pequena quantidade de água destilada e, em seguida, use-o para limpar suavemente a viseira num movimento circular.
 
-Para limpar o resto do aparelho, incluindo a bandelete e os braços do dispositivo, utilize um pano sem pelos humedecido com sabão suave e água. Deixe os hololelens secarem completamente antes de o voltar a utilizar.
+Para limpar o resto do aparelho, incluindo a bandelete e os braços do dispositivo, utilize um pano sem pelos humedecido com sabão suave e água. Deixe a sua HoloLens secar completamente antes de a voltar a utilizar.
 
 ![Imagem que mostra como limpar a viseira](images/hololens-cleaning-visor.png)
 
@@ -185,4 +185,4 @@ O número de série também pode ser encontrado através de um PC conectado:
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [Configurar e iniciar os seus HoloLens (1ª geração)](hololens1-setup.md)
+> [Configurar e iniciar o seu HoloLens (1ª geração)](hololens1-setup.md)
