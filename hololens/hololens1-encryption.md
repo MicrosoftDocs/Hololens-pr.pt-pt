@@ -1,6 +1,6 @@
 ---
-title: Encriptação HoloLens BitLocker
-description: Saiba como ativar a encriptação do dispositivo BitLocker para proteger ficheiros armazenados nos seus dispositivos de realidade mista HoloLens.
+title: HoloLens Encriptação BitLocker
+description: Saiba como ativar a encriptação do dispositivo BitLocker para proteger ficheiros armazenados nos seus HoloLens dispositivos de realidade mista.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,26 +13,26 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378474"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635250"
 ---
-# <a name="hololens-1st-gen-bitlocker-encryption"></a>Encriptação Do HoloLens (1ª Gen) BitLocker
+# <a name="hololens-1st-gen-bitlocker-encryption"></a>encriptação bitLocker HoloLens (1ª Gen)
 
-HoloLens (1º gênero) e HoloLens 2 ambos suportam encriptação do dispositivo usando BitLocker, no entanto, BitLocker está sempre ativado em HoloLens 2.
+HoloLens (1º gênero) e HoloLens 2 ambos suportam encriptação do dispositivo usando BitLocker, no entanto, o BitLocker está sempre ativado no HoloLens 2.
 
-Este artigo irá ajudá-lo a ativar e gerir o BitLocker no HoloLens (1º género).
+Este artigo irá ajudá-lo a ativar e gerir o BitLocker em HoloLens (1ª geração).
 
-No HoloLens (1º gênero) pode ativar a encriptação do dispositivo BitLocker manualmente ou utilizar a gestão de dispositivos móveis (MDM). Siga estas instruções para permitir a [encriptação do dispositivo BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) para proteger ficheiros e informações armazenados nos HoloLens. A encriptação do dispositivo ajuda a proteger os seus dados utilizando o método de encriptação AES-CBC 128, que é equivalente ao [método 3 do Método EncryptionMethodByDriveType](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) no fornecedor de serviços de configuração BitLocker (CSP). O pessoal que tiver a chave de encriptação correta (como uma palavra-passe) pode desencriptar ou efetuar uma recuperação de dados.
+No HoloLens (1º gênero) pode ativar a encriptação do dispositivo BitLocker manualmente ou utilizar a gestão de dispositivos móveis (MDM). Siga estas instruções para permitir a [encriptação do dispositivo BitLocker](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) para proteger ficheiros e informações armazenados no HoloLens. A encriptação do dispositivo ajuda a proteger os seus dados utilizando o método de encriptação AES-CBC 128, que é equivalente ao [método 3 do Método EncryptionMethodByDriveType](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) no fornecedor de serviços de configuração BitLocker (CSP). O pessoal que tiver a chave de encriptação correta (como uma palavra-passe) pode desencriptar ou efetuar uma recuperação de dados.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Ativar a encriptação do dispositivo usando o MDM
 
-Pode utilizar o seu fornecedor de Gestão de Dispositivos Móveis (MDM) para aplicar uma política que exija encriptação do dispositivo. A política a utilizar é a [definição de Segurança/RequerDeviceEncrição](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) na Política CSP.
+Pode utilizar o seu fornecedor de Gestão de Dispositivos Móveis (MDM) para aplicar uma política que exija encriptação do dispositivo. A política a utilizar é a [definição de Segurança/RequerDeviceEncrição](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) na Política CSP.
 
-[Consulte as instruções para ativar a encriptação do dispositivo utilizando o Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Consulte as instruções para ativar a encriptação do dispositivo utilizando Microsoft Intune.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 Para outras ferramentas DEDM, consulte a documentação do seu fornecedor de MDM para obter instruções. Se o seu fornecedor DEMS necessitar de URI personalizado para encriptação do dispositivo, utilize a seguinte configuração:
 
@@ -44,11 +44,11 @@ Para outras ferramentas DEDM, consulte a documentação do seu fornecedor de MDM
 
 ## <a name="enable-device-encryption-using-a-provisioning-package"></a>Ativar a encriptação do dispositivo utilizando um pacote de provisionamento
 
-Os pacotes de provisionamento são ficheiros criados pela ferramenta Design de Configuração do Windows que aplicam uma configuração especificada a um dispositivo. 
+Os pacotes de provisionamento são ficheiros criados pela ferramenta Windows Configuration Designer que aplicam uma configuração especificada a um dispositivo. 
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Crie um pacote de provisionamento que atualize a edição holográfica do Windows e permita encriptação
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Crie um pacote de provisionamento que atualize a edição holográfica Windows e permita encriptação
 
-1. [Crie um pacote de provisões para hololens.](hololens-provisioning.md)
+1. [Crie um pacote de provisionamento para HoloLens.](hololens-provisioning.md)
 1. Vá para **configurações de tempo de**  >    >  **execução Segurança** políticas e selecione **RequireDeviceEncryption**.
 
     ![Requerer a configuração de encriptação do dispositivo configurado para sim](images/device-encryption.png)
@@ -74,7 +74,7 @@ Os pacotes de provisionamento são ficheiros criados pela ferramenta Design de C
     > Pode escoar alterações nos pacotes existentes e alterar o número da versão para atualizar pacotes previamente aplicados.
 
 1. Nos **detalhes de segurança Select para o pacote de provisionamento,** clique em **Seguinte**.
-1. Clique em **seguida** para especificar o local de saída onde deseja que o pacote de provisionamento vá assim que for construído. Por predefinição, o Windows ICD utiliza a pasta do projeto como localização de saída.
+1. Clique em **seguida** para especificar o local de saída onde deseja que o pacote de provisionamento vá assim que for construído. Por predefinição, Windows ICD utiliza a pasta do projeto como localização de saída.
 
     Opcionalmente, pode clicar em navegar para alterar o local de saída predefinido.
 
@@ -82,11 +82,11 @@ Os pacotes de provisionamento são ficheiros criados pela ferramenta Design de C
 1. Clique **em Build** para começar a construir o pacote. A informação do projeto é exibida na página de construção e a barra de progresso indica o estado de construção.
 1. Quando a construção estiver concluída, clique em **Terminar**.
 
-### <a name="apply-the-provisioning-package-to-hololens"></a>Aplicar o pacote de provisionamento aos HoloLens
+### <a name="apply-the-provisioning-package-to-hololens"></a>Aplicar o pacote de provisionamento à HoloLens
 
-1. Ligue o dispositivo via USB a um PC e inicie o dispositivo, mas não continue além da página **de ajuste** da experiência inicial de configuração (a primeira página com a caixa azul).
+1. Ligação o dispositivo via USB para um PC e inicie o dispositivo, mas não continue além da página **de ajuste** da experiência inicial de configuração (a primeira página com a caixa azul).
 1. Pressione e solte brevemente os botões **Volume Down** e **Power** simultaneamente.
-1. Os HoloLens aparecerão como um dispositivo no File Explorer no PC.
+1. HoloLens aparecerão como um dispositivo no Explorador de Ficheiros no PC.
 1. No File Explorer, arraste e deixe cair o pacote de provisionamento (.ppkg) no armazenamento do dispositivo.
 1. Prima e solte brevemente os botões **Volume Down** e **Power** simultaneamente enquanto estiver na página **de ajuste.**
 1. O dispositivo irá perguntar-lhe se confia no pacote e gostaria de aplicá-lo. Confirme que confia no pacote.
@@ -97,8 +97,8 @@ Os pacotes de provisionamento são ficheiros criados pela ferramenta Design de C
 
 ## <a name="verify-device-encryption"></a>Verificar encriptação do dispositivo
 
-A encriptação é silenciosa nos HoloLens. Para verificar o estado de encriptação do dispositivo:
+A encriptação é silenciosa na HoloLens. Para verificar o estado de encriptação do dispositivo:
 
-- No HoloLens, vá ao **Sistema de Definições**  >    >  **Sobre**. **O BitLocker** **está ativado** se o dispositivo estiver encriptado. 
+- No HoloLens, vá ao **Definições**  >  **System**  >  **About.** **O BitLocker** **está ativado** se o dispositivo estiver encriptado. 
 
     ![Sobre o ecrã mostrando BitLocker ativado](images/about-encryption.png)

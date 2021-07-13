@@ -1,6 +1,6 @@
 ---
-title: Guia de Implementação - HoloLens conectados corporativos 2 com Dinâmica 365 Guias - Visão geral
-description: Saiba como inscrever dispositivos HoloLens 2 com Guias Dinâmicos 365 sobre uma rede conectada corporativa.
+title: Guia de Implementação - HoloLens 2 conectado corporativo com Dinâmica 365 Guias - Visão geral
+description: Saiba como inscrever HoloLens 2 dispositivos com Dinâmica 365 Guides sobre uma rede conectada corporativa.
 keywords: HoloLens, gestão, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378640"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637018"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guia de Implementação - Corporate Connected HoloLens 2 com Dinâmica 365 Guias - Visão geral
 
-Este guia ajudará os profissionais de TI a planear e a implementar dispositivos Microsoft HoloLens 2 com Guias Dinâmicos 365 (Guias) para a sua organização. Este guia é ótimo para pilotos, bem como implementações de produção e é semelhante ao Cenário B: Implementar dentro do guia [de rede da sua organização.](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Depois de testar a sua prova de conceito, use este guia para avançar com a integração dos HoloLens na sua organização.
+Este guia ajudará os profissionais de TI a planear e implementar Microsoft HoloLens 2 dispositivos com Guias Dinâmicos 365 (Guias) para a sua organização. Este guia é ótimo para pilotos, bem como implementações de produção e é semelhante ao Cenário B: Implementar dentro do guia [de rede da sua organização.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Depois de testar a sua prova de conceito, utilize este guia para avançar com a integração HoloLens na sua organização.
 
 Neste guia, vamos cobrir como inscrever os seus dispositivos na gestão de dispositivos existentes, aplicar licenças conforme necessário, e validar que os seus utilizadores finais são capazes de operar um Guia Dinâmico 365, bem como usar a linha personalizada de aplicações empresariais, após a configuração do dispositivo. 
 
@@ -33,7 +33,7 @@ As infraestruturas que se seguem já devem estar em vigor:
 - Wi-Fi
     - Rede corporativa interna com acesso a recursos internos e acesso limitado aos serviços da Internet ou Cloud
     - Autenticação de certificados baseado em dispositivo.
-- Azure Ative Directy (Azure AD) Junte-se à inscrição automática do MDM[(subscrição Azure AD P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) necessária)
+- Azure Ative Directory (Azure AD) Junte-se à inscrição automática do MDM[(Azure AD P1](/azure/active-directory/fundamentals/active-directory-whatis) necessária)
 - MDM (Intune) Gerido
     - Uma ou mais aplicações são implementadas via MDM.
 - Rede 
@@ -43,12 +43,13 @@ As infraestruturas que se seguem já devem estar em vigor:
     - É suportado um único ou múltiplo por dispositivo.
 - Níveis variados de configurações de bloqueio do dispositivo aplicados com base em casos de utilização específicos, desde o Quiosque de Aplicações Totalmente Abertos a Single App.
 
-## <a name="guides-licensing-and-requirements"></a>[Guias licenciamento e requisitos](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+## <a name="guides-licensing-and-requirements"></a>[Guias licenciamento e requisitos](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+
 - Conta do Azure AD
-- Dinâmica 365 Aplicações guides PC e HoloLens
+- Dinâmica 365 Guias aplicações PC e HoloLens
 - Assinatura dinâmica 365 guias
     - Microsoft Dataverse (incluído)
-    - Aplicativos de energia (incluído)
+    - Power Apps (incluído)
 - Power BI Desktop
 - Conectividade da rede
 
@@ -59,7 +60,7 @@ As infraestruturas que se seguem já devem estar em vigor:
 ## <a name="in-this-guide-you-will"></a>Neste guia:
 ### <a name="prepare"></a>Preparação
 > [!div class="checklist"]
->- [Conheça o essencial da infraestrutura para dispositivos HoloLens 2.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Conheça os elementos essenciais da infraestrutura para HoloLens 2 dispositivos.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Saiba mais sobre o AZure AD e crie um se não o tiver.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Saiba mais sobre a gestão de identidade e como configurar melhor as contas AD da Azure.](hololens2-corp-connected-prepare.md#identity-management)
 >- [Saiba mais sobre o MDM e prepare-se com o Intune se ainda não tiver um pronto.](hololens2-corp-connected-prepare.md#mobile-device-management)
@@ -84,7 +85,7 @@ As infraestruturas que se seguem já devem estar em vigor:
 >-  [Validar Guias através da autoria e funcionamento.](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
 ### <a name="maintain"></a>Manter
 > [!div class="checklist"]
->- [Atualizar HoloLens 2.](hololens2-corp-connected-maintain.md#update-hololens)
+>- [Atualização HoloLens 2.](hololens2-corp-connected-maintain.md#update-hololens)
 >- [Como atualizar Guias (aplicações de loja).](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
 >- [Como atualizar aplicações LOB.](hololens2-corp-connected-maintain.md#how-to-update-lob-apps) 
 >- [Plano de desenvolvimento.](hololens2-corp-connected-maintain.md#development-plan) 

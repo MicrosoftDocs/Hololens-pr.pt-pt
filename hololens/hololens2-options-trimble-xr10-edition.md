@@ -1,8 +1,8 @@
 ---
 title: Trimble XR10 com HoloLens 2
-description: Saiba mais sobre o Trimble XR10 com hololens 2 e o que fazer depois de obter um dos seus.
-keywords: Opções de compra HoloLens 2, opções HoloLens, Trimble XR10
-author: bogenera
+description: Saiba mais sobre o Trimble XR10 com HoloLens 2 e o que fazer depois de obter um dos seus.
+keywords: HoloLens 2 opções de compra, opções de HoloLens, Trimble XR10
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b52b675faa81a9d713f035fec8a533093a7a8580
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: cd3b122de155efeb59acb86bfc56264c3da4bd44
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379974"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639459"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 com HoloLens 2
 
@@ -27,7 +27,7 @@ Construído de propósito para trabalhadores em ambientes sujos, altos e control
 
 ## <a name="learn-about-trimble-xr10"></a>Saiba mais sobre Trimble XR10
 
-Trimble XR10 com HoloLens 2 é o primeiro dispositivo criado com o Microsoft HoloLens Customization Program. O dispositivo integra um HoloLens 2 num chapéu duro para produzir uma solução de realidade mista de segurança.
+Trimble XR10 com HoloLens 2 é o primeiro dispositivo criado com o Programa de Personalização Microsoft HoloLens. O dispositivo integra um HoloLens 2 num chapéu duro para produzir uma solução de realidade mista de segurança.
 
 ![Trimble SKU](./images/trimble-ed.png)
 
@@ -35,8 +35,8 @@ Veja mais sobre o [Trimble XR10](https://fieldtech.trimble.com/en/product/trimbl
 
 ## <a name="next-steps"></a>Passos seguintes
 
-1. Comece a interagir imediatamente com a Realidade Mista e navegue no Windows 10 nos seus HoloLens - consulte a aplicação **Tips** para tutoriais práticos para interações com as mãos. Use o gesto inicial para ir para Iniciar ou dizer "Vá para começar" e selecione Dicas.
+1. Comece logo a interagir com a Realidade Mista e navegue Windows 10 no seu HoloLens - confira a app **Sugestões** para tutoriais práticos para interações com as mãos. Use o gesto inicial para ir para Iniciar ou dizer "Vá para começar" e selecione Sugestões.
 1. Clique abaixo para continuar a ler sobre como contornar HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Começa com o HoloLens 2](hololens2-basic-usage.md)
+> [Começa com HoloLens 2](hololens2-basic-usage.md)

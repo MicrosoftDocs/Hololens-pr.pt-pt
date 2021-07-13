@@ -1,5 +1,5 @@
 ---
-title: Como carregar lateralmente e instalar apps através do Instalador de Aplicações HoloLens 2
+title: Como carregar lateralmente e instalar apps através de HoloLens 2 App Installer
 description: Aprenda a instalar e resolver problemas com o instalador de aplicações e carregar lateralmente e instalar aplicações via UI.
 keywords: gestão de aplicativos, app, hololens, instalador de aplicativos
 author: evmill
@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8f236ee27903069b65d3ded8eb7a1f37c65f535e
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924133"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635590"
 ---
-# <a name="install-apps-on-hololens-2-via-app-installer"></a>Instalar aplicativos no HoloLens 2 através do Instalador de Aplicações
+# <a name="install-apps-on-hololens-2-via-app-installer"></a>Instale apps no HoloLens 2 através do Instalador de Aplicações
 
 > [!NOTE]
-> Esta funcionalidade foi disponibilizada no [Windows Holographic, versão 20H2 – dezembro 2020 Update](hololens-release-notes.md). Certifique-se de que o seu dispositivo está [atualizado](hololens-update-hololens.md) para utilizar esta funcionalidade.
+> Esta funcionalidade foi disponibilizada em [Windows Holographic, versão 20H2 – dezembro 2020 Update](hololens-release-notes.md). Certifique-se de que o seu dispositivo está [atualizado](hololens-update-hololens.md) para utilizar esta funcionalidade.
 
-**Adicionámos uma nova capacidade (App Installer) para permitir a instalação de aplicações de forma mais perfeita** nos seus dispositivos HoloLens 2. A funcionalidade será **on-by predefinida para dispositivos não geridos**. Para evitar perturbações nas empresas, o instalador de aplicações **não estará disponível para dispositivos geridos** neste momento.  
+**Adicionámos uma nova capacidade (App Installer) para permitir a instalação de aplicações de forma mais perfeita** nos seus HoloLens 2 dispositivos. A funcionalidade será **on-by predefinida para dispositivos não geridos**. Para evitar perturbações nas empresas, o instalador de aplicações **não estará disponível para dispositivos geridos** neste momento.  
 
 Um dispositivo é considerado "gerido" se **algum** dos seguintes for verdadeiro:
 
@@ -34,21 +34,21 @@ Um dispositivo é considerado "gerido" se **algum** dos seguintes for verdadeiro
 - Configurado com [pacote de provisionamento](hololens-provisioning.md)
 - [Identidade](hololens-identity.md) do utilizador é Azure AD
 
-Agora é possível instalar apps sem necessidade de ativar o Modo de Desenvolvimento ou de utilizar o Portal do Dispositivo.  Descarregue (através de USB ou através do Microsoft Edge) o Pacote Appx para o seu dispositivo e navegue para o Pacote Appx no File Explorer para ser solicitado para iniciar a instalação.  Em alternativa, [inicie uma instalação a partir de uma página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Tal como as aplicações que instala a partir da Microsoft Store ou sideload utilizando a capacidade de implementação da App LOB do MDM, as aplicações precisam de ser assinadas digitalmente com a [Ferramenta de Sinais](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e o [certificado utilizado para assinar deve ser fidedigno](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) pelo dispositivo HoloLens antes de a aplicação poder ser implementada.
+Agora é possível instalar apps sem necessidade de ativar o Modo de Desenvolvimento ou de utilizar o Portal do Dispositivo.  Descarregue (através de USB ou através de Microsoft Edge) o Pacote Appx para o seu dispositivo e navegue para o Pacote Appx no Explorador de Ficheiros para ser solicitado para iniciar a instalação.  Em alternativa, [inicie uma instalação a partir de uma página web](/windows/msix/app-installer/installing-windows10-apps-web). Tal como as aplicações que instala a partir do Microsoft Store ou sideload utilizando a capacidade de implementação da App LOB do MDM, as aplicações precisam de ser assinadas digitalmente com a [Ferramenta de Sinais](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e o [certificado utilizado para assinar deve ser confiável](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) pelo dispositivo HoloLens antes de a aplicação poder ser implementada.
 
 ## <a name="requirements"></a>Requisitos
 
 ### <a name="for-your-devices"></a>Para os seus dispositivos:
 
-Esta funcionalidade encontra-se atualmente disponível nas construções Holográficas 20H2 do Windows para dispositivos HoloLens 2. Certifique-se de que todos os dispositivos que utilizam este método são [atualizados](hololens-update-hololens.md).
+Esta funcionalidade encontra-se atualmente disponível em Windows 20H2 holográficos para HoloLens 2 dispositivos. Certifique-se de que todos os dispositivos que utilizam este método são [atualizados](hololens-update-hololens.md).
 
 ### <a name="for-your-apps"></a>Para as suas aplicações:
 
-A Configuração da Solução da sua aplicação deve ser **Master** ou **Release,** uma vez que o Instalador de Aplicações utilizará dependências da loja. Veja mais sobre [a criação de pacotes de aplicações.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+A Configuração da Solução da sua aplicação deve ser **Master** ou **Release,** uma vez que o Instalador de Aplicações utilizará dependências da loja. Veja mais sobre [a criação de pacotes de aplicações.](/windows/msix/app-installer/create-appinstallerfile-vs)
 
 As aplicações instaladas através deste método devem ser assinadas digitalmente. Terá de usar um certificado para assinar a aplicação. Você pode obter um certificado da [Lista de CA Fidedignas da MS,](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)caso em que você não precisará tomar qualquer ação extra. Ou pode assinar o seu próprio certificado no entanto esse certificado terá de ser empurrado para o dispositivo.
 
-- Como assinar aplicativos [utilizando a Ferramenta de Sinal.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+- Como assinar aplicativos [utilizando a Ferramenta de Sinal.](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
 **Opções de certificado:**
 
@@ -57,16 +57,16 @@ As aplicações instaladas através deste método devem ser assinadas digitalmen
 **Escolha um método de implantação de certificados.**
 
 - [Os pacotes de provisionamento](hololens-provisioning.md) podem ser aplicados a dispositivos locais.
-- O MDM pode ser utilizado para [aplicar certificados com configurações do dispositivo.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
+- O MDM pode ser utilizado para [aplicar certificados com configurações do dispositivo.](/mem/intune/protect/certificates-configure)
 - Utilize o [gestor de certificados no](certificate-manager.md)dispositivo.
 
 ## <a name="installation-method"></a>Método de instalação
 
 1. Verifique se o seu dispositivo não é considerado gerido.
 1. Verifique se o seu dispositivo HoloLens 2 está ligado e está inscrito.
-1. No seu PC, navegue para a sua aplicação personalizada e copie o seu appapp.appxbundle para o seu devicename\Internal Storage\Downloads.
+1. No seu PC, navegue para a sua aplicação personalizada e copie o seu appapp.appxbundle para o seu nome dedevicename\Internal Armazenamento\Downloads.
     Depois de ter terminado de copiar o seu ficheiro, poderá desligar o seu dispositivo e terminar a instalação mais tarde.
-1. A partir do seu dispositivo HoloLens 2 Abra o **Menu Iniciar,** selecione **Todas as aplicações** e lance a aplicação **File Explorer.**
+1. A partir do seu HoloLens 2 dispositivo Abra o **Menu Iniciar,** selecione **Todas as aplicações** e lance a aplicação **File Explorer.**
 1. Navegue para a pasta Downloads. Pode ser necessário no painel esquerdo da aplicação selecionar este **dispositivo** primeiro e, em seguida, navegar para Downloads.
 1. Selecione o ficheiro appxbundle do seuapp.appxbundle.
 1. O Instalador de Aplicações será lançado. Selecione o botão **Instalar** para instalar a sua aplicação.
@@ -91,7 +91,7 @@ Os utilizadores podem instalar uma aplicação diretamente a partir de um servid
 ### <a name="how-to-set-up-web-install"></a>Como configurar a instalação web:
 
 1. Certifique-se de que a sua aplicação está corretamente configurada para instalar.
-1. Siga estes [passos para permitir a instalação a partir de uma página web.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)
+1. Siga estes [passos para permitir a instalação a partir de uma página web.](/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)
 
 ### <a name="end-user-experience"></a>Experiência do utilizador final:
 
@@ -100,13 +100,13 @@ Os utilizadores podem instalar uma aplicação diretamente a partir de um servid
 
 A aplicação irá agora instalar-se no dispositivo. Para encontrar a aplicação, abra o **menu Iniciar** e selecione o botão **Todas as aplicações** para encontrar a sua aplicação.
 
-- Para obter mais ajuda na resolução de problemas, o método de instalação do instalador de aplicações visite [problemas de instalação de aplicações de resolução de problemas.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- Para obter mais ajuda na resolução de problemas, o método de instalação do instalador de aplicações visite [problemas de instalação de aplicações de resolução de problemas.](/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
 > [!NOTE]
-> A UI durante o processo de atualização não é suportada. Assim, a opção ShowPrompt [nesta página](https://docs.microsoft.com/windows/msix/app-installer/update-settings) e as opções relacionadas não são suportadas.
+> A UI durante o processo de atualização não é suportada. Assim, a opção ShowPrompt [nesta página](/windows/msix/app-installer/update-settings) e as opções relacionadas não são suportadas.
 
 ## <a name="sample-apps"></a>Exemplos de Aplicações
 
 Experimente o Instalador de Aplicações com uma das nossas aplicações de amostra disponíveis. 
 > [!div class="nextstepaction"]
-> [Exemplos de aplicações](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)
+> [Exemplos de aplicações](/windows/mixed-reality/develop/features-and-samples)

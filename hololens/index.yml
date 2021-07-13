@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: O Microsoft HoloLens é o primeiro computador holográfico totalmente autónomo a executar o Windows 10. Agora, com a introdução do HoloLens 2, todos os dispositivos HoloLens fornecem capacidades de gestão pronta comercial que são potenciadas pela fiabilidade, segurança e escalabilidade dos serviços de cloud e IA da Microsoft.
+summary: Microsoft HoloLens é o primeiro computador holográfico totalmente autossuficiente a funcionar Windows 10. Agora, com a introdução de HoloLens 2, cada HoloLens dispositivo fornece capacidades de gestão de prontos comerciais que são potenciadas pela fiabilidade, segurança e escalabilidade dos serviços de cloud e IA da Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Página de aterragem para Microsoft HoloLens.
@@ -11,21 +11,23 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
-  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
   ms.translationtype: MT
   ms.contentlocale: pt-PT
-  ms.lasthandoff: 06/25/2021
-  ms.locfileid: "112924320"
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637154"
 landingContent:
-- title: Conheça os HoloLens 2
+- title: Conheça o HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: Sobre o hardware HoloLens 2
-      url: hololens2-hardware.md
-    - text: Compare as opções hololens 2
+    - text: HoloLens 2 capacidades e soluções
+      url: hololens-commercial-features.md
+    - text: HoloLens 2 opções
       url: hololens2-options.md
+    - text: hardware HoloLens 2
+      url: hololens2-hardware.md
   - linkListType: overview
     links:
     - text: Apenas para dispositivos
@@ -52,17 +54,17 @@ landingContent:
     links:
     - text: Cenários de implementação comuns
       url: common-scenarios.md
-    - text: Planeamento holoLens 2 implantação em ambiente comercial
+    - text: Planeamento HoloLens 2 implantação em ambiente comercial
       url: hololens-core-components.md
     - text: Registo CSS do piloto automático
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Guia de implementação - Implantação hololens 2 ligada à nuvem em escala com assistência remota
+    - text: Guia de implementação - Implementação HoloLens 2 ligada à nuvem em escala com assistência remota
       url: hololens2-cloud-connected-overview.md
     - text: Guia de Implementação - Clientes Externos (ligados à nuvem)
       url: hololens2-deployment-guide.md
-    - text: Guia de Implementação - Implantação de HoloLens 2 conectados corporativos com Guias Dinâmicos 365
+    - text: Guia de Implementação - Implementação de HoloLens 2 com Dinâmica 365 Guias
       url: hololens2-corp-connected-overview.md
     - text: Guia de implementação - Offline seguro
       url: hololens-common-scenarios-offline-secure.md
@@ -78,7 +80,7 @@ landingContent:
       url: hololens2-display.md
     - text: Dispositivos de implementação e gestão
       url: hololens2-enterprise-troubleshooting.md
-    - text: Recolher e utilizar informações de diagnóstico a partir de dispositivos HoloLens
+    - text: Recolher e utilizar informações de diagnóstico de dispositivos HoloLens
       url: hololens-diagnostic-logs.md
     - text: Reiniciar, reiniciar ou recuperar HoloLens 2
       url: hololens-recovery.md
@@ -86,7 +88,7 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Notas de lançamento holoLens 2
+    - text: HoloLens 2 notas de lançamento
       url: hololens-release-notes.md
     - text: Pré-visualização de insider
       url: hololens-insider.md

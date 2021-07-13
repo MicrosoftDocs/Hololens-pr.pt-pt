@@ -1,6 +1,6 @@
 ---
-title: Utilização de Beta do Espectador 3D em HoloLens (1ª geração)
-description: Descreve os tipos de ficheiros e funcionalidades que o 3D Viewer Beta em HoloLens (1ª gen) suporta e como usar e resolver problemas da aplicação.
+title: Usando beta do espectador 3D em HoloLens (1ª geração)
+description: Descreve os tipos de ficheiros e funcionalidades que a Beta do Espectador 3D suporta HoloLens (1ª gen) e como usar e resolver problemas da aplicação.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,28 +13,28 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f5481d6466459667deb99232fdd67c4491798cbe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379858"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635488"
 ---
-# <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>Utilização de Beta do Espectador 3D em HoloLens (1ª geração)
+# <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>Usando beta do espectador 3D em HoloLens (1ª geração)
 
-Beta do Espectador 3D permite-lhe ver modelos 3D em HoloLens (1ª geração). Pode abrir e visualizar ficheiros .fbx *suportados* do Microsoft Edge, OneDrive e outras aplicações.
+A Beta do Espectador 3D permite-lhe ver os modelos 3D no HoloLens (1ª geração). Pode abrir e visualizar ficheiros .fbx *suportados* a partir de Microsoft Edge, OneDrive e outras aplicações.
 
 >[!NOTE]
->Este artigo aplica-se à imersiva aplicação **Unity 3D Viewer Beta,** que suporta ficheiros .fbx e só está disponível em HoloLens (1º género). A aplicação **3D Viewer** pré-instalada no HoloLens 2 suporta a abertura de modelos 3D personalizados na casa de realidade mista (ver [visão geral dos requisitos do Ativo](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) para mais detalhes.
+>Este artigo aplica-se à imersiva aplicação **Unity 3D Viewer Beta,** que suporta ficheiros .fbx e só está disponível em HoloLens (1ª geração). A aplicação **3D Viewer** pré-instalada no HoloLens 2 suporta a abertura de modelos 3D personalizados na casa de realidade mista (ver [visão geral dos requisitos do Ativo](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) para mais detalhes.
 
 >[!IMPORTANT]
->Embora a Beta do Espectador 3D possa permanecer disponível na Microsoft Store para HoloLens (1ª geração), já não está em desenvolvimento ativo e já não está suportada.
+>Embora a Beta do Espectador 3D possa permanecer disponível no Microsoft Store para HoloLens (1ª gen), já não está em desenvolvimento ativo e já não está suportada.
 
 Se tiver dificuldade em abrir um modelo 3D em Beta do Espectador 3D, ou certas funcionalidades do seu modelo 3D não forem [suportadas,](#supported-content-specifications) consulte as especificações de conteúdo suportado abaixo.
 
 Para construir ou otimizar modelos 3D para uso com Beta do Espectador 3D, consulte [otimizar os modelos 3D para Beta do Espectador 3D](#optimizing-3d-models-for-3d-viewer-beta) abaixo.
 
-Há duas maneiras de abrir um modelo 3D no HoloLens. Consulte [os ficheiros FBX de visualização em HoloLens](#viewing-fbx-files-on-hololens) abaixo para saber mais.
+Há duas formas de abrir um modelo 3D na HoloLens. Consulte [os ficheiros FBX de visualização no HoloLens](#viewing-fbx-files-on-hololens) abaixo para saber mais.
 
 Se tiver problemas depois de ler estes tópicos, consulte [a resolução de problemas abaixo.](#troubleshooting)
 
@@ -105,13 +105,13 @@ Existem limites rígidos no tamanho dos ficheiros, bem como no número de modelo
 
 ### <a name="special-considerations"></a>Considerações especiais
 
-- Evite materiais pretos ou áreas pretas em mapas de textura. Os hologramas são feitos de luz, assim holoLens torna o preto (a ausência de luz) como transparente.
+- Evite materiais pretos ou áreas pretas em mapas de textura. Hologramas são feitas de luz, HoloLens torna o preto (a ausência de luz) transparente.
 - Antes de exportar para FBX a partir da sua ferramenta de criação, certifique-se de que toda a geometria é visível e desbloqueada e que nenhuma camada que contenha geometria seja desligada ou modelo. A visibilidade não é respeitada.
 - Evite compensações de tradução muito grandes entre nós (por exemplo, 100.000 unidades). Isto pode fazer com que o modelo se aquelida enquanto é movido/escalado/rodado.
 
 ### <a name="performance-optimization"></a>Otimização do desempenho
 
-Tenha em mente o desempenho enquanto autoriza conteúdos e valide na aplicação Beta do Espectador 3D em HoloLens durante o processo de autoria para obter os melhores resultados. O 3D Viewer Beta torna o conteúdo em tempo real e o desempenho está sujeito às capacidades de hardware hololens.  
+Tenha em mente o desempenho enquanto autoriza os conteúdos e valide na aplicação Beta do Espectador 3D em HoloLens durante o processo de autoria para obter os melhores resultados. O 3D Viewer Beta torna o conteúdo em tempo real e o desempenho está sujeito a HoloLens capacidades de hardware.  
 
 Existem muitas variáveis num modelo 3D que podem impactar o desempenho. O 3D Viewer Beta mostrará um aviso sobre a carga se houver mais de 150.000 vértices ou mais de 400 malhas. As animações podem ter impacto no desempenho de outros modelos abertos. Existem também limites rígidos nos modelos totais de números, vértices e malhas que podem ser abertos simultaneamente em Beta do Espectador 3D (ver [limitações de ficheiros e modelos).](#file-and-model-limitations)  
 
@@ -125,7 +125,7 @@ A renderização de dupla face é suportada em Beta do Espectador 3D, embora sej
 
 ### <a name="validating-your-3d-model"></a>Validando o seu modelo 3D
 
-Valide o seu modelo abrindo-o em Beta de Visualização 3D em HoloLens. Selecione o botão **Detalhes** para visualizar as características do seu modelo e avisos de conteúdo não suportado (se estiver presente).
+Valide o seu modelo abrindo-o em Beta 3D Viewer no HoloLens. Selecione o botão **Detalhes** para visualizar as características do seu modelo e avisos de conteúdo não suportado (se estiver presente).
 
 ### <a name="rendering-3d-models-with-true-to-life-dimensions"></a>Renderização de modelos 3D com dimensões verdadeiras à vida
 
@@ -135,27 +135,27 @@ Para evitar o escalonamento do modelo, adicione um atributo personalizado Boolea
 
 ## <a name="viewing-fbx-files-on-hololens"></a>Visualização de ficheiros FBX em HoloLens
 
-### <a name="open-an-fbx-file-from-microsoft-edge"></a>Abrir um ficheiro FBX do Microsoft Edge
+### <a name="open-an-fbx-file-from-microsoft-edge"></a>Abra um ficheiro FBX a partir de Microsoft Edge
 
-Os ficheiros FBX podem ser abertos diretamente a partir de um website utilizando o Microsoft Edge em HoloLens.
+Os ficheiros FBX podem ser abertos diretamente a partir de um website utilizando Microsoft Edge em HoloLens.
 
-1. No Microsoft Edge, navegue para a página web que contém o ficheiro FBX que pretende visualizar.
+1. Em Microsoft Edge, navegue para a página web que contém o ficheiro FBX que pretende visualizar.
 1. Selecione o ficheiro para o descarregar.
-1. Quando o download estiver concluído, selecione o botão **Open** no Microsoft Edge para abrir o ficheiro em Beta do Espectador 3D.
+1. Quando o download estiver concluído, selecione o botão **'Abrir'** em Microsoft Edge para abrir o ficheiro em Beta do Espectador 3D.
 
-O ficheiro descarregado pode ser acedido e aberto novamente mais tarde, utilizando Downloads no Microsoft Edge. Para guardar um modelo 3D e garantir o acesso continuado, descarregue o ficheiro no seu PC e guarde-o na sua conta OneDrive. O ficheiro pode então ser aberto a partir da aplicação OneDrive em HoloLens.
+O ficheiro descarregado pode ser acedido e aberto novamente mais tarde, utilizando Downloads em Microsoft Edge. Para guardar um modelo 3D e garantir o acesso continuado, descarregue o ficheiro no seu PC e guarde-o para a sua conta OneDrive. O ficheiro pode então ser aberto a partir da aplicação OneDrive no HoloLens.
 
 > [!NOTE]
-> Alguns sites com modelos FBX transferíveis fornecem-nos em formato ZIP comprimido. A Beta do Espectador 3D não pode abrir ficheiros ZIP diretamente. Em vez disso, utilize o seu PC para extrair o ficheiro FBX e guarde-o na sua conta OneDrive. O ficheiro pode então ser aberto a partir da aplicação OneDrive em HoloLens.
+> Alguns sites com modelos FBX transferíveis fornecem-nos em formato ZIP comprimido. A Beta do Espectador 3D não pode abrir ficheiros ZIP diretamente. Em vez disso, utilize o seu PC para extrair o ficheiro FBX e guarde-o na sua conta OneDrive. O ficheiro pode então ser aberto a partir da aplicação OneDrive no HoloLens.
 
-### <a name="open-an-fbx-file-from-onedrive"></a>Abra um ficheiro FBX da OneDrive
+### <a name="open-an-fbx-file-from-onedrive"></a>Abra um ficheiro FBX a partir de OneDrive
 
-Os ficheiros FBX podem ser abertos a partir do OneDrive utilizando a aplicação OneDrive em HoloLens. Certifique-se de que instalou o OneDrive utilizando a aplicação da Microsoft Store no HoloLens e que já carregou o ficheiro FBX para o OneDrive no seu PC.
+Os ficheiros FBX podem ser abertos a partir de OneDrive utilizando a aplicação OneDrive no HoloLens. Certifique-se de que instalou OneDrive usando Microsoft Store aplicação no HoloLens e que já carregou o ficheiro FBX para OneDrive no seu PC.
 
-Uma vez no OneDrive, os ficheiros FBX podem ser abertos nos HoloLens utilizando beta do espectador 3D de uma de duas maneiras:
+Uma vez em OneDrive, os ficheiros FBX podem ser abertos no HoloLens utilizando a Beta do Espectador 3D de uma de duas maneiras:
 
-- Lance o OneDrive nos HoloLens e selecione o ficheiro FBX para o abrir em Beta do Espectador 3D.
-- Lançar Beta do Espectador 3D, toque de ar para mostrar a barra de ferramentas e selecione **Open File**. O OneDrive será lançado, permitindo-lhe selecionar um ficheiro FBX.
+- Lançar OneDrive no HoloLens e selecione o ficheiro FBX para o abrir em Beta do Espectador 3D.
+- Lançar Beta do Espectador 3D, toque de ar para mostrar a barra de ferramentas e selecione **Open File**. OneDrive será lançado, permitindo-lhe selecionar um ficheiro FBX.
 
 ## <a name="troubleshooting"></a>Resolução de problemas
 
@@ -189,9 +189,9 @@ Para obter mais informações, consulte [a Otimização de modelos 3D para beta]
 
 A Beta do Espectador 3D está automaticamente associada à extensão de ficheiro .fbx quando esta é instalada.
 
-Se tentar abrir um ficheiro FBX e ver uma caixa de diálogo que o direcione para a Microsoft Store, não tem atualmente uma aplicação associada à extensão de ficheiro .fbx nos HoloLens.
+Se tentar abrir um ficheiro FBX e ver uma caixa de diálogo que o direcione para Microsoft Store, não tem atualmente uma aplicação associada à extensão de ficheiro .fbx no HoloLens.
 
-Verifique se a Beta do Visualizador 3D está instalada. Se não estiver instalado, descarregue-o a partir da Microsoft Store no HoloLens.
+Verifique se a Beta do Visualizador 3D está instalada. Se não estiver instalado, descarregue-o a partir de Microsoft Store no HoloLens.
 
 Se o 3D Viewer Beta já estiver instalado, lance o 3D Viewer Beta e tente abrir novamente o ficheiro. Se o problema persistir, desinstale e reinstale a Beta do Visualizador 3D. Isto irá reassutar a extensão de ficheiro .fbx com beta do espectador 3D.
 
@@ -199,9 +199,9 @@ Se tentar abrir um ficheiro FBX abre uma aplicação que não seja a Beta do Esp
 
 ### <a name="the-open-file-button-in-3d-viewer-beta-doesnt-launch-an-app"></a>O botão Open File em Beta do Espectador 3D não lança uma aplicação
 
-O botão **Ficheiro Aberto** abrirá a aplicação associada à função de selecionador de ficheiros em HoloLens. Se o OneDrive estiver instalado, o botão **Ficheiro Aberto** deverá lançar o OneDrive. No entanto, se não existir atualmente nenhuma aplicação associada à função de selecionador de ficheiros instalada no HoloLens, será direcionada para a Microsoft Store.
+O botão **Ficheiro Aberto** abrirá a aplicação associada à função de selecionador de ficheiros no HoloLens. Se OneDrive estiver instalado, o botão **Ficheiro Aberto** deverá OneDrive. No entanto, se não existir atualmente nenhuma aplicação associada à função de selecionador de ficheiros instalada no HoloLens, será direcionado para Microsoft Store.
 
-Se o botão **Open File** lançar uma aplicação diferente da OneDrive, essa aplicação foi provavelmente instalada após o OneDrive e assumiu a associação com a função de selecionador de ficheiros. Se preferir o Lançamento do OneDrive ao selecionar o botão **Ficheiro Aberto** em Beta do Visualizador 3D, desinstale e reinstale o OneDrive.
+Se o botão **Open File** lançar uma aplicação que não OneDrive, essa aplicação foi provavelmente instalada após OneDrive e assumiu a associação com a função de selecionador de ficheiros. Se preferir OneDrive lançar ao selecionar o botão **Ficheiro Aberto** em Beta do Visualizador 3D, desinstale e reinstale OneDrive.
 
 Se o botão **'Ficheiro Aberto'** não estiver ativo, é possível que tenha atingido o limite de modelos que podem ser abertos em Beta do Espectador 3D de uma só vez. Se tiver 40 modelos abertos em Beta 3D Viewer, terá de fechar alguns antes de conseguir abrir modelos adicionais.
 
