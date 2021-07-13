@@ -1,6 +1,6 @@
 ---
 title: Requisitos de licença
-description: Mantenha-se atualizado com todos os requisitos e diretrizes de licenciamento necessários para a gestão de dispositivos móveis, HoloLens e Remote Assist.
+description: Mantenha-se atualizado com todos os requisitos e diretrizes de licenciamento necessários para a gestão de dispositivos móveis, HoloLens e Assistência Remota.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -12,49 +12,102 @@ ms.date: 1/23/2020
 ms.reviewer: ''
 manager: bradke
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d0d8aa648df7901dec8636942e43aa549e626d7e
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379913"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635896"
 ---
-# <a name="license-requirements"></a><span data-ttu-id="c9308-103">Requisitos de licença</span><span class="sxs-lookup"><span data-stu-id="c9308-103">License requirements</span></span>
+# <a name="license-requirements"></a><span data-ttu-id="39365-103">Requisitos de licença</span><span class="sxs-lookup"><span data-stu-id="39365-103">License requirements</span></span>
 
-## <a name="mobile-device-management-mdm-licenses-guidance"></a><span data-ttu-id="c9308-104">Orientação para as licenças de gestão de dispositivos móveis (MDM)</span><span class="sxs-lookup"><span data-stu-id="c9308-104">Mobile Device Management (MDM) Licenses Guidance</span></span>
+## <a name="hololens-2-device-managed"></a><span data-ttu-id="39365-104">HoloLens 2 Dispositivo (gerido)</span><span class="sxs-lookup"><span data-stu-id="39365-104">HoloLens 2 Device (managed)</span></span>
 
-<span data-ttu-id="c9308-105">Se planeia gerir os seus dispositivos HoloLens, precisará do Azure AD e de um MDM.</span><span class="sxs-lookup"><span data-stu-id="c9308-105">If you plan on managing your HoloLens devices, you will need Azure AD and an MDM.</span></span> <span data-ttu-id="c9308-106">O Ative Diretor (AD) não pode ser utilizado para gerir dispositivos HoloLens.</span><span class="sxs-lookup"><span data-stu-id="c9308-106">Active Director (AD) cannot be used to manage HoloLens devices.</span></span>
-<span data-ttu-id="c9308-107">Se planeia utilizar um MDM diferente do Intune, é necessário um [Diretório Ativo Azure.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)</span><span class="sxs-lookup"><span data-stu-id="c9308-107">If you plan on using an MDM other than Intune, an [Azure Active Directory Licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.</span></span>
-<span data-ttu-id="c9308-108">Se planeia usar o Intune como seu MDM, leia a [lista de suites](https://docs.microsoft.com/intune/fundamentals/licenses) que incluem licenças Intune.</span><span class="sxs-lookup"><span data-stu-id="c9308-108">If you plan on using Intune as your MDM, read up on the [list of suites](https://docs.microsoft.com/intune/fundamentals/licenses) that include Intune licenses.</span></span> <span data-ttu-id="c9308-109">**Por favor, note que a Azure AD está incluída na maioria destas suites.**</span><span class="sxs-lookup"><span data-stu-id="c9308-109">**Please note that Azure AD is included in the majority of these suites.**</span></span>
+[<span data-ttu-id="39365-105">Conta Azure AD</span><span class="sxs-lookup"><span data-stu-id="39365-105">Azure AD Account</span></span>](https://docs.microsoft.com/azure/active-directory/)
 
-## <a name="identify-the-licenses-needed-for-your-scenario-and-products"></a><span data-ttu-id="c9308-110">Identifique as licenças necessárias para o seu cenário e produtos</span><span class="sxs-lookup"><span data-stu-id="c9308-110">Identify the licenses needed for your scenario and products</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="39365-106">O Ative Directory (AD) não pode ser utilizado para gerir HoloLens dispositivos.</span><span class="sxs-lookup"><span data-stu-id="39365-106">Active Directory (AD) cannot be used to manage HoloLens devices.</span></span>
 
-### <a name="hololens-1st-gen-licenses-requirements"></a><span data-ttu-id="c9308-111">Requisitos de licenças hololens (1ª gen)</span><span class="sxs-lookup"><span data-stu-id="c9308-111">HoloLens (1st gen) Licenses Requirements</span></span>
+<span data-ttu-id="39365-107">[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) ou outro MDM.</span><span class="sxs-lookup"><span data-stu-id="39365-107">[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) or another MDM.</span></span>
+- <span data-ttu-id="39365-108">[Windows Autopilot para HoloLens 2](hololens2-autopilot.md)- simplifica a experiência de fornecimento tanto para administradores de TI como para utilizadores finais.</span><span class="sxs-lookup"><span data-stu-id="39365-108">[Windows Autopilot for HoloLens 2](hololens2-autopilot.md)- simplifies the provisioning experience for both IT admins and end users.</span></span> <span data-ttu-id="39365-109">Os administradores de TI podem pré-configurar HoloLens 2 políticas, e após o primeiro arranque, os dispositivos serão implantados em estado de preparação para o negócio com zero interação do utilizador final.</span><span class="sxs-lookup"><span data-stu-id="39365-109">IT admins can preconfigure HoloLens 2 policies, and upon first boot, devices will be deployed in business-ready state with zero end-user interaction.</span></span> 
 
-<span data-ttu-id="c9308-112">Poderá ser necessário atualizar o seu dispositivo HoloLens (1º género) para o Windows Holographic for Business.</span><span class="sxs-lookup"><span data-stu-id="c9308-112">You may need to upgrade your HoloLens (1st gen) device to Windows Holographic for Business.</span></span> <span data-ttu-id="c9308-113">(Consulte [as funcionalidades comerciais da HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions) para determinar se precisa de fazer upgrade).</span><span class="sxs-lookup"><span data-stu-id="c9308-113">(See [HoloLens commercial features](holoLens-commercial-features.md#feature-comparison-between-editions) to determine if you need to upgrade).</span></span>
+  > [!NOTE]
+  > <span data-ttu-id="39365-110">Windows O piloto automático requer que [o Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) e a [inscrição automática](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) sejam configurados primeiro para o fluxo de piloto automático de baixo toque e para a implementação do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="39365-110">Windows Autopilot requires [Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) and [Auto-enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) to be configured first for the low-touch Autopilot flow and device deployment.</span></span> 
 
- <span data-ttu-id="c9308-114">Em caso afirmativo, terá de fazer o seguinte:</span><span class="sxs-lookup"><span data-stu-id="c9308-114">If so, you will need to do the following:</span></span>
+### <a name="business-use-case"></a><span data-ttu-id="39365-111">Caso de utilização de negócios:</span><span class="sxs-lookup"><span data-stu-id="39365-111">Business Use Case:</span></span> 
 
-- <span data-ttu-id="c9308-115">Adquirir um ficheiro XML de licença da HoloLens Enterprise</span><span class="sxs-lookup"><span data-stu-id="c9308-115">Acquire a HoloLens Enterprise license XML file</span></span>
-- <span data-ttu-id="c9308-116">Aplique o ficheiro XML nos HoloLens.</span><span class="sxs-lookup"><span data-stu-id="c9308-116">Apply the XML file to the HoloLens.</span></span> <span data-ttu-id="c9308-117">Pode fazê-lo através de um [pacote de Provisioning](hololens-provisioning.md) ou através do seu [Gestor de Dispositivos Móveis](https://docs.microsoft.com/intune/configuration/holographic-upgrade)</span><span class="sxs-lookup"><span data-stu-id="c9308-117">You can do this through a [Provisioning package](hololens-provisioning.md) or through your [Mobile Device Manager](https://docs.microsoft.com/intune/configuration/holographic-upgrade)</span></span>
+- <span data-ttu-id="39365-112">[Cenário de implantação A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - prova de conceito ou implantação de pilotos.</span><span class="sxs-lookup"><span data-stu-id="39365-112">[Deployment Scenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - proof-of-concept or pilot deployment.</span></span>
 
-### <a name="remote-assist-license-requirements"></a><span data-ttu-id="c9308-118">Requisitos de licença de assistência remota</span><span class="sxs-lookup"><span data-stu-id="c9308-118">Remote Assist License Requirements</span></span>
+- <span data-ttu-id="39365-113">[Cenário de implantação B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - implantação à escala.</span><span class="sxs-lookup"><span data-stu-id="39365-113">[Deployment Scenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - deployment at scale.</span></span>
 
-<span data-ttu-id="c9308-119">Certifique-se de que tem o licenciamento e o dispositivo necessários, que pode consultar a documentação dos [requisitos.](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)</span><span class="sxs-lookup"><span data-stu-id="c9308-119">Make sure you have the required licensing and device, which you can check in the [requirements](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements) documentation.</span></span>
+## <a name="hololens-2-device-only-non-managed"></a><span data-ttu-id="39365-114">HoloLens 2 Apenas dispositivo (não gerido)</span><span class="sxs-lookup"><span data-stu-id="39365-114">HoloLens 2 Device-only (non-managed)</span></span>
 
-1. [<span data-ttu-id="c9308-120">Licença de Assistência Remota</span><span class="sxs-lookup"><span data-stu-id="c9308-120">Remote Assist License</span></span>](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. <span data-ttu-id="c9308-121">Ou tente um [julgamento de Assistência Remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)</span><span class="sxs-lookup"><span data-stu-id="c9308-121">Or try a [Remote Assist trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)</span></span>
-1. [<span data-ttu-id="c9308-122">Equipas Freemium/Equipas</span><span class="sxs-lookup"><span data-stu-id="c9308-122">Teams Freemium/Teams</span></span>](https://products.office.com/microsoft-teams/free)
-1. [<span data-ttu-id="c9308-123">Licença Azure Ative Directory (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="c9308-123">Azure Active Directory (Azure AD) License</span></span>](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+<span data-ttu-id="39365-115">Ao utilizar uma conta Microsoft (MSA) ou uma conta local não são necessárias licenças adicionais para estas contas.</span><span class="sxs-lookup"><span data-stu-id="39365-115">When using either a Microsoft Account (MSA) or Local account no additional licenses are required for these accounts.</span></span>
 
-<span data-ttu-id="c9308-124">Se planeia implementar **[este cenário de inquilinos cruzados,](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)** poderá necessitar de uma licença de Barreiras de Informação.</span><span class="sxs-lookup"><span data-stu-id="c9308-124">If you plan on implementing **[this cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)**, you may need an Information Barriers license.</span></span> <span data-ttu-id="c9308-125">Consulte [este artigo](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) para determinar se é necessária uma Licença de Barreira de Informação.</span><span class="sxs-lookup"><span data-stu-id="c9308-125">Please see [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.</span></span>
+[<span data-ttu-id="39365-116">Conta Local</span><span class="sxs-lookup"><span data-stu-id="39365-116">Local Account</span></span>](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
 
-### <a name="guides-license-requirements"></a><span data-ttu-id="c9308-126">Requisitos de licença de guias</span><span class="sxs-lookup"><span data-stu-id="c9308-126">Guides License Requirements</span></span>
+- <span data-ttu-id="39365-117">Esta conta deve ser [disponibilizada](hololens-provisioning.md#provisioning-package-hololens-wizard) com antecedência com Windows Designer de Configuração (WCD).</span><span class="sxs-lookup"><span data-stu-id="39365-117">This account must be [provisioned](hololens-provisioning.md#provisioning-package-hololens-wizard) ahead of time with Windows Configuration Designer (WCD).</span></span>
 
-<span data-ttu-id="c9308-127">Confira os [requisitos de licenciamento e dispositivo atualizados.](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements)</span><span class="sxs-lookup"><span data-stu-id="c9308-127">Check out the [updated licensing and device requirements](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).</span></span>
+[<span data-ttu-id="39365-118">Conta Microsoft (MSA)</span><span class="sxs-lookup"><span data-stu-id="39365-118">Microsoft Account (MSA)</span></span>](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
-1. [<span data-ttu-id="c9308-128">Licença Azure Ative Directory (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="c9308-128">Azure Active Directory (Azure AD) License</span></span>](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [<span data-ttu-id="c9308-129">Power BI</span><span class="sxs-lookup"><span data-stu-id="c9308-129">Power BI</span></span>](https://powerbi.microsoft.com/desktop/)
-1. [<span data-ttu-id="c9308-130">Guides</span><span class="sxs-lookup"><span data-stu-id="c9308-130">Guides</span></span>](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+> [!WARNING]
+> <span data-ttu-id="39365-119">Vários utilizadores não são suportados por um dispositivo que utilize qualquer uma destas contas.</span><span class="sxs-lookup"><span data-stu-id="39365-119">Multiple users are not supported for a device using either of these accounts.</span></span>
+
+### <a name="business-use-case"></a><span data-ttu-id="39365-120">Caso de utilização de negócios:</span><span class="sxs-lookup"><span data-stu-id="39365-120">Business Use Case:</span></span> 
+
+- <span data-ttu-id="39365-121">[Cenário de implantação C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - implantação offline ou segura.</span><span class="sxs-lookup"><span data-stu-id="39365-121">[Deployment Scenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - offline or secure deployment.</span></span>
+ 
+## <a name="dynamics-365-licensing-and-requirements"></a><span data-ttu-id="39365-122">Dinâmica 365 Licenciamento e Requisitos</span><span class="sxs-lookup"><span data-stu-id="39365-122">Dynamics 365 Licensing and Requirements</span></span>
+
+### <a name="dynamics-365-remote-assist"></a><span data-ttu-id="39365-123">Dinâmico 365 Assistência Remota</span><span class="sxs-lookup"><span data-stu-id="39365-123">Dynamics 365 Remote Assist</span></span> 
+
+#### <a name="admin"></a><span data-ttu-id="39365-124">Admin</span><span class="sxs-lookup"><span data-stu-id="39365-124">Admin</span></span>
+
+- <span data-ttu-id="39365-125">Conta AZURE AD (necessária para a aquisição da subscrição e atribuição de licenças)</span><span class="sxs-lookup"><span data-stu-id="39365-125">Azure AD account (required for purchasing the subscription and assigning licenses)</span></span>
+- <span data-ttu-id="39365-126">[Subscrição de Assistência Remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [Ensaio de Assistência Remota)](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)</span><span class="sxs-lookup"><span data-stu-id="39365-126">[Remote Assist subscription](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (or [Remote Assist Trial](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))</span></span>
+    
+#### <a name="dynamics-365-remote-assist-user"></a><span data-ttu-id="39365-127">Dynamics 365 Remote Assist utilizador</span><span class="sxs-lookup"><span data-stu-id="39365-127">Dynamics 365 Remote Assist user</span></span>
+
+- <span data-ttu-id="39365-128">Conta do Azure AD</span><span class="sxs-lookup"><span data-stu-id="39365-128">Azure AD account</span></span>
+
+- <span data-ttu-id="39365-129">Licença de Assistência Remota</span><span class="sxs-lookup"><span data-stu-id="39365-129">Remote Assist license</span></span> 
+
+  > [!NOTE]
+  > <span data-ttu-id="39365-130">Microsoft Teams está agregado com assistência remota</span><span class="sxs-lookup"><span data-stu-id="39365-130">Microsoft Teams is bundled with Remote Assist</span></span>
+
+- <span data-ttu-id="39365-131">Conectividade da rede</span><span class="sxs-lookup"><span data-stu-id="39365-131">Network Connectivity</span></span>
+
+#### <a name="microsoft-teams-user"></a><span data-ttu-id="39365-132">Microsoft Teams utilizador</span><span class="sxs-lookup"><span data-stu-id="39365-132">Microsoft Teams user</span></span>
+
+- <span data-ttu-id="39365-133">Conta do Azure AD</span><span class="sxs-lookup"><span data-stu-id="39365-133">Azure AD account</span></span>
+
+- <span data-ttu-id="39365-134">Microsoft Teams ou [Teams Freemium.](https://products.office.com/microsoft-teams/free)</span><span class="sxs-lookup"><span data-stu-id="39365-134">Microsoft Teams or [Teams Freemium](https://products.office.com/microsoft-teams/free).</span></span>
+
+- <span data-ttu-id="39365-135">Conectividade de rede</span><span class="sxs-lookup"><span data-stu-id="39365-135">Network connectivity</span></span>
+
+<span data-ttu-id="39365-136">Se planeia implementar este [cenário de inquilinos cruzados,](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)poderá necessitar de uma licença de Barreiras de Informação.</span><span class="sxs-lookup"><span data-stu-id="39365-136">If you plan on implementing this [cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), you may need an Information Barriers license.</span></span> <span data-ttu-id="39365-137">Consulte [este artigo](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) para determinar se é necessária uma Licença de Barreira de Informação.</span><span class="sxs-lookup"><span data-stu-id="39365-137">See [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.</span></span>
+
+### <a name="dynamics-365-guides"></a><span data-ttu-id="39365-138">Dinâmica 365 Guias</span><span class="sxs-lookup"><span data-stu-id="39365-138">Dynamics 365 Guides</span></span> 
+
+#### <a name="admin"></a><span data-ttu-id="39365-139">Admin</span><span class="sxs-lookup"><span data-stu-id="39365-139">Admin</span></span>
+
+- <span data-ttu-id="39365-140">Conta AZURE AD (necessária para a aquisição da subscrição e atribuição de licenças)</span><span class="sxs-lookup"><span data-stu-id="39365-140">Azure AD account (required for purchasing the subscription and assigning licenses)</span></span>
+- <span data-ttu-id="39365-141">Subscrição de [Guias Dinâmicos](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one) 365 ou teste gratuito</span><span class="sxs-lookup"><span data-stu-id="39365-141">Dynamics 365 [Guides subscription or free trial](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)</span></span>
+
+#### <a name="guides-author"></a><span data-ttu-id="39365-142">Autor de Guias</span><span class="sxs-lookup"><span data-stu-id="39365-142">Guides Author</span></span>
+
+1. <span data-ttu-id="39365-143">Conta do Azure AD</span><span class="sxs-lookup"><span data-stu-id="39365-143">Azure AD account</span></span>
+1. [<span data-ttu-id="39365-144">Licença de Guias Dinâmicos 365</span><span class="sxs-lookup"><span data-stu-id="39365-144">Dynamics 365 Guides license</span></span>](/dynamics365/mixed-reality/guides/requirements)
+1. <span data-ttu-id="39365-145">Aplicação Dinâmica 365 Guias instalada num PC ou HoloLens</span><span class="sxs-lookup"><span data-stu-id="39365-145">Dynamics 365 Guides application installed on a PC or HoloLens</span></span>
+1. <span data-ttu-id="39365-146">[Power BI Desktop](https://powerbi.microsoft.com/desktop/) (usado para ver o painel de instrumentos Analytics)</span><span class="sxs-lookup"><span data-stu-id="39365-146">[Power BI Desktop](https://powerbi.microsoft.com/desktop/) (used to view the Analytics dashboard)</span></span>
+1. <span data-ttu-id="39365-147">Papel de autor (para criar guias)</span><span class="sxs-lookup"><span data-stu-id="39365-147">Author role (for creating guides)</span></span>
+1. <span data-ttu-id="39365-148">Conectividade da rede</span><span class="sxs-lookup"><span data-stu-id="39365-148">Network Connectivity</span></span>
+
+#### <a name="guides-user"></a><span data-ttu-id="39365-149">Guias Utilizador</span><span class="sxs-lookup"><span data-stu-id="39365-149">Guides User</span></span>
+
+1. <span data-ttu-id="39365-150">Conta do Azure AD</span><span class="sxs-lookup"><span data-stu-id="39365-150">Azure AD account</span></span>
+1. [<span data-ttu-id="39365-151">Licença de Guias Dinâmicos 365</span><span class="sxs-lookup"><span data-stu-id="39365-151">Dynamics 365 Guides license</span></span>](/dynamics365/mixed-reality/guides/requirements)
+1. <span data-ttu-id="39365-152">Aplicação Dynamics 365 Guides instalada num HoloLens</span><span class="sxs-lookup"><span data-stu-id="39365-152">Dynamics 365 Guides app installed on a HoloLens</span></span>
+1. <span data-ttu-id="39365-153">Função do operador (para testar ou utilizar guias)</span><span class="sxs-lookup"><span data-stu-id="39365-153">Operator role (for testing or using guides)</span></span>
+1. <span data-ttu-id="39365-154">Conectividade da rede</span><span class="sxs-lookup"><span data-stu-id="39365-154">Network Connectivity</span></span>
