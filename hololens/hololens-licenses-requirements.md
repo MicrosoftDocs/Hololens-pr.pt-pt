@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659561"
+ms.locfileid: "114661717"
 ---
 # <a name="license-requirements"></a>Requisitos de licença
 
@@ -27,8 +27,8 @@ Esta página fornece uma visão geral de alto nível das licenças e contas nece
 
 ## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 requisitos de licença e conta
 
-
-|                   | HoloLens geridos | HoloLens não geridos |
+ 
+|       &nbsp;      | HoloLens geridos | HoloLens não geridos |
 |-------------------|-----------------|---------------------|
 | **Caso de uso de negócios** | | |
 | [Implementar para dispositivos ligados à nuvem - prova de implementação de conceito/piloto](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
