@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1de9687174bf9c1de2e2b15ee03aa841254b0b82
-ms.sourcegitcommit: 2988afb1d7792c9e4bae15485cd52d6eff7e27c8
+ms.openlocfilehash: b7ce9f94fb6d3074f8b7f517af6bd70c78462ddc
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113685053"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659544"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -38,7 +38,6 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 Melhorias e correções na atualização:
 
 - O Portal do Dispositivo tem métodos melhorados de notificar o cliente quando o Explorador de Ficheiros encontra problemas de abertura de ficheiros bloqueados.
-- Ao utilizar o HoloLens 2 Emulator num PC com adaptadores gráficos integrados e discretos, o emulador será agora capaz de permitir a aceleração de gráficos de hardware, embora possa utilizar o adaptador integrado menos potente.  Anteriormente, a aceleração do hardware não podia ser ativada, reportando frequentemente uma falha gráfica com o Código 43.  Em alguns casos, o emulador não arrancaria com sucesso, mas agora vai.
 - O upload de ficheiros, o download, o renomeamento e a eliminação são agora corrigidos quando se utilizam https em todos os navegadores suportados.
 - Problema fixo em que Wi-Fi proxy não pode ser salvo quando Wi-Fi propriedades UI é lançado a partir de **Definições -> Rede & Internet -> Status -> Properties**.
 - Abordou um problema em torno da remoção dos certificados eSIM através de atualizações do SISTEMA. Esta correção garante que os certificados eSIM e componentes conexos sejam removidos ao atualizar a versão 21H1.
@@ -49,8 +48,8 @@ Melhorias e correções na atualização:
 - Construção 19041.1157
 
 Melhorias e correções na atualização:
+
 - O Portal do Dispositivo tem métodos melhorados de notificar o cliente quando o Explorador de Ficheiros encontra problemas de abertura de ficheiros bloqueados. 
-- Ao utilizar o HoloLens 2 Emulator num PC com adaptadores gráficos integrados e discretos, o emulador será agora capaz de permitir a aceleração de gráficos de hardware, embora possa utilizar o adaptador integrado menos potente.  Anteriormente, a aceleração do hardware não podia ser ativada, reportando frequentemente uma falha gráfica com o Código 43.  Em alguns casos, o emulador não arrancaria com sucesso, mas agora vai.
 - O upload de ficheiros, o download, o renomeamento e a eliminação são agora corrigidos quando se utilizam https em todos os navegadores suportados.
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holográfico, versão 21H1 - junho 2021 Atualização

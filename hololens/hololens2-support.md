@@ -7,12 +7,12 @@ description: Opções de suporte de realidade mista para pequenos a grandes clie
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636219"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659102"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quais são as opções de apoio à Realidade Mista e de ajuda?
 
@@ -79,6 +79,7 @@ Se submeter uma nova pergunta ao Stack Overflow, utilize uma ou mais das seguint
 
 - [Compre HoloLens 2](https://www.microsoft.com/hololens/buy) utilize esta opção para saber mais sobre HoloLens 2 preços e opções
 - Veja abaixo a lista de números de escritórios de negócios para falar com os nossos colegas de Suporte à Loja Comercial se precisar de ajuda através do suporte telefónico
+- Para compras fora do Microsoft Store, consulte esta [lista de HoloLens 2 revendedores autorizados](hololens2-purchase.md) e países onde está disponível HoloLens 2.
 
 ### <a name="commercial-store-support-numbers"></a>Números de Suporte à Loja Comercial
 >[!Note]

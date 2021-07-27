@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635675"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659119"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Contribuindo para a documentação HoloLens
 
@@ -53,11 +53,16 @@ Utilize o seguinte fluxo de trabalho para fazer atualizações a *um artigo exis
 
 1. Navegue para o artigo que pretende editar na pasta "mixed-reality-docs".
 
-2. Selecione o botão de edição (ícone de lápis) no superior direito, que irá automaticamente desviar um ramo descartável do ramo 'master'.
+2. Selecione o botão de edição (ícone de lápis) no superior direito.
 
    ![Editar um artigo.](images/editpage.png)
+
+   Isto irá automaticamente desviar um ramo descartável do ramo padrão, _mestre_.
+
+   > [!NOTE]
+   > Este artigo contém referências ao _master_, um termo que a Microsoft já não utiliza. Quando o termo for removido do software, vamos removê-lo deste artigo.
    
-3. Editar o conteúdo do artigo de acordo com o ["Básico de Markdown".](#markdown-basics)
+3. Editar o conteúdo do artigo de acordo com os [fundamentos de Markdown](#markdown-basics).
 
 4. Atualizar metadados no topo de cada artigo:
 
@@ -70,7 +75,7 @@ Utilize o seguinte fluxo de trabalho para fazer atualizações a *um artigo exis
    
 5. Quando tiver concluído as edições de artigo, desloque-se para baixo e **selecione Alterar ficheiros**.
 
-6. Na página seguinte, selecione **Criar pedido de puxar** para fundir o seu ramo criado automaticamente em 'master'.
+6. Na página seguinte, **selecione Criar pedido de puxar** para fundir o seu ramo criado automaticamente no ramo predefinido, _mestre_.
 
 7. Repita os passos acima para o próximo artigo que pretende editar.
 
@@ -102,9 +107,12 @@ Se adicionar um redirecionamento, certifique-se de eliminar o ficheiro antigo ta
 
 Utilize o seguinte fluxo de trabalho para *criar novos artigos* na documentação repo via GitHub num navegador web:
 
-1. Crie um garfo fora do ramo 'master' microsoftDocs/de realidade mista (utilizando o botão **Fork** no topo direito).
+1. Crie um garfo fora do ramo padrão, _mestre,_ do MicrosoftDocs/mixed-reality utilizando o botão **Fork** no topo direito.
 
-   ![Fork o ramo principal.](images/forkbranch.png)
+   ![Fork o ramo padrão, atualmente chamado de "mestre".](images/forkbranch.png)
+
+   > [!NOTE]
+   > Este artigo contém referências ao _master_, um termo que a Microsoft já não utiliza. Quando o termo for removido do software, vamos removê-lo deste artigo.
    
 2. Na pasta "mixed reality-docs", selecione **Criar um novo ficheiro** no topo direito.
 
@@ -129,15 +137,15 @@ Utilize o seguinte fluxo de trabalho para *criar novos artigos* na documentaçã
    ---
    ```
 
-5. Preencha os campos de metadados relevantes de acordo com as instruções na [secção acima](#editing-an-existing-article).
+5. Preencha os campos de metadados relevantes, tal como descrito anteriormente na [Edição de um artigo existente](#editing-an-existing-article).
 
-6. Escreva conteúdo de artigos utilizando [o básico de Markdown](#markdown-basics).
+6. Escreva o conteúdo do artigo utilizando [o básico de Markdown](#markdown-basics).
 
 7. Adicione uma `## See also` secção na parte inferior do artigo com links para outros artigos relevantes.
 
 8. Quando terminar, **selecione Comprometa novo ficheiro**.
 
-9. Selecione **novo pedido de puxar** e misture o ramo 'master' do seu garfo no MicrosoftDocs/mixed-reality 'master' (certifique-se de que a seta está a apontar para o caminho correto).
+9. Selecione **novo pedido de puxar** e misture o ramo _principal_ do seu garfo no MicrosoftDocs/mixed-reality _master_ (certifique-se de que a seta aponta para o destino correto).
 
    ![Crie o pedido de puxar do seu garfo para o MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
@@ -150,7 +158,7 @@ Os seguintes recursos irão ajudá-lo a aprender a editar documentação utiliza
 
 ### <a name="adding-tables"></a>Adicionar tabelas
 
-Devido à forma como docs.microsoft.com tabelas de estilos, eles não terão fronteiras ou estilos personalizados, mesmo que experimente o CSS inline. Parece funcionar por um curto período de tempo, mas eventualmente a plataforma irá tirar o styling da mesa. Então planeie com antecedência e mantenha as suas mesas simples. [Aqui está um site que facilita as mesas de Markdown.](https://www.tablesgenerator.com/markdown_tables)
+Devido à forma como docs.microsoft.com tabelas de estilos, eles não terão fronteiras ou estilos personalizados, mesmo que experimente o CSS inline. Parece funcionar por um curto período de tempo, mas eventualmente a plataforma irá tirar o styling da mesa. Então planeie com antecedência e mantenha as suas mesas simples. Aqui está um site que facilita as mesas de Markdown: [Gerador de https://www.tablesgenerator.com/markdown_tables) Mesas].
 
 A [extensão de markdown do Docs para Visual Studio Código](/teamblog/docs-extension) também facilita a geração de mesas se estiver a utilizar Visual Studio Código [(ver abaixo)](#using-visual-studio-code) para editar a documentação.
 
@@ -164,7 +172,7 @@ Terá de fazer o upload das suas imagens para a pasta "mixed-reality-docs/images
 >1. Forked the MicrosoftDocs/mixed-reality repo.
 >2. Editou o artigo no seu garfo.
 >3. Carregou as imagens a que se refere no seu artigo para a pasta "mixed-reality-docs/images" no seu garfo.
->4. Criei um **pedido de puxar** para fundir o seu garfo no ramo 'master' do MicrosoftDocs/mixed-reality.
+>4. Criei um **pedido de puxar** para fundir o seu garfo no ramo _principal_ microsoftDocs/de realidade mista.
 >
 >Para aprender a configurar o seu próprio repo forcado, siga as instruções para [criar um novo artigo](#creating-a-new-article).
 
@@ -175,14 +183,14 @@ Ao editar em GitHub através de um navegador web, pode selecionar o **separador 
 >[!NOTE]
 >Pré-visualizar as suas alterações no review.docs.microsoft.com só está disponível para os colaboradores da Microsoft
 
-Funcionários da Microsoft: uma vez que as suas contribuições tenham sido fundidas na sucursal 'master', pode rever o conteúdo antes de ser divulgado em </hololens?branch=master>. Encontre o seu artigo utilizando a tabela de conteúdos na coluna esquerda.
+Funcionários da Microsoft: Quando as suas contribuições tiverem sido fundidas no ramo padrão, _mestre,_ pode rever o conteúdo antes de ser divulgado em </hololens?branch=master>. Encontre o seu artigo utilizando a tabela de conteúdos na coluna esquerda.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Edição no navegador vs. edição com um cliente de desktop
 
 A edição no navegador é a forma mais fácil de fazer mudanças rápidas, no entanto, existem algumas desvantagens:
 
 - Não se ouve o feitiço.
-- Não obtém qualquer ligação inteligente a outros artigos (tem de escrever manualmente o nome de ficheiro do artigo).
+- Não obtém qualquer ligação inteligente a outros artigos (tem de escrever manualmente o nome do ficheiro do artigo).
 - Pode ser um ausoso carregar e fazer referência a imagens.
 
 Se preferir não lidar com estes problemas, use um cliente de desktop como [Visual Studio Code](https://code.visualstudio.com/) com [algumas extensões úteis](#useful-extensions) ao contribuir.
@@ -216,7 +224,7 @@ Utilize o seguinte fluxo de trabalho para erosão da documentação com Visual S
 
 1. Certifique-se de que o seu garfo clonado está atualizado com o repo oficial.
 
-   1. Num navegador web, crie um pedido de puxar para sincronizar as recentes alterações de outros contribuintes no MicrosoftDocs/mixed-reality 'master' para o seu garfo (certifique-se de que a seta está apontando para o caminho certo).
+   1. Num navegador web, crie um pedido de puxar para sincronizar as recentes alterações de outros contribuintes no ramo padrão do MicrosoftDocs/mixed-reality, _master,_ para o seu garfo (certifique-se de que a seta está apontando para o destino correto).
       
       ![Sync alterações de MicrosoftDocs/mixed-reality para o seu garfo](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Utilize o seguinte fluxo de trabalho para erosão da documentação com Visual S
       
       ![Clique no botão de sincronização](images/sync-back.png)
       
-3. Num navegador web, crie um pedido de puxar para sincronizar novas alterações no seu garfo de volta ao MicrosoftDocs/mixed-reality 'master' (certifique-se de que a seta está a apontar para o caminho correto).
+3. Num navegador web, crie um pedido de puxar para sincronizar novas alterações no seu garfo de volta ao MicrosoftDocs/mixed-reality _master_ (certifique-se de que a seta está apontando para o destino correto).
 
    ![Crie o pedido de puxar do seu garfo para o MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 

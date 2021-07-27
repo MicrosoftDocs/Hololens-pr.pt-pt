@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640288"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659561"
 ---
 # <a name="license-requirements"></a>Requisitos de licença
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2 Dispositivo (gerido)
+## <a name="overview"></a>Descrição Geral
+Esta página fornece uma visão geral de alto nível das licenças e contas necessárias para implementar dispositivos de HoloLens 2 geridos e não geridos na sua organização. Inclui também informações para licenciamento de Dinâmicos 365 [Remote Assist](#dynamics-365-remote-assist) e [Guides](#dynamics-365-guides).
 
-[Conta Azure AD](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 requisitos de licença e conta
+
+
+|                   | HoloLens geridos | HoloLens não geridos |
+|-------------------|-----------------|---------------------|
+| **Caso de uso de negócios** | | |
+| [Implementar para dispositivos ligados à nuvem - prova de implementação de conceito/piloto](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [Implementar dentro da rede da sua organização - implantação em escala](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Implementar em ambiente offline seguro](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **Licenças** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> ou <sup>2)</sup> | ✔️  | |
+| **Contas** |  | |
+| Conta Azure AD Ad | ✔️ |  |
+| Conta de Utilizador do Azure AD | ✔️ | |
+| [Conta Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Conta Local](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1</sup> [Inscrição automática](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) durante a configuração inicial do dispositivo, que regista e junta Azure Ative Directory e permite que o dispositivo seja gerido com o Intune.
+- <sup>2</sup> [Windows Autopilot para HoloLens 2](hololens2-autopilot.md) simplifica a experiência de provisionamento tanto para administradores de TI como para utilizadores finais. Os administradores de TI podem pré-configurar HoloLens 2 políticas, e após o primeiro arranque, os dispositivos serão implantados em estado de preparação para o negócio com zero interação do utilizador final.
+- <sup>3</sup> Esta conta deve ser [disponibilizada](hololens-provisioning.md#provisioning-package-hololens-wizard) com antecedência com Windows Designer de Configuração (WCD).
 
 > [!IMPORTANT]
 > O Ative Directory (AD) não pode ser utilizado para gerir HoloLens dispositivos.
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ou outro MDM.
-- [Windows Autopilot para HoloLens 2](hololens2-autopilot.md)- simplifica a experiência de fornecimento tanto para administradores de TI como para utilizadores finais. Os administradores de TI podem pré-configurar HoloLens 2 políticas, e após o primeiro arranque, os dispositivos serão implantados em estado de preparação para o negócio com zero interação do utilizador final. 
-
-  > [!NOTE]
-  > Windows O piloto automático requer que [o Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) e a [inscrição automática](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) sejam configurados primeiro para o fluxo de piloto automático de baixo toque e para a implementação do dispositivo. 
-
-### <a name="business-use-case"></a>Caso de utilização de negócios: 
-
-- [Cenário de implantação A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - prova de conceito ou implantação de pilotos.
-
-- [Cenário de implantação B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - implantação à escala.
-
-## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 Apenas dispositivo (não gerido)
-
-Ao utilizar uma conta Microsoft (MSA) ou uma conta local não são necessárias licenças adicionais para estas contas.
-
-[Conta Local](/windows/security/identity-protection/access-control/local-accounts)
-
-- Esta conta deve ser [disponibilizada](hololens-provisioning.md#provisioning-package-hololens-wizard) com antecedência com Windows Designer de Configuração (WCD).
-
-[Conta Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Vários utilizadores não são suportados por um dispositivo que utilize qualquer uma destas contas.
-
-### <a name="business-use-case"></a>Caso de utilização de negócios: 
-
-- [Cenário de implantação C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - implantação offline ou segura.
  
+> [!WARNING]
+> Vários utilizadores não são suportados para um dispositivo que utilize uma conta MSA ou local.
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Dinâmica 365 Licenciamento e Requisitos
 
 ### <a name="dynamics-365-remote-assist"></a>Dinâmico 365 Assistência Remota 
@@ -82,7 +76,7 @@ Ao utilizar uma conta Microsoft (MSA) ou uma conta local não são necessárias 
 
 - Conta do Azure AD
 
-- Microsoft Teams ou [Teams Freemium.](https://products.office.com/microsoft-teams/free)
+- Microsoft Teams ou [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Conectividade de rede
 
@@ -92,8 +86,8 @@ Se planeia implementar este [cenário de inquilinos cruzados,](/dynamics365/mixe
 
 #### <a name="admin"></a>Admin
 
-- Conta AZURE AD (necessária para a aquisição da subscrição e atribuição de licenças)
-- Subscrição de [Guias Dinâmicos](/dynamics365/mixed-reality/guides/setup-step-one) 365 ou teste gratuito
+1. Conta AZURE AD (necessária para a aquisição da subscrição e atribuição de licenças)
+2. Subscrição de [Guias Dinâmicos](/dynamics365/mixed-reality/guides/setup-step-one) 365 ou teste gratuito
 
 #### <a name="guides-author"></a>Autor de Guias
 

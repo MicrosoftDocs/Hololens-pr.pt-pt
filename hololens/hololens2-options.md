@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640479"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659034"
 ---
 # <a name="compare-hololens-2-options"></a>Comparar HoloLens 2 Opções
 
@@ -47,17 +47,6 @@ Quer seja um [profissional de TI](https://www.microsoft.com/hololens/apps) à pr
 - <sup>2</sup> - Receba um dispositivo de substituição durante a noite ou transporte expedito (mais rápido das opções disponíveis) antes de o dispositivo defeituoso ser recebido pela Microsoft.
 - <sup>3</sup> - Para questões de garantia, suporte e certificação para o Trimble XR10 com HoloLens 2 edição, [contacte a Trimble](https://fieldtech.trimble.com/en/contact-support).
 
-## <a name="countries-where-hololens-2-is-available"></a>Países onde está disponível HoloLens 2
-
-<br>
-
-| HoloLens 2 Edição                  | Mercados Apoiados               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | EUA, Canadá, Alemanha, França, Reino Unido, Irlanda, China, Japão, Austrália, Itália, Nova Zelândia, Países Baixos, Suíça, Espanha, Áustria, Suécia, Finlândia, Noruega, Dinamarca, Bélgica, Portugal, Polónia, Singapura, Hong Kong, Taiwan e Coreia do Sul |
-| HoloLens 2 com Assistência Remota | Austrália, Japão, Canadá, EUA, Áustria, Bélgica, Dinamarca, Finlândia, França, Alemanha, Itália, Países Baixos, Noruega, Espanha, Suécia, Suíça, Reino Unido e Irlanda <sup>1</sup> 
-| HoloLens 2 Edição Industrial *(no lançamento)* | EUA, Canadá, Alemanha, França, Reino Unido, Irlanda, China, Japão, Austrália, Itália, Nova Zelândia, Países Baixos, Suíça, Espanha, Áustria, Suécia, Finlândia, Noruega, Dinamarca, Bélgica, Portugal, Polónia, Singapura, Hong Kong, Taiwan e Coreia do Sul |
-| HoloLens 2 Edição de Desenvolvimento | Canadá, Alemanha, França, Reino Unido, Irlanda, Japão, Austrália, Itália, Suíça e Nova Zelândia |
-- <sup>1</sup> Esta lista é dinâmica, verifique se há atualizações
 
 ## <a name="options-overview"></a>Visão geral das opções
 

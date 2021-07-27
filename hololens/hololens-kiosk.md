@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9d9e521f3e337b3a48a60c19e52bfeb3186507af
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640360"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659595"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurar HoloLens como um quiosque
 
@@ -82,7 +82,7 @@ A tabela que se segue lista as funcionalidades de suporte do utilizador dos dife
 
 | &nbsp; |Tipos de utilizadores suportados | Inscrição automática | Vários níveis de acesso |
 | --- | --- | --- | --- |
-|Quiosque de aplicações únicas |Conta de Serviço Gerido (MSA) em Azure Ative Directory (Azure AD) ou conta local |Yes |No |
+|Quiosque de aplicações únicas | Conta Microsoft (MSA) em Azure Ative Directory (Azure AD) ou conta local |Yes |No |
 |Quiosque multi-aplicativo |Conta do Azure AD |No |Yes |
 
 Por exemplo, como utilizar estas capacidades, consulte a tabela seguinte.
@@ -349,7 +349,7 @@ O início de sísmis do Visitor Auto pode ser gerido através da [política pers
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
 
-| Política |Description |Configurações 
+| Política |Descrição |Configurações 
 | --------------------------- | ------------- | -------------------- |
 | Realidade Mista/VisitanteAutoLogon | Permite um visitante a apresentar um início de saúde a um quiosque. | 1 (Sim), 0 (Não, padrão.) |
 
