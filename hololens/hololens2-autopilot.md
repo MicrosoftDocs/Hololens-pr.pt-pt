@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: jarrettr
-ms.openlocfilehash: cc73f5cbb438119f4c626ae76db9c91373e19aff
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ca50a4b0ec2e3687a350ca654aaa60c144c4c78a
+ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635369"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991445"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -329,3 +329,7 @@ Para fornecer problemas de feedback ou relatório, utilize um dos seguintes mét
 - Se o seu dispositivo estiver registado no serviço Autopilot e o perfil for atribuído no portal MEM, contacte HoloLens [suporte](/hololens/) (ver cartão 'Suporte'). Por favor, abra um bilhete de suporte e, se aplicável, inclua imagens e registos capturando [registos](hololens-diagnostic-logs.md#offline-diagnostics) de diagnóstico offline durante a experiência fora de caixa (OOBE).
 - Para reportar um problema a partir do dispositivo, utilize a aplicação Feedback Hub no seu HoloLens. No Feedback Hub, selecione a categoria **dispositivo de gestão**  >   empresarial.
 - Para fornecer feedback geral sobre o Autopilot para HoloLens, pode submeter este [inquérito](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)
+
+## <a name="delete-autopilot-devices"></a>Eliminar dispositivos Autopilot
+
+Pode desejar deixar de utilizar um dispositivo para o Autopilot ou registar os seus dispositivos a um inquilino diferente. Se quiser fazê-lo, leia h[ow para eliminar dispositivos Autopilot.](/mem/autopilot/add-devices#delete-autopilot-devices)
