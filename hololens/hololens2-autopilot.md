@@ -13,21 +13,23 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: jarrettr
-ms.openlocfilehash: ca50a4b0ec2e3687a350ca654aaa60c144c4c78a
-ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
+ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991445"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009362"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
+
+> [!NOTE]
+> A configuração do piloto automático para HoloLens em Microsoft Endpoint Manager está a transitar da **Visualização Pública** para a **Disponibilidade Geral**. Todos os inquilinos poderão configurar o Autopilot no centro de administração MEM.
 
 Começando pela versão holográfica Windows 2004, HoloLens 2 suporta Windows [Modo de Auto-Implantação](/mem/autopilot/self-deploying) autopiloto com Microsoft Intune (os MDMs de 3ª parte não são suportados). Os administradores podem configurar a experiência fora de caixa (OOBE) em Microsoft Endpoint Manager e permitir que os utilizadores finais preparem dispositivos para uso empresarial com pouca ou nenhuma interação. Isto reduz a sobrecarga de gestão de inventário, o custo da preparação prática do dispositivo e as chamadas de suporte dos colaboradores durante a experiência de configuração. Saiba mais na documentação [Windows Autopilot.](/mem/autopilot/windows-autopilot)
 
 Tal como nos dispositivos Surface, recomenda-se que os clientes trabalhem com o seu Microsoft [Fornecedor de Soluções em Nuvem](https://partner.microsoft.com/cloud-solution-provider) (revendedor ou distribuidor) para obter dispositivos registados no serviço Autopilot através do Partner Center. Outros métodos de registo do dispositivo estão delineados na documentação do [dispositivo de adição,](/mem/autopilot/add-devices) embora alavancar os parceiros de canal da Microsoft garanta o caminho mais eficaz de ponta a ponta.
 
-> [!NOTE]
-> A partir de 11/20/2020 a configuração do Autopilot para HoloLens em Microsoft Endpoint Manager está em transição para **a Visualização Pública**. Os clientes já não precisam de se inscrever na pré-visualização privada e todos os inquilinos poderão configurar o Autopilot no centro de administração MEM.
+
 
 Quando um utilizador inicia o processo de auto-implantação do Autopilot, o Autopilot completa os seguintes passos:
 
