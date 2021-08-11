@@ -2,10 +2,10 @@
 title: Onde comprar HoloLens 2
 description: Lista de contactos E disponíveis da Global ADR.
 keywords: HoloLens 2 opções de compra, compra internacional, revendedor internacional, ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658827"
 ---
 # <a name="where-to-buy-hololens-2"></a>Onde comprar HoloLens 2
 
@@ -30,11 +30,12 @@ HoloLens 2 é o dispositivo de realidade mista mais confortável disponível, co
 
 | HoloLens 2 Edição| Mercado Apoiado |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | EUA, Canadá, Alemanha, França, Reino Unido, Irlanda, China, Japão, Austrália, Itália, Nova Zelândia, Países Baixos, Suíça, Espanha, Áustria, Suécia, Finlândia, Noruega, Dinamarca, Bélgica, Portugal, Polónia, Singapura, Hong Kong, Taiwan, Tailândia, Vietname, Malásia e Coreia do Sul |
-| HoloLens 2 com Assistência Remota | Austrália, Japão, Canadá, EUA, Áustria, Bélgica, Dinamarca, Finlândia, França, Alemanha, Itália, Países Baixos, Noruega, Espanha, Suécia, Suíça, Reino Unido e Irlanda <sup>1</sup> 
-| HoloLens 2 Edição Industrial *(no lançamento)* | EUA, Canadá, Alemanha, França, Reino Unido, Irlanda, China, Japão, Austrália, Itália, Nova Zelândia, Países Baixos, Suíça, Espanha, Áustria, Suécia, Finlândia, Noruega, Dinamarca, Bélgica, Portugal, Polónia, Singapura, Hong Kong, Taiwan, Tailândia, Vietname, Malásia e Coreia do Sul |
-| HoloLens 2 Edição de Desenvolvimento | Canadá, Alemanha, França, Reino Unido, Irlanda, Japão, Austrália, Itália, Suíça e Nova Zelândia |
-- <sup>1</sup> Esta lista é dinâmica, verifique se há atualizações
+| HoloLens 2 | Austrália, Áustria, Bélgica, Canadá, China, Dinamarca, Finlândia, França, Alemanha, Hong Kong, Irlanda, Itália, Japão, Malásia, Holanda, Nova Zelândia, Noruega, Polónia, Portugal, Singapura, Coreia do Sul, Espanha, Suécia, Suíça, Taiwan, Tailândia, Reino Unido, EUA e Vietname  |
+| HoloLens 2 com Assistência Remota | Austrália, Áustria, Bélgica, Canadá, Dinamarca, Finlândia, França, Alemanha, Hong Kong, Irlanda, Itália, Japão, Coreia, Malásia, Países Baixos, Nova Zelândia, Noruega, Singapura, Espanha, Suécia, Suíça, Taiwan, Tailândia, Reino Unido, EUA e Vietname  <sup>1</sup> 
+| HoloLens 2 Edição Industrial *(no lançamento)* | Austrália, Áustria, Bélgica, Canadá, China, Dinamarca, Finlândia, França, Alemanha, Hong Kong, Irlanda, Itália, Japão, Malásia, Holanda, Nova Zelândia, Noruega, Polónia, Portugal, Singapura, Coreia do Sul, Espanha, Suécia, Suíça, Taiwan, Tailândia, Reino Unido, EUA e Vietname  |
+| HoloLens 2 Edição de Desenvolvimento | Austrália, Canadá, França, Alemanha, Irlanda, Itália, Japão, Nova Zelândia, Suíça e Reino Unido |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> Esta lista é dinâmica, verifique se há atualizações
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>Encontre um revendedor autorizado HoloLens 2
 Consulte as tabelas abaixo para HoloLens 2 opções de disponibilidade e compra por região.
