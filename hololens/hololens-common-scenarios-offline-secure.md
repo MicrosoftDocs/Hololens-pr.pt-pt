@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664558"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Cenários Comuns - Offline Secure HoloLens 2
 
@@ -37,11 +37,11 @@ Este guia fornece orientações para a aplicação de um pacote de provisionamen
 
 ## <a name="prepare"></a>Preparação
 
-Configuração do PC do Windows 10
+Windows 10 Configuração do PC
 1. [Descarregue o mais recente ficheiro HoloLens 2 OS](https://aka.ms/hololens2download) diretamente para um PC. 
    1. O suporte para esta configuração está incluído na Build 19041.1117 ou acima.
-1. Descarregue/Instale a ferramenta Advanced Recovery Companion (ARC) [da Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) para o seu PC
-1. Descarregue/Instale a mais recente ferramenta [do Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) da Microsoft Store para o seu PC.
+1. Descarregue/Instale a ferramenta Advanced Recovery Companion (ARC) [do Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) para o seu PC
+1. Descarregue/Instale a mais recente ferramenta [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) do Microsoft Store para o seu PC.
 1. [Descarregue a pasta OfflineSecureHL2_Sample com os ficheiros do projeto](https://aka.ms/HoloLensDocs-SecureOfflineSample) para construir o PPKG.
 1. Prepare a sua aplicação offline [Line of Business para a implementação ppkg](app-deploy-provisioning-package.md). 
 
@@ -67,7 +67,7 @@ Construa um pacote de provisionamento de configuração segura
    |     Primeira Experiência / HoloLens / SkipTraining          |     Verdadeiro                          |     Ignora o treino do dispositivo durante a configuração inicial do dispositivo                                                                              |
    |     Primeira Experiência / HoloLens / Wi-Fi                  |     Verdadeiro                          |     Salta Wi-Fi config durante a configuração inicial do dispositivo                                                                                 |
    |     Políticas/Conectividade/Permitir Bluetooth                |     No                            |     Desativa Bluetooth                                                                                                             |
-   |     Políticas/Experiência/Permitir aCortana                    |     No                            |     Desativa cortana (para eliminar potenciais problemas uma vez que os microfones estão desativados)                                          |
+   |     Políticas/Experiência/Permitir aCortana                    |     No                            |     Desativa Cortana (para eliminar potenciais problemas uma vez que os microfones estão desativados)                                          |
    |     Políticas/Realidade Mista/MicrofoneDisabled            |     Yes                           |     Desativa o microfone                                                                                                            |
    |     Políticas/Privacidade/LetAppsAccessLocalização              |     Força negar                    |     Impede que as Aplicações tentem aceder aos dados de localização (para eliminar potenciais problemas uma vez que o rastreio de Localização está desativado)    |
    |     Políticas/Privacidade/LetAppsAccessMicrophone            |     Força negar                    |     Impede que as Apps tentem aceder aos microfones (para eliminar potenciais problemas uma vez que os microfones estão desactivdos)           |
@@ -76,7 +76,7 @@ Construa um pacote de provisionamento de configuração segura
    |     Políticas/Sistema/PermitirLocalização                       |     No                            |     Impede que o dispositivo tente rastrear os dados de localização.                                                                        |
    |     Políticas/Wi-Fi/AllowWiFi                             |     No                            |     Desativa Wi-Fi                                                                                                                 |
 
-1. Em Configurações de Tempo de Execução, Selecione **Contas / Utilizadores / Nome do Utilizador: Holo / Password**.
+1. Em Definições de tempo de execução, selecione **Contas / Utilizadores / Nome do Utilizador: Holo / Password**.
 
    Observe a palavra-passe e reinicie se desejar.
 
@@ -92,27 +92,27 @@ Construa um pacote de provisionamento de configuração segura
 
 ## <a name="deploy"></a>Implementar
 
-1. Ligue o HL2 ao seu PC Windows 10 através de cabo USB.
-1. Lance a ferramenta ARC e **selecione HoloLens 2**
+1. Ligação o HL2 ao seu pc Windows 10 via cabo USB.
+1. Lance a ferramenta ARC e selecione **HoloLens 2**
 
-   ![HoloLens 2 limpa reflash ecrã inicial](images/ARC2.png)
+   ![HoloLens ecrã inicial de reflash limpo de 2](images/ARC2.png)
 
 1. No ecrã seguinte selecione **Manual .**
 
-   ![Ecrã de informação HoloLens 2 ARC](images/arc_device_info.png)
+   ![HoloLens ecrã de informação de 2 ARC](images/arc_device_info.png)
 
 1. Navegue para o ficheiro .ffu previamente descarregado e selecione **Open**.
 1. Na página de Advertência **selecione Continue**.
 
-   ![Tela de aviso HoloLens 2 ARC](images/arc_warning.png)
+   ![HoloLens ecrã de aviso de 2 ARC](images/arc_warning.png)
 
-1. Aguarde que a ferramenta ARC preencha a instalação HoloLens 2 OS.
+1. Aguarde que a ferramenta ARC preencha a instalação de HoloLens 2 OS.
 1. Assim que o dispositivo completar a instalação e as botas de volta, do seu PC navegue para o File Explorer e copie o ficheiro PPKG previamente guardado para a pasta do dispositivo.
 
    > [!div class="mx-imgBorder"]
    > ![Ficheiro PPKG no PC na janela do Explorador de Ficheiros.](images/offline-secure-file-explorer.png)
 
-1. No HoloLens 2, prima a combinação seguinte do botão para executar o Pacote de Provisionamento: Toque no **volume para baixo** e no **botão de alimentação** ao mesmo tempo.
+1. No HoloLens 2, prima a combinação seguinte do botão para executar o Pacote de Provisionamento: Toque no **botão de baixo volume** e **de alimentação** ao mesmo tempo.
 1. Será solicitado para aplicar o Pacote de Provisionamento, **selecione Confirmar**
 1. Uma vez que o pacote de provisionamento complete, selecione **OK**.
 1. Em seguida, deve ser solicitado que assine no dispositivo com a conta local partilhada e a palavra-passe.

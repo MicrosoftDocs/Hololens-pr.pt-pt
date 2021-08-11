@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b7ce9f94fb6d3074f8b7f517af6bd70c78462ddc
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 1c0beed39fa6b4642a581da6baac44c732642e74d8b2c41ebca1b6d3f24b127d
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663370"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -505,7 +505,7 @@ O início de sísmis do Visitor Auto pode ser gerido através da política [pers
 
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| Política  | Descrição   | Configurações  |
+| Política  | Description   | Configurações  |
 |---|---|---|
 | Realidade Mista/VisitanteAutoLogon  | Permite um visitante a passar por um quiosque   | 1 (Sim), 0 (Não, padrão.)  |
 
@@ -995,7 +995,7 @@ Anteriormente, ao encontrar falhas na aplicação do modo quiosque, HoloLens usa
 
 Foram criadas novas políticas de realidade mista para HoloLens 2 dispositivos na versão holográfica 20H2 Windows. As novas definições controláveis incluem: luminosidade de definição, volume de definição, gravação de áudio incapacitante em capturas de realidade mista, definição quando os diagnósticos podem ser recolhidos e cache de membro do grupo AAD.  
 
-| Política de nova HoloLens                                | Descrição                                                                               | Notas                                                                |
+| Política de nova HoloLens                                | Description                                                                               | Notas                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | Realidade Mista\BrightnessButtonDisabled              | Permite que os botões de luminosidade sejam desativados de modo a premir, não altere o brilho.       | 1 Sim, 0 Não (padrão)                                                |
 | Realidade Mista\VolumeButtonDisabled                  | Permite que os botões de volume sejam desativados de modo a que a pressão não altere o volume.               | 1 Sim, 0 Não (padrão)                                                |

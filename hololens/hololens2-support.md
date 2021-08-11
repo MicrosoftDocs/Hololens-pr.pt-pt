@@ -7,12 +7,12 @@ description: Opções de suporte de realidade mista para pequenos a grandes clie
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658756"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quais são as opções de apoio à Realidade Mista e de ajuda?
 
@@ -38,7 +38,7 @@ Se não conseguir encontrar uma resposta para o seu problema usando a pesquisa, 
 
 - [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
 - [Azure Remote Rendering](/answers/topics/azure-remote-rendering.html)
-- [Âncoras de objetos Azure](/answers/topics/azure-object-anchors.html)
+- [Azure Object Anchors](/answers/topics/azure-object-anchors.html)
 - [HoloLens Programação](/answers/topics/hololens-development.html)
 - [Windows Produtos](/answers/products/windows)
 
@@ -56,7 +56,7 @@ Se submeter uma nova pergunta ao Stack Overflow, utilize uma ou mais das seguint
 - [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 - [Azure Spatial Anchors](https://stackoverflow.com/questions/tagged/azure-spatial-anchors)
 - [Azure Remote Rendering](https://stackoverflow.com/questions/tagged/azure-remote-rendering)
-- [Âncoras de objetos Azure](https://stackoverflow.com/questions/tagged/azure-object-anchors)
+- [Azure Object Anchors](https://stackoverflow.com/questions/tagged/azure-object-anchors)
 - [Kit de ferramentas de realidade mista (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
 #### <a name="other-communities"></a>Outras Comunidades:

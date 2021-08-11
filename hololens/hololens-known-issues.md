@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: 36991d62da91011b807dfb9ff52ab16eadac8bc7
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663967"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Questões conhecidas para HoloLens (1ª Gen)
 
@@ -67,7 +67,7 @@ Soluções alternativas:
 
 Visual Studio lançou a versão 16.2 do VS 2019, que inclui uma correção para este problema. Recomendamos a atualização para esta versão mais recente para evitar este erro.
 
-Causa raiz de problema: Os utilizadores que utilizaram Visual Studio lançamentos antecipados Visual Studio de 2015 ou de 2017 para implementar e depurar aplicações nas suas HoloLens e posteriormente utilizaram as versões mais recentes de Visual Studio 2017 ou Visual Studio 2019 com as mesmas HoloLens serão afetadas. Os mais recentes lançamentos de Visual Studio implementar uma nova versão de um componente, mas os ficheiros da versão mais antiga são deixados no dispositivo, fazendo com que a versão mais recente falhe.  Isto causa a seguinte mensagem de erro: DEP0100: Certifique-se de que o dispositivo-alvo tem o modo de desenvolvimento ativado. Não foi possível obter uma licença de programador \<ip\> devido ao erro 80004005.
+Causa raiz de problema: Os utilizadores que utilizaram Visual Studio lançamentos antecipados Visual Studio de 2015 ou de 2017 para implementar e depurar aplicações nas suas HoloLens e posteriormente utilizaram as versões mais recentes de Visual Studio 2017 ou Visual Studio 2019 com as mesmas HoloLens serão afetadas. Os mais recentes lançamentos de Visual Studio implementar uma nova versão de um componente, mas os ficheiros da versão mais antiga são deixados no dispositivo, fazendo com que a versão mais recente falhe.  Isto causa a seguinte mensagem de erro: DEP0100: Certifique-se de que o dispositivo-alvo tem o modo de desenvolvimento ativado. Não foi possível obter uma licença de programador \<ip\> devido a erros 80004005.
 
 #### <a name="workaround"></a>Solução
 

@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662897"
 ---
 # <a name="common-deployment-scenarios"></a>Cenários comuns de implantação
 
@@ -29,7 +29,7 @@ Quer soluções implantadas em escala. Queremos levá-lo lá. Vamos primeiro fal
 
 Você pode ser um decisor de negócios, profissional de TI, ou uma equipe de inovação que procura adotar HoloLens dentro da sua organização. À medida que se constrói a partir da prova de conceito para uma implantação em escala, os nossos guias de implantação fazem sentido HoloLens dentro da sua infraestrutura de TI - não importa o tamanho ou o pequeno. Os seguintes cenários de implantação são os mais comuns:
 
-| Cenário |Utilização | Pontos principais |
+| Scenario |Utilização | Pontos principais |
 |---------|---------|---------|
 | [Cenário A: Dispositivos ligados à nuvem](hololens2-cloud-connected-overview.md) | Quando iniciar a sua implementação, poderá iniciar um pequeno dispositivo ligado à nuvem apenas para ver o processo básico. | Os dispositivos serão ligados a serviços na nuvem e internet pública. Isto é mais adequado para casos de uso do cliente, serviços de campo e prova de conceito.|
 | [Cenário B: Rede da organização](hololens2-corp-connected-overview.md) | À medida que se implanta para a produção em escala, poderá ter de se integrar com a rede da sua própria organização. | Os dispositivos serão ligados a uma rede wi-fi "Corporativa". Isto é mais adequado para utilizadores internos, ou uso dentro do ambiente corporativo.|

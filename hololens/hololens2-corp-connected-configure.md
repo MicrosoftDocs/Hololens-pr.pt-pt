@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660181"
 ---
 # <a name="configure---corporate-connected-guide"></a>Configure - Guia Ligado Corporativo
 

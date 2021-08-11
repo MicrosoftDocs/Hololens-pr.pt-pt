@@ -1,5 +1,5 @@
 ---
-title: Arquitetura de segurança HoloLens
+title: arquitetura de segurança HoloLens
 description: Arquitetura de segurança
 author: evmill
 ms.author: v-evmill
@@ -13,28 +13,28 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: fd6409f5087ef7d6e7ab90d6ef8dcb83e1c490746803ad869ef075dace24bae7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665527"
 ---
 # <a name="security-overview-and-architecture"></a>Visão geral de segurança e arquitetura
 
-A arquitetura de segurança HoloLens 2 foi projetada e projetada do zero para ser livre de problemas de segurança antigas, enquanto criava uma superfície de ataque minimizada. Esta nova arquitetura inovadora oferece locais de armazenamento seguros e elementos de segurança avançados, com mecanismos capazes de proteger os sistemas operativos de potenciais ameaças e vulnerabilidades.
+A arquitetura de segurança HoloLens 2 foi projetada e projetada do zero para ser livre de questões de segurança antigas, enquanto criava uma superfície de ataque minimizada. Esta nova arquitetura inovadora oferece locais de armazenamento seguros e elementos de segurança avançados, com mecanismos capazes de proteger os sistemas operativos de potenciais ameaças e vulnerabilidades.
 
-O HoloLens 2 combina hardware, software, networking e serviços para fornecer segurança de ponta a ponta, ao mesmo tempo que proporciona ao utilizador uma experiência ideal. Com holoLens 2, uma grande maioria das funcionalidades de segurança são agora ligadas automaticamente, minimizando o esforço necessário para configurar e configurar corretamente o sistema operativo.
+HoloLens 2 combina hardware, software, networking e serviços para fornecer segurança de ponta a ponta, ao mesmo tempo que proporciona ao utilizador uma experiência ideal. Com HoloLens 2, uma grande maioria das funcionalidades de segurança são agora ligadas automaticamente, minimizando o esforço necessário para configurar e configurar corretamente o sistema operativo.
 
-O Windows HoloLens 2 e a arquitetura do sistema operativo oferecem estas funcionalidades de segurança inovadoras:
+Windows HoloLens 2 e a arquitetura do sistema operativo oferece estas características de segurança inovadoras:
 
-  * **Separação do Estado e isolamento**: Esta nova arquitetura protege partes críticas do sistema operativo HoloLens 2 da mudança - como as necessárias para que o sistema operativo central entre em estado de confiança. A tecnologia de isolamento é usada para limitar aplicações não fided assediadas numa área de sandbox, garantindo que não podem afetar a segurança do sistema. Todo o sistema operativo é segmentado em secções seguras, com cada secção protegida por uma combinação de diferentes tecnologias de segurança.
+  * **Separação e isolamento** do Estado : Esta nova arquitetura protege partes críticas do sistema operativo HoloLens 2 da mudança - como as necessárias para que o sistema operativo central entre em estado de confiança. A tecnologia de isolamento é usada para limitar aplicações não fided assediadas numa área de sandbox, garantindo que não podem afetar a segurança do sistema. Todo o sistema operativo é segmentado em secções seguras, com cada secção protegida por uma combinação de diferentes tecnologias de segurança.
   
-  * **Proteção de Dados**: Se o dispositivo de um utilizador for perdido ou roubado, o HoloLens 2 impede que aplicações não autorizadas leiam informações sensíveis, baseando-se na encriptação de dados bitLocker. 
+  * **Proteção de Dados**: Se o dispositivo de um utilizador for perdido ou roubado, HoloLens 2 impede que aplicações não autorizadas leiam informações sensíveis, baseando-se na encriptação de dados bitLocker. 
   
-  * **Sistema operativo sem palavra-passe**: Os sistemas operativos mais antigos e baseados em palavras-passe poderiam expor inadvertidamente os utilizadores a ameaças de phishing e eram muitas vezes responsáveis por contas comprometidas. O Windows Holographic for Business elimina o uso de palavras-passe para o sismo MSA e Azure AD e reforça a proteção de identidade do utilizador com o Windows Hello™ e fido2. 
+  * **Sistema operativo sem palavra-passe**: Os sistemas operativos mais antigos e baseados em palavras-passe poderiam expor inadvertidamente os utilizadores a ameaças de phishing e eram muitas vezes responsáveis por contas comprometidas. Windows Holographic for Business elimina o uso de palavras-passe para o sismo MSA e Azure AD e reforça a proteção da identidade do utilizador com Windows Hello™ e fido2. 
   
     > [!NOTE]
     > Para ter suporte FIDO2, o dispositivo deve estar na Construção 19041 ou superior. 
 
-  * **Segurança da rede**: O HoloLens 2 oferece ao utilizador uma maior segurança da rede através de protocolos melhorados e definições predefinidas.
+  * **Segurança da rede**: HoloLens 2 oferece ao utilizador uma segurança de rede aumentada através de protocolos melhorados e definições predefinidas.

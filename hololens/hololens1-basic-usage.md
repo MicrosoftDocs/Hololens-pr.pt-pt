@@ -1,6 +1,6 @@
 ---
 title: Contornar HoloLens (1ª geração)
-description: Começa com uma breve visita à interface HoloLens (1ª gen), funcionalidades de rastreio manual e utilização de aplicações holográficas.
+description: Começa com uma breve visita à interface HoloLens (1ª geração), funcionalidades de rastreio manual e utilização de aplicações holográficas.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 9/16/2019
 ms.reviewer: jarrettr
@@ -14,40 +14,40 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a1ed1b900f255da9f8db66577f1e88f6bd6881e8
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378583"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662823"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Contornar HoloLens (1ª geração)
 
 Pronto para entrar no mundo dos hologramas? Aqui está uma informação para começar.
 
-Este guia fornece uma introdução à realidade mista, gestos para interagir com hologramas e uma introdução ao Windows Holographic.
+Este guia fornece uma introdução à realidade mista, gestos para interagir com hologramas, e uma introdução a Windows Holográfico.
 
 ## <a name="discover-mixed-reality"></a>Descubra a realidade mista
 
-Nos HoloLens, os hologramas misturam-se com o seu ambiente físico para parecer e soar como se fossem parte do seu mundo. Mesmo quando os hologramas estão à sua volta, você ainda pode ver o que o rodeia, mover-se livremente, e interagir com outras pessoas e objetos. Chamamos a esta experiência "realidade mista".
+No HoloLens, os hologramas misturam-se com o seu ambiente físico para parecer e soar como se fossem parte do seu mundo. Mesmo quando os hologramas estão à sua volta, você ainda pode ver o que o rodeia, mover-se livremente, e interagir com outras pessoas e objetos. Chamamos a esta experiência "realidade mista".
 
-O quadro holográfico posiciona os hologramas onde os seus olhos são mais sensíveis ao detalhe, e as lentes ver-através deixam a sua visão periférica desafogada. Com som espacial, podes identificar um holograma, mesmo que esteja atrás de ti. E como o HoloLens aprende e compreende o seu ambiente, pode colocar hologramas sobre e em torno de objetos reais - assim como as suas apps e jogos. Assim, um personagem num jogo pode sentar-se no seu sofá, ou [robôs espaciais podem sair das suas paredes.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
+O quadro holográfico posiciona os hologramas onde os seus olhos são mais sensíveis ao detalhe, e as lentes ver-através deixam a sua visão periférica desafogada. Com som espacial, podes identificar um holograma, mesmo que esteja atrás de ti. E como HoloLens aprende e compreende o seu ambiente, pode colocar hologramas sobre e em torno de objetos reais — assim como as suas apps e jogos. Assim, um personagem num jogo pode sentar-se no seu sofá, ou [robôs espaciais podem sair das suas paredes.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
 ## <a name="use-hololens-with-your-hands"></a>Use HoloLens com as mãos
 
-Contornar o HoloLens é como usar o teu telemóvel inteligente. Pode usar as mãos para manipular janelas holográficas, menus e botões.  Em vez de apontar, clicar ou tocar, usará o seu olhar, a sua [voz](hololens-cortana.md)e gestos para selecionar apps e hologramas e contornar holoLens.
+Contornar HoloLens é muito parecido com usar o seu telefone inteligente. Pode usar as mãos para manipular janelas holográficas, menus e botões.  Em vez de apontar, clicar ou tocar, usará o seu olhar, a sua [voz](hololens-cortana.md)e gestos para selecionar apps e hologramas e contornar HoloLens.
 
-Quando souberes destas interações básicas, andar por aí nos HoloLens será um estalo.
+Quando souberes destas interações básicas, andar por aí em HoloLens será um estalo.
 
-Vamos falar-te do básico da primeira vez que usares os teus HoloLens. Você também vai encontrar um tutorial de gestos no seu menu **Iniciar** - procure a app Learn Gestures.
+Vamos falar-te do básico da primeira vez que usares o teu HoloLens. Você também vai encontrar um tutorial de gestos no seu menu **Iniciar** - procure a app Learn Gestures.
 
 ### <a name="the-hand-tracking-frame"></a>A moldura de rastreio manual
 
-O HoloLens tem sensores que conseguem ver alguns metros de cada lado de ti. Quando usares as mãos, terás de as manter dentro da moldura, ou os HoloLens não as verão. À medida que te moves, a moldura move-se contigo.  
+HoloLens tem sensores que podem ver alguns metros para cada lado de si. Quando usares as mãos, terás de as manter dentro da moldura, ou HoloLens não as vejas. À medida que te moves, a moldura move-se contigo.  
 
-![Imagem que mostra o quadro de rastreio manual dos HoloLens](./images/hololens-2-gesture-frame.png)
+![Imagem que mostra o quadro de rastreio manual HoloLens](./images/hololens-2-gesture-frame.png)
 
-### <a name="open-the-start-menu-with-bloom"></a>Abra o menu Iniciar com bloom
+### <a name="open-the-start-menu-with-bloom"></a>Abra a menu Iniciar com flor
 
 Para abrir o menu **Iniciar:**
 
@@ -74,11 +74,11 @@ Para selecionar uma aplicação ou outro holograma, toque-lhe no ar enquanto olh
 
 Agora é hora de pôr à prova gestos!
 
-Encontrará as suas aplicações instaladas no [menu Iniciar](holographic-home.md) e há mais aplicações para HoloLens (1º género) na Microsoft Store.
+Você vai encontrar as suas aplicações instaladas no [menu Iniciar](holographic-home.md) e há mais aplicativos para HoloLens (1ª gen) no Microsoft Store.
 
 Abra o menu **Iniciar** e selecione uma aplicação!
 
-A utilização de aplicações em HoloLens é um pouco diferente de um PC: Algumas aplicações usam uma visão 2D e parecem outras aplicações do Windows. Outras aplicações (aplicações imersivas) usam uma visão 3D e quando as lanças, tornam-se a única aplicação que vês.
+Usar aplicações em HoloLens é um pouco diferente de um PC: Algumas aplicações usam uma visão 2D e parecem outras aplicações Windows. Outras aplicações (aplicações imersivas) usam uma visão 3D e quando as lanças, tornam-se a única aplicação que vês.
 
 Quando colocar uma janela de aplicação ou um lançador de aplicativos, ele permanecerá colocado até que o remova. Você pode mover ou redimensionar estes hologramas em sua casa de realidade mista a qualquer momento.
 
@@ -87,7 +87,7 @@ Quando colocar uma janela de aplicação ou um lançador de aplicativos, ele per
 Mover e redimensionar aplicações em HoloLens funciona de forma um pouco diferente do que funciona num PC. Em vez de arrastar a aplicação, usará o seu olhar, juntamente com um [gesto](https://support.microsoft.com/help/12644/hololens-use-gestures) ou o [clicker](hololens1-clicker.md). Também pode rodar uma janela de aplicações no espaço 3D.
 
 > [!TIP]
-> Rearranje apps usando a sua voz - olhe para uma aplicação e diga "Face me", "Bigger" ou "Small". Ou peça ao Cortana que mova uma aplicação para si: diga "Hey Cortana, mova \* *o nome \* da aplicação* aqui."
+> Rearranje apps usando a sua voz - olhe para uma aplicação e diga "Face me", "Bigger" ou "Small". Ou Cortana mover uma aplicação para si: diga "Hey Cortana, mude \* *o nome \* da aplicação* aqui."
 
 ### <a name="move-an-app"></a>Mover uma aplicação
 
@@ -119,25 +119,25 @@ Olhe para a aplicação, toque e segure com ambas as mãos para selecioná-la. R
 
 Olhe para o conteúdo da janela da aplicação. Toque e segure e, em seguida, mova a mão ligeiramente para cima ou para baixo para deslocar o conteúdo.
 
-## <a name="meet-the-hololens-1st-gen-clicker"></a>Conheça o Clicker HoloLens (1º gênero)
+## <a name="meet-the-hololens-1st-gen-clicker"></a>Conheça o clicker HoloLens (1ª gen)
 
-O [clicker HoloLens (1ª Gen)](hololens1-clicker.md) dá-lhe outra forma de interagir com hologramas. [Emparelha-o](hololens-connect-devices.md) com os hololens e depois usa-o juntamente com o teu olhar para selecionar, rolar e muito mais.
+O [clicker HoloLens (1ª Gen)](hololens1-clicker.md) dá-lhe outra forma de interagir com hologramas. [Emparelha-o](hololens-connect-devices.md) com o HoloLens e depois use-o juntamente com o seu olhar para selecionar, deslocar e muito mais.
 
 ## <a name="next-steps"></a>Passos seguintes
 
 Parabéns! você está pronto para usar HoloLens (1ª geração).
 
-Agora pode configurar os seus HoloLens (1º gênero) para atender às suas necessidades específicas.
+Agora pode configurar o seu HoloLens (1º gênero) para atender às suas necessidades específicas.
 
-[Conecte dispositivos bluetooth como rato e teclado](hololens-connect-devices.md)
+[Ligação dispositivos bluetooth como rato e teclado](hololens-connect-devices.md)
 
 [Saiba mais sobre Voz e Cortana](hololens-cortana.md)
 
 ### <a name="help-i-dont-see-my-holograms"></a>Ajuda! Não vejo os meus hologramas.
 
-Se não vir hologramas que colocou durante a utilização de HoloLens, eis algumas coisas para tentar:
+Se não vir hologramas que colocou durante a utilização de HoloLens, aqui ficam algumas coisas para tentar:
 
 - Certifique-se de que está a olhar para a área &mdash; certa, lembre-se, hologramas ficam onde os deixou!
 - Certifique-se de que está numa sala bem iluminada sem muita luz solar direta.
-- Esperem, tenho de fazer isto. Quando holoLens tem dificuldade em reconhecer o seu espaço, hologramas previamente colocados podem demorar até um minuto para reaparecer.
-- Se o problema persistir, poderá querer limpar os dados de armazenamento dos Hologramas em Hologramas do Sistema **de Definições,**  >    >  em seguida, volte a colocar hologramas em casa de realidade mista.
+- Esperem, tenho de fazer isto. Quando HoloLens tem dificuldade em reconhecer o seu espaço, os hologramas previamente colocados podem demorar até um minuto a reaparecer.
+- Se o problema persistir, poderá querer limpar os seus dados de armazenamento Hologramas no **Definições**  >  **System**  >  **Hologramas**, em seguida, volte a colocar hologramas em casa de realidade mista.
