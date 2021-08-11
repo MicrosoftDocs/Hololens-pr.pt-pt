@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c0beed39fa6b4642a581da6baac44c732642e74d8b2c41ebca1b6d3f24b127d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
+ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663370"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "116975500"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -33,6 +33,7 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 > Devido a um problema agora resolvido [conhecido na nossa construção 21H1 que estava a afetar os utilizadores do Remote Assist](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), interrompemos temporalmente a oferta de Windows atualizações Holográficas, versão 21H1. Também tínhamos alterado a construção padrão do Advanced Recovery Companion (ARC) para o [Windows Holographic, versão 20H2 – junho 2021 Atualização](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). A construção do ARC vai agora retomar a 21H1.
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows Holográfico, versão 21H1 - julho 2021 Atualização
+
 - Construção 20348.1010
 
 Melhorias e correções na atualização:
@@ -41,18 +42,20 @@ Melhorias e correções na atualização:
 - O upload de ficheiros, o download, o renomeamento e a eliminação são agora corrigidos quando se utilizam https em todos os navegadores suportados.
 - Problema fixo em que Wi-Fi proxy não pode ser salvo quando Wi-Fi propriedades UI é lançado a partir de **Definições -> Rede & Internet -> Status -> Properties**.
 - Abordou um problema em torno da remoção dos certificados eSIM através de atualizações do SISTEMA. Esta correção garante que os certificados eSIM e componentes conexos sejam removidos ao atualizar a versão 21H1.
-- Corrigi um problema com impacto em aplicações pré-instaladas em resets de SISTEMA. 
-- Desempenho de carregamento da bateria sintonizado para aumentar o tempo de funcionaamento ao carregar com um maior carregamento de CPU.
+- Corrigi um problema com impacto em aplicações pré-instaladas em resets de SISTEMA.
+- Desempenho de carregamento da bateria sintonizado para aumentar o tempo de funcionaamento ao carregar com um maior carregamento de CPU. Enquanto carrega HoloLens 2 dispositivos, se o dispositivo for detetado estar a correr quente, a bateria interna carregará mais lentamente para reduzir o calor. A compensação positiva é que um dispositivo é menos propenso a ser desligado devido a problemas térmicos, com o impacto é que o dispositivo é que o dispositivo é mais longo. Se o aparelho estiver a arrefecer, a taxa de carga não é afetada.
 
 ## <a name="windows-holographic-version-20h2--july-2021-update"></a>Windows Holográfico, versão 20H2 - Atualização julho 2021
+
 - Construção 19041.1157
 
 Melhorias e correções na atualização:
 
-- O Portal do Dispositivo tem métodos melhorados de notificar o cliente quando o Explorador de Ficheiros encontra problemas de abertura de ficheiros bloqueados. 
+- O Portal do Dispositivo tem métodos melhorados de notificar o cliente quando o Explorador de Ficheiros encontra problemas de abertura de ficheiros bloqueados.
 - O upload de ficheiros, o download, o renomeamento e a eliminação são agora corrigidos quando se utilizam https em todos os navegadores suportados.
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holográfico, versão 21H1 - junho 2021 Atualização
+
 - Construção 20348.1007
 
 ### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive para o trabalho ou para o upload do Rolo de Câmara escolar
@@ -77,9 +80,11 @@ Adicionámos uma nova funcionalidade à aplicação HoloLens 2 Definições, que
 - Esta funcionalidade deve ser ativada para cada conta de utilizador no dispositivo, e apenas pode fazer upload de ficheiros para o utilizador que se encontra atualmente inscrito no dispositivo.
 - Se estiver a tirar fotografias ou vídeos enquanto vê a contagem de upload na página Definições em tempo real, note que a contagem de ficheiros pendentes não pode ser alterada até que o ficheiro atual tenha concluído o upload.
 - O upload fará uma pausa se o seu dispositivo adormecer ou estiver desligado. Para garantir que os uploads pendentes estão completos, utilize ativamente o dispositivo até que a página Definições se leia "OneDrive está atualizado" ou ajuste as definições **de & de alimentação.**
+
 ### <a name="added-support-for-some-telemetry-policies"></a>Apoio adicional a algumas políticas de telemetria
 
 As seguintes políticas de telemetria são agora apoiadas no HoloLens 2:
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - PermitirDeviceNameInDiagnosticData
@@ -88,16 +93,19 @@ As seguintes políticas de telemetria são agora apoiadas no HoloLens 2:
 Tanto o Sistema\AllowTelemetry e System\ConfigureTelemetryOptInSettingsUx devem ser utilizados em conjunto para ter controlo total sobre a Telemetria e o comportamento na aplicação Definições.
 
 Melhorias e correções na atualização:
+
 - Corrige a grande corrupção de vídeo com a calibração de cores.
 - Aborda um problema em que o texto pode ser truncado no menu Power.
 - Permite o suporte para a política RequerPrivateStoreOnly.
 
 ## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holográfico, versão 20H2 - junho 2021 Atualização
+
 - Construção 19041.1154
 
 ### <a name="added-support-for-some-telemetry-policies"></a>Apoio adicional a algumas políticas de telemetria
 
 As seguintes políticas de telemetria são agora apoiadas no HoloLens 2:
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - PermitirDeviceNameInDiagnosticData
@@ -108,9 +116,11 @@ Tanto o Sistema\AllowTelemetry e System\ConfigureTelemetryOptInSettingsUx devem 
 Encorajamo-lo a experimentar a nossa mais recente construção, Windows Holographic, versão 21H1.
 
 ## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holográfico, versão 1903 - junho 2021 Atualização
+
 - Construção 18362.1116
 
 Melhorias e correções na atualização:
+
 - Esta atualização mensal de qualidade não contém quaisquer alterações notáveis, encorajamos-te a experimentar a nossa mais recente construção, Windows Holographic, versão 21H1.
 
 >[!IMPORTANT]
@@ -127,9 +137,9 @@ Esta atualização contém funcionalidades para dois públicos-alvo; funcionalid
 >Hoje, Microsoft HoloLens 2 suporta atualizações mensais de manutenção (correções de erros e segurança) para as seguintes versões:
 >- Windows Holográfico, versão 20H2 (Construção 19041.1128+)
 >- Windows Holográfico, versão 2004 (Build 19041.1103+)
->- Windows Holográfico, versão 1903 (Construção 18362+) 
+>- Windows Holográfico, versão 1903 (Construção 18362+)
 >
-> Com a introdução da versão holográfica 21H1 Windows, **estamos a descontinuar atualizações mensais de manutenção para Windows versão Holográfica 1903**. Isto permite-nos focar em lançamentos mais recentes e continuar a oferecer melhorias valiosas. 
+> Com a introdução da versão holográfica 21H1 Windows, **estamos a descontinuar atualizações mensais de manutenção para Windows versão Holográfica 1903**. Isto permite-nos focar em lançamentos mais recentes e continuar a oferecer melhorias valiosas.
 
 
 | Nome do recurso                                              | Breve descrição                                                                      | Público-alvo | 
