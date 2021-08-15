@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/17/2021
+ms.date: 08/10/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
-ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
+ms.openlocfilehash: ca821c5229ba9d6d8fff0f1ed22a7df139120ab99e64c2bb3502effac7049f31
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "116975500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364307"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -31,6 +31,23 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 
 > [!IMPORTANT]
 > Devido a um problema agora resolvido [conhecido na nossa construção 21H1 que estava a afetar os utilizadores do Remote Assist](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), interrompemos temporalmente a oferta de Windows atualizações Holográficas, versão 21H1. Também tínhamos alterado a construção padrão do Advanced Recovery Companion (ARC) para o [Windows Holographic, versão 20H2 – junho 2021 Atualização](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). A construção do ARC vai agora retomar a 21H1.
+
+## <a name="windows-holographic-version-21h1---august-2021-update"></a>Windows Holográfico, versão 21H1 - agosto 2021 Atualização
+
+- Construção 20348.1014
+
+Melhorias e correções na atualização:
+
+- Corrigiu um problema que impedia os controladores da Xbox de trabalharem em aplicações imersivas com suporte ao controlador.
+- Diagnósticos melhorados para falhas na atualização do dispositivo.
+
+## <a name="windows-holographic-version-20h2---august-2021-update"></a>Windows Holográfico, versão 20H2 - agosto 2021 Atualização
+
+- Construção 19041.1161
+
+Melhorias e correções na atualização:
+
+- Esta atualização mensal de qualidade não contém quaisquer alterações notáveis, encorajamos-te a experimentar a nossa mais recente construção, Windows Holographic, versão 21H1.
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows Holográfico, versão 21H1 - julho 2021 Atualização
 
@@ -515,7 +532,7 @@ O início de sísmis do Visitor Auto pode ser gerido através da política [pers
 
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| Política  | Description   | Configurações  |
+| Política  | Descrição   | Configurações  |
 |---|---|---|
 | Realidade Mista/VisitanteAutoLogon  | Permite um visitante a passar por um quiosque   | 1 (Sim), 0 (Não, padrão.)  |
 
@@ -1005,7 +1022,7 @@ Anteriormente, ao encontrar falhas na aplicação do modo quiosque, HoloLens usa
 
 Foram criadas novas políticas de realidade mista para HoloLens 2 dispositivos na versão holográfica 20H2 Windows. As novas definições controláveis incluem: luminosidade de definição, volume de definição, gravação de áudio incapacitante em capturas de realidade mista, definição quando os diagnósticos podem ser recolhidos e cache de membro do grupo AAD.  
 
-| Política de nova HoloLens                                | Description                                                                               | Notas                                                                |
+| Política de nova HoloLens                                | Descrição                                                                               | Notas                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | Realidade Mista\BrightnessButtonDisabled              | Permite que os botões de luminosidade sejam desativados de modo a premir, não altere o brilho.       | 1 Sim, 0 Não (padrão)                                                |
 | Realidade Mista\VolumeButtonDisabled                  | Permite que os botões de volume sejam desativados de modo a que a pressão não altere o volume.               | 1 Sim, 0 Não (padrão)                                                |

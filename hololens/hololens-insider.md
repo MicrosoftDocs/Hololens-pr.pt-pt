@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364290"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -40,7 +40,8 @@ Estamos entusiasmados por começar a voar novas funcionalidades para Windows Ins
 | [Notificações de Diagnóstico Offline](#offline-diagnostics-notifications) | Feedback audiovisual para coleção de registos | Resolução de problemas | 20348.1405 |
 | [Utilize apenas aplicativos de loja privada apenas para Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure a app da loja para mostrar apenas apps da organização | Administrador de TI | 20348.1408 |
 | [Melhorias na recolha de registos de baixo armazenamento](#low-storage-log-collection-improvements) | Melhorias nos cenários de recolha de registos em situações de armazenamento reduzido. | Administrador de TI | 20348.1412 |
-| [Correções e melhorias](hololens-insider.md#fixes-and-improvements) | Correções e melhorias para HoloLens. | Todos | 20348.1411 |
+| [Modo de plataforma móvel](#moving-platform-mode) | Introduz a beta do Modo plataforma móvel, que, quando configurada, permite a utilização de HoloLens 2 em grandes embarcações marinhas que experimentam movimentos de baixa dinâmica. | Todos | 20348.1411 |
+| [Correções e melhorias](#fixes-and-improvements) | Correções e melhorias para HoloLens. | Todos | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Alterações do CSP para reportar detalhes HoloLens
 
@@ -135,11 +136,18 @@ Saiba mais sobre [ApplicationManagement/RequirePrivateStoreOnly](http://windows/
 
 Em cenários em que um dispositivo parece estar com pouco espaço no disco quando os registos de diagnóstico são recolhidos, será criado um relatório adicional chamado **StorageDiagnostics.zip.** O limiar de armazenamento baixo é determinado automaticamente por Windows [sentido de armazenamento](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
+### <a name="moving-platform-mode"></a>Modo de plataforma móvel
+
+A partir da **build 20348.1411** do Insider, adicionámos suporte beta para rastrear plataformas de movimento de baixa dinâmica em HoloLens 2. Depois de instalar o modo de plataforma móvel, poderá utilizar o seu HoloLens 2 em ambientes previamente inacessíveis, como grandes navios e grandes embarcações marinhas. Atualmente, a funcionalidade destina-se a ativar estas plataformas móveis específicas apenas. Embora nada o impeça de tentar utilizar a funcionalidade em outros ambientes, a funcionalidade está focada em adicionar suporte a estes ambientes em primeiro lugar.
+
+Para saber mais sobre o que é suportado e como ativar esta nova funcionalidade, [visite a página da plataforma móvel.](hololens2-moving-platform.md)
+
 ### <a name="fixes-and-improvements"></a>Correções e melhorias
 
 - Corrigiu um [problema conhecido para o Portal do Dispositivo onde não havia qualquer solicitação de descarregamento de ficheiros bloqueados.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Corrigi um [problema conhecido para o Portal do Dispositivo com upload de ficheiros e descarregamento de tempo.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Aborda questões relacionadas com a denúncia de propriedades de conformidade a partir de dispositivos HoloLens; pode ser necessário reiniciar para que o relatório correto seja acionado nas construções insider.  
+- Ativou uma [API de acesso atribuído](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) para que as aplicações possam agora determinar se um HoloLens está a ser em execução num modo quiosque para o utilizador iniciado no HoloLens.
 - Atualize a versão in-box do Remote Assist que está instalada em flashes frescos.
 
 ## <a name="start-receiving-insider-builds"></a>Comece a receber construções insider

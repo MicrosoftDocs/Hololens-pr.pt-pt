@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ceb2416ec96db1bdd363e9164ec39eed9247fe37095a52e7f02bafc74416e4f2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c19f01fc502a32c7f40a9296f0ddd9651d92284f3550908b1a5b7bbbef7b639a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364273"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gerir a identidade do utilizador e iniciar s-in para HoloLens
 
@@ -38,7 +38,7 @@ HoloLens suporta vários tipos de identidades de utilizador. Pode utilizar uma o
 | --- | --- | --- |
 | [Azure Ative Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Fornecedor de credenciais web Azure</li><li>App Azure Authenticator</li><li>Biométrico (Íris) &ndash; HoloLens 2 apenas<sup>2</sup> </li><li>Chave de segurança FIDO2</li><li>PIN &ndash; Opcional para HoloLens (1ª gen), necessário para HoloLens 2</li><li>Palavra-passe</li></ul> |
 | [Conta Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biométrico (Íris) &ndash; HoloLens 2</li><li>PIN &ndash; Opcional para HoloLens (1ª gen), necessário para HoloLens 2</li><li>Palavra-passe</li></ul> |
-| [Conta local](/windows/security/identity-protection/access-control/local-accounts) | 1 | Palavra-passe |
+| [Conta local](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Palavra-passe |
 
 As contas ligadas à nuvem (Azure AD e MSA) oferecem mais funcionalidades porque podem usar os serviços Azure.  
 > [!IMPORTANT]
@@ -47,13 +47,16 @@ As contas ligadas à nuvem (Azure AD e MSA) oferecem mais funcionalidades porque
 > [!NOTE]
 > 2 - Enquanto um dispositivo HoloLens 2 pode suportar até 64 contas AZure AD, apenas 31 dessas contas podem inscrever-se na Autenticação iris. Isto está alinhado com outras [opções de autenticação biométrica para Windows Hello para o Negócio](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
+> [!IMPORTANT]
+> 3 - Uma conta local só pode ser configurada num dispositivo [através de um pacote de provisionamento durante o OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup), não pode ser adicionada mais tarde na aplicação de definições. Se quiser utilizar uma conta local num dispositivo que já está configurado, terá de voltar a [ser reflash ou reiniciar o dispositivo.](hololens-recovery.md)
+
 ## <a name="setting-up-users"></a>Criação de utilizadores
 
 Há duas formas de criar um novo utilizador no HoloLens. A forma mais comum é durante a experiência fora de caixa HoloLens (OOBE). Se utilizar Azure Ative Directory, [outros utilizadores podem iniciar sessão](#setting-up-multi-user-support-azure-ad-only) após o OOBE utilizando as suas credenciais AZure AD. HoloLens dispositivos que são inicialmente configurado com uma msa ou conta local durante o OOBE não suportam vários utilizadores. Consulte configuração do seu [HoloLens (1º gênero)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
 
 Se utilizar uma conta empresarial ou organizacional para iniciar scontabilidade para HoloLens, HoloLens se inscreve na infraestrutura de TI da organização. Esta inscrição permite ao seu Administrador de TI configurar a Gestão de Dispositivos Móveis (MDM) para enviar políticas de grupo para o seu HoloLens.
 
-Tal como Windows noutros dispositivos, a sessão durante a configuração cria um perfil de utilizador no dispositivo. O perfil do utilizador armazena aplicações e dados. A mesma conta também fornece O Único Sign-on para aplicações, como Edge ou o Microsoft Store, utilizando as APIs do Gestor de Conta Windows. 
+Tal como Windows noutros dispositivos, a sessão durante a configuração cria um perfil de utilizador no dispositivo. O perfil do utilizador armazena aplicações e dados. A mesma conta também fornece O Único Sign-on para aplicações, como Edge ou o Microsoft Store, utilizando as APIs do Gestor de Conta Windows.
 
 Por padrão, como para outros dispositivos Windows 10, terá de iniciar sposição novamente quando HoloLens reiniciar ou retomar de espera. Pode usar a aplicação Definições para alterar este comportamento, ou o comportamento pode ser controlado pela política do grupo.
 
