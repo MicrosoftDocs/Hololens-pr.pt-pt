@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemas, bug, resolução de problemas, correção, ajuda, apoio, HoloLens, emulador
-ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c634b90b03468073887397b59f072258ad7a3ccc
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662891"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858567"
 ---
 # <a name="device-troubleshooting"></a>Resolução de problemas do dispositivo
 
@@ -119,13 +119,15 @@ Não há soluções alternativas conhecidas, pois não conseguimos enraizar a qu
 Existe um problema durante o OOBE, em que uma vez que o utilizador escolheu uma conta de trabalho ou escola e está a introduzir a sua palavra-passe, tentando mudar para os caracteres especiais no teclado, tocando no botão &123 não se altera para caracteres especiais. Esta é uma **questão conhecida.**
 
 Work-arounds:
--   Feche o teclado e reabra-o tocando no campo de texto.
--   Introduza incorretamente a sua palavra-passe. Quando o teclado for relançado da próxima vez, funcionará como esperado.
+
+- Feche o teclado e reabra-o tocando no campo de texto.
+- Introduza incorretamente a sua palavra-passe. Quando o teclado for relançado da próxima vez, funcionará como esperado.
 - Autenticação web, feche o teclado e selecione **Iniciar sôm nas costas de outro dispositivo**.
--   Se introduzir apenas números, um utilizador pode premir e segurar certas chaves para abrir um menu expandido.
--   Utilizando um teclado USB.
+- Se introduzir apenas números, um utilizador pode premir e segurar certas chaves para abrir um menu expandido.
+- Utilizando um teclado USB.
 
 Isto não afeta:
+
 - Utilizadores que optem por utilizar uma conta pessoal.
 
 [De volta à lista](#list)
@@ -133,7 +135,7 @@ Isto não afeta:
 ## <a name="downloading-locked-files-doesnt-error"></a>Descarregar ficheiros bloqueados não é erro
 
 > [!NOTE]
-> Esta é uma **questão conhecida** que é corrigida na Windows build Insider, versão 20348.1403.
+> Esta é uma **questão conhecida** que foi corrigida em [Windows Holographic, versão 21H1 - julho 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
 
 Em construções anteriores de Windows Holographic, ao tentar descarregar um ficheiro bloqueado, o resultado seria uma página de erro HTTP. Na Windows holográfica, a versão 21H1 atualização, tentando descarregar um ficheiro bloqueado resulta em nada visível a acontecer - o ficheiro não descarrega e não há erro.
 
@@ -141,10 +143,9 @@ Em construções anteriores de Windows Holographic, ao tentar descarregar um fic
 
 ## <a name="device-portal-file-uploaddownload-times-out"></a>Upload/download de tempos de carregamento/descarregamento de ficheiros do Portal do Dispositivo
 > [!NOTE]
-> Esta é uma **questão conhecida** que é corrigida na Windows build Insider, versão 20348.1403. Se desativou previamente a Ligação SSL como parte da solução alternativa, recomendamos vivamente que a reative.
+> Esta é uma **questão conhecida** que foi corrigida em [Windows Holographic, versão 21H1 - julho 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). Se desativou previamente a Ligação SSL como parte da solução alternativa, recomendamos vivamente que a reative.
 
-
-Alguns clientes descobriram que, ao tentar carregar ou descarregar ficheiros, a operação pode parecer pendurar e, em seguida, sair ou nunca completar. Isto é separado da questão conhecida do['ficheiro bloqueado'](#downloading-locked-files-doesnt-error) -- isto afeta Windows construções holográficas, versões 2004, 20H2 e 21H1 no mercado. O problema tem sido causado por um bug no tratamento do Portal do Dispositivo de determinadas solicitações, e é mais consistentemente atingido quando se utiliza https, que é o padrão. 
+Alguns clientes descobriram que, ao tentar carregar ou descarregar ficheiros, a operação pode parecer pendurar e, em seguida, sair ou nunca completar. Isto é separado da questão conhecida do['ficheiro bloqueado'](#downloading-locked-files-doesnt-error) -- isto afeta Windows construções holográficas, versões 2004, 20H2 e 21H1 no mercado. O problema tem sido causado por um bug no tratamento do Portal do Dispositivo de determinadas solicitações, e é mais consistentemente atingido quando se utiliza https, que é o padrão.
 
 ### <a name="workaround"></a>Solução
 

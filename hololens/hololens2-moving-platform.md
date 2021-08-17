@@ -1,5 +1,5 @@
 ---
-title: plataforma móvel HoloLens 2
+title: HoloLens 2 Modo de plataforma móvel
 description: Como usá HoloLens em plataformas móveis
 keywords: plataformas em movimento, movimento dinâmico, hololens, modo de plataforma em movimento
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ae9090409b9c357f7d7ced8ddd477fbebea62e1e3912a9d3691d5585ad79239c
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 2c0e6e285b2eb86342450e8f05876e0cc3bccfe8
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120389211"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858622"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataforma móvel em plataformas de movimento de movimento de movimento de movimento de baixo dinâmico
 

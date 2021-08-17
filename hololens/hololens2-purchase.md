@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cbe196f8ad76a157933223d3d440716c17cd0332
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658827"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858454"
 ---
 # <a name="where-to-buy-hololens-2"></a>Onde comprar HoloLens 2
 
@@ -47,8 +47,8 @@ Consulte as tabelas abaixo para HoloLens 2 opções de disponibilidade e compra 
 | **Austrália** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [Comprar HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Comprar HoloLens 2 Edição Industrial - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra Roxo | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **China** | Alta informação (HII) 翰林汇信息产业股份有限公司 | Feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Comprar HoloLens 2 - Alta informação](http://www.ehighly.com.cn/productList.html?key=hololens) | [Comprar HoloLens 2 Edição Industrial - Alta informação](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Comprar HoloLens 2 Edição Industrial - Changhong IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Comprar HoloLens 2 Edição Industrial - Changhong IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | Tuomeng黑龙江拓盟科技有限公司, CN, 哈尔滨  | Zhaowen Qiu<br>[qiuzw@hljtmkj.com](mailto:qiuzw@hljtmkj.com)<br> lidan<br>[lidan@hljtmkj.com](mailto:lidan@hljtmkj.com) | [Comprar HoloLens 2 - Tuomeng](http://hljtmkj.com/buy.html) | [Comprar HoloLens 2 Edição Industrial - Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
+| | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Comprar HoloLens 2 Edição Industrial - Changhong IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Compre HoloLens 2 Edição Industrial - Changhong IT Information Product7890-=s Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
+| | 四川长虹佳华信息产品有限责任公司/Changhong IT Information Products Co., Ltd | [Comprar HoloLens 2 - Tuomeng](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Comprar HoloLens 2 Edição Industrial - Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
 | | 英施艾特(上海)软件贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd. | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Comprar HoloLens 2 - Insight Enterprises (Xangai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Comprar HoloLens 2 Edição Industrial - Insight Enterprises (Xangai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **RAE de Hong Kong** | GO VR Imersivo Ltd. (OVNI) | Howard Tian <howard.tian@govrimmersive.com> | [Compre HoloLens 2 - GO VR Imersivo Ltd.](https://www.govrimmersive.com/hololens2) | [Comprar HoloLens 2 Edição Industrial - GO VR Imersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | Insight Enterprises Hong Kong | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [Comprar HoloLens 2 - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Comprar HoloLens 2 Edição Industrial - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |

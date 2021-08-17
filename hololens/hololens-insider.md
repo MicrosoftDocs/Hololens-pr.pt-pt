@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364290"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858572"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -35,7 +35,9 @@ Estamos entusiasmados por começar a voar novas funcionalidades para Windows Ins
 |-------------------------|----------------------------|--------------|------------------|
 | [Alterações do CSP para reportar detalhes HoloLens](#csp-changes-for-reporting-hololens-details) | Novos CSPs para consulta de dados | Administradores de TI    | 20348.1403                 |
 | [Política de login automático controlada pela CSP](#auto-login-policy-controlled-by-csp) | Usado para iniciar sessão numa conta automaticamente | Administradores de TI | 20348.1405 |
+| [Melhor atualização reinicia a deteção e notificações](#improved-update-restart-detection-and-notifications) | Novas polícias habilitados e UX para atualizações. | Administradores de TI | 20348.1405 |
 | [Suporte de ficheiro PFX para Gestor de Certificados](#pfx-file-support-for-certificate-manager) | Adicione pfx certs via Definições UI | Utilizador Final | 20348.1405 |
+| [Smart Retry para atualizações de aplicações](#smart-retry-for-app-updates) | Permite que os administradores de TI marquem recauchutagens para atualizar as aplicações. | Administradores de TI | 20348.1405 |
 | [Ver relatório de diagnóstico avançado em Definições sobre HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Ver registos de diagnóstico do MDM no dispositivo | Resolução de problemas | 20348.1405 |
 | [Notificações de Diagnóstico Offline](#offline-diagnostics-notifications) | Feedback audiovisual para coleção de registos | Resolução de problemas | 20348.1405 |
 | [Utilize apenas aplicativos de loja privada apenas para Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure a app da loja para mostrar apenas apps da organização | Administrador de TI | 20348.1408 |
@@ -95,13 +97,34 @@ O OMA-URI do novo valor de cadeia de políticas `./Device/Vendor/MSFT/Policy/Con
 Num dispositivo em que esta política está configurada, o utilizador especificado na política terá de se apresentar pelo menos uma vez. As reinicializações subsequentes do dispositivo após o primeiro início de sessão terão o utilizador especificado automaticamente ligado. Apenas um único utilizador de início de sítido automático é suportado. Uma vez ativado, o utilizador registado automaticamente não poderá iniciar sessão manualmente. Para se apresentar como um utilizador diferente, a política deve primeiro ser desativada.
 
 > [!NOTE]
-> - Alguns eventos, como as principais atualizações do SO, podem exigir que o utilizador especificado volte a apresentar-se ao dispositivo para retomar o comportamento do início de sé. 
+>
+> - Alguns eventos, como as principais atualizações do SO, podem exigir que o utilizador especificado volte a apresentar-se ao dispositivo para retomar o comportamento do início de sé.
 > - O logotipo automático só é suportado para utilizadores de MSA e AAD.
+
+### <a name="improved-update-restart-detection-and-notifications"></a>Melhor atualização reinicia a deteção e notificações
+
+Entre horas ativas e políticas de tempo de instalação, é possível evitar reiniciar HoloLens dispositivos quando estão a ser utilizados. No entanto, também atrasaria a adoção de atualizações caso não ocorressem reboots para completar a instalação de uma atualização necessária. Agora adicionámos políticas para permitir que as TI apliquem prazos e reiniciem e garantam que a instalação de uma atualização seja concluída em tempo útil. Os utilizadores podem ser notificados antes do início do reboot e podem atrasar o reboot de acordo com a política de TI.
+
+Foram adicionadas as seguintes políticas de atualização:
+
+- [Atualização/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Atualização/AutoRestartRequiredNotificationDissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Atualização/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Atualização/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Atualização/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Atualização/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Atualização/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Atualização/AgendaRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Atualização/actualizaçãoNotificaçãoLesvel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Suporte de ficheiro PFX para Gestor de Certificados
 
 Introduzido em Windows insider build 20348.1405. Adicionámos apoio ao [Gestor de Certificados](certificate-manager.md) para agora usar certificados .pfx. Quando os utilizadores navegam para **Definições**  >  **Atualizar &**  >  **Certificados de** Segurança , e selecione **Instalar um certificado,** o UI agora suporta o ficheiro de certificado .pfx.
 Os utilizadores podem importar certificado .pfx, com chave privada, para a loja de utilizadores ou loja de máquinas.
+
+### <a name="smart-retry-for-app-updates"></a>Smart Retry para atualizações de aplicações
+
+Agora ativada para HoloLens é uma nova política que permite aos Administradores de TI definir uma data recorrente ou uma data de tempo para reiniciar aplicações cuja atualização falhou devido à aplicação estar em uso permitindo que a atualização seja aplicada. Estes podem ser definidos com base em alguns gatilhos diferentes, tais como uma hora programada ou uma sindes. Para saber mais sobre como utilizar esta política, consulte [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver relatório de diagnóstico avançado em Definições sobre HoloLens
 
@@ -119,7 +142,7 @@ Agora adicionado no Windows builds Insider, existem duas formas de feedback audi
 ![Torrada para recolher troncos.](./images/logcollection1.jpg)
 
 ![Torradas quando a recolha de registos estiver completa.](./images/logcollection2.jpg)
- 
+
 Como os utilizadores usam frequentemente o Offline Diagnostics como um mecanismo de recolha de registos de recuo para quando não têm acesso a um ecrã, não podem fazer login ou ainda estão no OOBE, haverá também uma sugestão de áudio reproduzida quando os registos são recolhidos. Este som será reproduzido para além da notificação de torradas.
 
 Esta nova funcionalidade será ativada quando o dispositivo atualizar, e não necessita de ser ativada ou gerida. Em qualquer caso que este novo feedback não possa ser exibido ou ouvido, o Offline Diagnostics continuará a ser gerado.
@@ -154,7 +177,8 @@ Para saber mais sobre o que é suportado e como ativar esta nova funcionalidade,
 
 > [!NOTE]
 > Se ainda não foi atualizado recentemente, por favor reinicie o seu dispositivo para atualizar o estado e obter a mais recente construção.
-> - O comando de voz "Reboot device" funciona bem. 
+>
+> - O comando de voz "Reboot device" funciona bem.
 > - Também pode escolher o botão de reinício no programa insider Definições/Windows.
 >
 > Tivemos uma escuta na parte de trás que podes ter encontrado e isto vai pôr-te de volta aos trilhos.
@@ -175,9 +199,9 @@ Se encontrar um erro de atualização 0x80070490 ao atualizar no canal Dev ou Be
 
 #### <a name="stage-one---release-preview"></a>Fase um - Visualização de lançamento
 
-1.  Definições, Update & Security, Windows Insider Program, selecione **Release Preview Channel**.
+1. Definições, Update & Security, Windows Insider Program, selecione **Release Preview Channel**.
 
-2.  Definições, Atualizar segurança &, Windows Update, **verificar as atualizações**. Depois da atualização, continue para a fase dois.
+2. Definições, Atualizar segurança &, Windows Update, **verificar as atualizações**. Depois da atualização, continue para a fase dois.
 
 #### <a name="stage-two---dev-channel"></a>Fase dois - Canal Dev
 
@@ -191,9 +215,9 @@ Para testar com um voo assinado ffu, primeiro tem de voar desbloqueando o seu di
 
 1. No PC:
     1. Faça o download para o seu PC a partir de [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
-    
+
     1. Instalar o ARC (Advanced Recovery Companion) a partir do Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
-    
+
 1. No HoloLens - Desbloqueio de voo: Abrir **Definições**  >  **atualizar & segurança** Windows Insider  >  **Program** e depois inscrever-se, reiniciar o dispositivo.
 
 1. Flash FFU - Agora pode piscar o voo assinado FFU usando ARC.
