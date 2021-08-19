@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/19/2021
+ms.date: 08/16/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
-ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
+ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
+ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "122213915"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122277159"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -31,19 +31,67 @@ Bem-vindos às mais recentes construções de Insider Preview para HoloLens! É 
 
 Estamos entusiasmados por começar a voar novas funcionalidades para Windows Insiders novamente. Novas construções serão voadas para os Canais Dev e Beta para as últimas atualizações. Continuaremos a atualizar esta página à medida que adicionamos mais funcionalidades e atualizações ao nosso Windows o Insider constrói. Fique animado e pronto para misturar estas atualizações na sua realidade.
 
+Este é sobre a melhoria da resolução de problemas e relatórios de dispositivos, alguns bugs fixos no modo quiosque e o espectador de certificado, a superfície de gestão expandida e a maior fiabilidade da atualização. Uma nova funcionalidade principal desta atualização de funcionalidades que chega a HoloLens é o nosso Modo plataforma móvel. Confira todas as novidades para HoloLens 2!
+
 | Funcionalidade                 | Descrição                | Utilizador ou Cenário | Construção introduzida |
 |-------------------------|----------------------------|--------------|------------------|
+| [Modo de plataforma móvel](#moving-platform-mode) | Introduz a beta do Modo plataforma móvel, que, quando configurada, permite a utilização de HoloLens 2 em grandes embarcações marinhas que experimentam movimentos de baixa dinâmica. | Todos | 20348.1411 |
+| [Suporte de ficheiro PFX para Gestor de Certificados](#pfx-file-support-for-certificate-manager) | Adicione pfx certs via Definições UI | Utilizador Final | 20348.1405 |
+| [Ver relatório de diagnóstico avançado em Definições sobre HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Ver registos de diagnóstico do MDM no dispositivo | Resolução de problemas | 20348.1405 |
+| [Notificações de Diagnóstico Offline](#offline-diagnostics-notifications) | Feedback audiovisual para coleção de registos | Resolução de problemas | 20348.1405 |
+| [Melhorias na recolha de registos de baixo armazenamento](#low-storage-log-collection-improvements) | Melhorias nos cenários de recolha de registos em situações de armazenamento reduzido. | Resolução de problemas | 20348.1412 |
 | [Alterações do CSP para reportar detalhes HoloLens](#csp-changes-for-reporting-hololens-details) | Novos CSPs para consulta de dados | Administradores de TI    | 20348.1403                 |
 | [Política de login automático controlada pela CSP](#auto-login-policy-controlled-by-csp) | Usado para iniciar sessão numa conta automaticamente | Administradores de TI | 20348.1405 |
 | [Melhor atualização reinicia a deteção e notificações](#improved-update-restart-detection-and-notifications) | Novas polícias habilitados e UX para atualizações. | Administradores de TI | 20348.1405 |
-| [Suporte de ficheiro PFX para Gestor de Certificados](#pfx-file-support-for-certificate-manager) | Adicione pfx certs via Definições UI | Utilizador Final | 20348.1405 |
 | [Smart Retry para atualizações de aplicações](#smart-retry-for-app-updates) | Permite que os administradores de TI marquem recauchutagens para atualizar as aplicações. | Administradores de TI | 20348.1405 |
-| [Ver relatório de diagnóstico avançado em Definições sobre HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Ver registos de diagnóstico do MDM no dispositivo | Resolução de problemas | 20348.1405 |
-| [Notificações de Diagnóstico Offline](#offline-diagnostics-notifications) | Feedback audiovisual para coleção de registos | Resolução de problemas | 20348.1405 |
 | [Utilize apenas aplicativos de loja privada apenas para Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure a app da loja para mostrar apenas apps da organização | Administrador de TI | 20348.1408 |
-| [Melhorias na recolha de registos de baixo armazenamento](#low-storage-log-collection-improvements) | Melhorias nos cenários de recolha de registos em situações de armazenamento reduzido. | Administrador de TI | 20348.1412 |
-| [Modo de plataforma móvel](#moving-platform-mode) | Introduz a beta do Modo plataforma móvel, que, quando configurada, permite a utilização de HoloLens 2 em grandes embarcações marinhas que experimentam movimentos de baixa dinâmica. | Todos | 20348.1411 |
 | [Correções e melhorias](#fixes-and-improvements) | Correções e melhorias para HoloLens. | Todos | 20348.1411 |
+
+### <a name="it-admin-insider-feature-checklist"></a>Lista de verificação de recursos de insider de TI
+
+✔️ Se pretender definir uma única conta Azure AD para iniciar sessão automaticamente, [configuure este novo CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ Se quiser configurar as suas apps para tentar atualizar automaticamente depois de não atualizar, [desconfiem deste novo CSP para uma nova tentativa inteligente.](#smart-retry-for-app-updates) <br>
+✔️ Se quiser ter mais controlo sobre as atualizações do SO, confira estas [novas políticas de Atualização ativadas.](#improved-update-restart-detection-and-notifications) <br>
+✔️ Se precisar de disponibilizar as aplicações da sua organização na loja da empresa através do Microsoft Store, mas apenas quiser permitir o acesso às aplicações da sua organização e não à loja completa, [desaça esta política.](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ Se pretender conhecer o espaço de armazenamento gratuito, SSID ou BSSID dos seus dispositivos HoloLens, consulte estes [CSPs de reporte.](#csp-changes-for-reporting-hololens-details)
+
+### <a name="moving-platform-mode"></a>Modo de plataforma móvel
+
+A partir da **build 20348.1411** do Insider, adicionámos suporte beta para rastrear plataformas de movimento de baixa dinâmica em HoloLens 2. Depois de instalar o modo de plataforma móvel, poderá utilizar o seu HoloLens 2 em ambientes previamente inacessíveis, como grandes navios e grandes embarcações marinhas. Atualmente, a funcionalidade destina-se a ativar estas plataformas móveis específicas apenas. Embora nada o impeça de tentar utilizar a funcionalidade em outros ambientes, a funcionalidade está focada em adicionar suporte a estes ambientes em primeiro lugar.
+
+Para saber mais sobre o que é suportado e como ativar esta nova funcionalidade, [visite a página da plataforma móvel.](hololens2-moving-platform.md)
+
+### <a name="pfx-file-support-for-certificate-manager"></a>Suporte de ficheiro PFX para Gestor de Certificados
+
+Introduzido em Windows insider build 20348.1405. Adicionámos apoio ao [Gestor de Certificados](certificate-manager.md) para agora usar certificados .pfx. Quando os utilizadores navegam para **Definições**  >  **Atualizar &**  >  **Certificados de** Segurança , e selecione **Instalar um certificado,** o UI agora suporta o ficheiro de certificado .pfx.
+Os utilizadores podem importar certificado .pfx, com chave privada, para a loja de utilizadores ou loja de máquinas.
+
+### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver relatório de diagnóstico avançado em Definições sobre HoloLens
+
+Para dispositivos geridos quando o comportamento de resolução de problemas, confirmar que uma configuração de política esperada é aplicada é um passo importante. Anteriormente a esta nova funcionalidade, esta tinha de ser feita fora do dispositivo via MDM ou perto do dispositivo depois de exportar registos de diagnóstico do MDM recolhidos através **do Definições**  ->  **Contas** Access  >  **ou escola**, e selecione **Exporte os seus registos de gestão** e seja visualizado num PC próximo.
+
+Agora o DIAGNÓSTICO MDM pode ser visto no dispositivo usando o navegador Edge. Para ver mais facilmente o relatório de diagnóstico do MDM, navegue para a página de Access work ou school, e **selecione Ver relatório de diagnóstico avançado**. Isto gerará e abrirá o relatório numa nova janela Edge.
+
+![Consulte o relatório de diagnóstico avançado na aplicação Definições.](./images/view-advanced-diagnostic-report.jpg)
+
+### <a name="offline-diagnostics-notifications"></a>Notificações de Diagnóstico Offline
+
+Esta é uma atualização para uma funcionalidade existente chamada [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). Anteriormente, não havia um indicador claro para os utilizadores de que tinham desencadeado a recolha de diagnóstico ou que tinham concluído.
+Agora adicionado no Windows builds Insider, existem duas formas de feedback audiovisual para diagnóstico offline. A primeira a ser torras notificações exibidas para ambos quando a recolha começa e completa. Estes serão apresentados quando o utilizador iniciar sessão e tiver visuais.
+
+![Torrada para recolher troncos.](./images/logcollection1.jpg)
+
+![Torradas quando a recolha de registos estiver completa.](./images/logcollection2.jpg)
+
+Como os utilizadores usam frequentemente o Offline Diagnostics como um mecanismo de recolha de registos de recuo para quando não têm acesso a um ecrã, não podem fazer login ou ainda estão no OOBE, haverá também uma sugestão de áudio reproduzida quando os registos são recolhidos. Este som será reproduzido para além da notificação de torradas.
+
+Esta nova funcionalidade será ativada quando o dispositivo atualizar, e não necessita de ser ativada ou gerida. Em qualquer caso que este novo feedback não possa ser exibido ou ouvido, o Offline Diagnostics continuará a ser gerado.
+
+Esperamos que com esta mais recente adição de feedback audiovisual seja mais fácil recolher dados de diagnóstico e, mais rapidamente, ser capaz de resolver os seus problemas.
+
+### <a name="low-storage-log-collection-improvements"></a>Melhorias na recolha de registos de baixo armazenamento
+
+Em cenários em que um dispositivo parece estar com pouco espaço no disco quando os registos de diagnóstico são recolhidos, será criado um relatório adicional chamado **StorageDiagnostics.zip.** O limiar de armazenamento baixo é determinado automaticamente por Windows [sentido de armazenamento](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Alterações do CSP para reportar detalhes HoloLens
 
@@ -117,53 +165,15 @@ Foram adicionadas as seguintes políticas de atualização:
 - [Atualização/AgendaRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Atualização/actualizaçãoNotificaçãoLesvel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
-### <a name="pfx-file-support-for-certificate-manager"></a>Suporte de ficheiro PFX para Gestor de Certificados
-
-Introduzido em Windows insider build 20348.1405. Adicionámos apoio ao [Gestor de Certificados](certificate-manager.md) para agora usar certificados .pfx. Quando os utilizadores navegam para **Definições**  >  **Atualizar &**  >  **Certificados de** Segurança , e selecione **Instalar um certificado,** o UI agora suporta o ficheiro de certificado .pfx.
-Os utilizadores podem importar certificado .pfx, com chave privada, para a loja de utilizadores ou loja de máquinas.
-
 ### <a name="smart-retry-for-app-updates"></a>Smart Retry para atualizações de aplicações
 
 Agora ativada para HoloLens é uma nova política que permite aos Administradores de TI definir uma data recorrente ou uma data de tempo para reiniciar aplicações cuja atualização falhou devido à aplicação estar em uso permitindo que a atualização seja aplicada. Estes podem ser definidos com base em alguns gatilhos diferentes, tais como uma hora programada ou uma sindes. Para saber mais sobre como utilizar esta política, consulte [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
-
-### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver relatório de diagnóstico avançado em Definições sobre HoloLens
-
-Para dispositivos geridos quando o comportamento de resolução de problemas, confirmar que uma configuração de política esperada é aplicada é um passo importante. Anteriormente a esta nova funcionalidade, esta tinha de ser feita fora do dispositivo via MDM ou perto do dispositivo depois de exportar registos de diagnóstico do MDM recolhidos através **do Definições**  ->  **Contas** Access  >  **ou escola**, e selecione **Exporte os seus registos de gestão** e seja visualizado num PC próximo.
-
-Agora o DIAGNÓSTICO MDM pode ser visto no dispositivo usando o navegador Edge. Para ver mais facilmente o relatório de diagnóstico do MDM, navegue para a página de Access work ou school, e **selecione Ver relatório de diagnóstico avançado**. Isto gerará e abrirá o relatório numa nova janela Edge.
-
-![Consulte o relatório de diagnóstico avançado na aplicação Definições.](./images/view-advanced-diagnostic-report.jpg)
-
-### <a name="offline-diagnostics-notifications"></a>Notificações de Diagnóstico Offline
-
-Esta é uma atualização para uma funcionalidade existente chamada [Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). Anteriormente, não havia um indicador claro para os utilizadores de que tinham desencadeado a recolha de diagnóstico ou que tinham concluído.
-Agora adicionado no Windows builds Insider, existem duas formas de feedback audiovisual para diagnóstico offline. A primeira a ser torras notificações exibidas para ambos quando a recolha começa e completa. Estes serão apresentados quando o utilizador iniciar sessão e tiver visuais.
-
-![Torrada para recolher troncos.](./images/logcollection1.jpg)
-
-![Torradas quando a recolha de registos estiver completa.](./images/logcollection2.jpg)
-
-Como os utilizadores usam frequentemente o Offline Diagnostics como um mecanismo de recolha de registos de recuo para quando não têm acesso a um ecrã, não podem fazer login ou ainda estão no OOBE, haverá também uma sugestão de áudio reproduzida quando os registos são recolhidos. Este som será reproduzido para além da notificação de torradas.
-
-Esta nova funcionalidade será ativada quando o dispositivo atualizar, e não necessita de ser ativada ou gerida. Em qualquer caso que este novo feedback não possa ser exibido ou ouvido, o Offline Diagnostics continuará a ser gerado.
-
-Esperamos que com esta mais recente adição de feedback audiovisual seja mais fácil recolher dados de diagnóstico e, mais rapidamente, ser capaz de resolver os seus problemas.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Utilize apenas aplicativos de loja privada para Microsoft Store
 
 A política RequerPrivateStoreOnly foi ativada para HoloLens. Esta política permite configurar a aplicação Microsoft Store apenas para mostrar a loja privada configurada para a sua organização. Limitando o acesso apenas às aplicações que disponibilizou.
 
 Saiba mais sobre [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
-
-### <a name="low-storage-log-collection-improvements"></a>Melhorias na recolha de registos de baixo armazenamento
-
-Em cenários em que um dispositivo parece estar com pouco espaço no disco quando os registos de diagnóstico são recolhidos, será criado um relatório adicional chamado **StorageDiagnostics.zip.** O limiar de armazenamento baixo é determinado automaticamente por Windows [sentido de armazenamento](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
-
-### <a name="moving-platform-mode"></a>Modo de plataforma móvel
-
-A partir da **build 20348.1411** do Insider, adicionámos suporte beta para rastrear plataformas de movimento de baixa dinâmica em HoloLens 2. Depois de instalar o modo de plataforma móvel, poderá utilizar o seu HoloLens 2 em ambientes previamente inacessíveis, como grandes navios e grandes embarcações marinhas. Atualmente, a funcionalidade destina-se a ativar estas plataformas móveis específicas apenas. Embora nada o impeça de tentar utilizar a funcionalidade em outros ambientes, a funcionalidade está focada em adicionar suporte a estes ambientes em primeiro lugar.
-
-Para saber mais sobre o que é suportado e como ativar esta nova funcionalidade, [visite a página da plataforma móvel.](hololens2-moving-platform.md)
 
 ### <a name="fixes-and-improvements"></a>Correções e melhorias
 

@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2c0e6e285b2eb86342450e8f05876e0cc3bccfe8
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 9c37baa6fb63e9b049378799515ef107ed0ea7a8
+ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858622"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122401173"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataforma móvel em plataformas de movimento de movimento de movimento de movimento de baixo dinâmico
 
 Na **build insider 20348.1411,** adicionámos suporte beta para rastrear plataformas de movimento de baixa dinâmica em HoloLens 2. Depois de instalar o modo de plataforma móvel, poderá utilizar o seu HoloLens 2 em ambientes anteriormente inacessíveis, como grandes navios e grandes embarcações marinhas. Atualmente, a funcionalidade destina-se a ativar estas plataformas móveis específicas apenas. Embora nada o impeça de tentar utilizar a funcionalidade em outros ambientes, a funcionalidade está focada em adicionar suporte a estes ambientes em primeiro lugar.
 
 > [!NOTE]
-> Esta funcionalidade só está disponível através de Windows [Insiders.](hololens-insider.md)
+> Esta funcionalidade só está disponível através [de Windows Insiders.](hololens-insider.md)
 
 Este artigo abrange:
 
@@ -71,14 +71,16 @@ Para ativar o modo plataforma móvel, [primeiro ative o Portal do Dispositivo](/
 1. Selecione o acordeão **do Sistema** no menu à esquerda
 2. Selecione a página **modo plataforma móvel** e verifique a caixa de **verificação do modo de plataforma móvel**
 
-![Primeira imagem](.\images\moving-platform-1.png) ![Segunda imagem](.\images\moving-platform-2.png)
+   ![Primeira imagem](.\images\moving-platform-1x.png)
+ 
+     ![Segunda imagem](.\images\moving-platform-2x.png)
 
 3. Quando solicitado com uma advertência, selecione **OK**
 
-![Terceira imagem](.\images\moving-platform-3.png)
+   ![Terceira imagem](.\images\moving-platform-3x.png)
 
 4. Reinicie o seu dispositivo, que pode ser feito através do menu Device Portal **Power** no canto superior direito ou emitindo o seguinte comando de voz &quot; Reinicie o dispositivo &quot; e selecione &quot; Sim &quot; .
 
-![Quarta imagem](.\images\moving-platform-4.png)
+   ![Quarta imagem](.\images\moving-platform-4x.png)
 
 Se não conseguir ver a opção Modo plataforma móvel no Portal do Dispositivo, então é provável que ainda não esteja na construção adequada. Consulte a secção [Pré-Requisitos.](#prerequisites)
