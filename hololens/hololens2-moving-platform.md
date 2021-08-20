@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c37baa6fb63e9b049378799515ef107ed0ea7a8
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: 64aaf726fab27c997eea26208f17daae4fa3179d
+ms.sourcegitcommit: 938fa78e1b6c59626e12399c9babc277eb30c29c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401173"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122448714"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataforma móvel em plataformas de movimento de movimento de movimento de movimento de baixo dinâmico
 
@@ -35,7 +35,7 @@ Este artigo abrange:
 
 ## <a name="why-moving-platform-mode-is-necessary"></a>Por que o modo de plataforma móvel é necessário
 
-HoloLens precisa de ser capaz de rastrear a sua posição de cabeça com [6 graus de liberdade](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, tradução z e rolo, pitch, rotação de bocejo) para mostrar hologramas estáveis. Para isso, HoloLens rastreia duas informações semelhantes de duas fontes distintas:
+HoloLens precisa ser capaz de rastrear a sua posição de cabeça com [6 graus de liberdade](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z, tradução e rolo, pitch, rotação de bocejo) para mostrar hologramas estáveis. Para isso, HoloLens rastreia duas informações semelhantes de duas fontes distintas:
 
 1. Câmaras de luz visíveis – que acompanham o ambiente, por exemplo, a sala física em que está a utilizar o HoloLens
 1. Unidade de Medição Inercial (IMU), que consiste num acelerómetro, giroscópio e magnetómetro que rastreia o movimento e orientação da cabeça em relação à Terra
@@ -44,7 +44,7 @@ A informação destas duas fontes é composta para rastrear a sua posição na c
 
 No entanto, esta abordagem baseia-se num pressuposto crítico; o ambiente (rastreado pelas câmaras) permanece estacionário em relação à Terra (contra o qual a IMU pode efetuar medições). Quando não é esse o caso, como num barco na água, a informação de ambas as fontes pode entrar em conflito entre si e fazer com que o localizador se perca. Este conflito produz informações de posição incorretas e resulta em hologramas de natação ou até mesmo em perdas de rastreamento.
 
-O Modo plataforma móvel resolve este problema. Quando ativa o Modo plataforma móvel, isso é uma dica para o nosso localizador que não podemos confiar nas nossas entradas de sensores para concordarmos completamente uns com os outros em todos os momentos. Em vez disso, temos de confiar mais fortemente no rastreio visual e identificar rapidamente dados de movimento incongruentes inércias e filtrá-los em conformidade antes de&#39;a reutilizar a entrada da IMU.
+O Modo plataforma móvel resolve este problema. Quando ativa o Modo plataforma móvel, isso é uma dica para o nosso localizador que não podemos confiar nas nossas entradas de sensores para concordarmos completamente uns com os outros em todos os momentos. Em vez disso, precisamos confiar mais fortemente no rastreio visual e identificar rapidamente dados de movimento incongruentes inércias e filtrá-los em conformidade antes de podermos usar a entrada IMU.
 
 ## <a name="supported-environments-and-known-limitations"></a>Ambientes Apoiados e Limitações Conhecidas
 
@@ -54,14 +54,17 @@ Enquanto o Modo plataforma móvel foi desenvolvido para lidar inteligentemente c
 
 - Os únicos ambientes suportados para o modo de plataforma móvel (MPM) são grandes navios marinhos que experimentam movimentos de baixa dinâmica. Por outras palavras, muitos ambientes/situações comuns ainda **não** são suportados devido ao seu movimento de alta frequência e elevados níveis de aceleração e [empurrão](https://en.wikipedia.org/wiki/Jerk_(physics)). Por exemplo: aviões, comboios, carros, bicicletas, autocarros, pequenos barcos, elevadores, etc.
 - Hologramas podem oscilar ligeiramente quando o MPM está ativado, especialmente quando se está em água picada.
-- Nada impede que os utilizadores tentem utilizar MPM em ambientes não suportados, no entanto, os utilizadores podem experimentar efeitos colaterais indesejáveis se o dispositivo for capaz de manter o rastreio no espaço não suportado. Por exemplo, com o MPM, os utilizadores podem achar&#39;possível de usar num elevador enquanto mudam de piso, enquanto que isso era anteriormente impossível. Infelizmente, embora o MPM permita que o dispositivo mantenha o rastreio, não lida com a gestão do mapa neste momento. Assim, os utilizadores vão descobrir que mudar de andar num elevador fará com que o dispositivo confunda os andares superiores e inferiores e afete negativamente a qualidade do mapa.
+- Nada impede que os utilizadores tentem utilizar MPM em ambientes não suportados, no entanto, os utilizadores podem experimentar efeitos colaterais indesejáveis se o dispositivo for capaz de manter o rastreio no espaço não suportado. Por exemplo, com o MPM, os utilizadores podem descobrir que é possível usar num elevador enquanto mudam de piso, enquanto que isso era anteriormente impossível. Infelizmente, embora o MPM permita que o dispositivo mantenha o rastreio, não lida com a gestão do mapa neste momento. Os utilizadores descobrirão que mudar de piso num elevador fará com que o dispositivo confunda os andares superiores e inferiores e afete negativamente a qualidade do mapa.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 O suporte beta para o modo plataforma móvel requer apenas alguns pré-requisitos:
 
 1. Instale a construção 20348.1411 ou mais [recente, piscando os mais recentes Insiders construídos via ARC](hololens-insider.md#ffu-download-and-flash-directions) ou [inscrevendo e atualizando o seu dispositivo](hololens-insider.md#start-receiving-insider-builds).
-   - Nota: Esta construção só está disponível no [Canal Insider Dev](hololens-insider.md#start-receiving-insider-builds).
+
+   > [!NOTE]
+   > Esta construção está atualmente disponível apenas no [Canal Insider Dev](hololens-insider.md#start-receiving-insider-builds).
+
 2. Ativar [o modo de desenvolvimento e o portal do dispositivo](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## <a name="enabling-moving-platform-mode"></a>Ativar o modo de plataforma móvel
@@ -69,18 +72,28 @@ O suporte beta para o modo plataforma móvel requer apenas alguns pré-requisito
 Para ativar o modo plataforma móvel, [primeiro ative o Portal do Dispositivo](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Selecione o acordeão **do Sistema** no menu à esquerda
+
+   ![Primeira imagem](.\images\moving-platform-1z.png)
+
 2. Selecione a página **modo plataforma móvel** e verifique a caixa de **verificação do modo de plataforma móvel**
 
-   ![Primeira imagem](.\images\moving-platform-1x.png)
- 
-     ![Segunda imagem](.\images\moving-platform-2x.png)
+    ![Segunda imagem](.\images\moving-platform-2z.png)
 
 3. Quando solicitado com uma advertência, selecione **OK**
 
-   ![Terceira imagem](.\images\moving-platform-3x.png)
+   ![Terceira imagem](.\images\moving-platform-3z.png)
 
 4. Reinicie o seu dispositivo, que pode ser feito através do menu Device Portal **Power** no canto superior direito ou emitindo o seguinte comando de voz &quot; Reinicie o dispositivo &quot; e selecione &quot; Sim &quot; .
 
-   ![Quarta imagem](.\images\moving-platform-4x.png)
+   ![Quarta imagem](.\images\moving-platform-4z.png)
 
 Se não conseguir ver a opção Modo plataforma móvel no Portal do Dispositivo, então é provável que ainda não esteja na construção adequada. Consulte a secção [Pré-Requisitos.](#prerequisites)
+
+## <a name="reporting-issues"></a>Questões de Reporte
+
+Como mencionado acima, esta funcionalidade é uma funcionalidade beta disponível apenas no Modo Desenvolvedor, o que significa que pode atingir problemas. Se isso acontecer, para que possamos investigar e melhorar o produto, por favor
+
+1. Reportar o problema através do [Feedback Hub](hololens-feedback.md) sob a categoria **de precisão, estabilidade e fiabilidade** do Holograma e incluir:
+    1. Uma descrição do problema, incluindo o comportamento esperado e comportamento experimentado
+    1. Uma captura de [vídeo](holographic-photos-and-videos.md#capture-a-mixed-reality-video) da Realidade Mista da questão
+2.  Abra um caso de apoio [https://aka.ms/hlsupport](https://aka.ms/hlsupport) e partilhe o URL do Feedback Hub, para que possamos chegar ao caso de termos questões de acompanhamento
