@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: jarrettr
-ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
+ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662355"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122620816"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -250,7 +250,12 @@ Uma vez concluídas as instruções acima, os seus utilizadores HoloLens 2 passa
        >
        > Para os dispositivos que utilizam adaptadores ethernet, deve ligar o dispositivo à rede antes do início da Experiência Fora da Caixa (OOBE). O dispositivo determina se está a ser abascamador como um dispositivo Autopilot enquanto está no primeiro ecrã OOBE. Se o dispositivo não conseguir ligar-se à rede, ou se optar por não providenciar o dispositivo como um dispositivo Autopilot, não poderá alterar o fornecimento de Piloto Automático posteriormente. Em vez disso, teria de recomeçar este procedimento para poder providenciar o dispositivo como um dispositivo Autopilot.
 
-1. O dispositivo deve iniciar automaticamente o OOBE. Não interaja com o OOBE. Em vez disso, sente-se, para trás e relaxe! Deixe HoloLens 2 detetar a conectividade da rede e permitir que complete o OOBE automaticamente. O aparelho pode reiniciar durante o OOBE. Os ecrãs OOBE devem assemelhar-se ao seguinte.
+1. O dispositivo deve iniciar automaticamente o OOBE. Não interaja com o OOBE.
+
+    > [!IMPORTANT]
+    > Não interaja com o OOBE ou pressione o botão de alimentação para colocar o sistema em modo de espera/paragem, enquanto o piloto automático está em andamento. Isto pode fazer com que o fluxo do piloto automático não esteja completo.
+
+   Deixe HoloLens 2 detetar a conectividade da rede e permitir que complete o OOBE automaticamente. O aparelho pode reiniciar durante o OOBE. Os ecrãs OOBE devem assemelhar-se ao seguinte.
 
    ![OOBE passo 1 ](./images/autopilot-welcome.jpg)
     ![ OOBE passo 2 ](./images/autopilot-step-complete.jpg)
