@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
+  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
   ms.translationtype: MT
   ms.contentlocale: pt-PT
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115659760"
+  ms.lasthandoff: 08/20/2021
+  ms.locfileid: "122610255"
 title: faQ HoloLens 2 edição de desenvolvimento
 summary: ''
 sections:
@@ -41,7 +41,7 @@ sections:
   - question: >
       Como e receberei os meus 500 dólares em créditos Azure, 3 meses de Pro de unidade e 3 meses de julgamento do Pixyz Plugin?
     answer: >
-      Os seus créditos de desconto ou acesso a testes serão enviados para o e-mail utilizado na compra no prazo de 2 dias úteis após a expedição do produto.
+      Os seus créditos de desconto ou acesso a testes serão incluídos na sua HoloLens 2 Development Edition.
   - question: >
       Posso "atualizar" o meu dispositivo HoloLens 2 (apenas para dispositivo) para a HoloLens 2 Development Edition para obter os créditos de teste?
     answer: >

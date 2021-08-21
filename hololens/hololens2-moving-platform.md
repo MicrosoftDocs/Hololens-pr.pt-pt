@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64aaf726fab27c997eea26208f17daae4fa3179d
-ms.sourcegitcommit: 938fa78e1b6c59626e12399c9babc277eb30c29c
+ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
+ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122448714"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122610143"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataforma móvel em plataformas de movimento de movimento de movimento de movimento de baixo dinâmico
 
@@ -73,7 +73,7 @@ Para ativar o modo plataforma móvel, [primeiro ative o Portal do Dispositivo](/
 
 1. Selecione o acordeão **do Sistema** no menu à esquerda
 
-   ![Primeira imagem](.\images\moving-platform-1z.png)
+   ![Primeira imagem](.\images\moving-platform-1w.png)
 
 2. Selecione a página **modo plataforma móvel** e verifique a caixa de **verificação do modo de plataforma móvel**
 
@@ -81,7 +81,7 @@ Para ativar o modo plataforma móvel, [primeiro ative o Portal do Dispositivo](/
 
 3. Quando solicitado com uma advertência, selecione **OK**
 
-   ![Terceira imagem](.\images\moving-platform-3z.png)
+   ![Terceira imagem](.\images\moving-platform-3w.png)
 
 4. Reinicie o seu dispositivo, que pode ser feito através do menu Device Portal **Power** no canto superior direito ou emitindo o seguinte comando de voz &quot; Reinicie o dispositivo &quot; e selecione &quot; Sim &quot; .
 
