@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663622"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859039"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Configure HoloLens utilizando um pacote de provisionamento
 
@@ -34,7 +34,7 @@ Algumas das configurações HoloLens que pode aplicar num pacote de provisioname
 - Criar uma ligação Wi-Fi
 - Aplicar certificados no dispositivo
 - Ativar o modo de desenvolvimento
-- Configure o modo quiosque seguindo as [nossas instruções detalhadas](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configure o modo quiosque seguindo as [nossas instruções detalhadas](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 ## <a name="provisioning-package-hololens-wizard"></a>Pacote de provisionamento HoloLens assistente
 
@@ -50,7 +50,7 @@ O assistente HoloLens ajuda-o a configurar as seguintes definições num pacote 
 - Inscreva o dispositivo em Azure Ative Directory ou crie uma conta local
 - Adicionar certificados
 - Ativar o modo de desenvolvimento
-- Configure o modo de quiosque seguindo [instruções detalhadas](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).
+- Configure o modo de quiosque seguindo [instruções detalhadas](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 > [!WARNING]
 > Tem de executar Windows Configuration Designer no Windows 10 para configurar Azure Ative Directory inscrição utilizando qualquer um dos assistentes.
@@ -123,7 +123,7 @@ Depois de terminar, **selecione Criar**. Leva apenas alguns segundos. Quando a e
 
     > [!IMPORTANT]
     > Ao construir um pacote de provisionamento, poderá incluir informações sensíveis nos ficheiros do projeto e no ficheiro do pacote de provisionamento (.ppkg). Embora tenha a opção de encriptar o ficheiro .ppkg, os ficheiros do projeto não estão encriptados. Deve armazenar os ficheiros do projeto num local seguro e eliminar os ficheiros do projeto quando já não forem necessários.
-    
+
 9. Selecione   >  **pacote de provisão de exportação**.
 
 10. Alterar **proprietário** para **administrador de TI**. Isto define a precedência deste pacote de provisionamento superior ao que os pacotes de provisionamento aplicados a este dispositivo a partir de outras fontes. Selecione **Seguinte**.
@@ -160,11 +160,11 @@ HoloLens 2 dispositivos Windows na [versão Holográfica 20H2](hololens-release-
 - [Pacotes de provisão automática em OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [Provisionamento automático sem utilização de UI](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. Utilize o cabo USB para ligar o dispositivo a um PC (ou unidade USB para HoloLens 2, como mencionado acima) e, em seguida, ligue o dispositivo. Não continue além da primeira página de **momento interagivel** da OOBE.   
-    - No HoloLens (1º gágeno), esta página contém uma caixa azul. 
+1. Utilize o cabo USB para ligar o dispositivo a um PC (ou unidade USB para HoloLens 2, como mencionado acima) e, em seguida, ligue o dispositivo. Não continue além da primeira página de **momento interagivel** da OOBE.
+    - No HoloLens (1º gágeno), esta página contém uma caixa azul.
     - No HoloLens 2, esta página contém o beija-flor.
 
-2. Pressione e solte brevemente os botões **Volume Down** e **Power** simultaneamente. 
+2. Pressione e solte brevemente os botões **Volume Down** e **Power** simultaneamente.
 
 3. HoloLens aparece como um dispositivo no Explorador de Ficheiros no PC.
 
@@ -183,10 +183,10 @@ HoloLens 2 dispositivos Windows na [versão Holográfica 20H2](hololens-release-
 
 - Processos automatizados que permitem uma menor interação do utilizador, quando as unidades USB com Pacotes de Provisionamento são utilizadas durante o OOBE.
 
-Antes desta libertação, os utilizadores tiveram de lançar manualmente o ecrã de provisionamento durante o OOBE para obterem uma combinação de botões. Agora os utilizadores podem saltar a combinação de botões, utilizando um Pacote de Provisionamento numa unidade de armazenamento USB. 
+Antes desta libertação, os utilizadores tiveram de lançar manualmente o ecrã de provisionamento durante o OOBE para obterem uma combinação de botões. Agora os utilizadores podem saltar a combinação de botões, utilizando um Pacote de Provisionamento numa unidade de armazenamento USB.
 
 1. Ligue a unidade USB com o pacote de provisionamento durante o primeiro momento interagivel da OOBE
-1. Quando o dispositivo estiver pronto para ser a provisionado, abrirá automaticamente o pedido com a página de provisionamento. 
+1. Quando o dispositivo estiver pronto para ser a provisionado, abrirá automaticamente o pedido com a página de provisionamento.
 
 Nota: Se uma unidade USB for deixada ligada durante o arranque do dispositivo, então o OOBE enumerará o dispositivo de armazenamento USB existente, bem como o relógio para outros que estão ligados.
 

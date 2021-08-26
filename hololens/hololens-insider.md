@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
-ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
+ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122277159"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859022"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -42,9 +42,10 @@ Este é sobre a melhoria da resolução de problemas e relatórios de dispositiv
 | [Melhorias na recolha de registos de baixo armazenamento](#low-storage-log-collection-improvements) | Melhorias nos cenários de recolha de registos em situações de armazenamento reduzido. | Resolução de problemas | 20348.1412 |
 | [Alterações do CSP para reportar detalhes HoloLens](#csp-changes-for-reporting-hololens-details) | Novos CSPs para consulta de dados | Administradores de TI    | 20348.1403                 |
 | [Política de login automático controlada pela CSP](#auto-login-policy-controlled-by-csp) | Usado para iniciar sessão numa conta automaticamente | Administradores de TI | 20348.1405 |
-| [Melhor atualização reinicia a deteção e notificações](#improved-update-restart-detection-and-notifications) | Novas polícias habilitados e UX para atualizações. | Administradores de TI | 20348.1405 |
+| [Melhor atualização reinicia a deteção e notificações](#improved-update-restart-detection-and-notifications) | Novas políticas ativadas e UX para atualizações. | Administradores de TI | 20348.1405 |
 | [Smart Retry para atualizações de aplicações](#smart-retry-for-app-updates) | Permite que os administradores de TI marquem recauchutagens para atualizar as aplicações. | Administradores de TI | 20348.1405 |
 | [Utilize apenas aplicativos de loja privada apenas para Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configure a app da loja para mostrar apenas apps da organização | Administrador de TI | 20348.1408 |
+| [Use aplicativos WDAC e LOB](#use-wdac-and-lob-apps) | Permite que os Administradores de TI utilizem as suas próprias apps e ainda utilizem o WDAC para bloquear outras aplicações. | Administradores de TI | 20348.1405 |
 | [Correções e melhorias](#fixes-and-improvements) | Correções e melhorias para HoloLens. | Todos | 20348.1411 |
 
 ### <a name="it-admin-insider-feature-checklist"></a>Lista de verificação de recursos de insider de TI
@@ -53,7 +54,8 @@ Este é sobre a melhoria da resolução de problemas e relatórios de dispositiv
 ✔️ Se quiser configurar as suas apps para tentar atualizar automaticamente depois de não atualizar, [desconfiem deste novo CSP para uma nova tentativa inteligente.](#smart-retry-for-app-updates) <br>
 ✔️ Se quiser ter mais controlo sobre as atualizações do SO, confira estas [novas políticas de Atualização ativadas.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ Se precisar de disponibilizar as aplicações da sua organização na loja da empresa através do Microsoft Store, mas apenas quiser permitir o acesso às aplicações da sua organização e não à loja completa, [desaça esta política.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ Se pretender conhecer o espaço de armazenamento gratuito, SSID ou BSSID dos seus dispositivos HoloLens, consulte estes [CSPs de reporte.](#csp-changes-for-reporting-hololens-details)
+✔️ Se pretender conhecer o espaço de armazenamento gratuito, SSID ou BSSID dos seus dispositivos HoloLens, consulte estes [CSPs de reporte.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ Se quiser usar o WDAC para bloquear aplicações ou processos de lançamento, mas também precisa de usar a sua própria linha de aplicações de bushiness, pode agora [permitir lob na sua política WDAC.](#use-wdac-and-lob-apps)
 
 ### <a name="moving-platform-mode"></a>Modo de plataforma móvel
 
@@ -68,7 +70,7 @@ Os utilizadores podem importar certificado .pfx, com chave privada, para a loja 
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver relatório de diagnóstico avançado em Definições sobre HoloLens
 
-Para dispositivos geridos quando o comportamento de resolução de problemas, confirmar que uma configuração de política esperada é aplicada é um passo importante. Anteriormente a esta nova funcionalidade, esta tinha de ser feita fora do dispositivo via MDM ou perto do dispositivo depois de exportar registos de diagnóstico do MDM recolhidos através **do Definições**  ->  **Contas** Access  >  **ou escola**, e selecione **Exporte os seus registos de gestão** e seja visualizado num PC próximo.
+Para dispositivos geridos quando o comportamento de resolução de problemas, confirmar que uma configuração de política esperada é aplicada é um passo importante. Anteriormente a esta nova funcionalidade, a visualização desta informação tinha de ser feita fora do dispositivo através do MDM ou perto do dispositivo após a exportação de registos de diagnóstico do MDM recolhidos através **do Definições**  ->  **Contas** Access  >  **ou escola**, e selecione **Exporte os seus registos de gestão** e seja visualizado num PC próximo.
 
 Agora o DIAGNÓSTICO MDM pode ser visto no dispositivo usando o navegador Edge. Para ver mais facilmente o relatório de diagnóstico do MDM, navegue para a página de Access work ou school, e **selecione Ver relatório de diagnóstico avançado**. Isto gerará e abrirá o relatório numa nova janela Edge.
 
@@ -167,13 +169,17 @@ Foram adicionadas as seguintes políticas de atualização:
 
 ### <a name="smart-retry-for-app-updates"></a>Smart Retry para atualizações de aplicações
 
-Agora ativada para HoloLens é uma nova política que permite aos Administradores de TI definir uma data recorrente ou uma data de tempo para reiniciar aplicações cuja atualização falhou devido à aplicação estar em uso permitindo que a atualização seja aplicada. Estes podem ser definidos com base em alguns gatilhos diferentes, tais como uma hora programada ou uma sindes. Para saber mais sobre como utilizar esta política, consulte [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+Agora ativada para HoloLens é uma nova política que permite aos Administradores de TI definir uma data recorrente ou uma data de tempo para reiniciar aplicações cuja atualização falhou devido à aplicação estar em uso permitindo que a atualização seja aplicada. Estes podem ser definidos com base em alguns gatilhos diferentes, tais como uma hora programada ou uma sindes. Para saber mais sobre como usar esta visão de política [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Utilize apenas aplicativos de loja privada para Microsoft Store
 
 A política RequerPrivateStoreOnly foi ativada para HoloLens. Esta política permite configurar a aplicação Microsoft Store apenas para mostrar a loja privada configurada para a sua organização. Limitando o acesso apenas às aplicações que disponibilizou.
 
 Saiba mais sobre [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+### <a name="use-wdac-and-lob-apps"></a>Use aplicativos WDAC e LOB
+
+Agora pode usar o WDAC para bloquear aplicações ou processos de lançamento e continuar a usar a sua própria linha de aplicações de bushiness. pode agora permitir que na sua política WDAC. A utilização desta política envolve executar uma linha de código extra no PowerShell ao criar a sua política WDAC. [Reveja os passos aqui.](/mem/intune/configuration/custom-profile-hololens)
 
 ### <a name="fixes-and-improvements"></a>Correções e melhorias
 

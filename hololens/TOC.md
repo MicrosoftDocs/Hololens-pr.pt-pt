@@ -93,7 +93,7 @@
 ### [Configurar HoloLens utilizando pacotes de provisionamento](hololens-provisioning.md)
 ### [Restrições comuns do dispositivo](hololens-common-device-restrictions.md)
 ### [Configurar HoloLens como um quiosque](hololens-kiosk.md)
-### [Acesso global atribuído - Quiosque](hololens-global-assigned-access-kiosk.md)
+### [HoloLens Informações de referência do quiosque](hololens-kiosk-reference.md)
 ### [Windows Defender Controlo de Aplicações - WDAC](windows-defender-application-control-wdac.md)
 ### [Página Definições CSP e URIs para HoloLens](settings-uri-list.md)
 ## Conectividade & de rede

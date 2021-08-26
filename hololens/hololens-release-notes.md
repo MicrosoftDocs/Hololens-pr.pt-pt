@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a8d1f9b8d04324236cb610b6018880891bdabdd1
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 4aa0ea03850277e528b134c9686633a140c64721
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858677"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859447"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -532,7 +532,7 @@ O início de sísmis do Visitor Auto pode ser gerido através da política [pers
 
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| Política  | Descrição   | Configurações  |
+| Política  | Description   | Configurações  |
 |---|---|---|
 | Realidade Mista/VisitanteAutoLogon  | Permite um visitante a passar por um quiosque   | 1 (Sim), 0 (Não, padrão.)  |
 
@@ -551,7 +551,7 @@ Ao modificar um quiosque para incluir as novas aplicações, recomendamos adicio
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Mudanças de comportamento no modo quiosque para lidar com falhas
 
-Em construções mais antigas, se um dispositivo tivesse uma configuração de quiosque, que é uma combinação de acesso global atribuído e membro do grupo AAD atribuído acesso, se determinar a adesão ao grupo AAD falhou, o utilizador veria "[nada mostrado no](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)menu inicial ".
+Em construções mais antigas, se um dispositivo tivesse uma configuração de quiosque, que é uma combinação de acesso global atribuído e membro do grupo AAD atribuído acesso, se determinar a adesão ao grupo AAD falhou, o utilizador veria "[nada mostrado no](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)menu inicial ".
 
 A partir deste Windows lançamento, a experiência do quiosque irá recorrer à configuração global do quiosque (se presente) em caso de falhas durante o modo quiosque do grupo AAD.
 
@@ -980,14 +980,14 @@ Verifique no portal Intune que a configuração do dispositivo foi aplicada com 
    > [!div class="mx-imgBorder"]
    > ![Screenshot de definição RequerNetworkInOOBE falso via OMA URI em Intune](images/hololens-tenant-lockdown-false.png)
 
-1. Crie um grupo e atribua o perfil de configuração do dispositivo a esse grupo de dispositivos. 
+1. Crie um grupo e atribua o perfil de configuração do dispositivo a esse grupo de dispositivos.
 
 1. Faça o HoloLens 2 membro do dispositivo do grupo criado em sincronização de passo e gatilho anteriores.
 
-Verifique no portal Intune que a configuração do dispositivo foi aplicada com sucesso. Uma vez que esta configuração do dispositivo se aplique com sucesso no dispositivo HoloLens 2, os efeitos do TenantLockdown ficarão inativos. 
+Verifique no portal Intune que a configuração do dispositivo foi aplicada com sucesso. Uma vez que esta configuração do dispositivo se aplique com sucesso no dispositivo HoloLens 2, os efeitos do TenantLockdown ficarão inativos.
 
 #### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>O que aconteceria durante o OOBE, se o perfil do Piloto Automático não fosse atribuído a uma HoloLens depois do TenantLockdown ter sido definido como verdadeiro? 
-A OOBE aguardará indefinidamente o download do perfil do Piloto Automático e será apresentado o diálogo seguinte. Para eliminar os efeitos do TenantLockdown, o dispositivo deve ser matriculado com o seu inquilino original primeiro usando o Autopilot e o RequireNetworkInOOBE deve ser desatado como descrito no passo anterior antes de as restrições introduzidas pelo TenantLockdown CSP serem removidas. 
+A OOBE aguardará indefinidamente o download do perfil do Piloto Automático e será apresentado o diálogo seguinte. Para eliminar os efeitos do TenantLockdown, o dispositivo deve ser matriculado com o seu inquilino original primeiro usando o Autopilot e o RequireNetworkInOOBE deve ser desatado como descrito no passo anterior antes de as restrições introduzidas pelo TenantLockdown CSP serem removidas.
 
 ![Vista no dispositivo para quando a política é aplicada no dispositivo.](images/hololens-autopilot-lockdown.png)
 
@@ -996,14 +996,14 @@ Esta informação pode agora ser encontrada ao lado do resto do Autopilot sob [o
 ### <a name="global-assigned-access--kiosk-mode"></a>Global Assigned Access – Modo Quiosque
 - Gestão de identidade reduzida para quiosque, permitindo o novo método do quiosque que aplica o modo quiosque ao nível do sistema.
 
-Esta nova funcionalidade permite que um Administrador de TI configuure um dispositivo HoloLens 2 para o modo de quiosque de várias aplicações, que é aplicável a nível do sistema, não possui qualquer afinidade com qualquer identidade no sistema e aplica-se a todos os que assinam no dispositivo. Leia sobre esta nova funcionalidade em detalhe no [HoloLens quiosque de acesso global atribuído.](hololens-global-assigned-access-kiosk.md)
+Esta nova funcionalidade permite que um Administrador de TI configuure um dispositivo HoloLens 2 para o modo de quiosque de várias aplicações, que é aplicável a nível do sistema, não possui qualquer afinidade com qualquer identidade no sistema e aplica-se a todos os que assinam no dispositivo. Leia detalhadamente esta nova funcionalidade no [modo quiosque HoloLens](hololens-kiosk.md).
 
 ### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Lançamento automático de uma aplicação em modo quiosque de várias aplicações 
 - Experiência focada no lançamento automático de aplicações, aumentando ainda mais as seleções de UI e apps escolhidas para experiências em modo quiosque.
 
-Aplica-se apenas ao modo quiosque de várias aplicações e apenas uma aplicação pode ser designada para lançamento automático utilizando o atributo realçado abaixo na configuração de Acesso Atribuído. 
+Aplica-se apenas ao modo quiosque de várias aplicações e apenas uma aplicação pode ser designada para lançamento automático utilizando o atributo realçado abaixo na configuração de Acesso Atribuído.
 
-A aplicação é lançada automaticamente quando o utilizador se inscreve. 
+A aplicação é lançada automaticamente quando o utilizador se inscreve.
 
 ```xml
 <AllowedApps>                     
@@ -1013,16 +1013,17 @@ A aplicação é lançada automaticamente quando o utilizador se inscreve.
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Mudanças de comportamento no modo quiosque para lidar com falhas
 - Modo quiosque mais seguro eliminando aplicações disponíveis em falhas no modo Kiosk. 
 
-Anteriormente, ao encontrar falhas na aplicação do modo quiosque, HoloLens usado para mostrar todas as aplicações no menu inicial. Agora, em Windows versão Holográfica 20H2 no caso de falhas nenhuma aplicação será mostrada no menu inicial como abaixo: 
+Anteriormente, ao encontrar falhas na aplicação do modo quiosque, HoloLens usado para mostrar todas as aplicações no menu inicial. Agora, em Windows versão Holográfica 20H2 no caso de falhas nenhuma aplicação será mostrada no menu inicial como abaixo:
 
 ![Imagem do que o modo Quiosque agora parece quando falha.](images/hololens-kiosk-failure-behavior.png )
 
 ### <a name="hololens-policies"></a>HoloLens Políticas
+
 - Opções de gestão de dispositivos especificamente para HoloLens criadas para gerir o dispositivo. 
 
 Foram criadas novas políticas de realidade mista para HoloLens 2 dispositivos na versão holográfica 20H2 Windows. As novas definições controláveis incluem: luminosidade de definição, volume de definição, gravação de áudio incapacitante em capturas de realidade mista, definição quando os diagnósticos podem ser recolhidos e cache de membro do grupo AAD.  
 
-| Política de nova HoloLens                                | Descrição                                                                               | Notas                                                                |
+| Política de nova HoloLens                                | Description                                                                               | Notas                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | Realidade Mista\BrightnessButtonDisabled              | Permite que os botões de luminosidade sejam desativados de modo a premir, não altere o brilho.       | 1 Sim, 0 Não (padrão)                                                |
 | Realidade Mista\VolumeButtonDisabled                  | Permite que os botões de volume sejam desativados de modo a que a pressão não altere o volume.               | 1 Sim, 0 Não (padrão)                                                |
