@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
-ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
+ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122610143"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989210"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataforma móvel em plataformas de movimento de movimento de movimento de movimento de baixo dinâmico
 
@@ -27,6 +27,8 @@ Na **build insider 20348.1411,** adicionámos suporte beta para rastrear platafo
 
 > [!NOTE]
 > Esta funcionalidade só está disponível através [de Windows Insiders.](hololens-insider.md)
+
+![Exemplo de plataforma em movimento.](./images/mpm-compare.gif)
 
 Este artigo abrange:
 
