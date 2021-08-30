@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662237"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189261"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Tenha o seu HoloLens (1ª gen) pronto a usar
 
@@ -27,7 +27,7 @@ Acompanhe pela primeira vez a criação de um HoloLens (1ª geração).
 
 Para carregar o seu HoloLens, ligue a alimentação à porta de carregamento utilizando o cabo Micro USB incluído. Em seguida, ligue a alimentação a uma tomada de corrente. Quando o dispositivo estiver a carregar, o indicador da bateria acende-se num padrão de onda.
 
-![Imagem que mostra como ligar o cabo Micro USB ao HoloLens](./images/hololens-charging.png)
+![Imagem que mostra como ligar o cabo Micro USB ao HoloLens.](./images/hololens-charging.png)
 
 Quando o seu HoloLens está ligado, o indicador da bateria mostra o nível da bateria em incrementos. Quando apenas uma das cinco luzes está acesa, o nível da bateria está abaixo dos 20%. Se o nível da bateria estiver criticamente baixo e tentar ligar o dispositivo, uma luz piscará brevemente e apagar-se-á.
 
@@ -44,17 +44,17 @@ A velocidade e a velocidade de carregamento podem variar consoante o ambiente em
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. Rode a fita da cabeça até cerca de 20-30 graus.|![Passo um, rode a fita da cabeça](./images/FitGuideStep1.png)|
-|2. Empurre a fita para trás. Não puxe para trás, nem manipule a banda por trás da dobradiça, porque com o tempo isto pode quebrar a banda.|![Passo dois, empurre a fita para trás](./images/FitGuideStep2.png)|
-|3. Rode a roda de regulação para estender a fita da cabeça até ao fim. |![Passo três, use a roda de regulação para estender a fita da cabeça](./images/FitGuideStep3.png)|
-|4. Segure o aparelho pelos braços do dispositivo e coloque-o sobre a cabeça. Certifique-se de que a fita da cabeça se encontra na parte superior da testa e, em seguida, aperte a roda de regulação.|![Passo quatro, coloque o dispositivo e ajuste a fita da cabeça](./images/FitGuideStep4.png)|
-|5. Deslize a viseira para trás e, em seguida, verifique o ajuste do dispositivo. A fita deve sentar-se na parte superior da testa, logo abaixo da linha do cabelo, com os altifalantes acima das orelhas. As lentes devem estar centradas nos seus olhos.|![Passo cinco, deslize a viseira para trás e verifique o ajuste](./images/FitGuideSetep5.png)|
+|1. Rode a fita da cabeça até cerca de 20-30 graus.|![Passo um, rode a fita da cabeça.](./images/FitGuideStep1.png)|
+|2. Empurre a fita para trás. Não puxe para trás, nem manipule a banda por trás da dobradiça, porque com o tempo isto pode quebrar a banda.|![Passo dois, empurre a fita para trás.](./images/FitGuideStep2.png)|
+|3. Rode a roda de regulação para estender a fita da cabeça até ao fim. |![Passo três, utilize a roda de regulação para estender a fita da cabeça.](./images/FitGuideStep3.png)|
+|4. Segure o aparelho pelos braços do dispositivo e coloque-o sobre a cabeça. Certifique-se de que a fita da cabeça se encontra na parte superior da testa e, em seguida, aperte a roda de regulação.|![Passo quatro, coloque o dispositivo e ajuste a fita da cabeça.](./images/FitGuideStep4.png)|
+|5. Deslize a viseira para trás e, em seguida, verifique o ajuste do dispositivo. A fita deve sentar-se na parte superior da testa, logo abaixo da linha do cabelo, com os altifalantes acima das orelhas. As lentes devem estar centradas nos seus olhos.|![Passo cinco, deslize a viseira para trás e verifique o ajuste.](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>Ligue o seu HoloLens
 
 Utilize o botão de alimentação para ligar e desligar HoloLens ou para o colocar em modo de espera.
 
-![Imagem que mostra o botão de energia HoloLens](./images/hololens-power.png)
+![Imagem que mostra o botão de alimentação HoloLens.](./images/hololens-power.png)
 
 Se o seu dispositivo não responder ou não arrancar, consulte [Reiniciar, reiniciar ou recuperar HoloLens](hololens-restart-recover.md).
 
@@ -79,11 +79,11 @@ HoloLens desliga-se automaticamente quando o nível da bateria desce para 1%, me
 
 Os botões de brilho e volume estão em cima do volume dos braços do dispositivo &mdash; à sua direita e brilho à sua esquerda.
 
-![Imagem que mostra os botões de HoloLens](./images/hololens-buttons.jpg)
+![Imagem que mostra os botões HoloLens.](./images/hololens-buttons.jpg)
 
 ## <a name="hololens-indicator-lights"></a>HoloLens luzes indicadoras
 
-![Imagem que mostra as luzes indicadoras HoloLens](./images/hololens-lights.png)
+![Imagem que mostra as luzes indicadoras HoloLens.](./images/hololens-lights.png)
 
 Não sabe o que significam as luzes indicadoras do seu HoloLens? Aqui está uma ajuda.
 

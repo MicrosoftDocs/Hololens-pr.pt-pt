@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 593dc65ab97eaae65591a5239cd0a978750eac9fa538364ba6bbc7ef0a2a08a4
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 519770badab9f260316fe4cfff4bf453a7c971a7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660550"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189754"
 ---
 # <a name="deploy---cloud-connected-guide"></a>Implementar - Guia ligado à nuvem
 
@@ -38,7 +38,7 @@ Se o seu dispositivo não estiver&#39;atualmente em estado de definição de fá
 1. Selecione a aplicação **Definições** e selecione **Sistema.** A primeira informação que&#39;verá é o nome do dispositivo, que para o seu dispositivo HoloLens 2 será &quot; HOLOLENS, &quot; seguido de uma cadeia de seis caracteres.
 1. Tome nota deste nome.
 
-![HoloLens 2 Definições - Cerca de](./images/hololens2-settings-about.jpg)
+![HoloLens 2 Definições.](./images/hololens2-settings-about.jpg)
 
 7. Pode verificar se o seu dispositivo está matriculado com sucesso no AD Azure dentro da aplicação Definições. A partir **de Definições** selecione **Contas** Acesso trabalho  ->  **ou escola.** A partir deste ecrã pode verificar que está matriculado com sucesso ao ver &quot; Connected to _nameofAAD_&#39;s Azure AD. Ligado pelo seu nome _de nome_ de nome de @ _ação (onmicrosoft.com)._ &quot;
 
@@ -46,11 +46,11 @@ Se o seu dispositivo não estiver&#39;atualmente em estado de definição de fá
 Para validar o dispositivo tem Azure AD Unidos podemos verificar o Azure Ative Directory a partir do [portal Azure](https://portal.azure.com/#home)  ->  **Azure Ative Directory**  ->  **Dispositivos** Todos  ->  **os dispositivos**, e pesquisar o nome do dispositivo. &#39;poderá ver que o dispositivo faz parte do Azure Ative Directory.
 
 
-![Azure Ative Directory - Dispositivo](./images/aad-enrollment.png)
+![Azure Ative Directory.](./images/aad-enrollment.png)
 
 Em seguida,&#39;terá de entrar no [centro de administração Microsoft Endpoint Manager.](https://endpoint.microsoft.com/#home) Faça login e selecione **Dispositivos** e, em seguida, **Todos os dispositivos**. A partir daqui pode pesquisar o seu HoloLens dispositivo&#39;nome. Deve poder ver o seu HoloLens listado no Intune.
 
-![Intune - Dispositivo](./images/endpoint-all-devices-enrolled.png)
+![Intune - Dispositivo.](./images/endpoint-all-devices-enrolled.png)
 
 ## <a name="remote-assist-call-validation"></a>Validação de chamada de assistência remota
 

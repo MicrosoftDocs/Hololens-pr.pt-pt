@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663203"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189703"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Apresentamos o novo Microsoft Edge
 
-![Animação do logotipo Microsoft Edge do legado para o novo logotipo Microsoft Edge](images/new-edge.gif)
+![Animação do legado Microsoft Edge logotipo para novo logotipo Microsoft Edge.](images/new-edge.gif)
 
 O novo Microsoft Edge [adota o projeto de código aberto Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) para criar uma melhor compatibilidade para os clientes e menos fragmentação da web para os desenvolvedores web.
 
@@ -27,11 +27,11 @@ Com [Windows Holographic, versão 21H1,](hololens-release-notes.md#windows-holog
 > [!IMPORTANT]
 > Esta nova Microsoft Edge substitui automaticamente o legado Microsoft Edge, que [já não](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) é suportado em novas versões.
 
-![Imagem de nova Microsoft Edge](images/new-edge-ui.png)
+![Nova Microsoft Edge imagem.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>Lançamento do novo Microsoft Edge
 
-O novo Microsoft Edge ![novo ícone de Microsoft Edge](images/new_edge_logo.png) (representado por um ícone de redemoinho azul e verde) está fixado ao menu Iniciar e será automaticamente lançado quando ativar uma ligação web.
+O novo Microsoft Edge ![novo ícone de Microsoft Edge.](images/new_edge_logo.png) (representado por um ícone de redemoinho azul e verde) está fixado ao menu Iniciar e será automaticamente lançado quando ativar uma ligação web.
 
 > [!NOTE]
 > Quando lançar pela primeira vez o novo Microsoft Edge no dia 2 HoloLens, as suas definições e dados serão importados do legado Microsoft Edge.
@@ -139,7 +139,7 @@ A extensão 360 Viewer é construída no WebXR e instala-se automaticamente ao l
 1. Navegue para um site com suporte WebXR.
 1. Selecione o botão **Enter VR** no site. A localização e representação visual deste botão podem variar por website, mas pode parecer semelhante a:
 
-    ![Introduza o exemplo do botão VR](images/75px-enter-vr.png)
+    ![Introduza o exemplo do botão VR.](images/75px-enter-vr.png)
 
 1. A primeira vez que tentar lançar uma experiência WebXR num domínio específico, o navegador pedirá consentimento para introduzir uma vista imersiva, selecione **Permitir**.
 1. Use [HoloLens 2 gestos](hololens2-basic-usage.md#the-hand-tracking-frame) para manipular a experiência.
@@ -156,7 +156,7 @@ A extensão 360 Viewer é construída no WebXR e instala-se automaticamente ao l
 1. Navegue para um vídeo de 360 graus no YouTube.
 1. Na moldura de vídeo, selecione o botão de auscultador de realidade mista:
 
-    ![Botão para ativar 360 Espectador](images/enter-360-viewer.jpg)
+    ![Botão para ativar 360 Espectador.](images/enter-360-viewer.jpg)
 
 1. A primeira vez que tentar lançar o 360 Viewer num domínio específico, o navegador pedirá consentimento para introduzir uma vista imersiva. **Selecione Permitir**.
 1. [Toque de ar](hololens2-basic-usage.md#select-using-air-tap) para aumentar os controlos de reprodução. Utilize [raios de mão e toque de ar](hololens2-basic-usage.md#select-using-air-tap) para reproduzir/fazer pausa, saltar para a frente/para trás, ligar/desligar as legendas ou parar a experiência (que sai da vista imersiva). Os controlos de reprodução desaparecerão após alguns segundos de inatividade.

@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662823"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190077"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Contornar HoloLens (1ª geração)
 
@@ -45,7 +45,7 @@ Vamos falar-te do básico da primeira vez que usares o teu HoloLens. Você tamb�
 
 HoloLens tem sensores que podem ver alguns metros para cada lado de si. Quando usares as mãos, terás de as manter dentro da moldura, ou HoloLens não as vejas. À medida que te moves, a moldura move-se contigo.  
 
-![Imagem que mostra o quadro de rastreio manual HoloLens](./images/hololens-2-gesture-frame.png)
+![Imagem que mostra o HoloLens quadro de rastreio manual.](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>Abra a menu Iniciar com flor
 
@@ -53,7 +53,7 @@ Para abrir o menu **Iniciar:**
 
 1. Segure a mão na sua frente para que esteja na moldura do gesto.
 1. Bloom: junte todos os seus dedos e abra a mão.
-  ![Animação que mostra o gesto de flor](./images/hololens-bloom.gif)
+  ![Animação que mostra o gesto de florescer.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Selecione hologramas com olhar e toque de ar
 
@@ -62,7 +62,7 @@ Para selecionar uma aplicação ou outro holograma, toque-lhe no ar enquanto olh
 1. Olhe para o holograma que quer selecionar.
 1. Aponte o dedo indicador para o teto.
 1. Toque de ar: baixe o dedo e, em seguida, levante-o rapidamente.
-   ![Animação de gesto de toque de ar](./images/hololens-air-tap.gif)
+   ![Animação de gesto de toque de ar.](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>Selecione um holograma usando a sua voz
 

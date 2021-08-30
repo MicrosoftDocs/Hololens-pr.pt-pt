@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401138"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190332"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Implementar nuvem conectada HoloLens 2 a clientes externos
 
@@ -114,7 +114,7 @@ A segunda opção é criar um inquilino separado que acolhe clientes (ver Imagem
 
 **Imagem 1.1**
 
-![Imagem do inquilino de serviço](./images/hololens-service-tenant-image.png)
+![Imagem do Inquilino de Serviço.](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>Aplicativos ocultos ou restritos
 

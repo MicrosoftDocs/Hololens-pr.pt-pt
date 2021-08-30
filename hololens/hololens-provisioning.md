@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859039"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189006"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Configure HoloLens utilizando um pacote de provisionamento
 
@@ -76,7 +76,7 @@ Utilize a ferramenta Windows Configuration Designer para criar um pacote de prov
 
 2. Selecione **dispositivos de HoloLens de provisão**.
 
-   ![Opções de início do ICD](images/icd-create-options-1703.png)
+   ![Opções de início do ICD.](images/icd-create-options-1703.png)
 
 3. Nomeie o seu projeto e **selecione Acabamento**.
 
@@ -235,7 +235,7 @@ Os pacotes de provisionamento utilizam os prestadores de serviços de configura�
 
 Em Windows Configuration Designer, quando cria um pacote de provisionamento para Windows Holographic, as definições em **personalizações disponíveis** são baseadas [em CSPs que são suportados em Windows Holográfico](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices). A tabela que se segue descreve as definições que poderá querer configurar para HoloLens.
 
-![Configurações comuns de tempo de execução para HoloLens](images/icd-settings.png)
+![Configurações comuns de tempo de execução para HoloLens.](images/icd-settings.png)
 
 | Definições | Descrição |
 | --- | --- |

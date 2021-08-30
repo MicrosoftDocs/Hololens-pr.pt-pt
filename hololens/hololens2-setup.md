@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658953"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190417"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Tenha o seu HoloLens 2 pronto a usar
 
@@ -42,7 +42,7 @@ Coloque o HoloLens 2 na cabeça. Se usar óculos, deixe-os ligados.  A almofada 
 
 Se necessário, estenda a fita da cabeça rodando a roda de regulação e, em seguida, desaperte a correia superior.
 
-![HoloLens 2 ajustes e ajustes](images/hololens2-fit.png)
+![HoloLens 2 ajustes e ajustes.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>Prenda e retire a correia superior
 
@@ -52,7 +52,7 @@ Para desprender a parte frontal da correia superior, desaperte a correia e desli
 
 Para desprender a parte de trás da correia superior, pressione o botão abaixo de cada separador de ligação e puxe suavemente. Para voltar a ligá-lo, empurre as linguetas de ligação de volta para as ranhuras até que clicem.
 
-![prender ou remover a correia de cabeça HoloLens 2](images/hololens2-headstrap.png)
+![prender ou remover a correia de HoloLens 2.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>Ligue o HoloLens 2
 

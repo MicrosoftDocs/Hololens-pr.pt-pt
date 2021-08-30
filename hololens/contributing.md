@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665071"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188989"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Contribuindo para a documentação HoloLens
 
@@ -147,7 +147,7 @@ Utilize o seguinte fluxo de trabalho para *criar novos artigos* na documentaçã
 
 9. Selecione **novo pedido de puxar** e misture o ramo _principal_ do seu garfo no MicrosoftDocs/mixed-reality _master_ (certifique-se de que a seta aponta para o destino correto).
 
-   ![Crie o pedido de puxar do seu garfo para o MicrosoftDocs/mixed-reality](images/pr-to-master.png)
+   ![Crie o pedido de puxar do seu garfo para o MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Noções básicas de markdown
 
@@ -226,11 +226,11 @@ Utilize o seguinte fluxo de trabalho para erosão da documentação com Visual S
 
    1. Num navegador web, crie um pedido de puxar para sincronizar as recentes alterações de outros contribuintes no ramo padrão do MicrosoftDocs/mixed-reality, _master,_ para o seu garfo (certifique-se de que a seta está apontando para o destino correto).
       
-      ![Sync alterações de MicrosoftDocs/mixed-reality para o seu garfo](images/sync-repos.png)
+      ![Sync muda de MicrosoftDocs/mixed-reality para o seu garfo.](images/sync-repos.png)
       
    2. Em Visual Studio Código, selecione o botão de sincronização para sincronizar o garfo recentemente atualizado para o clone local.
       
-      ![Clique na imagem do botão de sincronização](images/sync-clone.png)
+      ![Clique na imagem do botão de sincronização.](images/sync-clone.png)
       
 2. Crie ou edite artigos no seu repo clonado utilizando Visual Studio Código.
 
@@ -246,11 +246,11 @@ Utilize o seguinte fluxo de trabalho para erosão da documentação com Visual S
       
    4. Selecione o botão **de sincronização** para sincronizar as alterações de volta à origem (o garfo no GitHub).
       
-      ![Clique no botão de sincronização](images/sync-back.png)
+      ![Clique no botão de sincronização.](images/sync-back.png)
       
 3. Num navegador web, crie um pedido de puxar para sincronizar novas alterações no seu garfo de volta ao MicrosoftDocs/mixed-reality _master_ (certifique-se de que a seta está apontando para o destino correto).
 
-   ![Crie o pedido de puxar do seu garfo para o MicrosoftDocs/mixed-reality](images/pr-to-master.png)
+   ![Crie o pedido de puxar do seu garfo para o MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>Extensões úteis
 

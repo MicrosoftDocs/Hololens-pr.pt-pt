@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
-ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
+ms.openlocfilehash: f717a0323d1b141423fab52e49a38407ba617d02
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122979377"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189346"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurar HoloLens como um quiosque
 
@@ -78,6 +78,16 @@ Consulte [links de referência](hololens-kiosk-reference.md#kiosk-xml-code-sampl
 
 ### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>Para utilizadores que se inscrevam como conta local ou MSA
 
+### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>O Prov. pacote, passo 2 &ndash; Adicione o ficheiro XML de configuração de quiosque a um pacote de provisionamento
+
+1. [Open Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
+1. Selecione **Provisão Avançada,** insira um nome para o seu projeto e, em seguida, selecione **Next**.
+1. Selecione **Windows 10 Holographic** e, em seguida, selecione **Seguinte**.
+1. Selecione **Concluir**. O espaço de trabalho para o seu pacote abre.
+1. Selecione **configurações de tempo de**  >  **execução AtribuídasAccess**  >  **MultiAppAssignedAccessettings**.
+1. No painel central, **selecione Procurar** para localizar e selecionar o ficheiro XML de configuração de quiosque que criou.
+
+   ![Screenshot do campo MultiAppAssignedAccessettings em Windows Configuration Designer.](./images/multiappassignedaccesssettings.png)
 | **Experiência de quiosque desejada** | **Configuração recomendada do quiosque** | **Formas de configuração**  | **Observações** |
 | --- | --- | --- | --- |
 | Todos os utilizadores que assinam recebem experiência de quiosque. | [Configure vários aplicativos Global Assigned Access profile](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune modelo personalizado](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisionamento de tempo de execução - Multi app](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Acesso global atribuído requer [20H2 e construções mais recentes](hololens-release-notes.md#windows-holographic-version-20h2) |

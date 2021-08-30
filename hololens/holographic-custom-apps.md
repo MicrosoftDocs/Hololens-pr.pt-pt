@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664962"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188853"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Gerir aplicativos personalizados para HoloLens (1ª gen)
 
@@ -55,7 +55,7 @@ Pode instalar as suas próprias aplicações no HoloLens, quer através do Porta
 1. Selecione **Go**.
 
    > [!div class="mx-imgBorder"]
-   > ![Instale o formulário de aplicação no Portal do Dispositivo Windows no Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+   > ![Instale o formulário de aplicação no portal Windows do dispositivo no Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>Implementação a partir de Microsoft Visual Studio 2015
 
@@ -73,7 +73,7 @@ Pode instalar as suas próprias aplicações no HoloLens, quer através do Porta
 
 1. Para implementar a aplicação do seu PC de desenvolvimento para o seu HoloLens, selecione **Remote Machine**. Se já tiver uma construção existente sobre o HoloLens, selecione **Sim** para instalar esta versão mais recente.  
 
-   ![Implementação de Máquinas Remotas para apps para Microsoft HoloLens em Visual Studio](images/vs2015-remotedeployment.jpg)  
+   ![Implementação de Máquinas Remotas para aplicações para Microsoft HoloLens em Visual Studio.](images/vs2015-remotedeployment.jpg)  
    
 1. A aplicação instalará e lançará automaticamente no seu HoloLens.
 

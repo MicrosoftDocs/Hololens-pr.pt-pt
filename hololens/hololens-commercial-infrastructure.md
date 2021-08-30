@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859005"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189074"
 ---
 # <a name="configure-your-network-for-hololens"></a>Configure a sua rede para HoloLens
 
@@ -95,9 +95,9 @@ Se precisar de atribuir licenças, siga estas [instruções.](/azure/active-dire
 **Inscreva-se no portal Azure como administrador**  >  **Azure Ative Directory**  >  **Dispositivos**  >  **Definições do dispositivo**  >
  **Definir Utilizadores podem juntar dispositivos para Azure AD a *Todos***
 
-    1. **Opção 2:** Dar aos utilizadores/grupos selecionados permissão para juntar dispositivos para Azure AD **Iniciar sação no portal Azure como administrador**  >  **Azure Ative Directory** dispositivo dispositivo de  >  **dispositivos**  >  **Definições**  >
- **Utilizadores definidos podem juntar dispositivos para Azure AD a imagem *selecionada*** 
- ![ que mostra Configuração de Dispositivos AD AD Azure](images/azure-ad-image.png)
+    1. **Opção 2:** Dê aos utilizadores/grupos selecionados permissão para se juntarem a dispositivos para Azure AD **Iniciar sação no portal Azure como administrador**  >  **Azure Ative Directory** dispositivo de  >  **dispositivos**  >  **Definições** Os  >
+ **utilizadores podem juntar dispositivos para Azure AD a Imagem *Selecionada*** 
+ ![ que mostra a Configuração de Dispositivos AD AD Azure.](images/azure-ad-image.png)
 
     1. **Opção 3:** Pode impedir que todos os utilizadores juntem os seus dispositivos ao domínio. Isto significa que todos os dispositivos terão de ser matriculados manualmente.
 
@@ -178,7 +178,7 @@ Você pode encontrar direções para upgrade para a suíte comercial na document
 > [!NOTE]
 > Pode configurar diferentes utilizadores para terem diferentes experiências do Modo Quiosque utilizando o "Azure AD" como o "tipo de início de súprico do utilizador". No entanto, esta opção apenas está disponível no modo quiosque Multi-App. O modo quiosque multi-App funcionará com apenas uma aplicação, bem como com várias aplicações.
 
-![Imagem que mostra configuração do modo quiosque em Intune](images/aad-kioskmode.png)
+![Imagem que mostra Configuração do Modo Quiosque em Intune.](images/aad-kioskmode.png)
 
 Para outros serviços de MDM, consulte a documentação do seu fornecedor para obter instruções. Consulte as instruções [de quiosque HoloLens](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) se precisar de utilizar uma configuração personalizada e uma configuração XML completa para configurar um quiosque no seu serviço MDM.
 

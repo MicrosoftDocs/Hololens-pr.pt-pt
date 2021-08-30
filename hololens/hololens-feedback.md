@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1f59c76fa760710d1b1333e1318784f5a488851b640c1cbd4ed6f673ae60029a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664172"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189431"
 ---
 # <a name="feedback-for-hololens"></a>Feedback para HoloLens
 
@@ -40,7 +40,7 @@ O Feedback Hub é uma excelente forma de alertar a equipa de engenharia para os 
 
 1. Utilize o gesto **Iniciar** para abrir o menu **Iniciar** e, em seguida, selecione **Feedback Hub**. A aplicação abre no seu ambiente.
 
-   ![App de feedback em HoloLens menu Iniciar](./images/hololens2-feedbackhub-tile.png)
+   ![Aplicativo de feedback no HoloLens menu Iniciar.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Se não vir o **Feedback Hub,** selecione **Todas as Aplicações** para ver a lista completa de aplicações no dispositivo.
 
@@ -48,7 +48,7 @@ O Feedback Hub é uma excelente forma de alertar a equipa de engenharia para os 
 1. Se encontrar feedback semelhante, selecione-o, adicione qualquer informação adicional que tenha na caixa **de comentários Write e,** em seguida, selecione **Upvote**.
 1. Se não encontrar nenhum feedback semelhante, **selecione Adicionar novo feedback**.
 
-   ![Adicionar novo feedback](./images/hololens-feedback-1.png)
+   ![Adicione um novo feedback.](./images/hololens-feedback-1.png)
 
 1. In **Summarize your feedback**, insira um breve resumo do seu feedback. Em seguida, adicione detalhes na **Caixa de Explicação em mais detalhes.** Quanto mais detalhes fornecer, como como reproduzir este problema e o efeito que tem, mais útil é o seu feedback. Quando terminar, selecione **Seguinte**.
 

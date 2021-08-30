@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662010"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189890"
 ---
 # <a name="getting-around-hololens-2"></a>Introdução ao HoloLens 2
 
@@ -47,7 +47,7 @@ Assim que souberes destas interações básicas, dar a volta a HoloLens será um
 
 HoloLens tem sensores que podem ver alguns metros para cada lado de si. Quando usares as mãos, terás de as manter dentro da moldura, ou HoloLens não as vejas. No entanto, a moldura move-se contigo à medida que te moves.  
 
-![Imagem que mostra o quadro de rastreio manual HoloLens](./images/hololens-2-gesture-frame.png)
+![Imagem que mostra o HoloLens quadro de rastreio manual.](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>Toque hologramas perto de si
 
@@ -74,7 +74,7 @@ Para selecionar algo que utilize **o raio de mão,** siga estes passos:
 1. Aponte o dedo indicador para o teto.
 1. Para executar o gesto da torneira de **ar,** belisque o polegar e o dedo indicador juntos e, em seguida, solte-os rapidamente.
 
-   ![Animação de gesto de toque de ar](./images/hololens-air-tap.gif)
+   ![Animação de gesto de toque de ar.](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>Agarre usando toque de ar e segure
 
@@ -101,7 +101,7 @@ O gesto Start abre a **menu Iniciar.**  Para realizar o gesto Iniciar, estudem a
 > - Se tiver dificuldade em ler o texto mais pequeno no menu Iniciar, aproxime-se dele depois de abrir.
 > - Se a sua mão estiver ligeiramente fora do lado da moldura, poderá ainda ser capaz de ver o menu Iniciar tocando no pulso interno, mesmo que não veja o ícone.
 
-![Imagem que mostra o ícone Iniciar e o gesto iniciar](./images/hololens-2-start-gesture.png)
+![Imagem que mostra o ícone Iniciar e o gesto Iniciar.](./images/hololens-2-start-gesture.png)
 
 Para **fechar** o menu Iniciar, faça o gesto Iniciar quando o menu Iniciar estiver aberto.  Também pode olhar para o menu Iniciar e dizer "Fechar".
 
@@ -115,7 +115,7 @@ Para **fechar** o menu Iniciar, faça o gesto Iniciar quando o menu Iniciar esti
 
 Também pode realizar o gesto Iniciar com apenas uma mão. Para isso, estudem a mão com a palma da mão virada para si e olhem para o **ícone Iniciar** no pulso interno. **Mantendo os olhos no ícone,** belisque o polegar e o dedo indicador juntos.
 
-![Imagem que mostra o ícone Iniciar e o gesto de partida com uma mão](./images/hololens-2-start-alternative.png)
+![Imagem que mostra o ícone Iniciar e o gesto de partida com uma mão.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>menu Iniciar, casa de realidade mista, e aplicativos
 
@@ -203,7 +203,7 @@ Pode usar a sua voz para fazer a maioria das mesmas coisas que faz com as mãos 
 | Para efetuar isto | Diga isto |
 | - | - |
 | Abrir o menu Iniciar | "Vai começar" |
-| Selecionar | Diga "selecione" para trazer o cursor de olhar. Em seguida, vire a cabeça para posicionar o cursor na coisa que deseja selecionar e diga "selecione" novamente. |
+| Selecione | Diga "selecione" para trazer o cursor de olhar. Em seguida, vire a cabeça para posicionar o cursor na coisa que deseja selecionar e diga "selecione" novamente. |
 | Ver comandos de fala disponíveis | "O que posso dizer?" |
 
  [Veja mais comandos de voz e formas de usar a fala com HoloLens](hololens-cortana.md)

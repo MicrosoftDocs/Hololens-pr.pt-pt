@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 635e2cc274101fcf08fd05f2b3b54ce6c2f79182011d76409a51c722ea47ecc7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662776"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190043"
 ---
 # <a name="manage-hololens-updates"></a>Gerir atualizações de HoloLens
 
@@ -122,7 +122,7 @@ Por exemplo, considere uma organização que tem 1.000 dispositivos, e tem que a
 
 Eis como o lançamento progride ao longo do tempo para toda a organização.
 
-![Linha do tempo para implementar atualizações](./images/hololens-updates-timeline.png)
+![Linha do tempo para implementar atualizações.](./images/hololens-updates-timeline.png)
 
 #### <a name="configure-an-update-deferral-policy"></a>Configure uma política de adiamento de atualização
 

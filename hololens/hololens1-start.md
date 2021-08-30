@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661852"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189873"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>Configurar o seu HoloLens (1ª geração)
 
@@ -67,7 +67,7 @@ HoloLens (1º gênero) usa a distância entre as suas pupilas (DISTÂNCIA IPD ou
 
 Durante a calibração, HoloLens pede-lhe para alinhar o dedo com uma série de seis alvos por olho. HoloLens utiliza este processo para definir o IPD correto para os seus olhos. Se a calibração precisar de ser atualizada ou ajustada para um novo utilizador, o novo utilizador pode executar a aplicação calibração fora da configuração.
 
-![Tela de alinhamento de dedos IPD no segundo passo](./images/ipd-finger-alignment-300px.jpg)
+![Ecrã de alinhamento de dedos IPD no segundo passo.](./images/ipd-finger-alignment-300px.jpg)
 
 *Tela de alinhamento de dedos IPD no segundo passo*
 

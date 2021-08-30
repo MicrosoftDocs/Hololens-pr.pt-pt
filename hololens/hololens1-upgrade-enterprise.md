@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661910"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189193"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Desbloqueie funcionalidades de Windows Holographic for Business
 
@@ -48,7 +48,7 @@ Os pacotes de provisionamento são ficheiros criados pela ferramenta Windows Con
 1. [Crie um pacote de provisionamento para HoloLens.](hololens-provisioning.md)
 1. Vá às **definições de tempo de**  >  **execução EditionUpgrade** e selecione **EditionUpgradeWithLicense**.
 
-    ![Edição de upgrade com definição de licença selecionada](images/icd1.png)
+    ![Edição de upgrade com definição de licença selecionada.](images/icd1.png)
 
 1. Encontre o ficheiro de licença XML que foi fornecido quando adquiriu a Suite Comercial.
 

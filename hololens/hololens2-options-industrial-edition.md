@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d9af1fb7d2c87b13cee926c3172ed2ce5411d9da73ab4b880efb1bd837ca3e5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 51306755da5500d22829f359d2bf1467980892ea
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659012"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188870"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Edição Industrial
 
@@ -34,7 +34,7 @@ A HoloLens 2 Industrial Edition foi reforçada e redesenhada com novos materiais
 
 Além do dispositivo atualizado, a HoloLens 2 Industrial Edition conta com uma garantia de 2 anos & programa de substituição rápida.
 
-![Edição Industrial usada em uma sala limpa](./images/ie-small-pic.png)
+![Edição Industrial usada numa sala limpa.](./images/ie-small-pic.png)
 
 Reveja o [HoloLens 2 Edição Industrial FAQ](hololens2-industrial-edition-faq.md).
 

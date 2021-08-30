@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bcde697b5887573826a3a1a61e8c3707b4d0337a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663053"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189669"
 ---
 # <a name="new-settings-app"></a>App New Definições
 
@@ -23,7 +23,7 @@ Com [Windows Holographic, versão 21H1, estamos](hololens-release-notes.md#windo
 > [!NOTE]
 > Uma vez que a nova aplicação Definições é distinta da aplicação legacy Definições, qualquer Definições janelas que tenha colocado anteriormente em torno do seu ambiente será removida após a atualização.
 
-![Página inicial da aplicação new Definições](images/new-settings-app.png)
+![Página inicial da aplicação new Definições.](images/new-settings-app.png)
 
 **Novas funcionalidades e configurações**
 - Definições pesquisa: procure configurações a partir da página inicial Definições usando palavras-chave ou o nome da definição.

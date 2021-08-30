@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665629"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190434"
 ---
 # <a name="page-settings-visibility"></a>Página Definições Visibilidade
 
@@ -74,7 +74,7 @@ Para obter informações completas sobre como criar e aplicar um pacote de provi
 
 Independentemente do método escolhido, o seu dispositivo deverá agora receber as alterações e os utilizadores serão apresentados com a seguinte App Definições.
 
-![Screenshot de horas ativas a ser modificada na app Definições](images/hololens-page-visibility-list.jpg)
+![Screenshot de horas ativas a ser modificada na aplicação Definições.](images/hololens-page-visibility-list.jpg)
 
 Para configurar as páginas de aplicações Definições para mostrar ou ocultar a sua própria seleção de páginas, dê uma olhada nas URIs Definições disponíveis no HoloLens.
 
@@ -170,7 +170,7 @@ HoloLens dispositivos e dispositivos Windows 10 têm uma seleção diferente de 
 | Língua <sup>2</sup> | `language`                  |
 | Língua <sup>2</sup> | `regionlanguage-languageoptions`                  |
 | Linguagem      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
-| Region        | `regionformatting`                  |
+| Região        | `regionformatting`                  |
 
 ### <a name="update--security"></a>Atualizar segurança &
 | Página de definições                         | URI                                       |

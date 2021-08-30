@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662679"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189941"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>encriptação bitLocker HoloLens (1ª Gen)
 
@@ -51,7 +51,7 @@ Os pacotes de provisionamento são ficheiros criados pela ferramenta Windows Con
 1. [Crie um pacote de provisionamento para HoloLens.](hololens-provisioning.md)
 1. Vá para **configurações de tempo de**  >    >  **execução Segurança** políticas e selecione **RequireDeviceEncryption**.
 
-    ![Requerer a configuração de encriptação do dispositivo configurado para sim](images/device-encryption.png)
+    ![Requer a definição de encriptação do dispositivo configurada para sim.](images/device-encryption.png)
 
 1. Encontre o ficheiro de licença XML que foi fornecido quando adquiriu a Suite Comercial.
 
@@ -101,4 +101,4 @@ A encriptação é silenciosa na HoloLens. Para verificar o estado de encriptaç
 
 - No HoloLens, vá ao **Definições**  >  **System**  >  **About.** **O BitLocker** **está ativado** se o dispositivo estiver encriptado. 
 
-    ![Sobre o ecrã mostrando BitLocker ativado](images/about-encryption.png)
+    ![Sobre o ecrã que mostra o BitLocker ativado.](images/about-encryption.png)

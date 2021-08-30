@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664301"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189091"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Ligação para dispositivos Bluetooth e USB-C
 
@@ -93,7 +93,7 @@ Os utilizadores podem selecionar microfones externos ligados a USB-C utilizando 
 
 Abra a aplicação **Definições** e selecione **System**  >  **Sound**.
 
-![Som Definições](images/usbc-mic-1.jpg)
+![Som Definições.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > Para utilizar microfones externos com **Assistência Remota,** os utilizadores terão de clicar na hiperligação "Gerir dispositivos de som".
@@ -102,11 +102,11 @@ Abra a aplicação **Definições** e selecione **System**  >  **Sound**.
 >
 > Escolher o **Padrão de Comunicações** significa que o microfone externo será utilizado em aplicações de Assistência Remota e outras aplicações de comunicações, mas o HoloLens conjunto de microfones ainda pode ser usado para outras tarefas.
 
-![Gerir dispositivos de som](images/usbc-mic-2.png)
+![Gerencie os dispositivos de som.](images/usbc-mic-2.png)
 
 <br>
 
-![Definir padrão do microfone](images/usbc-mic-3.jpg)
+![Descode o microfone por defeito.](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>E Bluetooth suporte ao microfone?
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660071"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190213"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Preparar - Guia Conectado Corporativo
 ## <a name="infrastructure-essentials"></a>Infraestruturas Essenciais
@@ -73,7 +73,7 @@ São necessários os seguintes serviços para a implementação do SCEP, com exc
 
 Também deve publicar o seu URL NDES externo à sua rede corporativa utilizando [o proxy de aplicação AD AZure ou o Proxy de Acesso Web.](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application) Também pode usar outro representante inverso à sua escolha.
 
-![Fluxo de dados SCEP](./images/hololens2-scep-info-flow.png)
+![Fluxo de dados SCEP.](./images/hololens2-scep-info-flow.png)
 
 Se a sua rede ainda não suporta o SCEP, ou se não tem a certeza se a sua rede está corretamente configurada para SCEP com Intune,  [referência Configure infraestrutura para apoiar o SCEP com a Intune](/mem/intune/protect/certificates-scep-configure).
 

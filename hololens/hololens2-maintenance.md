@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 limpeza FAQ
+title: HoloLens 2 faq de limpeza
 description: Obtenha respostas atualizadas para todas as suas perguntas comuns para limpeza e manutenção do seu dispositivo HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378540"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189448"
 ---
-# <a name="hololens-2-cleaning-faq"></a>HoloLens 2 limpeza FAQ
+# <a name="hololens-2-cleaning-faq"></a>HoloLens 2 faq de limpeza
 
 > [!IMPORTANT]  
 > A Microsoft não pode determinar a eficácia de qualquer produto desinfetante no combate a agentes patogénicos como o COVID-19. Por favor, consulte a orientação da autoridade de saúde pública local sobre como se manter a salvo de uma potencial infeção.  
 
-## <a name="hololens-2-use-and-care"></a>HoloLens 2 Uso e Cuidados
+## <a name="hololens-2-use-and-care"></a>HoloLens 2 Utilização e Cuidados
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -37,7 +37,7 @@ ms.locfileid: "111378540"
 
 1. Retire qualquer pó utilizando um pano de microfibra seco e sem pelos para limpar suavemente a superfície do aparelho.
 
-   ![Limpe enquanto segura a almofada da testa](images/hl2-cleaning.png)
+   ![Limpe enquanto segura a almofada da testa.](images/hl2-cleaning.png)
 
 2. Humedeça ligeiramente o pano utilizando álcool isopropílico "70%" médico e, em seguida, use o pano humedecido para limpar suavemente a superfície do dispositivo.
 
@@ -58,10 +58,10 @@ N.º Os limpadores de lentes podem ser abrasivos para os revestimentos na viseir
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Posso usar toalhetes desinfeção para limpar o dispositivo?
 
-Sim, se os lenços não contiverem lixívia. Pode utilizar toalhetes desinfeção sem lixívia para [limpar suavemente as superfícies hololens](#hololens-2-use-and-care).  
+Sim, se os lenços não contiverem lixívia. Pode utilizar toalhetes desinfeção sem lixívia para [limpar suavemente as superfícies HoloLens](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
-> Evite utilizar toalhetes desinfeção que contenham lixívia para limpar as superfícies hololens. É aceitável utilizar toalhetes de lixívia em situações críticas, quando não há mais nada disponível. No entanto, a lixívia pode danificar a viseira HoloLens ou outras superfícies.
+> Evite utilizar toalhetes desinfeção que contenham lixívia para limpar as superfícies HoloLens. É aceitável utilizar toalhetes de lixívia em situações críticas, quando não há mais nada disponível. No entanto, a lixívia pode danificar a viseira HoloLens ou outras superfícies.
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>Posso usar álcool para limpar o dispositivo?
 
@@ -71,7 +71,7 @@ Sim. Pode utilizar uma solução de álcool e água isopropílicos "70%" para li
 
 Sim. A almofada de sobrancelha está ligada magnéticamente ao dispositivo. Para desconectá-lo, puxe-o suavemente para longe da fita da cabeça. Para substituí-lo, volte a colocá-lo no lugar.
 
-![Remova ou substitua a almofada de sobrancelha](images/hololens2-remove-browpad.png)
+![Retire ou substitua a almofada de sobrancelha.](images/hololens2-remove-browpad.png)
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>Como posso limpar a almofada de sobrancelhas?
 

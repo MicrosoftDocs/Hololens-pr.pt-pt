@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664908"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189176"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Use a casa de menu Iniciar e realidade mista
 
@@ -91,7 +91,7 @@ Se uma aplicação imersiva estiver em estado de avaria e precisar de reiniciá-
 
 Com [Windows Holographic, versão 21H1](hololens-release-notes.md#windows-holographic-version-21h1), quando ativar uma hiperligação ou abrir um tipo de ficheiro com mais de uma aplicação instalada, que a suporta, verá uma nova janela aberta, levando-o a selecionar qual a aplicação instalada que deve lidar com o ficheiro ou o tipo de ligação. Nesta janela, também pode optar por ter a aplicação selecionada a manusear o ficheiro ou o tipo de ligação "Uma vez" ou "Sempre".
 
-![Janela de picker de aplicativo](images/default-app-picker.png)
+![Janela de picker de aplicativo.](images/default-app-picker.png)
 
 Se escolher "Always" mas mais tarde quiser alterar qual a aplicação que lida com um determinado ficheiro ou tipo de ligação, pode redefinir as suas predefinições guardadas em **Definições > Apps**. Desloque-se para a parte inferior da página e selecione o botão **Limpar** em "Aplicações predefinidos para tipos de ficheiros" e/ou "Aplicações predefinidos para tipos de ligação". Ao contrário da definição semelhante nos computadores de secretária, não é possível redefinir os predefinidos individuais do tipo de ficheiro.
 

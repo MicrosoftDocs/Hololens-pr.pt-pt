@@ -13,22 +13,22 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662046"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189907"
 ---
 # <a name="hololens-1st-gen-hardware"></a>hardware HoloLens (1ª geração)
 
-![Microsoft HoloLens (1ª geração)](images/see-through-400px.jpg)
+![Microsoft HoloLens (1ª geração).](images/see-through-400px.jpg)
 
 Microsoft HoloLens (1ª geração) é o primeiro computador holográfico totalmente sem amarras do mundo. HoloLens redefine a computação pessoal através de experiências holográficas para capacitá-lo de novas formas. HoloLens mistura ótica de ponta e sensores para entregar hologramas 3D presos ao mundo real à sua volta.
 
 ## <a name="hololens-components"></a>componentes HoloLens
 
-![Imagem que mostra o conteúdo da caixa](images/hololens-box-contents.png)
+![Imagem que mostra o conteúdo da caixa.](images/hololens-box-contents.png)
 
 O seu HoloLens inclui as seguintes funcionalidades:
 
@@ -65,7 +65,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="display"></a>Apresentar
 
-![HoloLens tem lentes holográficas ver-through](images/displays-400px.jpg)
+![HoloLens tem lentes holográficas ver-through.](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -76,7 +76,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="sensors"></a>Sensores
 
-![HoloLens tem sensores para compreender o seu ambiente e as ações dos utilizadores](images/sensor-bar-400px.jpg)
+![HoloLens tem sensores para compreender o seu ambiente e as ações dos utilizadores.](images/sensor-bar-400px.jpg)
 
 - 1 unidade de medição por inércia (IMU)
 - 4 câmaras de compreensão ambiental
@@ -108,7 +108,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 ### <a name="processors"></a>Processadores
 
-![A placa-mãe para Microsoft HoloLens](images/motherboard-400px.jpg)
+![A placa-mãe para Microsoft HoloLens.](images/motherboard-400px.jpg)
 
 - Intel arquitetura de 32 bits com suporte TPM 2.0
 - Unidade de Processamento Holográfico microsoft personalizada (HPU 1.0)
@@ -166,7 +166,7 @@ Para limpar a viseira, retire qualquer pó com uma escova de lentes de camelo ou
 
 Para limpar o resto do aparelho, incluindo a bandelete e os braços do dispositivo, utilize um pano sem pelos humedecido com sabão suave e água. Deixe a sua HoloLens secar completamente antes de a voltar a utilizar.
 
-![Imagem que mostra como limpar a viseira](images/hololens-cleaning-visor.png)
+![Imagem que mostra como limpar a viseira.](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Encontrar o número de série
 

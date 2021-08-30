@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663967"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189295"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Questões conhecidas para HoloLens (1ª Gen)
 
@@ -178,7 +178,7 @@ Se o seu dispositivo ainda não conseguir carregar aplicações, pode descarrega
 
 1. Em seguida, verá um ecrã semelhante ao abaixo.  Você quer ir para a secção que diz **Instalar App** e navegar para onde você abriu os dois ficheiros APPX. Só é possível fazer um de cada vez, por isso, depois de selecionar o primeiro, clique em "Go" na secção 'Implementar'. Em seguida, faça isto para o segundo ficheiro APPX.
 
-   ![Windows Portal do Dispositivo para instalar Side-Loaded app](images/20190322-DevicePortal.png)
+   ![Windows Portal do Dispositivo para instalar Side-Loaded aplicação.](images/20190322-DevicePortal.png)
 
 1. Neste momento acreditamos que as suas aplicações devem começar a funcionar novamente e que também pode chegar à Loja.
 

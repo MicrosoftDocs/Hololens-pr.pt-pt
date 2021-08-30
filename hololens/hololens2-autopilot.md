@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: jarrettr
-ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
-ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
+ms.openlocfilehash: 4782b5d4d3c51038f7810c57d2144758ce0dc1ac
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122782812"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190196"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -191,7 +191,7 @@ Há duas maneiras de recuperar o haxixe de hardware.
    Deve ver uma lista que inclui **HoloLens.** Se esta opção não estiver presente, utilize uma das opções [de Feedback](hololens2-autopilot.md#feedback-and-support-for-autopilot) para nos contactar.
 
    > [!div class="mx-imgBorder"]
-   > ![Adicione um nome de perfil e descrição](./images/hololens-ap-profile-name.png)
+   > ![Adicione um nome de perfil e descrição.](./images/hololens-ap-profile-name.png)
 
 1. Na página **out-of-box experience (OOBE),** a maioria das definições estão pré-configuradas para simplificar o OOBE para esta avaliação. Opcionalmente, pode configurar as seguintes definições:  
 
@@ -202,7 +202,7 @@ Há duas maneiras de recuperar o haxixe de hardware.
      > Se utilizar um modelo de nome do dispositivo, o processo OOBE reinicia o dispositivo mais um tempo depois de aplicar o nome do dispositivo e antes de se juntar ao Azure AD. Este reinício permite que o novo nome produza efeitos.  
 
    > [!div class="mx-imgBorder"]
-   > ![Configurar as definições OOBE](./images/hololens-ap-profile-oobe.png)
+   > ![Configurar as definições OOBE.](./images/hololens-ap-profile-oobe.png)
 
 1. Depois de configurar as definições, selecione **Seguinte**.
 1. Na página **de tags Scope,** adicione opcionalmente as etiquetas de âmbito que pretende aplicar a este perfil. Para obter mais informações sobre etiquetas de âmbito, consulte [use o controlo de acesso baseado em funções e etiquetas de âmbito para TI distribuídos](/mem/intune/fundamentals/scope-tags.md). Quando terminar, selecione **Seguinte**.
@@ -218,14 +218,14 @@ Há duas maneiras de recuperar o haxixe de hardware.
 1. Na página **'Rever + Criar',** rever as definições e, em seguida, selecionar **Criar** para criar o perfil.  
 
    > [!div class="mx-imgBorder"]
-   > ![Rever + criar](./images/hololens-ap-profile-summ.png)
+   > ![Review + criar.](./images/hololens-ap-profile-summ.png)
 
 ### <a name="7-verify-the-esp-configuration"></a>7. Verifique a configuração esp
 
 A Página de Estado de Inscrição (ESP) apresenta o estado do processo completo de configuração do dispositivo que funciona quando um utilizador gerido pelo MDM assina por um dispositivo pela primeira vez. Certifique-se de que a sua configuração ESP se assemelha ao seguinte e verifique se as atribuições estão corretas.  
 
 > [!div class="mx-imgBorder"]
-> ![Configuração ESP](./images/hololens-ap-profile-settings.png)
+> ![Configuração ESP.](./images/hololens-ap-profile-settings.png)
 
 ### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. Verificar o estado do perfil dos dispositivos HoloLens
 
@@ -263,9 +263,9 @@ Uma vez concluídas as instruções acima, os seus utilizadores HoloLens 2 passa
 
    Deixe HoloLens 2 detetar a conectividade da rede e permitir que complete o OOBE automaticamente. O aparelho pode reiniciar durante o OOBE. Os ecrãs OOBE devem assemelhar-se ao seguinte.
 
-   ![OOBE passo 1 ](./images/autopilot-welcome.jpg)
-    ![ OOBE passo 2 ](./images/autopilot-step-complete.jpg)
-    ![ OOBE passo 3](./images/autopilot-device-setup.jpg)
+   ![OOBE passo 1. ](./images/autopilot-welcome.jpg)
+    ![ Passo OOBE 2. ](./images/autopilot-step-complete.jpg)
+    ![ Passo OOBE 3.](./images/autopilot-device-setup.jpg)
 
 1. No final do OOBE, pode iniciar sôms no dispositivo utilizando o seu nome de utilizador e senha.
 
@@ -290,7 +290,7 @@ Uma vez que o nó de RequerenetworkInOOBE do TenantLockdown cSPs seja definido p
 O valor OMA-URI deve ser ./Fornecedor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Fixação do bloqueio do tennant via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Configurar o bloqueio do tennant via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Crie um grupo e atribua o perfil de configuração do dispositivo a esse grupo de dispositivos.
 
@@ -306,7 +306,7 @@ Verifique no portal Intune que a configuração do dispositivo foi aplicada com 
 O valor OMA-URI deve ser ./Fornecedor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot de definição RequerNetworkInOOBE falso via OMA URI em Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Screenshot de configuração RequerNetworkInOOBE falso via OMA URI em Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Crie um grupo e atribua o perfil de configuração do dispositivo a esse grupo de dispositivos. 
 

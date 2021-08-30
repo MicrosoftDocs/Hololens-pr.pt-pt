@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664412"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188904"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planeamento HoloLens 2 implantação em ambiente comercial
 
@@ -32,11 +32,11 @@ Os seguintes passos e vídeo podem ajudá-lo a guiá-lo através do processo de 
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Passo 1](images/1green.png)| <br/> **[Cenários de implantação comuns](hololens-requirements.md)**: Compreenda os cenários de implantação e explore os componentes centrais necessários para implantar HoloLens 2 dispositivos. |
-| ![Passo 2](images/2green.png)| <br/> **[Preparar](#prepare)**: Familiarize-se com os elementos essenciais da infraestrutura necessários para HoloLens 2. |
-| ![Passo 3](images/3green.png) | <br/> **[Configurar](#configure)**: Aprenda a configurar os seus componentes essenciais para uma implantação baseada na nuvem. |
-| ![Passo 4](images/4green.png) | <br/> **[Implementar](#deploy)**: Descubra como implantar os seus dispositivos e distribuir as suas aplicações de forma segura e eficiente. |
-| ![Passo 5](images/5green.png) | <br/> **[Manter](#maintain)**: Descubra o que é necessário para manter corretamente o estado dos seus HoloLens 2 dispositivos e garantir o cumprimento da política corporativa. |
+| ![Passo 1.](images/1green.png)| <br/> **[Cenários de implantação comuns](hololens-requirements.md)**: Compreenda os cenários de implantação e explore os componentes centrais necessários para implantar HoloLens 2 dispositivos. |
+| ![Passo 2.](images/2green.png)| <br/> **[Preparar](#prepare)**: Familiarize-se com os elementos essenciais da infraestrutura necessários para HoloLens 2. |
+| ![Passo 3.](images/3green.png) | <br/> **[Configurar](#configure)**: Aprenda a configurar os seus componentes essenciais para uma implantação baseada na nuvem. |
+| ![Passo 4:](images/4green.png) | <br/> **[Implementar](#deploy)**: Descubra como implantar os seus dispositivos e distribuir as suas aplicações de forma segura e eficiente. |
+| ![Passo 5.](images/5green.png) | <br/> **[Manter](#maintain)**: Descubra o que é necessário para manter corretamente o estado dos seus HoloLens 2 dispositivos e garantir o cumprimento da política corporativa. |
 
 <br/>
 

@@ -7,12 +7,12 @@ description: Opções de suporte de realidade mista para pequenos a grandes clie
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658756"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190451"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quais são as opções de apoio à Realidade Mista e de ajuda?
 
@@ -124,18 +124,18 @@ Para abrir um bilhete de suporte técnico no portal Azure para âncoras espaciai
 
 1. Com o [portal Azure](https://azure.microsoft.com/account/) aberto, selecione o ícone de ajuda a partir da barra de menu superior e, em seguida, selecione o botão **de suporte Ajuda +.**
 
-   ![Ajuda e suporte do portal Azure](../hololens/images/azure-help-support.png)
+   ![Ajuda e suporte do portal Azure.](../hololens/images/azure-help-support.png)
 
 2. Com a página de suporte Help + aberta, selecione **+ Novo pedido de suporte.**
 
-   ![Novo pedido de apoio ao portal Azure](../hololens/images/azure-help-support2.png)
+   ![Novo pedido de apoio ao portal Azure.](../hololens/images/azure-help-support2.png)
 
 3. Ao completar os campos de bilhetes de apoio:
 
     + Tipo de problema: técnico
     + Serviço: Âncoras Espaciais Azure, Renderização Remota Azure ou Âncoras de ObjetoS Azure
 
-    ![Campos de bilhetes de apoio ao portal Azure](../hololens/images/azure-help-support3.png)
+    ![Azure portal suporta campos de bilhetes.](../hololens/images/azure-help-support3.png)
 
     1. Clique em **seguida: Soluções** na parte inferior da página para adicionar mais detalhes para nos dizer mais sobre o problema.
 

@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4aa0ea03850277e528b134c9686633a140c64721
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: be2fde329293b89698c0f6dd5d92df1c6260f1be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859447"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190230"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -189,18 +189,18 @@ Confira as notas de lançamento relacionadas:
 
 ### <a name="introducing-the-new-microsoft-edge"></a>Apresentamos o novo Microsoft Edge
 
-![Animação do logotipo Microsoft Edge do legado para o novo logotipo Microsoft Edge](images/new-edge.gif)
+![Animação do legado Microsoft Edge logotipo para novo logotipo Microsoft Edge.](images/new-edge.gif)
 
 O novo Microsoft Edge [adota o projeto de código aberto Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) para criar uma melhor compatibilidade para os clientes e menos fragmentação da web para os desenvolvedores web.
 
 > [!IMPORTANT]
 > Esta nova Microsoft Edge substitui automaticamente o legado Microsoft Edge, que [já não](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) é suportado em novas versões.
 
-![Imagem de nova Microsoft Edge](images/new-edge-ui.png)
+![Nova Microsoft Edge imagem.](images/new-edge-ui.png)
 
 #### <a name="launching-the-new-microsoft-edge"></a>Lançamento do novo Microsoft Edge
 
-O novo Microsoft Edge ![novo ícone de Microsoft Edge](images/new_edge_logo.png) (representado por um ícone de redemoinho azul e verde) está fixado ao menu Iniciar e será automaticamente lançado quando ativar uma ligação web.
+O novo Microsoft Edge ![novo ícone de Microsoft Edge.](images/new_edge_logo.png) (representado por um ícone de redemoinho azul e verde) está fixado ao menu Iniciar e será automaticamente lançado quando ativar uma ligação web.
 
 > [!NOTE]
 > Quando lançar pela primeira vez o novo Microsoft Edge no dia 2 HoloLens, as suas definições e dados serão importados do legado Microsoft Edge. Se continuar a utilizar o legado Microsoft Edge depois de lançar o novo Microsoft Edge, esses novos dados não serão sincronizados desde o legado Microsoft Edge até ao novo Microsoft Edge.
@@ -309,7 +309,7 @@ A extensão 360 Viewer é construída no WebXR e instala-se automaticamente ao l
 1. Navegue para um site com suporte WebXR.
 1. Selecione o botão **Enter VR** no site. A localização e representação visual deste botão podem variar por website, mas pode parecer semelhante a:
 
-    ![Introduza o exemplo do botão VR](images/75px-enter-vr.png)
+    ![Introduza o exemplo do botão VR.](images/75px-enter-vr.png)
 
 1. A primeira vez que tentar lançar uma experiência WebXR num domínio específico, o navegador pedirá consentimento para introduzir uma vista imersiva, selecione **Permitir**.
 1. Use [HoloLens 2 gestos](hololens2-basic-usage.md#the-hand-tracking-frame) para manipular a experiência.
@@ -326,7 +326,7 @@ A extensão 360 Viewer é construída no WebXR e instala-se automaticamente ao l
 1. Navegue para um vídeo de 360 graus no YouTube.
 1. Na moldura de vídeo, selecione o botão de auscultador de realidade mista:
 
-    ![Botão para ativar 360 Espectador](images/enter-360-viewer.jpg)
+    ![Botão para ativar 360 Espectador.](images/enter-360-viewer.jpg)
 
 1. A primeira vez que tentar lançar o 360 Viewer num domínio específico, o navegador pedirá consentimento para introduzir uma vista imersiva. **Selecione Permitir**.
 1. [Toque de ar](hololens2-basic-usage.md#select-using-air-tap) para aumentar os controlos de reprodução. Utilize [raios de mão e toque de ar](hololens2-basic-usage.md#select-using-air-tap) para reproduzir/fazer pausa, saltar para a frente/para trás, ligar/desligar as legendas ou parar a experiência (que sai da vista imersiva). Os controlos de reprodução desaparecerão após alguns segundos de inatividade.
@@ -347,7 +347,7 @@ Com este lançamento, estamos a introduzir uma nova versão da aplicação Defin
 > [!NOTE]
 > Uma vez que a nova aplicação Definições é distinta da aplicação legacy Definições, qualquer Definições janelas que tenha colocado anteriormente em torno do seu ambiente será removida após a atualização.
 
-![Página inicial da aplicação new Definições](images/new-settings-app.png)
+![Página inicial da aplicação new Definições.](images/new-settings-app.png)
 
 **Novas funcionalidades e configurações**
 - Definições pesquisa: procure configurações a partir da página inicial Definições usando palavras-chave ou o nome da definição.
@@ -392,7 +392,7 @@ Com esta nova definição, pode selecionar um perfil de cores alternativo para o
     > Se tiver dificuldades em ver a cena escurecida no seu ambiente, pode ajustar manualmente o nível de luminosidade do HoloLens 2 utilizando os botões de luminosidade no lado esquerdo do dispositivo.
 1. Selecione os botões 1-6 para experimentar instantaneamente cada perfil de cor, e encontre um que fique melhor para os seus olhos (isto geralmente significa o perfil que ajuda a cena a parecer mais neutro, com o padrão em tons de cinza e a pele a parecerem esperados.)
 
-    ![Cena de calibração de cores de exibição](images/color-cal-ui.png)
+    ![Mostrar cena de calibração de cores.](images/color-cal-ui.png)
     
 1. Quando estiver satisfeito com o perfil selecionado, selecione o botão **'Saída &'**
 1. Se preferir não fazer alterações, selecione o botão **'Cancelar & Saída'** e as alterações serão revertidas
@@ -472,11 +472,11 @@ Introduzido neste Windows construção, ao selecionar **Outro utilizador** que e
 
 Quando estiver no menu Outros utilizadores, o botão Outros utilizadores apresentará o último utilizador assinado no dispositivo. Selecione este botão para voltar ao Sinal no ecrã para este utilizador.
 
-![Predefinição do ecrã de inscrição](./images/multiusers1.jpg)
+![Predefinição do ecrã de inscrição.](./images/multiusers1.jpg)
 
 <br>
 
-![Ecrã de inscrição de outros utilizadores](./images/multiusers2.jpg)
+![Teste de saturação de outros utilizadores.](./images/multiusers2.jpg)
 
 ### <a name="usb-c-external-microphone-support"></a>Suporte externo do microfone USB-C
 
@@ -487,7 +487,7 @@ Os utilizadores podem selecionar microfones externos ligados a USB-C utilizando 
 
 Abra a aplicação **Definições** e selecione **System**  >  **Sound**.
 
-![Som Definições](images/usbc-mic-1.jpg)
+![Som Definições.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > Para utilizar microfones externos com **Assistência Remota,** os utilizadores terão de clicar na hiperligação "Gerir dispositivos de som".
@@ -496,11 +496,11 @@ Abra a aplicação **Definições** e selecione **System**  >  **Sound**.
 >
 > Escolher o **Padrão de Comunicações** significa que o microfone externo será utilizado em aplicações de Assistência Remota e outras aplicações de comunicações, mas o HoloLens conjunto de microfones ainda pode ser usado para outras tarefas.
 
-![Gerir dispositivos de som](images/usbc-mic-2.png)
+![Gerencie os dispositivos de som.](images/usbc-mic-2.png)
 
 <br>
 
-![Definir padrão do microfone](images/usbc-mic-3.jpg)
+![Descode o microfone por defeito.](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>E Bluetooth suporte ao microfone?
 
@@ -512,7 +512,7 @@ Esteja ciente de que alguns microfones USB-C se reportam incorretamente como um 
 
 No **Definições**  ->  **System**  ->  **Sound,** coloque explicitamente os altifalantes incorporados **(Controlador de áudio de recurso analógico)** como o **dispositivo Predefinido**. HoloLens deve lembrar-se desta definição mesmo que o microfone seja removido e reconectado mais tarde.
 
-![Resolução de problemas dos microfones USB-C](images/usbc-mic-4.png)
+![Resolução de problemas dos microfones USB-C.](images/usbc-mic-4.png)
 
 ### <a name="visitor-auto-logon-for-kiosks"></a>Início de visita Auto para quiosques
 
@@ -799,7 +799,7 @@ Pode encontrar aplicativos de amostras em [Windows GitHub de Amostras Universais
 
 Leia sobre o processo completo de instalação de [apps no HoloLens 2 com o Instalador de Aplicações.](app-deploy-app-installer.md)  
 
-![Instalação de exemplos MRTK através do Instalador de Aplicações](images/hololens-app-installer-picture.jpg)
+![Instalação de exemplos MRTK através do Instalador de Aplicações.](images/hololens-app-installer-picture.jpg)
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Melhorias e correções na atualização:
 
@@ -899,9 +899,9 @@ O certificado deve agora ser instalado no aparelho.
 1. Clique **em Remover**
 1. Selecione **Sim** quando solicitado para confirmação.
 
-![Espectador de certificado na app Definições](images/certificate-viewer-device.jpg)
+![Espectador de certificado na aplicação Definições.](images/certificate-viewer-device.jpg)
 
-![Imagem mostrando como usar o Certificado UI para instalar um certificado](images/certificate-device-install.jpg)
+![Imagem que mostra como usar o Certificado UI para instalar um certificado.](images/certificate-device-install.jpg)
 
 Esta informação pode ser encontrada mais tarde [numa nova página do Gestor de Certificados.](certificate-manager.md)
 
@@ -964,7 +964,7 @@ Uma vez que o nó de RequerenetworkInOOBE do TenantLockdown cSPs seja definido p
 O valor OMA-URI deve ser ./Fornecedor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Fixação do bloqueio do tennant via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Configurar o bloqueio do tennant via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Crie um grupo e atribua o perfil de configuração do dispositivo a esse grupo de dispositivos. 
 
@@ -978,7 +978,7 @@ Verifique no portal Intune que a configuração do dispositivo foi aplicada com 
 1. Crie um perfil de configuração de dispositivo baseado em OMA URI personalizado e especifique falso para RequireNetworkInOOBE, como mostrado abaixo. O valor OMA-URI deve ser ./Fornecedor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot de definição RequerNetworkInOOBE falso via OMA URI em Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Screenshot de configuração RequerNetworkInOOBE falso via OMA URI em Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Crie um grupo e atribua o perfil de configuração do dispositivo a esse grupo de dispositivos.
 
@@ -1108,7 +1108,7 @@ Agora permitimos que uma política que permite aos administradores de TI impedir
 
 Para saber quais as definições de página que pode personalizar no HoloLens 2, visite a nossa [página uris Definições](settings-uri-list.md). 
  
-![Screenshot de horas ativas a ser modificada na app Definições](images/hololens-page-visibility-list.jpg)
+![Screenshot de horas ativas a ser modificada na aplicação Definições.](images/hololens-page-visibility-list.jpg)
 
 ### <a name="research-mode"></a>Modo de investigação
 Enquanto em Modo de Investigação, o HoloLens 2 torna-se uma ferramenta potente para a pesquisa de visão computacional. Em comparação com edições anteriores, o Modo de Investigação para HoloLens 2 tem as seguintes vantagens:
@@ -1365,7 +1365,7 @@ Estas aplicações "in-box" suportam o modo escuro:
 - Espectador 3D 
 - Filmes & TV 
 
-![Janelas de modo escuro em azulejo](images/DarkMode.jpg)
+![Janelas de modo escuro em azulejo.](images/DarkMode.jpg)
 
 ### <a name="system-voice-commands"></a>Comandos de voz do sistema
 

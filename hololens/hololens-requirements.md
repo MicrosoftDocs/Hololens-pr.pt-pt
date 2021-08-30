@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662897"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189244"
 ---
 # <a name="common-deployment-scenarios"></a>Cenários comuns de implantação
 
@@ -39,7 +39,7 @@ Você pode ser um decisor de negócios, profissional de TI, ou uma equipe de ino
 
 Este cenário é comparável à implementação de dispositivos móveis geridos dentro de uma empresa. HoloLens 2 é implantado para uso principalmente em ambientes externos a uma rede corporativa. Os recursos corporativos não são acedidos ou podem ser limitados através da VPN.
 
-[![Cenário Um diagrama](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+[![Cenário Um diagrama.](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>Quando utilizar
 
@@ -75,9 +75,9 @@ Utilize o guia de Clientes Externos para implantar dispositivos num local remoto
 
 Este cenário é idêntico a uma implantação clássica para a maioria dos PCs Windows 10. HoloLens 2 é implementado para uso principalmente na rede corporativa com acesso a recursos corporativos internos. Os serviços de internet e nuvem podem ser limitados. 
 
-[![Diagrama do cenário B1](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![Cenário B1 diagrama.](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Diagrama do cenário B2](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Cenário B2 diagrama.](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ### <a name="when-to-use"></a>Quando utilizar
 
@@ -111,7 +111,7 @@ O guia Corporate Connected correspondente instrui sobre como inscrever HoloLens 
 
 Esta é uma implementação típica para locais altamente seguros ou confidenciais. HoloLens 2 é implementado para uso principalmente offline sem rede ou acesso à Internet.
 
-[![Diagrama de segurança offline 1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Esquema de segurança offline 1.](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ### <a name="when-to-use"></a>Quando utilizar
 

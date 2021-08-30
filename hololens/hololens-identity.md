@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 11a5680ea2b27a277bc4eb5b1dc0e62a2c602312
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858450"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189550"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gerir a identidade do utilizador e iniciar s-in para HoloLens
 
@@ -88,11 +88,11 @@ Introduzido em [Windows Holographic, versão 21H1,](hololens-release-notes.md#wi
 
 Quando estiver no menu Outros utilizadores, o botão Outros utilizadores apresentará o último utilizador assinado no dispositivo. Selecione este botão para voltar ao Sinal no ecrã para este utilizador.
 
-![Predefinição do ecrã de inscrição](./images/multiusers1.jpg)
+![Predefinição do ecrã de inscrição.](./images/multiusers1.jpg)
 
 <br>
 
-![Ecrã de inscrição de outros utilizadores](./images/multiusers2.jpg)
+![Teste de saturação de outros utilizadores.](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>Remoção de utilizadores
 
@@ -140,7 +140,7 @@ A informação biométrica da íris é armazenada localmente em cada HoloLens po
 ### <a name="do-i-have-to-use-iris-authentication"></a>Tenho de usar a autenticação da Iris?
 Não, pode saltar este passo durante a configuração. 
 
-![Configuração Iris](./images/setup-iris.png)
+![Trama iris.](./images/setup-iris.png)
 
 HoloLens 2 oferece muitas opções diferentes para a autenticação, incluindo chaves de segurança FIDO2.
 
