@@ -7,7 +7,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/27/2020
+ms.date: 08/30/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9547545fee4b1e0c8bacf258fa9bea081dec2445
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
+ms.sourcegitcommit: c4fe077e9e19a3b0a9fad8defa4b51547c5ae3c8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189720"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123261928"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Reiniciar, reiniciar ou recuperar HoloLens 2
 
@@ -69,18 +69,18 @@ Se o procedimento de reset padrão não funcionar, utilize o procedimento de res
 
 1. Desligue o cabo Type-C para desligar o dispositivo da alimentação ou do PC de hospedeiro.
 
-2. Mantenha **premidos** os  +  botões **de potência** durante 15 segundos. O aparelho reiniciará automaticamente.
+1. Mantenha **premidos** os  +  botões **de potência** durante 15 segundos. O aparelho reiniciará automaticamente.
 
-4. Ligação o dispositivo para o PC anfitrião.
+1. Ligação o dispositivo para o PC anfitrião.
 
-
-5. Abra o Gestor de Dispositivos (para Windows 10 prima a **tecla Windows** e, em seguida, a tecla **X** e, em seguida, selecione **o Gestor de Dispositivos).** Certifique-se de que o dispositivo enumera corretamente como *Microsoft HoloLens* como mostrado na seguinte imagem:
+1. Abra o Gestor de Dispositivos (para Windows 10 prima a **tecla Windows** e, em seguida, a tecla **X** e, em seguida, selecione **o Gestor de Dispositivos).** Certifique-se de que o dispositivo enumera corretamente como *Microsoft HoloLens* como mostrado na seguinte imagem:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery dispositivo maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>Limpar o dispositivo
 
 Em situações extraordinárias, pode ter de "limpar" o HoloLens 2. Por favor, note que não se espera que o reflash limpo afete os seguintes problemas:
+
 - [Uniforme de cor do ecrã](hololens2-display.md)
 - Arranque com som mas sem saída de exibição
 - [Padrão de 1-3-5-LED](hololens2-setup.md#lights-to-indicate-problems)
@@ -92,7 +92,7 @@ Há duas maneiras de reflash o dispositivo. Para ambos, deve primeiro [instalar 
 >[!WARNING]
 >Se voltar a colocar o seu dispositivo, todos os seus dados pessoais, aplicações e configurações serão apagados, incluindo informações de reset TPM.
 
-Por predefinição, Advanced Recovery Companion está programado para descarregar a mais recente construção de lançamento de funcionalidades, consulte aqui para ler as [nossas notas de Lançamento](hololens-release-notes.md#) para saber mais sobre a versão mais recente da funcionalidade. Para obter o mais recente pacote HoloLens 2 Full Flash Update (FFU) para relançar o seu dispositivo através do Advanced Recovery Companion, [clique aqui para descarregar a mais recente imagem mensal HoloLens 2](https://aka.ms/hololens2download). Esta versão é a mais recente construção geralmente disponível.
+Por predefinição, o Advanced Recovery Companion está definido para descarregar a mais recente construção de lançamento de funcionalidades; para conhecer o mais recente lançamento da funcionalidade, consulte [HoloLens 2 notas de lançamento](hololens-release-notes.md). Para obter o mais recente pacote HoloLens 2 Full Flash Update (FFU) para relançar o seu dispositivo através do Advanced Recovery Companion, descarregue a mais recente imagem mensal HoloLens 2: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Esta versão é a mais recente construção geralmente disponível.
 
 Antes de iniciar o procedimento de reflash, certifique-se de que a aplicação está instalada e a funcionar no seu PC Windows 10 e pronta para detetar o dispositivo. Certifique-se também de que o seu HoloLens é cobrado até um mínimo de 40%.
 
@@ -101,16 +101,20 @@ Antes de iniciar o procedimento de reflash, certifique-se de que a aplicação e
 ### <a name="normal-procedure"></a>Procedimento normal
 
 1. Enquanto o HoloLens dispositivo estiver em execução, conecte-o ao PC Windows 10 onde abriu previamente a aplicação Advanced Recovery Companion.
- 
+
    O dispositivo será detetado automaticamente e a UI da aplicação Advanced Recovery Companion iniciará o processo de atualização:
 
    ![HoloLens ecrã inicial de reflash limpo de 2.](images/ARC2.png)
 
-3. Selecione o dispositivo HoloLens 2 na UI da aplicação Advanced Recovery Companion e siga as instruções para completar o reflash.
+1. Selecione o dispositivo HoloLens 2 na UI da aplicação Advanced Recovery Companion e siga as instruções para completar o reflash.
 
 ### <a name="manual-procedure"></a>Procedimento manual
 
-Se o HoloLens 2 não arrancar corretamente ou se o Avançado Recovery Companion não conseguir detetar o dispositivo, poderá ter de colocar o dispositivo no modo de recuperação:
+Pode ser necessário colocar o dispositivo no modo de recuperação se:
+
+- O HoloLens 2 não começa corretamente
+- O Companheiro de Recuperação Avançado não consegue detetar o dispositivo
+- Já não conhece a palavra-passe/PIN de um dispositivo que tem apenas um único utilizador
 
 1. Desligue o cabo Type-C para desligar o dispositivo da alimentação ou do PC de hospedeiro.
 
@@ -132,18 +136,18 @@ Se o HoloLens 2 não arrancar corretamente ou se o Avançado Recovery Companion 
 
 1. Certifique-se de que o seu dispositivo está carregado até 40% ou mais antes de tentar piscar.
 
-2. Verifique se o seu dispositivo está desbloqueado.
+1. Verifique se o seu dispositivo está desbloqueado.
 
 1. Verifique se o seu dispositivo está ligado diretamente ao PC anfitrião, não a um hub.
 
 1. Se o seu dispositivo não estiver a aparecer como um dispositivo de recuperação HoloLens/HoloLens sob a Universal Serial Bus Drivers, verifique:
     1. **Portas**, como um dispositivo Qualcomm HS-USB
-    1.   **Outros Dispositivos**, como QUSB_BULK dispositivo – o seu PC anfitrião está a perder os controladores necessários para detetar o seu HoloLens. Clique e selecione Update Driver e procure por condutores on-line ou [verifique atualizações opcionais nas definições de Atualização Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). Depois de o controlador ser descarregado, a ARC deverá ser capaz de detetá-lo.
- 
+    1. **Outros Dispositivos**, como QUSB_BULK dispositivo – o seu PC anfitrião está a perder os controladores necessários para detetar o seu HoloLens. Clique e selecione Update Driver e procure por condutores on-line ou [verifique atualizações opcionais nas definições de Atualização Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). Depois de o controlador ser descarregado, a ARC deverá ser capaz de detetá-lo.
+
 1. Se o ARC não detetar o seu dispositivo, certifique-se de que pode ligar-se ao seu dispositivo através do File Explorer no seu PC. Se não puder;
 
-    1.  É possível que o seu dispositivo possa ter políticas USB que desativem essa ligação. Em caso afirmativo, experimente [o modo de piscar manual](hololens-recovery.md#manual-procedure).
-    2.  Se não houver políticas, experimente um cabo USB diferente.
+    1. É possível que o seu dispositivo possa ter políticas USB que desativem essa ligação. Em caso afirmativo, experimente [o modo de piscar manual](hololens-recovery.md#manual-procedure).
+    2. Se não houver políticas, experimente um cabo USB diferente.
 
 1. Verifique se o seu dispositivo não apresenta um [padrão de 1-3-5 LED](hololens2-setup.md#lights-to-indicate-problems).
 
@@ -183,7 +187,7 @@ Siga estes passos para permitir a via de implantação:
 > [!TIP]
 > Quando planeia utilizar o Advanced Recovery Companion para instalar um FFU offline, pode ser útil descarregar a sua imagem flash. [**Descarregue a imagem atual para HoloLens 2**](https://aka.ms/hololens2download).
 
-
 Outros recursos:
+
 - [Distribuir aplicativos offline](/microsoft-store/distribute-offline-apps) 
 - [Pacote de aplicativos DISM (.appx ou .appxbundle) opções de linha de comando](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
