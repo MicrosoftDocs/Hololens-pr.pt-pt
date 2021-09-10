@@ -8,11 +8,11 @@ ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
 ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190451"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428397"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quais são as opções de apoio à Realidade Mista e de ajuda?
 

@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 08/10/2021
+ms.date: 9/8/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be2fde329293b89698c0f6dd5d92df1c6260f1be
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: f27a469e76df1ccf29a2823b48f3640bdf414050
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190230"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428621"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -991,7 +991,7 @@ A OOBE aguardará indefinidamente o download do perfil do Piloto Automático e s
 
 ![Vista no dispositivo para quando a política é aplicada no dispositivo.](images/hololens-autopilot-lockdown.png)
 
-Esta informação pode agora ser encontrada ao lado do resto do Autopilot sob [o CSP e o Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
+Esta informação pode agora ser encontrada ao lado do resto do Autopilot sob [o CSP e o Autopilot](hololens2-autopilot.md#tenant-lockdown-csp-and-autopilot).
 
 ### <a name="global-assigned-access--kiosk-mode"></a>Global Assigned Access – Modo Quiosque
 - Gestão de identidade reduzida para quiosque, permitindo o novo método do quiosque que aplica o modo quiosque ao nível do sistema.

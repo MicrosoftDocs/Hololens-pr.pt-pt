@@ -15,11 +15,11 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189295"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124429008"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Questões conhecidas para HoloLens (1ª Gen)
 

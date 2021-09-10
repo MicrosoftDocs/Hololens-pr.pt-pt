@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189482"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427430"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -186,8 +186,9 @@ Agora pode usar o WDAC para bloquear aplicações ou processos de lançamento e 
 - Corrigiu um [problema conhecido para o Portal do Dispositivo onde não havia qualquer solicitação de descarregamento de ficheiros bloqueados.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Corrigi um [problema conhecido para o Portal do Dispositivo com upload de ficheiros e descarregamento de tempo.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Aborda questões relacionadas com a denúncia de propriedades de conformidade a partir de dispositivos HoloLens; pode ser necessário reiniciar para que o relatório correto seja acionado nas construções insider.  
-- Ativou uma [API de acesso atribuído](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) para que as aplicações possam agora determinar se um HoloLens está a ser em execução num modo quiosque para o utilizador iniciado no HoloLens.
+- Ativou uma [API de acesso atribuído](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) para que as aplicações possam agora determinar se um HoloLens está a ser em execução num modo quiosque para o utilizador iniciado no HoloLens.
 - Atualize a versão in-box do Remote Assist que está instalada em flashes frescos.
+- O processamento de gamepad para aplicações 2D foi desativado nas construções insider. Ao removê-lo, as aplicações são agora gratuitas para usar as APIs do Gamepad diretamente e têm acesso a todo o conjunto de controlos e fazem o que quiserem. Os desenvolvedores devem usar as APIs do Gamepad para consumir a entrada do Gamepad. Aqui está uma amostra para [a Classe Gamepad (Windows. Gaming.Input) - Windows aplicações UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
 
 ## <a name="start-receiving-insider-builds"></a>Comece a receber construções insider
 

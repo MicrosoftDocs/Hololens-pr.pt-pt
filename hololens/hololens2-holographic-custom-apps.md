@@ -2,13 +2,13 @@
 title: Gerir aplicativos personalizados para HoloLens 2
 description: Aprenda a instalar, desinstalar e carregar as aplicações holográficas personalizadas em HoloLens 2 dispositivos utilizando o Portal do Dispositivo e Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 01/21/2021
-manager: yannisle
+ms.date: 9/3/2021
+manager: sekerawa
 keywords: hololens, hololens 2, sideload, side load, side-load, side-load, store, uwp, app, install
 ms.prod: hololens
 ms.sitesec: library
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 ms.custom:
@@ -16,16 +16,16 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 99149c24922c582a66669685df20520b29f692677859d1408328fc9f2ee8ddf3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 057d70c221bbecd060fd5650874ee6a6940ffd18
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659808"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428949"
 ---
 # <a name="manage-custom-apps-for-hololens-2"></a>Gerir aplicativos personalizados para HoloLens 2
 
-HoloLens suporta muitas aplicações existentes a partir do Microsoft Store, bem como novas aplicações construídas especificamente para HoloLens. 
+HoloLens suporta muitas aplicações existentes a partir do Microsoft Store, e novas aplicações construídas especificamente para HoloLens. 
 
 Para obter mais informações sobre aplicações da loja, consulte [Gerir aplicações com a loja.](holographic-store-apps.md)
 
@@ -38,3 +38,5 @@ Se estiver à procura de um dos métodos de instalação de aplicações para Ho
 - [Utilizar Visual Studio para implementar e depurar apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 Consulte o nosso [guia](holographic-custom-apps.md) se quiser implementar aplicações personalizadas no HoloLens (1ª geração).
+
+

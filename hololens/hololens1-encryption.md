@@ -14,11 +14,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189941"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428211"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>encriptação bitLocker HoloLens (1ª Gen)
 

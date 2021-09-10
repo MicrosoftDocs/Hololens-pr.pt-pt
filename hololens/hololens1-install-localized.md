@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: fe29e4ed611f86764f0db576b1a8794fa0ceec3047cadd26f502209faadea8b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661824"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428543"
 ---
 # <a name="install-localized-versions-of-hololens-1st-gen"></a>Instalar versões localizadas de HoloLens (1ª geração)
 

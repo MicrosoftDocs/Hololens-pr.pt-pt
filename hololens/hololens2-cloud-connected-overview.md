@@ -1,6 +1,6 @@
 ---
-title: Visão geral da Nuvem conectada HoloLens 2 com Assistência Remota
-description: Saiba como inscrever HoloLens 2 dispositivos através de uma rede Cloud Connected utilizando o Dynamics 365 Remote Assist.
+title: Visão geral da Cloud conectada HoloLens 2 com Assistência Remota
+description: Saiba como inscrever os dispositivos HoloLens 2 através de uma rede Cloud Connected utilizando o Dynamics 365 Remote Assist.
 keywords: HoloLens, gestão, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -15,21 +15,21 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189652"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428757"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guia de Implementação - Cloud conectado HoloLens 2 com Assistência Remota – Visão Geral
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guia de Implementação - HoloLens ligado à nuvem 2 com Assistência Remota – Visão geral
 
-Este guia ajudará os profissionais de TI a planear e implementar Microsoft HoloLens 2 dispositivos com Assistência Remota à sua organização. Isto servirá como um modelo para implementações de prova de conceito para a sua organização em vários casos de utilização HoloLens 2. A configuração é semelhante ao [cenário A: Implementar para dispositivos de ligação em nuvem](common-scenarios.md#scenario-a). 
+Este guia ajudará os profissionais de TI a planear e implementar dispositivos Microsoft HoloLens 2 com Assistência Remota à sua organização. Isto servirá como um modelo para implementações de prova de conceito para a sua organização em vários casos de utilização hololes 2. A configuração é semelhante ao [cenário A: Implementar para dispositivos de ligação em nuvem](common-scenarios.md#scenario-a). 
 
-Durante o guia, iremos cobrir como inscrever os seus dispositivos na gestão do seu dispositivo, aplicar licenças conforme necessário e validar que os seus utilizadores finais são capazes de utilizar imediatamente o Remote Assist após a configuração do dispositivo. Para isso, vamos analisar as importantes infraestruturas necessárias para se instalar e funcionar – conseguir a implantação em escala com HoloLens 2. Nenhuma outra restrição ou configurações do dispositivo será aplicada neste guia, no entanto, encorajamos-o a explorar essas opções após o acabamento.
+Durante o guia, iremos cobrir como inscrever os seus dispositivos na gestão do seu dispositivo, aplicar licenças conforme necessário e validar que os seus utilizadores finais são capazes de utilizar imediatamente o Remote Assist após a configuração do dispositivo. Para isso, vamos analisar as importantes peças de infraestrutura necessárias para se instalar e funcionar – conseguindo a implantação em escala com hololens 2. Nenhuma outra restrição ou configurações do dispositivo será aplicada neste guia, no entanto, encorajamos-o a explorar essas opções após o acabamento.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Devem estar em vigor as infraestruturas que se seguem para implantar o HoloLens 2. Caso contrário, a criação de Azure e Intune está incluída neste guia:
+Devem estar em vigor as infraestruturas seguintes para implantar os HoloLens 2. Caso contrário, a criação de Azure e Intune está incluída neste guia:
 
 Esta é uma configuração semelhante ao [cenário A: Implementar para dispositivos de ligação em nuvem](/hololens/common-scenarios#scenario-a), que é uma boa opção para muitas implementações de Prova de Conceito, que incluirá:
 
@@ -43,7 +43,7 @@ Esta é uma configuração semelhante ao [cenário A: Implementar para dispositi
 
 ## <a name="learn-about-remote-assist"></a>Saiba mais sobre assistência remota
 
-O Remote Assist permite a manutenção e reparação colaborativa, inspeção remota, bem como partilha e formação de conhecimentos. Ao ligar pessoas em diferentes funções e locais, um técnico que utiliza o Remote Assist pode conectar-se com um colaborador remoto em Microsoft Teams. Podem combinar vídeo, imagens e anotações para resolver problemas em tempo real, mesmo quando não estão no mesmo local. Os colaboradores remotos podem inserir imagens de referência, esquemas e outras informações úteis do espaço físico do técnico para que possam consultar o esquema enquanto trabalham no heads-up e mãos-livres no HoloLens.
+O Remote Assist permite a manutenção e reparação colaborativa, inspeção remota, bem como partilha e formação de conhecimentos. Ao conectar pessoas em diferentes funções e locais, um técnico que utiliza o Remote Assist pode conectar-se com um colaborador remoto em Microsoft Teams. Podem combinar vídeo, imagens e anotações para resolver problemas em tempo real, mesmo quando não estão no mesmo local. Os colaboradores remotos podem inserir imagens de referência, esquemas e outras informações úteis do espaço físico do técnico para que possam consultar o esquema enquanto trabalham heads-up e mãos-livres em HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -57,9 +57,9 @@ O Remote Assist permite a manutenção e reparação colaborativa, inspeção re
 - Licença de Assistência Remota
 - Conectividade da rede
 
-#### <a name="microsoft-teams-user"></a>Microsoft Teams utilizador
+#### <a name="microsoft-teams-user"></a>Utilizador da Microsoft Teams
 
-- Microsoft Teams ou [Teams Freemium.](https://products.office.com/microsoft-teams/free)
+- Microsoft Teams ou [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Conectividade de rede
 
 Se planeia implementar este [cenário de inquilinos cruzados,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)poderá necessitar de uma licença de Barreiras de Informação. Para determinar se é necessária uma Licença de Barreira de Informação, consulte [os Fornecedores e clientes que utilizem todas as capacidades de Assistência Remota Dynamics 365](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation).
@@ -69,7 +69,7 @@ Se planeia implementar este [cenário de inquilinos cruzados,](/dynamics365/mixe
 Preparar:
 
 > [!div class="checklist"]
-> - [Conheça os elementos essenciais da infraestrutura para HoloLens 2 dispositivos.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+> - [Conheça o essencial da infraestrutura para dispositivos HoloLens 2.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
 > - [Saiba mais sobre o Azure AD e crie um se não&#39;o tiver.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [Saiba mais sobre a gestão de identidade e como configurar melhor as contas AD da Azure.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Saiba mais sobre o MDM e prepare-se com o Intune se não&#39;já não tenha um pronto.](hololens2-cloud-connected-prepare.md#mobile-device-management)
@@ -86,7 +86,7 @@ Configure:
 Implementação:
 
 > [!div class="checklist"]
-> - [Crie o seu HoloLens 2 e valide a inscrição.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [Configurar os hololens 2 e validar a inscrição.](hololens2-cloud-connected-deploy.md#enrollment-validation)
 > - [Valide que pode esporar uma chamada de Assistência Remota.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
 Manter:

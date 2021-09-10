@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Controlo de Aplicações - WDAC
+title: Windows Defender Controlo de Aplicações (WDAC)
 description: Visão geral sobre o que é Windows Defender Application Control e como usá-lo para gerir HoloLens dispositivos de realidade mista.
 ms.prod: hololens
 ms.sitesec: library
@@ -7,26 +7,28 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665561"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427336"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Controlo de Aplicações - WDAC
 
-O WDAC permite que um Administrador de TI configuure os seus dispositivos para bloquear o lançamento de aplicações em dispositivos. Isto é diferente dos métodos de restrição do dispositivo, como o modo Quiosque, onde o utilizador é apresentado com uma UI que esconde as aplicações no dispositivo mas que ainda podem ser lançadas. Apesar de o WDAC estar implementado, as aplicações ainda estão visíveis na lista de Todas as Aplicações, mas o WDAC impede que essas aplicações e processos possam ser lançados pelo utilizador do dispositivo.
+## <a name="overview"></a>Descrição Geral
 
-Um dispositivo pode ser atribuído mais do que uma política WDAC. Se várias políticas do WDAC forem definidas num sistema, as mais restritivas fazem efeito. 
+O WDAC permite-lhe configurar HoloLens para bloquear o lançamento de apps. É diferente do modo Quiosque, onde a UI esconde as aplicações, mas ainda podem ser lançadas. Com o WDAC, pode ver as aplicações, mas não podem ser lançadas.
 
 > [!NOTE]
-> Quando os utilizadores finais tentarem lançar uma aplicação que é bloqueada pelo WDAC, na HoloLens não receberão uma notificação sobre não poderem lançar essa aplicação.
+> Quando os utilizadores finais tentarem lançar uma aplicação que é bloqueada pelo WDAC na HoloLens, não serão notificados sobre não poderem lançar a app.
+
+Um dispositivo pode ser atribuído mais do que uma política WDAC. Se várias políticas do WDAC forem definidas num sistema, as mais restritivas fazem efeito. 
 
 O seguinte é um guia para que os utilizadores aprendam a [usar o WDAC e Windows PowerShell para permitir ou bloquear aplicações em HoloLens 2 dispositivos com Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
@@ -38,7 +40,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 Se não souber o nome completo do pacote, poderá ter de executar 'Get-AppxPackage -name \* YourBestGuess' \* algumas vezes para o encontrar. Em seguida, uma vez que você tem o nome executar '$package 1 = Get-AppxPackage -name Atual.PackageName'
 
-Por exemplo, executar o seguinte para Microsoft Edge retornará mais do que um resultado, mas dessa lista pode identificar que o nome completo de que precisa é Microsoft.MicrosoftEdge.
+Por exemplo, executar o seguinte código para Microsoft Edge retornará mais do que um resultado, mas dessa lista pode identificar que o nome completo de que precisa é Microsoft.MicrosoftEdge.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -81,6 +83,5 @@ Se uma aplicação não estiver nesta lista, então um utilizador poderá utiliz
 1. Assim que o Portal do Dispositivo estiver ligado, navegue para **Visualizações** e depois **para apps**. 
 1. Dentro do painel de Aplicações Instaladas, utilize o dropdown para selecionar a aplicação instalada. 
 1. Localize o PackageRelativeID. 
-1. Copiar caracteres de aplicativos antes do !, estes caracteres serão o seu Nome Demôndio Pacote.
-
+1. Copiar caracteres de aplicativos antes do `!` , estes caracteres serão o seu Nome DeMily Package.
 

@@ -13,11 +13,11 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189244"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428760"
 ---
 # <a name="common-deployment-scenarios"></a>Cenários comuns de implantação
 

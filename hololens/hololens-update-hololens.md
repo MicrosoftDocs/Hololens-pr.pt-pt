@@ -4,39 +4,62 @@ description: Saiba como verificar o seu HoloLens construir o número, manter-se 
 keywords: como, atualizar, reverter, HoloLens, verificar construção, número de construção
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/27/2019
+ms.date: 9/3/2021
 audience: ITPro
 ms.reviewer: ''
-manager: jarrettr
+manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7e63fcab4c64f151684a634bb24d9fc31826f6805d52b23c5672add0b6269430
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f39fc2c6c0aaf16f304f38216a424c3811eb439d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662833"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427071"
 ---
 # <a name="update-hololens-2"></a>Atualização HoloLens 2
 
-HoloLens utiliza Windows Update, tal como outros dispositivos de Windows 10. O seu HoloLens descarregará e instalará automaticamente atualizações do sistema sempre que estiver ligado à energia e ligado à Internet, mesmo quando este se encontra em modo de espera.
+## <a name="overview"></a>Descrição Geral
 
-Este artigo irá percorrer HoloLens ferramentas para:
+Estamos sempre a trabalhar em novas funcionalidades, correções de bugs e atualizações de segurança. Será notificado quando estas atualizações estiverem prontas.
 
-- visualizando a sua versão atual do sistema operativo (número de construção)
+Com base na sua preferência, o seu HoloLens descarregará e instalará automaticamente atualizações do sistema sempre que estiver ligado à energia, ligado à Internet e até mesmo em standby.
+
+Para garantir que o seu HoloLens está sempre atualizado, deixe-o ligado ao carregador que o acompanha. Também quer que o seu HoloLens ligado à internet. Desta forma, irá descarregar e instalar automaticamente atualizações do sistema. 
+
+Com Windows serviço Update, irá controlar vários aspetos do processo de atualização, tais como quais os dispositivos que obtêm quais atualizações a que horas. Este controlo é útil porque pode lançar atualizações para um subconjunto de HoloLens dispositivos para testes. Em seguida, lançar atualizações para as restantes. Ou, pode definir diferentes horários de atualização para diferentes tipos de atualizações.
+
+## <a name="types-of-updates"></a>Tipos de atualizações
+
+Para HoloLens, pode gerir automaticamente dois tipos de atualizações. 
+
+- Atualizações de recursos: lançadas duas vezes por ano.
+- Atualizações de qualidade: inclua atualizações críticas de segurança. São libertados mensalmente, ou conforme necessário.
+
+Use **a atualização** / **AllowAutoUpdate** para gerir a digitalização, o download e a instalação de atualizações. 
+
+## <a name="scheduling-updates"></a>Atualizações de agendamento
+
+Também pode definir um calendário de atualização. Pode ser num dia em particular, ou todos os dias, num determinado momento. Por exemplo, a 5.m., ou fora do horário ativo.
+
+Finalmente, algumas palavras sobre como planear a sua estratégia de atualização. Apoiamos atualização de adiamentos. Assim, pode decidir quanto tempo esperar depois de a Microsoft lançar uma atualização para instalar essa atualização nos dispositivos.
+
+Por vezes, uma empresa gosta de experimentar todas as novidades primeiro para garantir que tudo funciona, e estão familiarizados com as novas atualizações para que a sua equipa de suporte esteja preparada. Assim que confirmarem que está tudo bem, lançam as atualizações para toda a empresa. Ao associar subconjuntos dos seus dispositivos com diferentes políticas de diferimento, conhecidas como anéis de atualização, pode coordenar uma estratégia de lançamento de atualização para a sua organização.
+
+## <a name="hololens-update-tools"></a>HoloLens ferramentas de atualização
+
+Esta secção irá acompanhá-lo através de HoloLens ferramentas para:
+
 - verificação de atualizações
 - atualizar manualmente HoloLens
+- visualizando a sua versão atual do sistema operativo (número de construção)
 - voltando para uma atualização mais antiga
 
-## <a name="check-your-operating-system-version-build-number"></a>Verifique a versão do seu sistema operativo (número de construção)
-
-Pode verificar o número da versão do sistema (número de construção) abrindo a aplicação Definições e selecionando **System**  >  **About**.
-
-## <a name="check-for-updates-and-manually-update"></a>Verifique as atualizações e atualização manual
+### <a name="check-for-updates-and-manually-update"></a>Verifique as atualizações e atualização manual
 
 Pode verificar se há atualizações a qualquer momento nas definições.  Para ver as atualizações disponíveis e verificar novas atualizações:
 
@@ -48,9 +71,13 @@ Se houver uma atualização disponível, começará a descarregar a nova versão
 
 Enquanto o seu HoloLens estiver a instalar a atualização, apresentará engrenagens giratórias e um indicador de progresso. Não desligue a HoloLens durante este tempo. Reiniciar-se-á automaticamente depois de concluída a instalação.
 
-HoloLens aplica uma atualização de cada vez.  Se o seu HoloLens estiver mais do que uma versão por trás da mais recente, poderá ter de passar várias vezes pelo processo de atualização para o atualizar completamente.
+HoloLens aplica uma atualização de cada vez.  Se o seu HoloLens for mais do que uma versão por trás da mais recente, poderá ter de passar várias vezes pelo processo de atualização para o atualizar completamente.
 
-## <a name="go-back-to-a-previous-version"></a>Volte para uma versão anterior
+### <a name="check-your-operating-system-version-build-number"></a>Verifique a versão do seu sistema operativo (número de construção)
+
+Pode verificar o número da versão do sistema (número de construção) abrindo **Definições** e selecione **System**  >  **About**.
+
+### <a name="go-back-to-a-previous-version"></a>Volte para uma versão anterior
 
 Em alguns casos, é melhor voltar a uma versão anterior do software HoloLens. Os passos recomendados são:
 
@@ -66,10 +93,10 @@ Em alguns casos, é melhor voltar a uma versão anterior do software HoloLens. O
         1. Pode baixar o [mais recente HoloLens versão 2](https://aka.ms/hololens2download).
         1. Pode utilizar a construção padrão que o ARC acolhe. (Se escolher esta opção, salte o passo seguinte.)
         1. Você pode usar uma construção Suporte fornecido com você.
-    1. Quando terminar estes downloads, abra as  >  **transferências do** File Explorer . Clique com o botão direito na pasta com fecho que acabou de descarregar e **selecione Extrair todo** o  >  **Extrato** para desapertá-la.
+    1. Quando terminar estes downloads, abra as  >  **transferências do** File Explorer . Clique com o botão direito na pasta com fecho que descarregou e **selecione Extrair todo o**  >  **Extrato** para desapertá-la.
     1. Ligação o seu HoloLens para o seu PC utilizando um cabo USB-A para USB-C. (Mesmo que tenha usado outros cabos para ligar o seu HoloLens, este funciona melhor.)
     1. O Companheiro de Recuperação Avançada deteta automaticamente o seu HoloLens. Selecione o **azulejo Microsoft HoloLens.**
-    1. No ecrã seguinte, selecione **Manual** e, em seguida, selecione o ficheiro de instalação contido na pasta que abriu no passo 4. (Procure um ficheiro com a extensão .ffu.)
+    1. No ecrã seguinte, selecione **Manual** e, em seguida, selecione o ficheiro de instalação contido na pasta que abriu no passo 4. (Procure um ficheiro com a `.ffu` extensão.)
     1. **Selecione Instalar o software** e seguir as instruções.
 
 > [!NOTE]

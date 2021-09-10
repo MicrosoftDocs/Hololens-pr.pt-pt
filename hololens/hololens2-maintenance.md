@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189448"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427791"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 faq de limpeza
 
@@ -79,7 +79,7 @@ Para limpar a almofada de sobrancelhas, limpe-a utilizando um pano que é humede
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Posso usar a luz ultravioleta (UV) para higienizar o dispositivo?
 
-A irradiação UVC utilizando o LED UVC, que opera a 265nm a um nível de intensidade de 0,5-0,6mW/cm<sup>2</sup>, e não emite ozono, pode ser usada para higienizar hololes2. Siga as especificações do fabricante sobre o tempo de manuseamento e exposição.
+A irradiação UVC utilizando LED UVC ou luz UVC fluorescente filtrada, que funciona ao nível de intensidade de 0,5-0,6mW/cm2, e não emite ozono, pode ser usada para higienizar HoloLens 2. Siga as especificações do fabricante sobre o tempo de manuseamento e exposição.
 
 > [!CAUTION]  
 > Níveis elevados de exposição UV-A e UV-B podem degradar a qualidade do visor do dispositivo e danificar o revestimento da viseira. A sobre exposição à radiação UV-A e UV-B tem os seguintes efeitos, por ordem da duração e intensidade da exposição:

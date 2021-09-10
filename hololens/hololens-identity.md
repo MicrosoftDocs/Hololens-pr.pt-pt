@@ -1,11 +1,11 @@
 ---
-title: Gerir a identidade do utilizador e iniciar s-in para HoloLens
-description: Saiba como gerir a identidade do utilizador, suporte a vários utilizadores, segurança, autenticação da empresa e iniciar sação para dispositivos HoloLens.
+title: Gerir a identidade do utilizador e iniciar sessão de HoloLens
+description: Saiba como gerir a identidade do utilizador, suporte a vários utilizadores, segurança, autenticação da empresa e inscreva-se para HoloLens dispositivos.
 keywords: HoloLens, utilizador, conta, AAD, Azure AD, adfs, conta microsoft, MSA, credenciais, referência
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
-author: scooley
-ms.author: scooley
-ms.date: 10/6/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 8/13/2021
 ms.prod: hololens
 ms.custom:
 - CI 111456
@@ -14,25 +14,27 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: jarrettr
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: c2fd7c8ee82fbf70b9eaa2b5eee1d73e1235d8b5
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189550"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427901"
 ---
-# <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gerir a identidade do utilizador e iniciar s-in para HoloLens
+# <a name="manage-user-identity-and-login-for-hololens"></a>Gerir a identidade do utilizador e iniciar sessão de HoloLens
 
 > [!NOTE]
 > Este artigo é uma referência técnica para profissionais de TI e entusiastas da tecnologia. Se estiver à procura de HoloLens configurar instruções, leia "[Configurar o seu HoloLens (1ª gen)](hololens1-start.md)" ou "[Configurar o seu HoloLens 2](hololens2-start.md)".
 
-Tal como outros dispositivos Windows, HoloLens funciona sempre num contexto de utilizador. Há sempre uma identidade de utilizador. HoloLens trata a identidade quase da mesma forma que outros dispositivos Windows. Este artigo é uma referência profunda para a identidade em HoloLens, e foca-se em como HoloLens difere de outros dispositivos Windows.
+## <a name="lets-talk-about-setting-up-user-identity-for-hololens-2"></a>Vamos falar sobre a criação da identidade do utilizador para HoloLens 2
 
-HoloLens suporta vários tipos de identidades de utilizador. Pode utilizar uma ou mais contas de utilizador para iniciar scontabilidade. Aqui está uma visão geral dos tipos de identidade e opções de autenticação no HoloLens:
+Tal como outros dispositivos Windows, HoloLens funciona sempre num contexto de utilizador. Há sempre uma identidade de utilizador. HoloLens trata a identidade quase da mesma forma que um dispositivo Windows 10. A sessão durante a configuração cria um perfil de utilizador no HoloLens que armazena aplicações e dados. A mesma conta também fornece O Único Sign-on para aplicações, como Edge ou Dynamics 365 Remote Assist, utilizando as APIs do Gestor de Conta Windows. 
+
+HoloLens suporta vários tipos de identidades de utilizador. Pode escolher qualquer um destes três tipos de conta, mas recomendamos vivamente a Azure AD, pois é o melhor para gerir dispositivos. Apenas as contas AD do AZure suportam vários utilizadores. 
 
 | Tipo de identidade | Contas por dispositivo | Opções de autenticação |
 | --- | --- | --- |
@@ -52,7 +54,7 @@ As contas ligadas à nuvem (Azure AD e MSA) oferecem mais funcionalidades porque
 
 ## <a name="setting-up-users"></a>Criação de utilizadores
 
-Há duas formas de criar um novo utilizador no HoloLens. A forma mais comum é durante a experiência fora de caixa HoloLens (OOBE). Se utilizar Azure Ative Directory, [outros utilizadores podem iniciar sessão](#setting-up-multi-user-support-azure-ad-only) após o OOBE utilizando as suas credenciais AZure AD. HoloLens dispositivos que são inicialmente configurado com uma msa ou conta local durante o OOBE não suportam vários utilizadores. Consulte configuração do seu [HoloLens (1º gênero)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
+Há duas formas de criar um novo utilizador no HoloLens. A forma mais comum é durante a experiência fora de caixa HoloLens (OOBE). Se utilizar Azure Ative Directory, [outros utilizadores podem iniciar sessão](#setting-up-multi-user-support-azure-ad-only) após o OOBE utilizando as suas credenciais AZure AD. HoloLens dispositivos que são inicialmente configurado com uma conta MSA ou local durante o OOBE não suportam vários utilizadores. Consulte configuração do seu [HoloLens (1º gênero)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
 
 Se utilizar uma conta empresarial ou organizacional para iniciar scontabilidade para HoloLens, HoloLens se inscreve na infraestrutura de TI da organização. Esta inscrição permite ao seu Administrador de TI configurar a Gestão de Dispositivos Móveis (MDM) para enviar políticas de grupo para o seu HoloLens.
 
@@ -62,7 +64,7 @@ Por padrão, como para outros dispositivos Windows 10, terá de iniciar sposiç�
 
 ### <a name="linked-accounts"></a>Contas ligadas
 
-Tal como na versão desktop de Windows, pode ligar credenciais adicionais de conta web à sua conta HoloLens. Esta ligação facilita o acesso a recursos através ou dentro de apps (como a Loja) ou para combinar o acesso a recursos pessoais e de trabalho. Depois de ligar uma conta ao dispositivo, pode conceder permissão para usar o dispositivo em apps para que não tenha de iniciar scontabilidade em cada aplicação individualmente.
+Tal como na versão desktop de Windows, pode ligar outras credenciais de conta web à sua conta HoloLens. Esta ligação facilita o acesso a recursos através ou dentro de apps (como a Loja) ou para combinar o acesso a recursos pessoais e de trabalho. Depois de ligar uma conta ao dispositivo, pode conceder permissão para usar o dispositivo em apps para que não tenha de iniciar scontabilidade em cada aplicação individualmente.
 
 A ligação de contas não separa os dados do utilizador criados no dispositivo, como imagens ou downloads.  
 
@@ -80,13 +82,13 @@ Os dispositivos configurados com contas AD Azure não permitirão iniciar sessã
 > [!NOTE]
 > **HoloLens (1ª gen)** começou a apoiar vários utilizadores de AD Azure na Atualização de Windows 10 abril de [2018](/windows/mixed-reality/release-notes-april-2018) como parte de [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-### <a name="multiple-users-listed-on-sign-in-screen"></a>Vários utilizadores listados no Sinal no ecrã
+### <a name="multiple-users-are-listed-on-sign-in-screen"></a>Vários utilizadores estão listados no ecrã de inscrição
 
-Anteriormente, o ecrã Sign In apresentava apenas o mais recentemente assinado no utilizador, bem como um ponto de entrada "Outro utilizador". Recebemos o feedback do cliente de que isso não é suficiente se vários utilizadores se inscreverem no dispositivo. Ainda eram obrigados a reescrever o seu nome de utilizador, etc.
+Anteriormente, o ecrã de entrada mostrou apenas o mais recentemente assinado no utilizador, e um ponto de entrada 'Outro utilizador'. Recebemos o feedback do cliente de que não é suficiente se vários utilizadores se inscreverem no dispositivo. Ainda eram obrigados a reescrever o seu nome de utilizador, etc.
 
-Introduzido em [Windows Holographic, versão 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)ao selecionar **Outro utilizador** que está localizado à direita do campo de entrada PIN, o Sinal no ecrã apresentará vários utilizadores com o qual já se tenham assinado previamente no dispositivo. Isto permite que os utilizadores selecionem o seu perfil de utilizador e, em seguida, inscrevam-se utilizando as suas credenciais de Windows Hello. Um novo utilizador também pode ser adicionado ao dispositivo a partir desta página de Outros utilizadores através do botão **de conta Adicionar.**
+Introduzido em [Windows Holographic, versão 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)ao selecionar **Outro utilizador** localizado à direita do campo de entrada PIN, o ecrã de entrada de entrada apresentará vários utilizadores com o qual já se tenham assinado previamente no dispositivo. Isto permite que os utilizadores selecionem o seu perfil de utilizador e, em seguida, inscrevam-se utilizando as suas credenciais de Windows Hello. Um novo utilizador também pode ser adicionado ao dispositivo a partir desta página de **outros utilizadores** através do botão **de conta Adicionar.**
 
-Quando estiver no menu Outros utilizadores, o botão Outros utilizadores apresentará o último utilizador assinado no dispositivo. Selecione este botão para voltar ao Sinal no ecrã para este utilizador.
+Quando estiver no menu **Outros utilizadores,** o botão **Outros utilizadores** apresentará o último utilizador assinado no dispositivo. Selecione este botão para voltar ao ecrã de início de s início para este utilizador.
 
 ![Predefinição do ecrã de inscrição.](./images/multiusers1.jpg)
 
@@ -108,7 +110,7 @@ Se a sua aplicação necessitar de um tipo de conta específico que não tenha s
 
 ## <a name="enterprise-and-other-authentication"></a>Empresa e outra autenticação
 
-Se a sua aplicação utilizar outros tipos de autenticação, como NTLM, Basic ou Kerberos, pode utilizar [Windows UI credencial](/uwp/api/Windows.Security.Credentials.UI) para recolher, processar e armazenar as credenciais do utilizador. A experiência do utilizador para recolher estas credenciais é muito semelhante a outras interrupções de conta baseadas na nuvem, e aparece como uma aplicação infantil em cima da sua aplicação 2D ou suspende brevemente uma aplicação Unidade para mostrar a UI.
+Se a sua aplicação utilizar outros tipos de autenticação, como NTLM, Basic ou Kerberos, pode utilizar [Windows UI credencial](/uwp/api/Windows.Security.Credentials.UI) para recolher, processar e armazenar as credenciais do utilizador. A experiência do utilizador para recolher estas credenciais é semelhante a outras interrupções de conta baseadas na nuvem, e aparece como uma aplicação infantil em cima da sua aplicação 2D ou suspende brevemente uma aplicação Unidade para mostrar a UI.
 
 ## <a name="deprecated-apis"></a>APIs precatados
 
@@ -118,7 +120,7 @@ Uma das formas pelas quais o desenvolvimento para HoloLens difere do desenvolvim
 
 ### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>A Windows Hello para o Negócios é apoiada na HoloLens (1ª Gen)?
 
-Windows Hello for Business (que suporta a utilização de um PIN para iniciar sedus) é suportado para HoloLens (1ª Gen). Para permitir Windows Hello para o sôm-in do Business PIN em HoloLens:
+Windows Hello for Business (que suporta a utilização de um PIN para iniciar sedus) é suportado para HoloLens (1ª Gen). Para permitir Windows Hello para o BUSINESS PIN iniciar s-HoloLens:
 
 1. O dispositivo HoloLens deve ser [gerido pelo MDM](hololens-enroll-mdm.md).
 1. Tem de Windows Hello ativar o Negócios para o dispositivo. (Ver[instruções para Microsoft Intune.](/intune/windows-hello))
@@ -148,9 +150,9 @@ HoloLens 2 oferece muitas opções diferentes para a autenticação, incluindo c
 Sim, pode removê-lo manualmente em Definições.
 
 
-### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>Como é que o tipo de conta afeta o comportamento de inscrição?
+### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>Como é que o tipo de conta afeta o sinal no comportamento?
 
-Se aplicar políticas de inscrição, a política é sempre respeitada. Se não for aplicada nenhuma política de inscrição, estes são os comportamentos predefinidos para cada tipo de conta:
+Se aplicar políticas de saúde, a política é sempre respeitada. Se não for aplicada nenhuma política de login, estes são os comportamentos padrão para cada tipo de conta:
 
 - **Azure AD**: pede a autenticação por defeito e configurável por **Definições** para deixar de pedir a autenticação.
 - **Conta Microsoft**: o comportamento de bloqueio é diferente permitindo o desbloqueio automático, no entanto, o sinal de autenticação ainda é necessário no reboot.
