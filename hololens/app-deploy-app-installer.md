@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033072"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Instale apps no HoloLens 2 através do Instalador de Aplicações
 

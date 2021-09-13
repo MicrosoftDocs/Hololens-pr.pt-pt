@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: eb96f1cdc799551297c0373268e8cc8f35c6bd06
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427077"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033548"
 ---
 # <a name="configure---cloud-connected-guide"></a>Configuração - Guia ligado à nuvem
 

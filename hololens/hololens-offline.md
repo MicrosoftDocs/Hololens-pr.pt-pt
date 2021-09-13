@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036521"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Gerir pontos finais de ligação para HoloLens
 

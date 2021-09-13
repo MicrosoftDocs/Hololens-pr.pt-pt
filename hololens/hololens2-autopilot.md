@@ -14,11 +14,11 @@ ms.localizationpriority: high
 keywords: piloto automático
 manager: sekerawa
 ms.openlocfilehash: c71716778ebd536d3aecd2a34c9929c8b2f76d98
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036473"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 

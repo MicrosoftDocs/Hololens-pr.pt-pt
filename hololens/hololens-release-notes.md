@@ -16,11 +16,11 @@ audience: ITPro
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: f27a469e76df1ccf29a2823b48f3640bdf414050
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033836"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 

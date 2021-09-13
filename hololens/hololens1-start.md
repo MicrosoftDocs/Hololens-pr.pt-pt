@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033629"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>Configurar o seu HoloLens (1ª geração)
 

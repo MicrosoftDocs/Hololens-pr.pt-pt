@@ -13,11 +13,11 @@ manager: jarrettr
 appliesto:
 - Hololens (1st gen)
 ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033647"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Tenha o seu HoloLens (1ª gen) pronto a usar
 

@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: c2fd7c8ee82fbf70b9eaa2b5eee1d73e1235d8b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033255"
 ---
 # <a name="manage-user-identity-and-login-for-hololens"></a>Gerir a identidade do utilizador e iniciar sessão de HoloLens
 

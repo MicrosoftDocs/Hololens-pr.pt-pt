@@ -16,11 +16,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033351"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 faq de limpeza
 

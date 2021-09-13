@@ -17,11 +17,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428709"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033904"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Configure HoloLens utilizando um pacote de provisionamento
 

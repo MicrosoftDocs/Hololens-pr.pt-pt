@@ -14,11 +14,11 @@ ms.custom:
 - CSSTroubleshooting
 keywords: problemas, bug, resolução de problemas, correção, ajuda, apoio, HoloLens, emulador
 ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033809"
 ---
 # <a name="device-troubleshooting"></a>Resolução de problemas do dispositivo
 

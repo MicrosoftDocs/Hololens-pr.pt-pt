@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036352"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Tenha o seu HoloLens 2 pronto a usar
 

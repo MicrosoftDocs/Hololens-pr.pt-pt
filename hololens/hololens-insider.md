@@ -3,25 +3,25 @@ title: Pré-visualização de insider para Microsoft HoloLens
 description: Saiba como começar com as construções do Insider e forneça feedback valioso para a nossa próxima grande atualização do sistema operativo para HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427430"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033271"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -189,6 +189,8 @@ Agora pode usar o WDAC para bloquear aplicações ou processos de lançamento e 
 - Ativou uma [API de acesso atribuído](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) para que as aplicações possam agora determinar se um HoloLens está a ser em execução num modo quiosque para o utilizador iniciado no HoloLens.
 - Atualize a versão in-box do Remote Assist que está instalada em flashes frescos.
 - O processamento de gamepad para aplicações 2D foi desativado nas construções insider. Ao removê-lo, as aplicações são agora gratuitas para usar as APIs do Gamepad diretamente e têm acesso a todo o conjunto de controlos e fazem o que quiserem. Os desenvolvedores devem usar as APIs do Gamepad para consumir a entrada do Gamepad. Aqui está uma amostra para [a Classe Gamepad (Windows. Gaming.Input) - Windows aplicações UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Corrigiu um problema em que após o primeiro início de sposição do utilizador, o OOBE estava a ser encerrado em cenários onde estavam a ser utilizadas configurações de quiosques baseados em grupoS AAD.
+- Corrigi um problema em torno da visualização de notificações de atualização e de pedidos de diálogo para o reinício do dispositivo.
 
 ## <a name="start-receiving-insider-builds"></a>Comece a receber construções insider
 

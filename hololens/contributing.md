@@ -7,11 +7,11 @@ ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032967"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Contribuindo para a documentação HoloLens
 
@@ -81,9 +81,9 @@ Utilize o seguinte fluxo de trabalho para fazer atualizações a *um artigo exis
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>Renomear ou apagar um artigo existente
 
-Se a sua alteração mudar de nome ou eliminar um artigo existente, certifique-se de adicionar um redirecionamento. Assim, qualquer pessoa com ligação ao artigo existente ainda acabará no lugar certo. Os redirecionamentos são geridos pelo .openpublishing.redirection.jsno ficheiro na raiz do repo.
+Se a sua alteração mudar de nome ou eliminar um artigo existente, certifique-se de adicionar um redirecionamento. Assim, qualquer pessoa com ligação ao artigo existente ainda acabará no lugar certo. Os redirecionamentos são geridos pelo ficheiro .openpublishing.redirection.json na raiz do repo.
 
-Para adicionar um redirecionamento para .openpublishing.redirection.js, adicione uma entrada na `redirections` matriz:
+Para adicionar um redirecionamento a .openpublishing.redirection.json, adicione uma entrada à `redirections` matriz:
 
 ```json
 {
