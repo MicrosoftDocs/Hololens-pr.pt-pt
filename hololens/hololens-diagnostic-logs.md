@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032951"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817281"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Recolher e utilizar informações de diagnóstico de dispositivos HoloLens
 
@@ -57,6 +57,7 @@ Um utilizador HoloLens pode utilizar a aplicação de desktop do Microsoft Feedb
 
 >[!IMPORTANT]
 > Para fornecer os melhores dados possíveis para corrigir problemas, recomendamos vivamente que deite o seu dispositivo de telemetria para **Opcional**. Pode definir este valor durante a Experiência Out-of-Box (OOBE), ou utilizando a aplicação **Definições.** Para isso, utilizando Definições, selecione **Iniciar > Definições > Privacidade > App Diagnostics > On**.
+
 ### <a name="prerequisites"></a>Pré-requisitos
 
 - O dispositivo está ligado a uma rede.
@@ -91,6 +92,7 @@ Um utilizador também pode configurar o comportamento dos Diagnósticos de Retor
 ### <a name="os-update-troubleshooter"></a>Resolução de problemas do OS Update
 Nas construções [Windows Holographic, versão 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e em diante:
 - Além dos anteriores troubleshooters dentro da aplicação Definições, foi adicionado um novo troubleshooter com a adição da nova app Definições para atualizações do OS. Navegue para **Definições -> Update & Security -> Troubleshoot -> Windows Update** e selecione **Start**. Isto permite-lhe recolher vestígios enquanto reproduz o seu problema com as Atualizações de OS para ajudar melhor na resolução de problemas com o seu TI ou suporte.
+
 ### <a name="prerequisites"></a>Pré-requisitos
 
 - A **aplicação Definições** está instalada no dispositivo e está disponível para o utilizador.
@@ -107,6 +109,10 @@ A informação de diagnóstico é armazenada no dispositivo. Se o dispositivo es
 > Neste caminho e nome do ficheiro, \<*HoloLens device name*> representa o nome do dispositivo HoloLens, e representa a data e a hora em que o ficheiro foi \<*ddmmyyhhmmss*> criado.
 
 A informação de diagnóstico permanece nestes locais até que o utilizador a elimine.
+
+### <a name="view-diagnostic-report"></a>Ver relatório de diagnóstico
+
+Para ver os Diagnósticos DO MDM no HoloLens 2, selecione o seu ícone WiFi e, em seguida, navegue para **Definições**  ->  **Contas**  >  **Access ou escola** e selecione Export your management **logs**. HoloLens envia os ficheiros de registo para a sua conta e exibe a sua localização no seu pc de secretária.
 
 ## <a name="diagnosticlog-csp"></a>CSP de Diagnóstico
 
@@ -153,13 +159,20 @@ Veja este vídeo para saber mais.
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Siga estes passos para recolher diagnósticos:
+
 1.  Ligação o dispositivo com um cabo USB para o seu PC.
+
 2.  No File Explorer no seu PC, navegue para **'This PC \<hololens-device> \Internal Armazenamento'.**
+
 3.  Se a pasta **de Armazenamento Interna** não aparecer, o dispositivo aguarda a inscrição de um utilizador. Ou iniciar sôm ou ligar o aparelho premindo o botão POWER durante 10 segundos.
+
 4.  Prima e solte imediatamente os botões **Power + Volume Down** juntos.
+
 5.  Aguarde um minuto para que o dispositivo prepare os arquivos zip. (Um ficheiro temporário chamado HololensDiagnostics.temperatura pode tornar-se visível enquanto o dispositivo gera os arquivos zip. Não aceda nem guarde o ficheiro. Quando o processo terminar, será substituído pelos arquivos zip.)
+
 6.  Refresque o explorador de ficheiros e navegue para a pasta **'\Documentos'.**
+
 7.  Copie os ficheiros ZIP de diagnóstico e partilhe-os com a equipa de suporte da Microsoft.
 
-> [!NOTE]
-> Alguns dos ficheiros ZIP de diagnóstico podem conter PII.
+    > [!NOTE]
+    > Alguns dos ficheiros ZIP de diagnóstico podem conter PII.
