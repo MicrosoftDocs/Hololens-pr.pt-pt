@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/8/2021
+ms.date: 9/16/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f27a469e76df1ccf29a2823b48f3640bdf414050
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 80b23e1cc851081179e6deee2e5fd13d374946f1
+ms.sourcegitcommit: f1c50b39430026fd5e3c92ac1a09f07b69733325
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033836"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127862481"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -31,6 +31,22 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 
 > [!IMPORTANT]
 > Devido a um problema agora resolvido [conhecido na nossa construção 21H1 que estava a afetar os utilizadores do Remote Assist](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), interrompemos temporalmente a oferta de Windows atualizações Holográficas, versão 21H1. Também tínhamos alterado a construção padrão do Advanced Recovery Companion (ARC) para o [Windows Holographic, versão 20H2 – junho 2021 Atualização](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). A construção do ARC vai agora retomar a 21H1.
+
+## <a name="windows-holographic-version-21h1---september-2021-update"></a>Windows Holográfico, versão 21H1 - Atualização de setembro de 2021
+
+- Construção 20348.1018
+
+Melhorias e correções na atualização:
+
+- Correções para resolver problemas em que o tempo do sistema pode saltar inesperadamente.
+
+## <a name="windows-holographic-version-20h2---september-2021-update"></a>Windows Holográfico, versão 20H2 - Atualização de setembro de 2021
+
+- Construção 19041.1165
+
+Melhorias e correções na atualização:
+
+- Correções para resolver problemas em que o tempo do sistema pode saltar inesperadamente.
 
 ## <a name="windows-holographic-version-21h1---august-2021-update"></a>Windows Holográfico, versão 21H1 - agosto 2021 Atualização
 
@@ -532,7 +548,7 @@ O início de sísmis do Visitor Auto pode ser gerido através da política [pers
 
 - Valor URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| Política  | Description   | Configurações  |
+| Política  | Descrição   | Configurações  |
 |---|---|---|
 | Realidade Mista/VisitanteAutoLogon  | Permite um visitante a passar por um quiosque   | 1 (Sim), 0 (Não, padrão.)  |
 
@@ -1023,7 +1039,7 @@ Anteriormente, ao encontrar falhas na aplicação do modo quiosque, HoloLens usa
 
 Foram criadas novas políticas de realidade mista para HoloLens 2 dispositivos na versão holográfica 20H2 Windows. As novas definições controláveis incluem: luminosidade de definição, volume de definição, gravação de áudio incapacitante em capturas de realidade mista, definição quando os diagnósticos podem ser recolhidos e cache de membro do grupo AAD.  
 
-| Política de nova HoloLens                                | Description                                                                               | Notas                                                                |
+| Política de nova HoloLens                                | Descrição                                                                               | Notas                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | Realidade Mista\BrightnessButtonDisabled              | Permite que os botões de luminosidade sejam desativados de modo a premir, não altere o brilho.       | 1 Sim, 0 Não (padrão)                                                |
 | Realidade Mista\VolumeButtonDisabled                  | Permite que os botões de volume sejam desativados de modo a que a pressão não altere o volume.               | 1 Sim, 0 Não (padrão)                                                |
