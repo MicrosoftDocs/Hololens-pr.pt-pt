@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817281"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833527"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Recolher e utilizar informações de diagnóstico de dispositivos HoloLens
 
@@ -90,6 +90,7 @@ Um utilizador também pode configurar o comportamento dos Diagnósticos de Retor
 > Se houver uma política de MDM configurada para o dispositivo, o utilizador não poderá anular esse comportamento.
 
 ### <a name="os-update-troubleshooter"></a>Resolução de problemas do OS Update
+
 Nas construções [Windows Holographic, versão 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e em diante:
 - Além dos anteriores troubleshooters dentro da aplicação Definições, foi adicionado um novo troubleshooter com a adição da nova app Definições para atualizações do OS. Navegue para **Definições -> Update & Security -> Troubleshoot -> Windows Update** e selecione **Start**. Isto permite-lhe recolher vestígios enquanto reproduz o seu problema com as Atualizações de OS para ajudar melhor na resolução de problemas com o seu TI ou suporte.
 
@@ -138,6 +139,7 @@ O administrador de TI utiliza o CSP do DiagnosticLog para configurar as polític
 - Permissões que controlam o acesso à informação de diagnóstico.
 
 ## <a name="offline-diagnostics"></a>Diagnósticos offline
+
 Em situações em que o dispositivo não é capaz de recolher diagnósticos através do Feedback Hub ou do Definições Troubleshooter, pode recolher diagnósticos manualmente. Um dos cenários em que isso é necessário é quando o dispositivo não consegue ligar-se a Wi-Fi ou não pode aceder a outros métodos acima mencionados. Os diagnósticos recolhem depósitos e registos de falhas do dispositivo que ajudam um engenheiro de suporte da Microsoft a isolar problemas.
 
 Isto funciona quando o dispositivo aparece no File Explorer depois de o ligar a um PC através de um cabo USB.

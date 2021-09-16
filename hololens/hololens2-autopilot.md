@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: sekerawa
-ms.openlocfilehash: c71716778ebd536d3aecd2a34c9929c8b2f76d98
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036473"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833578"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -119,7 +119,7 @@ Existem três formas primárias de registar HoloLens dispositivos:
 Pode recuperar o hash de hardware do dispositivo. O dispositivo regista o seu hash de hardware num ficheiro CSV durante o processo OOBE, ou mais tarde quando um proprietário do dispositivo inicia o processo de recolha de registos de diagnóstico (descrito no seguinte procedimento). Normalmente, o proprietário do dispositivo é o primeiro utilizador a iniciar sôms no dispositivo.
 
 > [!WARNING]
-> Em construções anteriores a 20H2, se passou pelo OOBE e a telemetria foi definida como Necessária, não é possível recolher o hash de hardware para o Autopilot através deste método. Para recolher o seu hash de hardware através deste método, desloque a sua opção de telemetria para Full através da App Definições e selecione Privacidade -> Diagnósticos.
+> Em construções anteriores a 20H2, se passou pelo OOBE e a telemetria foi definida como Necessária, não é possível recolher o hash de hardware para o Autopilot através deste método. Para recolher o seu hash de hardware através deste método, desloque a sua opção de telemetria para Full através da App Definições e selecione  >  **Diagnósticos de** Privacidade .
 
 1. Inicie o dispositivo HoloLens 2.
 
@@ -129,20 +129,21 @@ Pode recuperar o hash de hardware do dispositivo. O dispositivo regista o seu ha
 
 1. Utilize um cabo USB-C para ligar o dispositivo a um computador.
 
-1. No computador, abra o Explorador de Ficheiros. Abra **este computador \\ \<*HoloLens device name*> \\ \\ documentos internos Armazenamento e** localize o ficheiro AutopilotDiagnostics.zip.  
+1. No computador, abra o Explorador de Ficheiros. Abra <b>Este \\ HoloLens</b>nome do dispositivo para < *PC* > <b> \\ \\ Documentos de Armazenamento</b>internos e localize o ficheiro AutopilotDiagnostics.zip.  
 
-> [!NOTE]  
-> O ficheiro .zip pode não estar imediatamente disponível. Se o ficheiro ainda não estiver pronto, poderá ver um ficheiro HoloLensDiagnostics.temp na pasta Documentos. Para atualizar a lista de ficheiros, refresque a janela.
+   > [!NOTE]  
+   > O ficheiro .zip pode não estar imediatamente disponível. Se o ficheiro ainda não estiver pronto, poderá ver um ficheiro HoloLensDiagnostics.temp na pasta Documentos. Para atualizar a lista de ficheiros, refresque a janela.
     
 1. Extrair o conteúdo do ficheiro AutopilotDiagnostics.zip.
 
 1. Nos ficheiros extraídos, localize o ficheiro CSV que tenha um prefixo de nome de ficheiro de "DeviceHash". Copie esse ficheiro para uma unidade no computador onde poderá aceder mais tarde.  
 
-> [!IMPORTANT]  
-> Os dados do ficheiro CSV devem utilizar o seguinte formato de cabeçalho e linha:
-> ```
-> Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
->```
+   > [!IMPORTANT]  
+   > Os dados do ficheiro CSV devem utilizar o seguinte formato de cabeçalho e linha:
+   >
+   > ```
+   > Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User <serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>
+   >```
 
 #### <a name="register-device-through-mem"></a>Registar dispositivo através do MEM
 

@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: calibração, conforto, visuais, qualidade, ipd, HoloLens, Windows Mixed Reality, auscultadores VR
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036295"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833561"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Melhorar a qualidade visual e o conforto
 
@@ -37,8 +37,7 @@ HoloLens 2 solicita ao utilizador que calibra o dispositivo nas seguintes circun
 - O utilizador anteriormente optou por não fazer o processo de calibração
 - O processo de calibração não teve sucesso na última vez que o utilizador usou o dispositivo
 - O utilizador apagou os seus perfis de calibração
-- O dispositivo é retirado e volta a colocar e qualquer uma das circunstâncias acima aplicável 
-
+- O dispositivo é retirado e colocado de volta e qualquer uma das circunstâncias acima aplicável 
 
 ![Pedido de calibração para se ajustar aos olhos.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -87,7 +86,7 @@ Para experiências que requerem dados de olhares oculares ou posicionamento prec
 
 #### <a name="deferred-calibration-prompt"></a>Pedido de calibração diferido
 
-Com a posição auto-olho, o diálogo de calibração de rastreio de olhos é adiado até que uma aplicação solicite dados de Eye Gaze. Isto garante que não há nenhuma solicitação para o utilizador quando a aplicação ativa não requer olhar. Se a aplicação necessitar de dados de gaze e o utilizador atual não estiver calibrado, o utilizador é apresentado com uma solicitação de calibração. Este comportamento pode ser usado para exibir uma solicitação de calibração de rastreio ocular num momento adequado para a experiência. Este método é recomendado pelas seguintes razões
+Com a posição auto-olho, o diálogo de calibração de rastreio de olhos é adiado até que uma aplicação solicite dados de Eye Gaze. Isto garante que não há nenhuma solicitação para o utilizador quando a aplicação ativa não requer olhar. Se a aplicação necessitar de dados de gaze e o utilizador atual não estiver calibrado, o utilizador é apresentado com uma solicitação de calibração. Este comportamento pode ser usado para exibir um pedido de calibração de rastreio ocular num momento adequado para a experiência. Este método é recomendado pelas seguintes razões:
 
 1.  O diálogo de calibração de calibração de rastreio de olhos fornece ao utilizador detalhes sobre o porquê do rastreio ocular ser necessário.
 2.  Apresenta ao utilizador uma forma de recusar ter os olhos calibrados.
@@ -104,16 +103,23 @@ As informações de calibração podem sempre ser eliminadas do dispositivo no *
 
 ### <a name="disable-calibration"></a>Desativar a calibração
 
-Também pode desativar a indicação de calibração seguindo estes passos:
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Comportamento de calibração ocular em HoloLens 2 constrói 20H2 e mais recente
+
+Com o início do [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) a partir de Windows Holographic, versão 20H2, não é necessário desativar a calibração. A indicação de calibração só aparece automaticamente se estiver a utilizar uma aplicação ativada por Rastreio de Olhos.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Desativar a calibração dos olhos em HoloLens 2 edifícios mais antigos
+
+Pode ligar um interruptor Definições para desativar a calibração, mas o estado do interruptor pode não ser fácil de determinar. Foi removido e substituído por [Suporte de Posição Auto Eye,](hololens-release-notes.md#auto-eye-position-support)que adia a calibração enquanto proporciona correção de cor e posicionamento holograma.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Desativação da calibração ocular em HoloLens (1ª geração)
+
+Para [HoloLens calibração (1ª gen)](#calibrating-your-hololens-1st-gen)pode desativar a indicação de calibração ocular seguindo estes passos:
 
 1. Selecione **Definições**  >    >  **Calibração** do Sistema .
 1. Desligue **Quando uma pessoa nova utilizar esta HoloLens, peça automaticamente para executar a calibração dos olhos**.
 
    > [!IMPORTANT]
    > Esta definição pode afetar negativamente a qualidade e conforto do holograma.  Quando desliga esta definição, as funcionalidades que dependem do rastreio dos olhos (como o scrolling de texto) já não funcionam em aplicações imersivas.
-
-> [!NOTE]
-> O interruptor Definições foi removido a partir de Windows Holographic, versão 20H2 com o início do [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support). A indicação de calibração só aparecerá automaticamente se um utilizador não calibrado estiver a utilizar uma aplicação ativada por Rastreio de Olhos.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 tecnologia de rastreio de olhos
 

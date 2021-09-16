@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 09/10/2021
+ms.date: 09/14/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: e3b067987fb339bc070fcb64ed01c28dee21ec35
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033271"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833544"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -52,8 +52,8 @@ Este é sobre a melhoria da resolução de problemas e relatórios de dispositiv
 
 ✔️ Se pretender definir uma única conta Azure AD para iniciar sessão automaticamente, [configuure este novo CSP.](#auto-login-policy-controlled-by-csp) <br>
 ✔️ Se quiser configurar as suas apps para tentar atualizar automaticamente depois de não atualizar, [desconfiem deste novo CSP para uma nova tentativa inteligente.](#smart-retry-for-app-updates) <br>
-✔️ Se quiser ter mais controlo sobre as atualizações do SO, confira estas [novas políticas de Atualização ativadas.](#improved-update-restart-detection-and-notifications) <br>
-✔️ Se precisar de disponibilizar as aplicações da sua organização na loja da empresa através do Microsoft Store, mas apenas quiser permitir o acesso às aplicações da sua organização e não à loja completa, [desaça esta política.](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ Se quiser ter mais controlo sobre as atualizações do SO, consulte estas [políticas de atualização recentemente ativadas](#improved-update-restart-detection-and-notifications). <br>
+✔️ Se precisar de disponibilizar as aplicações da sua organização na loja da empresa através do Microsoft Store, mas pretende apenas permitir o acesso às aplicações da sua organização e não à loja completa, [desaça esta política.](#use-only-private-store-apps-for-microsoft-store) <br>
 ✔️ Se pretender conhecer o espaço de armazenamento gratuito, SSID ou BSSID dos seus dispositivos HoloLens, consulte estes [CSPs de reporte.](#csp-changes-for-reporting-hololens-details) <br>
 ✔️ Se quiser usar o WDAC para bloquear aplicações ou processos de lançamento, mas também precisa de usar a sua própria linha de aplicações de bushiness, pode agora [permitir lob na sua política WDAC.](#use-wdac-and-lob-apps)
 
@@ -63,10 +63,22 @@ A partir da **build 20348.1411** do Insider, adicionámos suporte beta para rast
 
 Para saber mais sobre o que é suportado e como ativar esta nova funcionalidade, [visite a página da plataforma móvel.](hololens2-moving-platform.md)
 
+#### <a name="overview-to-try-out-moving-platform-mode"></a>Visão geral para experimentar o Modo plataforma móvel
+
+1. [Ativar o modo de desenvolvimento e o portal do dispositivo](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+1. [Ativar o modo de plataforma móvel através do portal Device](hololens2-moving-platform.md#enabling-moving-platform-mode).
+1. Leve o seu dispositivo para a sua grande plataforma móvel e observe como os hologramas são estáveis.
+
 ### <a name="pfx-file-support-for-certificate-manager"></a>Suporte de ficheiro PFX para Gestor de Certificados
 
 Introduzido em Windows insider build 20348.1405. Adicionámos apoio ao [Gestor de Certificados](certificate-manager.md) para agora usar certificados .pfx. Quando os utilizadores navegam para **Definições**  >  **Atualizar &**  >  **Certificados de** Segurança , e selecione **Instalar um certificado,** o UI agora suporta o ficheiro de certificado .pfx.
 Os utilizadores podem importar certificado .pfx, com chave privada, para a loja de utilizadores ou loja de máquinas.
+
+#### <a name="overview-to-try-out-pfx-files-in-certificate-manager"></a>Visão geral para experimentar ficheiros PFX no Certificate Manager
+
+1. Prepare o seu ficheiro PFX.
+1. Copie o ficheiro para o seu dispositivo através de um cabo USB-C.
+1. Abra a Definições app e navegue para o [Gestor de Certificados](certificate-manager.md) e aplique o certificado.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver relatório de diagnóstico avançado em Definições sobre HoloLens
 
@@ -75,6 +87,12 @@ Para dispositivos geridos quando o comportamento de resolução de problemas, co
 Agora o DIAGNÓSTICO MDM pode ser visto no dispositivo usando o navegador Edge. Para ver mais facilmente o relatório de diagnóstico do MDM, navegue para a página de Access work ou school, e **selecione Ver relatório de diagnóstico avançado**. Isto gerará e abrirá o relatório numa nova janela Edge.
 
 ![Consulte o relatório de diagnóstico avançado na aplicação Definições.](./images/view-advanced-diagnostic-report.jpg)
+
+#### <a name="overview-to-try-out-the-advanced-diagnostic-report"></a>Visão geral para experimentar o relatório de diagnóstico avançado
+
+1. Abra a aplicação Definições.
+1. Navegue na página Contas e clique no novo link **Exporte os seus registos de gestão.**
+1. Consulte informações avançadas sobre as configurações do seu dispositivo.
 
 ### <a name="offline-diagnostics-notifications"></a>Notificações de Diagnóstico Offline
 
@@ -91,9 +109,21 @@ Esta nova funcionalidade será ativada quando o dispositivo atualizar, e não ne
 
 Esperamos que com esta mais recente adição de feedback audiovisual seja mais fácil recolher dados de diagnóstico e, mais rapidamente, ser capaz de resolver os seus problemas.
 
+#### <a name="overview-to-try-out-the-diagnostics-notifications"></a>Visão geral para experimentar as notificações de diagnóstico
+
+1. Desbloqueie o seu dispositivo e use-o.
+1. Prima a combinação de botões **de potência** e volume **para baixo** para recolher [diagnósticos offline](hololens-diagnostic-logs.md#offline-diagnostics).
+1. Veja as notificações de torradas e ouça as indicações áudio para quando o seu dispositivo começar e terminar de recolher registos.
+
 ### <a name="low-storage-log-collection-improvements"></a>Melhorias na recolha de registos de baixo armazenamento
 
 Em cenários em que um dispositivo parece estar com pouco espaço no disco quando os registos de diagnóstico são recolhidos, será criado um relatório adicional chamado **StorageDiagnostics.zip.** O limiar de armazenamento baixo é determinado automaticamente por Windows [sentido de armazenamento](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+#### <a name="overview-to-try-out-the-low-storage-improvements"></a>Visão geral para experimentar as melhorias de armazenamento baixo
+
+1. Preencha o espaço de armazenamento do seu dispositivo.
+1. Prima a combinação de botões **de potência** e volume **para baixo** para recolher [diagnósticos offline](hololens-diagnostic-logs.md#offline-diagnostics).
+1. Observe que existe um novo ficheiro na recolha de registos armazenados na pasta Documentos do seu HoloLens.
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Alterações do CSP para reportar detalhes HoloLens
 
@@ -151,6 +181,13 @@ Num dispositivo em que esta política está configurada, o utilizador especifica
 > - Alguns eventos, como as principais atualizações do SO, podem exigir que o utilizador especificado volte a apresentar-se ao dispositivo para retomar o comportamento do início de sé.
 > - O logotipo automático só é suportado para utilizadores de MSA e AAD.
 
+#### <a name="overview-to-try-auto-logon-csp"></a>Visão geral para experimentar CSP de logotipo automático
+
+1. Configure o novo CSP a um utilizador pretendido [utilizando uma política personalizada:](/mem/intune/configuration/custom-settings-windows-10)`./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+1. Aplicar o CSP ao dispositivo através de [um pacote de provisionamento](hololens-provisioning.md) ou [DEM](hololens-mdm-configure.md).
+1. Inscreva-se na conta especificada.
+1. Reinicie o dispositivo e observe que o utilizador inicia sessão automaticamente.
+
 ### <a name="improved-update-restart-detection-and-notifications"></a>Melhor atualização reinicia a deteção e notificações
 
 Entre horas ativas e políticas de tempo de instalação, é possível evitar reiniciar HoloLens dispositivos quando estão a ser utilizados. No entanto, também atrasaria a adoção de atualizações caso não ocorressem reboots para completar a instalação de uma atualização necessária. Agora adicionámos políticas para permitir que as TI apliquem prazos e reiniciem e garantam que a instalação de uma atualização seja concluída em tempo útil. Os utilizadores podem ser notificados antes do início do reboot e podem atrasar o reboot de acordo com a política de TI.
@@ -167,28 +204,56 @@ Foram adicionadas as seguintes políticas de atualização:
 - [Atualização/AgendaRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Atualização/actualizaçãoNotificaçãoLesvel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
+#### <a name="overview-to-try-new-update-notifications"></a>Visão geral para experimentar novas notificações de atualização
+
+1. Configure um dos novos CSPs de atualização através de [um pacote de provisionamento](hololens-provisioning.md) ou [MDM](hololens-mdm-configure.md) (ver a lista de ligações acima e escolha um).
+1. Utilize o aparelho durante a hora programada.
+1. Observe que o utilizador é notificado sobre a atualização e a necessidade de reiniciar o dispositivo \* .
+
+\* Os seus resultados podem variar em função das políticas de Atualização utilizadas.
+
 ### <a name="smart-retry-for-app-updates"></a>Smart Retry para atualizações de aplicações
 
 Agora ativada para HoloLens é uma nova política que permite aos Administradores de TI definir uma data recorrente ou uma data de tempo para reiniciar aplicações cuja atualização falhou devido à aplicação estar em uso permitindo que a atualização seja aplicada. Estes podem ser definidos com base em alguns gatilhos diferentes, tais como uma hora programada ou uma sindes. Para saber mais sobre como usar esta visão de política [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+
+#### <a name="overview-to-try-smart-retry-for-app-updates"></a>Visão geral para experimentar Smart Retry para atualizações de aplicações
+
+1. Configure a nova funcionalidade de relagem inteligente.
+1. Num dispositivo que ainda não recebeu a sua app e que está corretamente configurado para, faça login num ambiente online.
+1. Torne o dispositivo incapaz de descarregar a aplicação através de desligá-la ou desconectá-la.
+1. Ligue o seu dispositivo e ligue-o à internet durante o tempo desencadeado para voltar a tentar o download.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Utilize apenas aplicativos de loja privada para Microsoft Store
 
 A política RequerPrivateStoreOnly foi ativada para HoloLens. Esta política permite configurar a aplicação Microsoft Store apenas para mostrar a loja privada configurada para a sua organização. Limitando o acesso apenas às aplicações que disponibilizou.
 
-Saiba mais sobre [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+Saiba mais sobre [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly).
+
+#### <a name="overview-to-try-only-private-store-apps"></a>Visão geral para experimentar apenas aplicativos de loja privada
+
+1. Configure a nova política para os seus dispositivos através do [MDM](hololens-mdm-configure.md).
+1. Inicie sessão num dispositivo que tenha a apólice.
+1. Abra a aplicação Microsoft Store e observe que só pode ver as aplicações da sua organização.
 
 ### <a name="use-wdac-and-lob-apps"></a>Use aplicativos WDAC e LOB
 
 Agora pode usar o WDAC para bloquear aplicações ou processos de lançamento e continuar a usar a sua própria linha de aplicações de bushiness. pode agora permitir que na sua política WDAC. A utilização desta política envolve executar uma linha de código extra no PowerShell ao criar a sua política WDAC. [Reveja os passos aqui.](/mem/intune/configuration/custom-profile-hololens)
 
+#### <a name="overview-to-try-your-own-apps-while-using-wdac-to-block-others"></a>Visão geral para experimentar as suas próprias apps enquanto usa o WDAC para bloquear outros
+
+1. Reúna os AUMIDs da sua aplicação LOB e as aplicações que pretende bloquear.
+1. [Criar uma nova política WDAC](/mem/intune/configuration/custom-profile-hololens) seguindo os novos passos.
+1. [Implemente a política utilizando o MDM](hololens-mdm-configure.md) no seu dispositivo.
+1. Inscreva-se no dispositivo e observe que pode lançar a sua aplicação e bloquear outras.
+
 ### <a name="fixes-and-improvements"></a>Correções e melhorias
 
-- Corrigiu um [problema conhecido para o Portal do Dispositivo onde não havia qualquer solicitação de descarregamento de ficheiros bloqueados.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Corrigi um [problema conhecido para o Portal do Dispositivo com upload de ficheiros e descarregamento de tempo.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Corrigi um [problema conhecido para o Portal do Dispositivo onde não havia qualquer solicitação de descarregamento de ficheiros bloqueados](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
+- Corrigi um [problema conhecido para o Portal do Dispositivo com upload de ficheiros e descarregamento de tempo .](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Aborda questões relacionadas com a denúncia de propriedades de conformidade a partir de dispositivos HoloLens; pode ser necessário reiniciar para que o relatório correto seja acionado nas construções insider.  
 - Ativou uma [API de acesso atribuído](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) para que as aplicações possam agora determinar se um HoloLens está a ser em execução num modo quiosque para o utilizador iniciado no HoloLens.
 - Atualize a versão in-box do Remote Assist que está instalada em flashes frescos.
-- O processamento de gamepad para aplicações 2D foi desativado nas construções insider. Ao removê-lo, as aplicações são agora gratuitas para usar as APIs do Gamepad diretamente e têm acesso a todo o conjunto de controlos e fazem o que quiserem. Os desenvolvedores devem usar as APIs do Gamepad para consumir a entrada do Gamepad. Aqui está uma amostra para [a Classe Gamepad (Windows. Gaming.Input) - Windows aplicações UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- O processamento de gamepad para aplicações 2D foi desativado nas construções insider. Ao removê-lo, as aplicações são agora gratuitas para usar as APIs do Gamepad diretamente e têm acesso a todo o conjunto de controlos e fazem o que quiserem. Os desenvolvedores devem usar as APIs do Gamepad para consumir a entrada do Gamepad. Aqui está uma amostra para [a Classe Gamepad (Windows. Gaming.Input) - Windows aplicações UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Corrigiu um problema em que após o primeiro início de sposição do utilizador, o OOBE estava a ser encerrado em cenários onde estavam a ser utilizadas configurações de quiosques baseados em grupoS AAD.
 - Corrigi um problema em torno da visualização de notificações de atualização e de pedidos de diálogo para o reinício do dispositivo.
 
@@ -203,6 +268,9 @@ Agora pode usar o WDAC para bloquear aplicações ou processos de lançamento e 
 > Tivemos uma escuta na parte de trás que podes ter encontrado e isto vai pôr-te de volta aos trilhos.
 
 Num dispositivo HoloLens 2, vá para **Definições**  >  **Update & Security** Windows Insider  >  **Program** e **selecione Get start**. Ligue a conta que usou para se registar como Windows Insider.
+
+> [!NOTE]
+> Para inscrever o seu dispositivo nas construções Insider, terá de ativar a telemetria opcional. Se ainda não o fez, abra a aplicação Definições e selecione **o Feedback** de Diagnóstico de Privacidade  ->  **&** e, em seguida, selecione **dados de diagnósticos opcionais**.
 
 Windows infiltrado está agora a mudar-se para os Canais. O anel **Rápido** tornar-se-á o **Canal Dev**, o anel **Lento** passará a ser o **Canal Beta**, e o anel **de pré-visualização** de lançamento tornar-se-á o **Canal de Pré-visualização de Lançamento**. Aqui está o que o mapeamento parece:
 
