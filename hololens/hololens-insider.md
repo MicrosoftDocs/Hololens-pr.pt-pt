@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bdfdcda8cc890691f6112e7798d402ca9e7f4c6d
-ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
+ms.openlocfilehash: 22d635fd3fc32b8aedc36bcb19d900128cdcb718
+ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "127904315"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128306170"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -225,7 +225,7 @@ Agora ativada para HoloLens é uma nova política que permite aos Administradore
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Utilize apenas aplicativos de loja privada para Microsoft Store
 
-A política RequerPrivateStoreOnly foi ativada para HoloLens. Esta política permite que a aplicação Microsoft Store seja configurada apenas para mostrar a loja privada configurada para a sua organização. Limitando o acesso apenas às aplicações que disponibilizou.
+A política RequerPrivateStoreOnly foi ativada para HoloLens. Esta política permite configurar a aplicação Microsoft Store apenas para mostrar a loja privada configurada para a sua organização através [de Microsoft Store para Empresas](/microsoft-store/microsoft-store-for-business-overview). Limitando o acesso apenas às aplicações que disponibilizou.
 
 Saiba mais sobre [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly).
 
