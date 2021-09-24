@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 22d635fd3fc32b8aedc36bcb19d900128cdcb718
-ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
+ms.openlocfilehash: 68485fd0ad7f050748a412da3d57eb8f59e9a685
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 09/23/2021
-ms.locfileid: "128306170"
+ms.locfileid: "128346749"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -248,14 +248,20 @@ Agora pode usar o WDAC para bloquear aplicações ou processos de lançamento e 
 
 ### <a name="fixes-and-improvements"></a>Correções e melhorias
 
+#### <a name="for-developers"></a>Para Programadores
+
 - Corrigi um [problema conhecido para o Portal do Dispositivo onde não havia qualquer solicitação de descarregamento de ficheiros bloqueados](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
 - Corrigi um [problema conhecido para o Portal do Dispositivo com upload de ficheiros e descarregamento de tempo .](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
-- Aborda questões em torno de reportar propriedades de conformidade a partir de dispositivos HoloLens; pode ser necessário reiniciar para que o relatório correto seja acionado nas construções insider.  
+- O processamento de gamepad para aplicações 2D foi desativado nas construções insider. Ao removê-lo, as aplicações são agora gratuitas para usar as APIs do Gamepad diretamente e têm acesso a todo o conjunto de controlos e podem ser desenvolvidos em mente para fazer mais. Os desenvolvedores devem usar as APIs do Gamepad para consumir a entrada do Gamepad. Aqui está uma amostra para [a Classe Gamepad (Windows. Gaming.Input) - Windows aplicações UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Ativou uma [API de acesso atribuído](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) para que as aplicações possam agora determinar se um HoloLens está a ser em execução num modo quiosque para o utilizador registado no HoloLens.
+
+#### <a name="for-enterprise"></a>Para empresa
+
+- Aborda questões em torno de reportar propriedades de conformidade a partir de dispositivos HoloLens; pode ser necessário reiniciar para que o relatório correto seja acionado nas construções insider.  
 - Atualize a versão in-box do Remote Assist que está instalada em flashes frescos.
-- O processamento de gamepad para aplicações 2D foi desativado nas construções insider. Ao removê-lo, as aplicações são agora gratuitas para usar as APIs do Gamepad diretamente e têm acesso a todo o conjunto de controlos e fazem o que quiserem. Os desenvolvedores devem usar as APIs do Gamepad para consumir a entrada do Gamepad. Aqui está uma amostra para [a Classe Gamepad (Windows. Gaming.Input) - Windows aplicações UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Corrigiu um problema em que após o primeiro início de sposição do utilizador, o OOBE estava a ser encerrado em cenários onde estavam a ser utilizadas configurações de quiosques baseados no grupo AAD.
 - Corrigiu um problema em torno da visualização de notificações de atualização e de pedidos de diálogo para reiniciar o dispositivo.
+- Corrigiu um problema em que após o reboot do dispositivo, os controladores Xbox e outros periféricos de Bluetooth LE precisavam de ser novamente emparelhados para se ligarem.
 
 ## <a name="start-receiving-insider-builds"></a>Comece a receber construções insider
 
