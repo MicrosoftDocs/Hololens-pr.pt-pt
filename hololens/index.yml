@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens é o primeiro computador holográfico totalmente autossuficiente a funcionar Windows 10. Agora, com a introdução de HoloLens 2, cada HoloLens dispositivo fornece capacidades de gestão de prontos comerciais que são potenciadas pela fiabilidade, segurança e escalabilidade dos serviços de cloud e IA da Microsoft.
+summary: Microsoft HoloLens é o primeiro computador holográfico totalmente autossuficiente a executar Windows 10. Agora, com a introdução do HoloLens 2, cada HoloLens dispositivo fornece capacidades de gestão de prontos comerciais que são potenciadas pela fiabilidade, segurança e escalabilidade dos serviços de cloud e IA da Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Página de aterragem para Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: MT
   ms.contentlocale: pt-PT
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126033918"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145935"
 landingContent:
 - title: Conheça o HoloLens 2
   linkLists:
@@ -44,7 +44,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Primeira utilização
+    - text: Utilização pela primeira vez
       url: hololens2-setup.md
     - text: Uso diário
       url: holographic-home.md
@@ -62,12 +62,28 @@ landingContent:
     links:
     - text: Guia de implementação - Implementação HoloLens 2 ligada à nuvem em escala com assistência remota
       url: hololens2-cloud-connected-overview.md
-    - text: Guia de Implementação - Clientes Externos (ligados à nuvem)
+    - text: Guia de implementação - Clientes Externos (ligados à nuvem)
       url: hololens2-deployment-guide.md
-    - text: Guia de Implementação - Implementação de HoloLens 2 com Dinâmica 365 Guias
+    - text: Guia de Implementação - Implementação de HoloLens 2 com Dinâmica 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Guia de implementação - Offline seguro
       url: hololens-common-scenarios-offline-secure.md
+- title: Recursos parceiros de realidade mista
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Recursos parceiros de realidade mista
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Fórum de Parceiros de Realidade Mista
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Blog parceiro de realidade mista
+      url: https://aka.ms/MRPartnerBlog
+    - text: Comece a desenhar e prototipagem
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: Modo de plataforma móvel
+      url: /hololens/hololens2-moving-platform
+    - text: Considerações Ambientais
+      url: /hololens/hololens-environment-considerations
 - title: Resolução de problemas
   linkLists:
   - linkListType: how-to-guide
@@ -118,7 +134,7 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Dinâmicos 365 Docs de Assistência Remota
+    - text: Dinâmico 365 Trabalhos de Assistência Remota
       url: /dynamics365/mixed-reality/remote-assist/ra-overview
     - text: Dinâmica 365 Guias
       url: /dynamics365/mixed-reality/guides/
