@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f646e70c61bda17fb315670e94a6fbada010e1d5
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036433"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129164003"
 ---
 # <a name="about-hololens-2"></a>Cerca de HoloLens 2
 
@@ -42,13 +42,13 @@ Uma conta de utilizador é necessária para utilizar HoloLens 2.
 ## <a name="in-the-box"></a>Na caixa
 
 - **[Almofada de sobrancelhas.](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)** Pode remover e substituir a almofada de sobrancelha, conforme necessário.
-- **[Correia aérea](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Quando estiver a usar o HoloLens enquanto se desloca, use a correia superior para ajudar a manter o dispositivo no lugar. Ao usar o HoloLens por longos períodos, a correia superior pode tornar o aparelho mais confortável de usar.
-- **[Carregador USB-C e cabo](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. A alimentação liga-se à tomada de corrente. Utilize o cabo USB-C para ligar o seu HoloLens à fonte de alimentação para carregamento ou para ligar o seu HoloLens ao computador.
+- **[Correia aérea](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Quando estiver a usar o HoloLens enquanto se desloca, use a correia superior para ajudar a manter o dispositivo no lugar. Ao usar o HoloLens por longos períodos, a correia superior pode tornar o aparelho mais confortável para usar.
+- **[Carregador USB-C e cabo](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. A alimentação liga-se à tomada de corrente. Utilize o cabo USB-C para ligar o seu HoloLens à fonte de alimentação para carregamento ou para ligar a sua HoloLens ao computador.
 - **Pano de microfibra.** Utilize para limpar a viseira HoloLens.
 
 ### <a name="power-supply-details"></a>Detalhes da fonte de alimentação
 
-A alimentação elétrica e o cabo USB que acompanham o dispositivo são o mecanismo mais bem suportado para o carregamento. A fonte de alimentação é um carregador de 18W.  O fornecimento 9V na 2A.
+A alimentação elétrica e o cabo USB que acompanham o dispositivo são o mecanismo mais bem suportado para o carregamento. A fonte de alimentação é um carregador de 18W.  Fornece 9V na 2A.
 
 A velocidade e a velocidade de carregamento podem variar consoante o ambiente em que o dispositivo está a funcionar.
 
@@ -60,7 +60,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 |   | &nbsp; |
 |---|---|
-| **Ótica** | Lentes holográficas ver-through (guias de onda) |
+| **Ótica** | Lentes holográficas see-through (guias de onda) |
 | **Resolução holográfica** | Motores ligeiros 2k 3:2 |
 | **Densidade holográfica** | >2,5 k radiantes (pontos de luz por radian) |
 | **Renderização baseada nos olhos** | Otimização do ecrã para posição 3D do olho |
@@ -78,7 +78,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 ![HoloLens dois sensores.](images/hololens2-front-view.png)
 
 > [!NOTE]
-> Não cubra nenhum dos sensores que são chamados na imagem. As câmaras de rastreio de cabeça têm um FOV muito largo, nada deve estar à sua volta, além de não as cobrir.
+> Não cubra nenhum dos sensores que são chamados na imagem. As câmaras de rastreio da cabeça têm um FOV muito largo, nada deve estar à sua volta, além de não as cobrir.
 
 ### <a name="audio-and-speech"></a>Áudio e fala
 
@@ -138,12 +138,12 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 
 | &nbsp; | &nbsp; |
 |---|---|
-| **Windows Sistema Operativo Holográfico** | Com [Windows OS Holográfico](hololens-release-notes.md), Windows 10 os utilizadores poderão utilizar algumas das suas apps e jogos num ambiente de realidade mista através do HoloLens 2.
-| **Espectador 3D** | [O 3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) permite-lhe ver facilmente modelos e animações 3D em tempo real.|
-| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)o seu assistente de produtividade pessoal, ajuda-o a manter-se a cargo do que importa e a poupar tempo para encontrar o que precisa.  |
-| **Dinâmica 365 Guias** |  [A Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ajudará os colaboradores a aprenderem mais rapidamente novas habilidades em dispositivos HoloLens. |
+| **Windows Sistema Operativo Holográfico** | Com [Windows os SISTEMAS Holográficos,](hololens-release-notes.md)Windows 10 os utilizadores poderão utilizar algumas das suas apps e jogos num ambiente de realidade mista através do HoloLens 2.
+| **Espectador 3D** | [O Espectador 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) permite-lhe ver facilmente modelos e animações 3D em tempo real.|
+| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)o seu assistente de produtividade pessoal, ajuda-o a manter-se no topo do que importa e a poupar tempo para encontrar o que precisa.  |
+| **Dinâmica 365 Guias** |  [A Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ajudará os colaboradores a aprenderem novas habilidades mais rapidamente em dispositivos HoloLens. |
 | **Dinâmico 365 Assistência Remota** | [O Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) capacita os técnicos a colaborar e resolver problemas com colaboradores remotos utilizando Microsoft Teams ou Dinâmico 365 Remote Assist.  |
-| **Centro de Feedback** | [O Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) permite-lhe fornecer feedback sobre Windows e aplicações, partilhando as suas sugestões ou problemas.  |
+| **Centro de Feedback** | [O Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) permite-lhe fornecer feedback sobre Windows e apps partilhando as suas sugestões ou problemas.  |
 | **Explorador de Ficheiros** | O File Explorer fornece uma interface gráfica do utilizador para aceder aos sistemas de ficheiros. |
 | **Correio e Calendário** | As aplicações [Mail e Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) ajudam-no a manter-se atualizado no seu email, a gerir a sua agenda e a manter-se em contacto com os seus contactos. |
 | **Microsoft Edge** | Microsoft Edge dá-lhe um desempenho de classe mundial com mais privacidade, mais produtividade e mais valor enquanto navega. |
@@ -164,7 +164,7 @@ Para manter/adiantar a percentagem de carga interna da bateria durante o funcion
 * [Informação SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Informação regulamentar
-[HoloLens Regulação](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Inclui informações sobre temperatura, eliminação, interferência de rádio e TV, entre outras.
+[HoloLens Regulação](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Inclui informações sobre temperatura, eliminação, interferência sonora e televisiva, entre outras.
 
 ## <a name="warranty-information"></a>Informação de Garantia
 
@@ -173,7 +173,7 @@ Microsoft HoloLens 2 vem com uma [garantia](https://support.microsoft.com/topic/
 
 A compra está sujeita a [Microsoft Store Termos de Utilização e Venda.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Todas as vendas são finais. Sem reembolsos.
 
-Ao comprar HoloLens 2, concorda com o [contrato de licença de software.](https://www.microsoft.com/Useterms/)
+Ao comprar HoloLens 2, concorda com o [contrato de licença de software](https://www.microsoft.com/Useterms/).
 
 Não se destina a ser utilizado por crianças menores de 13 anos.
 
@@ -196,10 +196,10 @@ Não se destina a ser utilizado por crianças menores de 13 anos.
 
 ## <a name="finding-the-serial-number"></a>Encontrar o número de série
 
-O número de série dos HoloLens 2 dispositivos está impresso debaixo da viseira.
+O número de série HoloLens 2 dispositivos está impresso debaixo da viseira.
 
 1. Levante a viseira do dispositivo.
-1. Olhe perto da almofada de sobrancelhas.
+1. Olhe perto da almofada de sobrancelha.
 1. Pode encontrar o número de série localizado perto da dobradiça.
 
    <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />

@@ -12,18 +12,18 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036472"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163986"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens bateria 2 e carregamento
 
 Esta página oferece detalhes sobre o carregamento HoloLens 2 e a utilização de baterias externas.
 
-## <a name="charging-the-device"></a>Carregar o dispositivo
+## <a name="charging-the-device"></a>Carregamento do dispositivo
 
 Utilize o [carregador e o cabo USB Type-C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) que veio com o HoloLens 2, pois esta é a melhor maneira de carregar o seu dispositivo. O carregador incluído com HoloLens 2 fornece até 9V @ 2A (18W). Juntamente com o carregador de parede fornecido, HoloLens 2 dispositivos podem carregar a bateria até à totalidade em menos de 65 minutos quando o dispositivo estiver em modo de espera. Se esses acessórios não estiverem disponíveis, certifique-se de que o carregador disponível pode suportar pelo menos 15W de energia.
 
@@ -34,18 +34,18 @@ Utilize o [carregador e o cabo USB Type-C](https://www.microsoft.com/en-us/p/mic
 Se o dispositivo estiver corretamente iniciado e em funcionamento, existem três formas de verificar o nível de carga da bateria:
 
 - A partir do menu principal do dispositivo HoloLens UI.
-- Ver o LED perto do botão de alimentação (para uma carga de 40%, deverá ver pelo menos dois LED sólidos).
+- Ver o LED perto do botão de alimentação (para uma carga de 40%, deverá ver pelo menos dois LEDs sólidos).
     - Quando o aparelho está a carregar, o indicador da bateria acende-se para indicar o nível de carga atual.  A última luz desvanece-se para dentro e para fora para indicar o carregamento ativo.
     - Quando o seu HoloLens estiver ligado, o indicador da bateria mostra o nível da bateria em cinco incrementos.
     - Quando apenas uma das cinco luzes está acesa, o nível da bateria está abaixo dos 20%.
-    - Se o nível da bateria estiver criticamente baixo e tentar ligar o dispositivo, uma luz piscará brevemente e apagar-se-á.
+    - Se o nível da bateria estiver criticamente baixo e tentar ligar o aparelho, uma luz piscará brevemente e apagar-se-á.
 - No seu PC anfitrião, abra o **File Explorer** e procure o seu dispositivo HoloLens 2 no lado esquerdo sob **este PC**. Clique com o botão direito no dispositivo e selecione **Propriedades**. Uma caixa de diálogo mostrará o nível de carga da bateria.
 
-   ![Um ecrã de HoloLens de 2 propriedades mostra o nível de mudança de bateria.](images/ResetRecovery2.png)
+   ![Um ecrã de HoloLens de 2 propriedades mostra o nível de mudança da bateria.](images/ResetRecovery2.png)
 
-## <a name="alternative-charging-specifications"></a>Especificações de carregamento alternativos
+## <a name="alternative-charging-specifications"></a>Especificações de carregamento alternativas
 
-HoloLens 2 podem ser carregados por fontes [usb de entrega de energia](https://www.usb.org/usb-charger-pd) até 27 Watts. Se a fonte for capaz de fornecer pelo menos 10 Watts, HoloLens tempo de funcionamento pode ser prolongado (potencialmente indefinidamente para algumas cargas de trabalho). 
+HoloLens 2 podem ser carregados por fontes [usb de fornecimento de energia](https://www.usb.org/usb-charger-pd) até 27 Watts. Se a fonte for capaz de fornecer pelo menos 10 Watts, HoloLens tempo de funcionamento pode ser prolongado (potencialmente indefinidamente para algumas cargas de trabalho). 
 
 > [!NOTE]
 > A utilização de um cabo de carregamento USB-A a USB-C limitará a carga a 7,5 Watts. O tempo de funcionamento continuará a ser prolongado, mas não tanto quanto a utilização usb-C a C.
@@ -65,7 +65,7 @@ Como em qualquer dispositivo, o carregamento HoloLens gera calor. Quanto mais r�
 
 - Não há problema em ligar HoloLens 2 a uma fonte de energia externa, mesmo quando a bateria interna está completamente carregada.
 - Quando uma bateria externa estiver esgotada, HoloLens continuará a funcionar na sua bateria interna.    
-- Se o calor continuar a ser um problema depois de seguir os passos acima, considere a utilização de um carregador ou bateria que limite o carregamento a 1,5A. Note que esta opção não proporcionará tanto tempo de funcionamento, uma vez que a bateria interna continuará a esgotar-se lentamente.
+- Se o calor continuar a ser um problema depois de seguir os passos acima, considere a utilização de um carregador ou bateria que limite o carregamento a 1.5A. Note que esta opção não proporcionará tanto tempo de funcionamento, uma vez que a bateria interna continuará a esgotar-se lentamente.
 
 ## <a name="troubleshooting"></a>Resolução de problemas
 
