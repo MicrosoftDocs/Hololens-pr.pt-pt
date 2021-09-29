@@ -1,44 +1,44 @@
 ---
-ms.openlocfilehash: 7a7122790d3e0257c07cdd8bc8c7f658b3a0e279
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 3d6b36124cd50dcc9f420227cb7787f0d787c013
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859429"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129220653"
 ---
 # <a name="microsoft-intune-single-app-kiosk-template"></a>[Microsoft Intune modelo de quiosque de aplicativo único](#tab/uisak)
 
-## <a name="microsoft-intune-single-app-kiosk-template"></a>Microsoft Intune modelo de quiosque de aplicativo único
+### <a name="microsoft-intune-single-app-kiosk-template"></a>Microsoft Intune modelo de quiosque de aplicativo único
 
-1. Criar um perfil de configuração <br> 
+1. Criar um perfil de configuração <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. Escolha o modelo de quiosque <br> 
+2. Escolha o modelo de quiosque <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. Escolha se uma aplicação única ou vários quiosques de aplicações e também escolha o tipo de utilizadores direcionados para o modo quiosque <br> 
+3. Escolha se uma aplicação única ou vários quiosques de aplicações e também escolha o tipo de utilizadores direcionados para o modo quiosque <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-sa-3.png"/>
 </kbd>
 
 <br>
 
-4. Escolha a app para correr em modo quiosque <br> 
+4. Escolha a app para correr em modo quiosque <br>
 <kbd>
     <img alt="Choose the app" src="../images/kiosk-steps/kiosk-template-sa-4.png"/>
 </kbd>
 
 <br>
 
-5. Deixe o resto das opções como está <br> 
+5. Deixe o resto das opções como está <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -56,37 +56,37 @@ ms.locfileid: "122859429"
 
 # <a name="microsoft-intune-multi-app-kiosk-template"></a>[Microsoft Intune modelo de quiosque de vários aplicativos](#tab/uimak)
 
-## <a name="microsoft-intune-multi-app-kiosk-template"></a>Microsoft Intune modelo de quiosque de vários aplicativos
+### <a name="microsoft-intune-multi-app-kiosk-template"></a>Microsoft Intune modelo de quiosque de vários aplicativos
 
-1. Criar um perfil de configuração <br> 
+1. Criar um perfil de configuração <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. Escolha o modelo de quiosque <br> 
+2. Escolha o modelo de quiosque <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. Escolha se uma aplicação única ou vários quiosques de aplicações e também escolha o tipo de utilizadores direcionados para o modo quiosque <br> 
+3. Escolha se uma aplicação única ou vários quiosques de aplicações e também escolha o tipo de utilizadores direcionados para o modo quiosque <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-mak-3.png"/>
 </kbd>
 
 <br>
 
-4. Escolha a(s) aplicação para correr em modo quiosque <br> 
+4. Escolha as aplicações para executar em modo quiosque <br>
 <kbd>
     <img alt="Choose the app(s)" src="../images/kiosk-steps/kiosk-template-mak-4.png"/>
 </kbd>
 
 <br>
 
-5. Deixe o resto das opções como está <br> 
+5. Deixe o resto das opções como está <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -106,11 +106,11 @@ ms.locfileid: "122859429"
 
 # <a name="microsoft-intune-custom-template"></a>[Microsoft Intune modelo personalizado](#tab/intunecustom)
 
-## <a name="microsoft-intune-custom-template"></a>Microsoft Intune modelo personalizado
+### <a name="microsoft-intune-custom-template"></a>Microsoft Intune modelo personalizado
 
 1. Crie configuração xml para a experiência de quiosque desejada. Veja [exemplos](../hololens-kiosk-reference.md#kiosk-xml-code-samples) aqui para começar.
 
-1. Crie um perfil de configuração personalizado <br>
+1. Criar um perfil de configuração personalizado <br>
 <kbd>
     <img alt="Create a custom configuration profile" src="../images/kiosk-steps/kiosk-custom-1.png"/>
 </kbd>
@@ -126,10 +126,10 @@ ms.locfileid: "122859429"
 
 4. Especificar o nome das definições OMA-URI.
 
-    1. Na caixa de texto OMA-URI, **introduza ./Dispositivo/Fornecedor/MSFT/AtribuiçãoAccess/Configuração**
-    1. Escolha o tipo de dados como **String.**
+    1. Na caixa de texto OMA-URI, **introduza ./Device/Vendor/MSFT/AssignedAccess/Configuration**
+    1. Escolha o tipo de Dados como **String.**
     1. Na caixa de texto de valor, copie a configuração de acesso atribuída xml (ver links de referência para exemplos baseados no seu cenário e atualização conforme necessário antes da cópia-colar).
-    1. Selecione o botão de poupança para guardar a definição e a configuração.
+    1. Selecione o botão de guardar para guardar a definição e a configuração.
 
     <kbd>
         <img alt="Specify OMA-URI settings" src="../images/kiosk-steps/kiosk-custom-3.png"/>
@@ -150,7 +150,7 @@ ms.locfileid: "122859429"
 
 # <a name="runtime-provisioning---multi-app"></a>[Fornecimento de tempo de execução - Multi app](#tab/ppkgmak)
 
-## <a name="runtime-provisioning---multi-app"></a>Fornecimento de tempo de execução - Multi app
+### <a name="runtime-provisioning---multi-app"></a>Fornecimento de tempo de execução - Multi app
 
 1. Crie configuração xml para a experiência de quiosque desejada. Veja [exemplos](../hololens-kiosk-reference.md#kiosk-xml-code-samples) aqui para começar.
 
@@ -170,7 +170,7 @@ ms.locfileid: "122859429"
 
 <br>
 
-5. Diga o nome do seu projeto. Opcionalmente, escreva uma descrição. **Selecione Acabamento** para prosseguir.
+5. Diga o seu projeto. Opcionalmente, escreva uma descrição. **Selecione Acabamento** para prosseguir.
 
 6. Na parte inferior esquerda do ecrã, selecione **Switch para editor avançado.** Confirme a mudança para o editor avançado selecionando **Sim.** <br>
 
@@ -198,7 +198,7 @@ ms.locfileid: "122859429"
 
 <br>
 
-10. Alterar o tipo de proprietário para **o Administrador DE TI.** <br>
+10. Alterar o tipo de proprietário para **o IT Admin**. <br>
 
     <kbd>
         <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
@@ -208,7 +208,7 @@ ms.locfileid: "122859429"
 
 11. Selecione **Seguinte** três vezes. Em seguida, **selecione Build**.
 
-12. Depois de construir o seu pacote de provisionamento, abra a pasta de localização de saída. O ficheiro .ppkg é o seu pacote de provisões. Passo opcional: Salvar o seu projeto.
+12. Depois de construir o pacote de provisionamento, abra a pasta de localização de saída. O ficheiro .ppkg é o seu pacote de provisões. Passo opcional: Salvar o seu projeto.
 
 13. Agora pode aplicar o seu pacote de provisionamento. Pode [aplicar um pacote de provisionamento para HoloLens durante a configuração](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) ou aplicar um pacote de [provisionamento para HoloLens após a configuração](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
@@ -216,7 +216,7 @@ ms.locfileid: "122859429"
 
 # <a name="runtime-provisioning---single-app"></a>[Fornecimento de tempo de execução - Aplicação única](#tab/ppkgsak)
 
-## <a name="runtime-provisioning---single-app"></a>Fornecimento de tempo de execução - Aplicação única
+### <a name="runtime-provisioning---single-app"></a>Fornecimento de tempo de execução - Aplicação única
 
 1. [Open Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
@@ -236,7 +236,7 @@ ms.locfileid: "122859429"
 
 <br>
 
-4. Diga o nome do seu projeto. Opcionalmente, escreva uma descrição. **Selecione Acabamento** para prosseguir.
+4. Diga o seu projeto. Opcionalmente, escreva uma descrição. **Selecione Acabamento** para prosseguir.
 
 5. Na parte inferior esquerda do ecrã, selecione **Switch para editor avançado.** Confirme a mudança para o editor avançado selecionando **Sim.** <br>
 
@@ -265,7 +265,7 @@ ms.locfileid: "122859429"
 
 <br>
 
-9. Alterar o tipo de proprietário para **o Administrador DE TI.** <br>
+9. Alterar o tipo de proprietário para **o IT Admin**. <br>
 
     <kbd>
         <img alt="Exporting as IT Admin" src="../images/kiosk-steps/kiosk-provision-5.png"/>
@@ -275,6 +275,6 @@ ms.locfileid: "122859429"
 
 10. Selecione **Seguinte** três vezes. Em seguida, **selecione Build**.
 
-11. Depois de construir o seu pacote de provisionamento, abra a pasta de localização de saída. O ficheiro .ppkg é o seu pacote de provisões. Passo opcional: Salvar o seu projeto.
+11. Depois de construir o pacote de provisionamento, abra a pasta de localização de saída. O ficheiro .ppkg é o seu pacote de provisões. Passo opcional: Salvar o seu projeto.
 
 12. Agora pode aplicar o seu pacote de provisionamento. Pode [aplicar um pacote de provisionamento para HoloLens durante a configuração](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) ou aplicar um pacote de [provisionamento para HoloLens após a configuração](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).

@@ -14,7 +14,7 @@
 ### [Edição Trimble XR10](hololens2-options-trimble-xr10-edition.md)
 
 # Usando o seu HoloLens
-## Primeira utilização
+## Utilização pela primeira vez
 ### [Tenha o seu HoloLens 2 pronto a usar](hololens2-setup.md)
 ### [Configura o seu HoloLens 2](hololens2-start.md)
 ### [Introdução ao HoloLens 2](hololens2-basic-usage.md)
@@ -28,7 +28,7 @@
 #### [App New Definições](hololens-new-settings.md)
 #### [Nova Microsoft Edge](hololens-new-edge.md)
 ### Gerir aplicações
-#### [Localizar, instalar e desinstalar aplicações](holographic-store-apps.md)
+#### [Localizar, instalar e desinstalar as aplicações da loja](holographic-store-apps.md)
 #### [Gerir aplicativos personalizados para HoloLens 2](hololens2-holographic-custom-apps.md)
 ### Ótica do holograma e colocação no espaço
 #### [Melhorar a qualidade visual e o conforto](hololens-calibration.md)
@@ -71,7 +71,7 @@
 ### [Separação do Estado e isolamento](security-state-separation-isolation.md)
 ### [Sistema operativo sem administração ](security-adminless-os.md)
 ### [Limitação da utilização de palavras-passe](security-limiting-password-use.md)
-### [Atestado de segurança e tempo de execução apoiados por hardware](security-hardware-backed-integrity.md)
+### [Segurança apoiada por hardware e atestado de tempo de execução](security-hardware-backed-integrity.md)
 ### [Encriptação e proteção de dados](security-encryption-data-protection.md)
 ### [Segurança da rede](security-network-security.md)
 ### [Engenharia de segurança ](security-engineering.md)
@@ -90,7 +90,7 @@
 ### [Configure CSPs e visão geral da gestão de dispositivos](hololens-csp-policy-overview.md)
 ### [Usar o MDM para gerir dispositivos HoloLens](hololens-mdm-configure.md)
 ### [Configurar HoloLens utilizando pacotes de provisionamento](hololens-provisioning.md)
-### [Restrições comuns do dispositivo](hololens-common-device-restrictions.md)
+### [Restrições comuns ao dispositivo](hololens-common-device-restrictions.md)
 ### [Configurar HoloLens como um quiosque](hololens-kiosk.md)
 ### [HoloLens Informações de referência do quiosque](hololens-kiosk-reference.md)
 ### [Windows Defender Controlo de Aplicações - WDAC](windows-defender-application-control-wdac.md)
@@ -119,7 +119,7 @@
 ## [Idiomas suportados](hololens2-language-support.md)
 ## [Desenvolver com a Malha microsoft (pré-visualização)](/mesh/overview)
 ## HoloLens (1ª geração)
-### Primeira utilização
+### Utilização pela primeira vez
 #### [Cerca de HoloLens (1ª geração)](hololens1-hardware.md)
 #### [HoloLens (1ª gen) ajuste e conforto](hololens1-fit-comfort-faq.md)
 #### [Visão geral de utilização básica](hololens1-setup.md)
@@ -129,12 +129,12 @@
 #### [Use o Espectador 3D em HoloLens (1ª geração)](holographic-3d-viewer-beta.md)
 #### [Contornar HoloLens (1ª geração)](hololens1-basic-usage.md)
 #### [Gerir aplicativos personalizados para HoloLens](holographic-custom-apps.md)
-#### [Instalar versão localizada de HoloLens (1ª geração)](hololens1-install-localized.md)
-#### [Desbloqueie funcionalidades de Windows Holographic for Business](hololens1-upgrade-enterprise.md)
+#### [Instalar versão localizada de HoloLens (1ª gen)](hololens1-install-localized.md)
+#### [Desbloqueie as funcionalidades Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 #### [Reset HoloLens (1ª geração)](hololens1-recovery.md)
 ### segurança HoloLens (1ª geração)
 #### [Perguntas frequentes HoloLens (1ª gen) Questões de Segurança](hololens1-faq-security.yml)
-#### [encriptação bitLocker HoloLens (1ª Gen)](hololens1-encryption.md)
+#### [HoloLens (1ª Gen) BitLocker Encriptação](hololens1-encryption.md)
 ### [Questões e soluções alternativas conhecidas para HoloLens (1ª geração)](hololens-known-issues.md)
 ### [HoloLens (1ª Gen) notas de lançamento](hololens1-release-notes.md)
 
