@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f9d012540cf29b7ed7ffd4033681c58767d78db
-ms.sourcegitcommit: e8a4714c7b16720819c7aaebefb7cfd21fc29c56
+ms.openlocfilehash: 8ad76f1c0cc16101b10fb0576c1b3763caac450d
+ms.sourcegitcommit: db573910a0c81fdf6edaca8cb8ef3d0be5e25603
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127985648"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129432033"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -28,9 +28,6 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 
 > [!NOTE]
 > O anúncio recente Windows 11 foi focado na versão para PC de Windows. Lançamos recentemente uma [grande atualização de OS](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) para HoloLens 2 em maio de 2021, e estamos a trabalhar num próximo lançamento baseado no feedback do cliente para este outono.
-
-> [!IMPORTANT]
-> Devido a um problema agora resolvido [conhecido na nossa construção 21H1 que estava a afetar os utilizadores do Remote Assist](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), interrompemos temporalmente a oferta de Windows atualizações Holográficas, versão 21H1. Também tínhamos alterado a construção padrão do Advanced Recovery Companion (ARC) para o [Windows Holographic, versão 20H2 – junho 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). A construção do ARC vai agora retomar a construção 21H1.
 
 ## <a name="windows-holographic-version-21h1---september-2021-update"></a>Windows Holográfico, versão 21H1 - Atualização de setembro de 2021
 
