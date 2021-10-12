@@ -1,24 +1,24 @@
 ---
 title: HoloLens Resolução de problemas do dispositivo
 description: Mantenha-se atualizado sobre as soluções mais comuns para HoloLens problemas com o dispositivo e técnicas de resolução de problemas.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/7/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemas, bug, resolução de problemas, correção, ajuda, suporte, HoloLens, emulador
-ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364622"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800543"
 ---
 # <a name="device-troubleshooting"></a>Resolução de problemas do dispositivo
 
@@ -31,6 +31,7 @@ Este artigo descreve como resolver várias questões comuns HoloLens.
 
 **Problemas Conhecidos**
 - [Cada vez que a energia vai para 18%, o dispositivo desliga-se automaticamente](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [OneDrive Aplicação UWP não funciona para utilizadores AD Azure](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Vídeo de Assistência Remota congela após 20 minutos](#remote-assist-video-freezes-after-20-minutes)
 - [O login automático pede o login](#auto-login-asks-for-log-in)
 - [Microsoft Edge falha no lançamento](#microsoft-edge-fails-to-launch)
@@ -70,6 +71,23 @@ Há um problema conhecido em que quando o dispositivo atinge a bateria de 18%, i
 1. Envie um problema [de Feedback Hub](hololens-feedback.md)
 1. Partilhar o artigo URL de emissão de feedback
 1. [Suporte de contato](https://aka.ms/hololenssupport)
+
+[De volta à lista](#list)
+
+## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDrive Aplicação UWP não funciona para utilizadores AD Azure
+
+Se utilizar OneDrive For Business utilizando a sua conta Azure AD, poderá ter encontrado erro ao iniciar sação na sua aplicação de OneDrive de caixa de entrada. Não conseguir entrar na OneDrive aplicação não afeta uploads automáticos de imagens e vídeos capturados pela aplicação Camera. Os seus ficheiros ainda podem ser guardados e acedidos a partir do armazenamento em nuvem OneDrive para Empresas. As equipas OneDrive e HoloLens estão a trabalhar no assunto.
+
+### <a name="workarounds"></a>Soluções
+
+Pré-requisito: Os clientes podem utilizar Microsoft Edge e o dispositivo OS é atualizado para um Windows construção Holográfica, 21H1 ou mais recente.
+
+Se estiver a passar por este problema, experimente um dos seguintes:
+
+- Os utilizadores podem aceder diretamente OneDrive For Business a partir de Microsoft Edge e interagir com os seus ficheiros no website a partir do seu navegador.
+- Os utilizadores podem instalar a aplicação OneDrive PWA para HoloLens, descarregando-a a partir de Microsoft Edge. Isto irá permitir que os utilizadores voltem a visualizar e gerir ficheiros no dispositivo. Leia e siga estas [instruções para instalar a aplicação OneDrive PWA no seu HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[De volta à lista](#list)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>Vídeo de Assistência Remota congela após 20 minutos
 
