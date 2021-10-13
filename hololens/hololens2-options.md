@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036369"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949025"
 ---
 # <a name="compare-hololens-2-options"></a>Comparar HoloLens 2 Opções
 
@@ -34,17 +34,18 @@ Quer seja um [profissional de TI](https://www.microsoft.com/hololens/apps) à pr
 | **HoloLens 2 dispositivo (um dispositivo)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Dinâmica 365 Assistência Remota (um assento)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
 | **Classificação da sala limpa ISO 14644-1 Classe 5**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| **Ul Classe I, Divisão 2-Grupos A, B, C e D HAZLOC**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **Ambientes UL Classe I, Divisão 2-Grupos A, B, C e D HAZLOC**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | **Hard hat integrado (PPE em conformidade com mais de 40 países)** |            |                               |                               |                                                  |               ✔️              |                                |
 | **Saída de áudio de cancelamento de ruído**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **Direitos do desenvolvedor <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **Programa de Substituição Rápida <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **Classificação de Proteção de Ingress (IP50, protegido por poeira)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Direitos de utilização comercial**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Garantia**](hololens2-hardware.md#warranty-information)                                             |   1 Ano   |             1 Ano            |             2 anos            |                      2 anos                      |            1 Ano <sup>3</sup>            |             1 Ano             |
-| **Limite de compra do dispositivo**                                |    Nenhuma    |              Nenhuma             |              Nenhuma             |                       Nenhuma                       |             Nenhuma             |       Um por transação      |
+| **Limite de compra de dispositivo**                                |    Nenhuma    |              Nenhuma             |              Nenhuma             |                       Nenhuma                       |             Nenhuma             |       Um por transação      |
 
 - <sup>1</sup> - Inclui crédito azure de $500 e ensaios de 3 meses para a Unidade Pro e Pixyz Plugin.
-- <sup>2</sup> - Receba um dispositivo de substituição durante a noite ou transporte expedito (mais rápido das opções disponíveis) antes de o dispositivo defeituoso ser recebido pela Microsoft.
+- <sup>2</sup> - Receba um dispositivo de substituição durante a noite ou envio acelerado (mais rápido das opções disponíveis) antes de o dispositivo defeituoso ser recebido pela Microsoft.
 - <sup>3</sup> - Para questões de garantia, suporte e certificação para o Trimble XR10 com HoloLens 2 edição, [contacte a Trimble](https://fieldtech.trimble.com/en/contact-support).
 
 
@@ -54,7 +55,7 @@ Quer seja um [profissional de TI](https://www.microsoft.com/hololens/apps) à pr
 
 **[HoloLens 2 com o Dynamics 365 Remote Assist](hololens2-options-remote-assist.md)**: Começa no primeiro dia com HoloLens 2 e a última aplicação de comunicação de realidade mista da Microsoft, disponível em conjunto. Ajude toda a sua empresa a ser mais produtiva e inovar com mais propósito. Experimente a realidade mista agora com a Dynamics 365 e soluções de parceiros do setor.
 
-**[HoloLens 2 Edição Industrial](hololens2-options-industrial-edition.md)**: Projetado, construído e testado para apoiar ambientes de sala limpa com padrões que vão da CLASSE ISO 6 à CLASSE ISO 8, o HoloLens 2 Industrial Edition é UL Classe I, Divisão 2 certificada e é suportado com uma garantia de 2 anos e um programa de substituição rápida.
+**[HoloLens 2 Edição Industrial](hololens2-options-industrial-edition.md)**: Projetado, construído e testado para suportar ambientes de sala limpa com padrões que vão da CLASSE ISO 6 à CLASSE ISO 8, o HoloLens 2 Industrial Edition é UL Classe I, Divisão 2 certificada e é suportado com uma garantia de 2 anos e um programa de substituição rápida.
 
 **[Trimble XR10 com HoloLens 2](hololens2-options-trimble-xr10-edition.md)**: Finalidade construída para trabalhadores em ambientes sujos, altos e controlados pela segurança, o Trimble XR10 com HoloLens 2 traz realidade mista diretamente para o seu local de trabalho.
 
@@ -71,7 +72,7 @@ Explore estas soluções adicionais construídas para HoloLens dispositivos de r
 | [Dinâmica 365 para HoloLens](https://www.microsoft.com//hololens/apps)          | Capacitar os colaboradores e otimizar as operações.                                                        |
 | [Dinâmico 365 Assistência Remota](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | Capacitar os técnicos a colaborar de forma mais eficiente, trabalhando em conjunto a partir de diferentes locais. |
 |   [Dinâmica 365 Guias](https://dynamics.microsoft.com/mixed-reality/guides/)        | Melhorar as necessidades de formação eficazes e aprender como os colaboradores estão a atuar.                          |
-|  [Serviços em nuvem Azure para realidade mista](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Saiba como desenvolver uma solução utilizando os Serviços Azure Cloud.                                       |
+|  [Serviços em nuvem de Azure para realidade mista](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Saiba como desenvolver uma solução utilizando os Serviços Azure Cloud.                                       |
 |  [Comece a desenvolver-se para HoloLens 2](/windows/mixed-reality/develop/development?tabs=unity)         | Construa uma solução de realidade mista para adequar as suas necessidades.                                                 |
 
 ## <a name="next-steps"></a>Passos seguintes
@@ -81,7 +82,7 @@ Para os utilizadores finais do dispositivo, consulte o [Get your HoloLens 2 pron
 > [!div class="nextstepaction"]
 > [Tenha o seu HoloLens 2 pronto a usar](hololens2-setup.md)
 
-Para os administradores de TI, a implantação de dispositivos para a sua organização desbloqueia poderosas experiências de realidade mista. Começa por rever HoloLens 2 requisitos e cenários de implementação através de uma série de configurações de infraestruturas de TI.
+Para administradores de TI, a implantação de dispositivos para a sua organização desbloqueia poderosas experiências de realidade mista. Começa por rever HoloLens 2 requisitos e cenários de implementação através de uma série de configurações de infraestruturas de TI.
 
 > [!div class="nextstepaction"]
 > [Implementar HoloLens 2 em ambiente comercial](hololens-requirements.md)
