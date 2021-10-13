@@ -8,32 +8,32 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 10/12/2021
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b1869e786e3f3324494cecbfd596f61811e1893
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: af9c6634ddbb40acace9a2abf8dd933ec05704de
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032960"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924387"
 ---
 # <a name="certificate-manager"></a>Gestor de Certificados
 
 - Melhoria da auditoria, diagnóstico e validação da segurança do dispositivo e cumprimento através do novo Gestor de Certificados. Esta capacidade permitir-lhe-á implantar, resolver problemas e validar os seus certificados em escala em ambientes comerciais.
 
-Na Windows Holographic, versão 20H2, estamos a adicionar um Certificate Manager na aplicação HoloLens 2 Definições. Aceda aos **certificados de > de segurança & Definições > de Definições >.** Esta funcionalidade fornece uma forma simples e fácil de visualizar, instalar e remover certificados no seu dispositivo. Com o novo Gestor de Certificados, os administradores e utilizadores têm agora uma ferramenta melhorada de auditoria, diagnóstico e validação para garantir que os dispositivos se mantenham seguros e conformes. 
+Na Windows Holographic, versão 20H2, estamos a adicionar um Certificate Manager na aplicação HoloLens 2 Definições. Aceda a **Definições > atualização & > certificados** de segurança > . Esta funcionalidade fornece uma forma simples e fácil de visualizar, instalar e remover certificados no seu dispositivo. Com o novo Gestor de Certificados, os administradores e utilizadores têm agora uma ferramenta melhorada de auditoria, diagnóstico e validação para garantir que os dispositivos se mantenham seguros e conformes.
 
--   **Auditoria:** Capacidade de validar que um certificado é implantado corretamente ou de confirmar que foi removido adequadamente. 
--   **Diagnóstico:** Quando surgem problemas, validar que os certificados adequados existem no dispositivo poupa tempo e ajuda na resolução de problemas. 
+-   **Auditoria:** Capacidade de validar que um certificado é implantado corretamente ou para confirmar que foi removido adequadamente.
+-   **Diagnóstico:** Quando surgem problemas, validar que os certificados adequados existem no dispositivo poupa tempo e ajuda na resolução de problemas.
 -   **Validação:** Verificar se um certificado serve o fim pretendido e é funcional, pode economizar tempo significativo, particularmente em ambientes comerciais antes de implantar certificados em maior escala.
 
-Para encontrar rapidamente um certificado específico na lista, existem opções para classificar pelo nome, loja ou data de validade. Os utilizadores também podem procurar diretamente um certificado. Para ver as propriedades individuais do certificado, selecione o certificado e clique em **Informação**. 
+Para encontrar rapidamente um certificado específico na lista, existem opções para classificar pelo nome, loja ou data de validade. Os utilizadores também podem procurar diretamente um certificado. Para ver as propriedades individuais do certificado, selecione o certificado e clique em **Informação**.
 
-A instalação do certificado suporta atualmente ficheiros .cer e .crt. Os Proprietários de Dispositivos podem instalar certificados na Máquina Local e no Utilizador Atual;  todos os outros utilizadores só podem instalar-se no Utilizador Atual.
+A instalação do certificado suporta atualmente ficheiros .cer e .crt. Os proprietários de dispositivos podem instalar certificados na Máquina Local e no Utilizador Atual;  todos os outros utilizadores só podem instalar-se no Utilizador Atual.
 
-## <a name="to-install-a-certificate"></a>Para instalar um certificado: 
+## <a name="to-install-a-certificate"></a>Para instalar um certificado:
 
 1.  Ligação o seu HoloLens 2 para um PC.
 1.  Coloque o ficheiro de certificado que pretende instalar num local na sua HoloLens 2.
@@ -52,7 +52,7 @@ O certificado deve agora ser instalado no aparelho.
 ## <a name="to-remove-a-certificate"></a>Para remover um certificado:
 
 > [!WARNING]
-> Utilizando o Certificate Manager, os utilizadores só podem remover certificados instalados diretamente da UI Definições. Se um certificado tiver sido instalado através de outros meios, deve também ser removido pelo mesmo mecanismo e não pode ser removido do Gestor de Certificados. Embora possa ver certificados implantados pelo MDM no Certificate Manager, não pode desinstalá-los no Certificate Manager. Deve desinstalá-los através do MDM.
+> Utilizando o Certificate Manager, os utilizadores só podem remover certificados instalados diretamente da UI Definições. Se um certificado tiver sido instalado através de outros meios, deve também ser removido pelo mesmo mecanismo e não pode ser removido do Gestor de Certificados. Embora possa ver certificados implantados pelo MDM no Certificate Manager, não é possível desinstalá-los no Certificate Manager. Deve desinstalá-los através do MDM.
 
 1. Navegue para **Definições App > atualização e certificados de > de segurança.**
 1. Procure o certificado pelo nome na caixa de pesquisa.
@@ -60,3 +60,9 @@ O certificado deve agora ser instalado no aparelho.
 1. Clique **em Remover**
 1. Selecione **Sim** quando solicitado para confirmação.
 
+## <a name="pfx-file-support-for-certificate-manager"></a>Suporte de ficheiro PFX para Gestor de Certificados
+
+- Introduzida em [Windows Holographic, versão 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+ Adicionámos apoio ao Gestor de Certificados para agora usar certificados .pfx. Quando os utilizadores navegam para **Definições**  >  **atualização &** certificados de segurança , e  >   **selecione Instale um certificado,** o UI agora suporta o ficheiro de certificado .pfx.
+Os utilizadores podem importar certificado .pfx, com chave privada, para a loja de utilizadores ou loja de máquinas.
