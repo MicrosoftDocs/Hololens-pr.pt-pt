@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: sekerawa
-ms.openlocfilehash: 46b57e44186b8944e58e68da66306bbe445b704a
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924439"
+ms.locfileid: "129964586"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -341,8 +341,12 @@ A experiência é que a experiência do Autopilot falhará com um erro específi
 
 Que medidas devem ser tomadas para resolver este erro?
 
-1. Siga os passos na importação e inscrição do [dispositivo Descodão](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) de Resolução de Problemas para remover o dispositivo do Intune.
-1. [Reinicie / Reflash HoloLens](hololens-recovery.md) dispositivo e, em seguida, tente Autopilot.
+1. Siga os passos na importação e inscrição do [dispositivo Descodão](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) de Resolução de Problemas para remover o dispositivo do Intune. (O seu administrador Intune terá de executar esta tarefa)
+1. Uma vez concluído o passo 1, reinicie o dispositivo e inscreva-se.
+1. Navegue para **Definições**  ->  **atualização &** a recuperação do & de segurança e  ->   selecione **Começar**.
+    1. Se houver problemas com os passos 2 & 3, consulte alternativas para repor o dispositivo no [reset / Reflash HoloLens](hololens-recovery.md).
+
+O AutoPilot deve então inscrever-se com sucesso.
 
 ### <a name="troubleshooting"></a>Resolução de problemas
 
