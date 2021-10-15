@@ -14,12 +14,12 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b6206f7121d1ba78908d96f71c5c809ec97b06d5
-ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
+ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "127904349"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034183"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscreva-se HoloLens no MDM
 
@@ -52,7 +52,7 @@ Uma vez que o dispositivo esteja matriculado no seu servidor MDM, a aplicação 
 
 ## <a name="auto-enrollment-in-mdm"></a>Inscrição automática em MDM
 
-Se a sua organização tiver uma [subscrição Azure Premium,](https://azure.microsoft.com/overview/)está a utilizar Azure Ative Directory (Azure AD) e uma solução MDM que aceita um token AD AZure para autenticação (atualmente, apenas suportado em Microsoft Intune e AirWatch), o seu administrador de TI pode configurar a Azure AD para permitir automaticamente a inscrição do MDM após o utilizador assinar com a sua conta Azure AD. [Saiba como configurar a inscrição em Ad Azure.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Se a sua organização tiver uma [subscrição Azure Premium,](https://azure.microsoft.com/overview/)está a utilizar Azure Ative Directory (Azure AD) e uma solução MDM que aceita um token AD AZure para autenticação (atualmente, apenas suportado em Microsoft Intune e AirWatch), o seu administrador de TI pode configurar a Azure AD para permitir automaticamente a inscrição do MDM após a inscrição do utilizador com o seu AD Azure conta. [Saiba como configurar a inscrição em Ad Azure.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 Quando a inscrição automática está ativada, não é necessária nenhuma inscrição manual extra. Quando o utilizador assina com uma conta AD Azure, o dispositivo é matriculado em MDM após completar a experiência de primeira execução.
 
@@ -62,7 +62,7 @@ Quando um dispositivo é Azure AD Unidos pode afetar quem considerou o [propriet
 
 Dependendo do método de inscrição, a não inscrição do seu dispositivo pode não estar disponível.
 
-Se o seu dispositivo foi matriculado com uma conta AD AZure ou Autopilot, não pode ser desenrolado a partir do Intune. Se desejar desacompra HoloLens da Azure AD ou voltar a juntar-se a um inquilino diferente do AD AZure, tem de [reiniciar/reflash](hololens-recovery.md#reset-the-device) o dispositivo.
+Se o seu dispositivo foi matriculado com uma conta AD AZure ou Autopilot, não pode ser desenrolado a partir do Intune. Se desejar desacompra HoloLens da Azure AD ou voltar a juntar-se a um inquilino diferente do AD AZure, tem de [reiniciar/reflash](hololens-recovery.md#restart-the-device) o dispositivo.
 
 Se o seu dispositivo foi matriculado a partir de uma conta MSA que adicionou uma conta de trabalho ou de uma conta Local que se inscreveu apenas na gestão do dispositivo, então pode desacordá-lo. Abra a menu Iniciar e, em seguida, selecione Definições o funcionamento do acesso à **aplicação**  ->  ou o botão  ->    ->  **Desconexão** da Contagem Escolar.
 

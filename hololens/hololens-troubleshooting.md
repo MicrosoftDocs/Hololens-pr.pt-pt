@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemas, bug, resolução de problemas, correção, ajuda, suporte, HoloLens, emulador
-ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964569"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034200"
 ---
 # <a name="device-troubleshooting"></a>Resolução de problemas do dispositivo
 
@@ -163,7 +163,7 @@ Isto não deve ocorrer durante:
 Trabalhar em torno de métodos:
 
 - Métodos de entrada como PIN, Password, Íris, Autenticação Web ou teclas FIDO2.
-- Se o dispositivo PIN não puder ser lembrado e não estiverem disponíveis outros métodos de autenticação, então um utilizador pode utilizar [o modo de reflashing manual](hololens-recovery.md#manual-procedure).
+- Se o dispositivo PIN não puder ser lembrado e não estiverem disponíveis outros métodos de autenticação, então um utilizador pode utilizar [o modo de reflashing manual](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [De volta à lista](#list)
 
@@ -262,7 +262,7 @@ Soluções alternativas:
 Se o seu HoloLens não começar:
 
 - Se os LEDs ao lado do botão de alimentação não se acenderem ou apenas um LED piscar brevemente, poderá ter de [carregar o seu HoloLens.](hololens2-charging.md#charging-the-device)
-- Se os LEDs acenderem quando premir o botão de alimentação, mas não conseguir ver nada nos visores, [faça um reset duro do dispositivo](hololens-recovery.md#hard-reset-procedure).
+- Se os LEDs acenderem quando premir o botão de alimentação, mas não conseguir ver nada nos visores, [faça um reset duro do dispositivo](hololens-recovery.md#hard-restart-procedure).
 
 Se o seu HoloLens ficar congelado ou sem resposta:
 

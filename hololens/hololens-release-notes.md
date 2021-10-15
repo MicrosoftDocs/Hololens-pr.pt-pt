@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c45a9a05cc7911bc9866df5e4313bc27a205d333
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 3f5e5f3e38c24805935fc69dfacd5eac93ddd017
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924477"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034285"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 notas de lançamento
 
@@ -35,7 +35,9 @@ Para garantir que tem uma experiência produtiva com os seus HoloLens dispositiv
 
 Windows Holographic, a versão 21H2 já está disponível e traz um grande conjunto de novas funcionalidades para HoloLens 2 utilizadores e profissionais de TI. Este é sobre a melhoria da resolução de problemas e relatórios de dispositivos, alguns bugs fixos no modo quiosque e o espectador de certificado, a superfície de gestão expandida e a maior fiabilidade da atualização. Uma nova funcionalidade principal desta atualização de funcionalidade que chega a HoloLens é o nosso Modo plataforma móvel. Confira todas as novidades para HoloLens 2!
 
-Esta última versão é uma atualização mensal para a versão 21H1, mas desta vez estamos a incluir novas funcionalidades. O maior número de construção permanecerá o mesmo e Windows Update indicará um lançamento mensal para a versão 21H1 (construção 20348). Pode ver o seu Número de Construção no seu Definições > Sobre o ecrã para confirmar que está na mais recente construção disponível 20348.1432+. Para atualizar para a versão mais recente, abra a aplicação Definições, vá a Update & Security e toque em Check for Updates. Para obter mais informações sobre como gerir HoloLens atualizações, visite [Gerir HoloLens atualizações.](hololens-updates.md)
+Esta última versão é uma atualização mensal para a versão 21H1, mas desta vez estamos a incluir novas funcionalidades, por isso o grande número de construção permanecerá o mesmo e Windows Update indicará um lançamento mensal para a versão 21H1 (construa 20348). HoloLens 2 configurações ainda apresentarão 21H1, apesar de estarmos a referir-nos a esta versão como 21H2. Para garantir que recebeu 21H2, verifique se o número da versão é 20348.1432 ou superior. Pode ver o seu Número de Construção no seu Definições > Sobre o ecrã para confirmar que está na mais recente construção disponível 20348.1432+.
+
+Para atualizar para a versão mais recente, abra a aplicação Definições, vá a Update & Security e toque em Check for Updates. Para obter mais informações sobre como gerir HoloLens atualizações, visite [Gerir HoloLens atualizações.](hololens-updates.md)
 
 | Funcionalidade                 | Descrição                | Utilizador ou Cenário |
 |-------------------------|----------------------------|--------------|
