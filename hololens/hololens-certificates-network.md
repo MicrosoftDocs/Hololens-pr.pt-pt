@@ -1,6 +1,6 @@
 ---
 title: Preparar certificados e perfis de rede para HoloLens 2
-description: Saiba como configurar, utilizar, implementar e resolver problemas de certificados para rede em HoloLens 2 dispositivos de realidade mista.
+description: Saiba como configurar, utilizar, implementar e resolver problemas de certificação para rede em HoloLens 2 dispositivos de realidade mista.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,21 +13,21 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036313"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151676"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Preparar certificados e perfis de rede para HoloLens 2
 
 A autenticação baseada em certificados é um requisito comum para os clientes que usam HoloLens 2. Você pode precisar de certificados para aceder wi-fi, para conectar-se a soluções VPN, ou para aceder a recursos internos na sua organização.
 
-Uma vez que HoloLens 2 dispositivos são normalmente associados a Azure Ative Directory (Azure AD) e geridos pela Intune ou outro fornecedor de MDM, você precisará de implementar esses certificados utilizando um Protocolo de Inscrição de Certificado Simples (SCEP) ou infraestrutura de certificados de criptografia de chave pública (PKCS) que está integrado com a sua solução MDM. 
+Uma vez que HoloLens 2 dispositivos são normalmente associados a Azure Ative Directory (Azure AD) e geridos pela Intune ou outro fornecedor de MDM, você precisará de implementar esses certificados utilizando um Protocolo de Inscrição de Certificado Simples (SCEP) ou infraestrutura de certificados de criptografia de chave pública (PKCS) que esteja integrada com a sua solução MDM. 
 
 >[!NOTE]
-> Se não tiver um fornecedor de MDM, ainda pode utilizar certificados através de um [pacote de provisionamento](hololens-provisioning.md#steps-for-creating-provisioning-packages) no [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) ou através do Certificate [Manager,](certificate-manager.md) indo para **Definições > Update & Security > Certificate Manager**.
+> Se não tiver um fornecedor de MDM, ainda pode utilizar certificados através de um [pacote de provisionamento](hololens-provisioning.md#create-the-provisioning-package) no [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) ou através do Certificate [Manager,](certificate-manager.md) indo para **Definições > Update & Security > Certificate Manager**.
 
 ## <a name="certificate-requirements"></a>Requisitos de certificados
 Os certificados de raiz são necessários para a implantação de certificados através de uma infraestrutura SCEP ou PKCS. Outras aplicações e serviços na sua organização podem exigir que os certificados de raiz sejam implantados no seu HoloLens 2 dispositivos também. 
@@ -41,7 +41,7 @@ Se já não existir nenhuma infraestrutura SCEP ou PKCS, terá de preparar uma. 
 > [!NOTE]
 > Quando utilizar o SCEP com um Microsoft CA, também deve configurar o Serviço de [Inscrição de Dispositivos de Rede (NDES)](/mem/intune/protect/certificates-scep-configure#set-up-ndes)
 
-Para obter mais informações, consulte [configurar um perfil de certificado para os seus dispositivos em Microsoft Intune.](/intune/certificates-configure)
+Para mais informações, consulte [configurar um perfil de certificado para os seus dispositivos em Microsoft Intune.](/intune/certificates-configure)
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Implementar certificados e perfil Wi-Fi/VPN
 Para implementar certificados e perfis, siga estes passos:
@@ -51,12 +51,12 @@ Para implementar certificados e perfis, siga estes passos:
     > [!NOTE]
     > Como o HoloLens 2 é considerado para muitos como um dispositivo partilhado, vários utilizadores por dispositivo, recomenda-se a implementação de certificados de Dispositivo em vez de certificados de Utilizador para Wi-Fi autenticação sempre que possível
 
-3.  Crie um perfil para cada rede de Wi-Fi corporativa (ver [definições wi-fi para Windows 10 e dispositivos posteriores).](/intune/wi-fi-settings-windows) 
+3.  Crie um perfil para cada rede de Wi-Fi corporativa (consulte [as definições de Wi-Fi para Windows 10 e dispositivos posteriores).](/intune/wi-fi-settings-windows) 
     > [!NOTE]
     > Recomenda-se que o perfil Wi-Fi seja [atribuído](/mem/intune/configuration/device-profile-assign) aos grupos de Dispositivos e não aos grupos do Utilizador, sempre que possível. 
 
     > [!TIP]
-    > Também pode exportar um perfil de Wi-Fi de trabalho a partir de um pc Windows 10 na sua rede corporativa. Esta exportação cria um ficheiro XML com todas as definições atuais. Em seguida, importe este ficheiro para o Intune e use-o como o perfil Wi-Fi para os seus HoloLens 2 dispositivos. Consulte [as definições de exportação e importação Wi-Fi para dispositivos Windows.](/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
+    > Também pode exportar um perfil de Wi-Fi de trabalho a partir de um pc Windows 10 na sua rede corporativa. Esta exportação cria um ficheiro XML com todas as definições atuais. Em seguida, importe este ficheiro para o Intune e use-o como Wi-Fi perfil para os seus HoloLens 2 dispositivos. Consulte [as definições de Wi-Fi de exportação e importação para dispositivos Windows.](/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
 4.  Crie um perfil para cada VPN corporativo (ver [Windows 10 e Windows configurações de dispositivo holográfico para adicionar ligações VPN utilizando o Intune).](/intune/vpn-settings-windows-10)
 
@@ -65,6 +65,6 @@ Para implementar certificados e perfis, siga estes passos:
 No caso de necessitar de validar corretamente um certificado, utilize o [Gestor de Certificados](certificate-manager.md) no dispositivo para verificar se o seu certificado está presente.  
 
 >[!WARNING]
-> Embora possa ver certificados implantados pelo MDM no Certificate Manager, não pode desinstalá-los no Certificate Manager. Deve desinstalá-los através do MDM.
+> Embora possa ver certificados implantados pelo MDM no Certificate Manager, não é possível desinstalá-los no Certificate Manager. Deve desinstalá-los através do MDM.
 
 

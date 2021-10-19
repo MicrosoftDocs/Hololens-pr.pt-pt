@@ -1,13 +1,13 @@
 ---
-title: Reiniciar, reiniciar ou recuperar HoloLens
+title: Reiniciar, reiniciar ou recuperar HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Como usar o Advanced Recovery Companion para mostrar uma imagem a HoloLens 2.
 keywords: como, reiniciar, reiniciar, recuperar, reset duro, reset suave, ciclo de potência, HoloLens, desligado, arco, companheiro de recuperação avançado
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034251"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151633"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Reiniciar, reiniciar ou recuperar HoloLens 2
 
@@ -45,7 +45,7 @@ Se o dispositivo estiver corretamente iniciado e em funcionamento, existem três
 
    ![Um ecrã de HoloLens de 2 propriedades mostra o nível de mudança da bateria.](images/ResetRecovery2.png)
 
-Se o dispositivo não conseguir arrancar no menu de arranque, note a aparência LED e a enumeração do dispositivo no PC anfitrião. Em seguida, siga o [guia de resolução de problemas](hololens-troubleshooting.md). Se o estado do dispositivo não corresponder a nenhum dos estados listados no guia de resolução de problemas, execute o [procedimento de reset duro](hololens-recovery.md#hard-restart-procedure) com o dispositivo ligado à alimentação elétrica e não com o pc anfitrião. Espere pelo menos uma hora para o dispositivo carregar.
+Se o dispositivo não conseguir arrancar no menu de arranque, note a aparência LED e a enumeração do dispositivo no PC anfitrião. Em seguida, siga o [guia de resolução de problemas](hololens-troubleshooting.md). Se o estado do dispositivo não corresponder a nenhum dos estados listados no guia de resolução de problemas, execute o [procedimento de reinicialização difícil](hololens-recovery.md#hard-restart-procedure) com o dispositivo ligado à alimentação elétrica e não com o seu PC anfitrião. Espere pelo menos uma hora para o dispositivo carregar.
 
 > [!NOTE]
 > Vamos começar por definir termos.
@@ -67,11 +67,11 @@ Em determinadas circunstâncias, poderá ter de reiniciar manualmente o disposit
 
 4. Ligação o dispositivo para o PC anfitrião e, em seguida, abra o Gestor de Dispositivos. (Para Windows 10, prima a **tecla Windows** e, em seguida, a tecla **X** e, em seguida, selecione o Gestor **de Dispositivos**.) Certifique-se de que o dispositivo enumera corretamente *Microsoft HoloLens* como mostrado na seguinte imagem:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery devovery gestor devive.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery gestor de dispositivos.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-restart-procedure"></a>Procedimento de reinício difícil
 
-Se o procedimento de reset padrão não funcionar, utilize o procedimento de reset rígido:
+Se o procedimento de reset padrão não funcionar, utilize o procedimento de reinicialização difícil:
 
 1. Desligue o cabo Type-C para desligar o dispositivo da alimentação ou do PC de hospedeiro.
 
@@ -81,7 +81,15 @@ Se o procedimento de reset padrão não funcionar, utilize o procedimento de res
 
 1. Abra o Gestor de Dispositivos (para Windows 10 prima a **tecla Windows** e, em seguida, a tecla **X** e, em seguida, selecione **o Gestor de Dispositivos).** Certifique-se de que o dispositivo enumera corretamente *Microsoft HoloLens* como mostrado na seguinte imagem:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery dispositivo maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery gestor de dispositivos 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Reiniciar o dispositivo
+
+Pode reiniciar o dispositivo diretamente a partir dos auscultadores. Selecione **Definições**, em seguida, selecione **Update & Security > Reset & recovery > Reset this device**.
+
+   ![HoloLens reset dos auscultadores.](images/headset-reset-recovery.png)
+
+Quando reiniciar desta forma, todas as contas de utilizador serão removidas e todos os dados serão apagados.
 
 ## <a name="clean-reflash-the-device"></a>Limpar o dispositivo
 

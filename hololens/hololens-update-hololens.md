@@ -14,16 +14,16 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034268"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151686"
 ---
 # <a name="update-hololens-2"></a>Atualização HoloLens 2
 
-## <a name="overview"></a>Descrição geral
+## <a name="overview"></a>Descrição Geral
 
 Estamos sempre a trabalhar em novas funcionalidades, correções de bugs e atualizações de segurança. Será notificado quando estas atualizações estiverem prontas.
 
@@ -86,7 +86,11 @@ Em alguns casos, é melhor voltar a uma versão anterior do software HoloLens. O
     1. No ['Feedback' de ficheiros](hololens-feedback.md) seja o mais descritivo possível. Tome nota do título ou use a funcionalidade de partilha para que possa partilhar o seu bug com o Suporte.
     1. [Suporte de](https://aka.ms/hlsupport)contato . Se o seu problema for um problema que precisa de ser resolvido retornando a uma versão anterior, eles podem fornecer-lhe a FFU para piscar o seu dispositivo.
 
-1. Se isso não funcionar, [reflash seu HoloLens 2 com o Companheiro de Recuperação Avançada](hololens-recovery.md#clean-reflash-the-device).
+1. Em alternativa, pode [reflash o seu HoloLens 2 com o Companheiro de Recuperação Avançada](hololens-recovery.md#clean-reflash-the-device).
+    1.  Escolha a versão a que pretende piscar: 
+        1.  Pode baixar o [mais recente HoloLens versão 2](https://aka.ms/hololens2download).
+        1.  Pode utilizar a construção padrão que o ARC acolhe.
+        1.  Você pode usar uma construção Suporte fornecido com você.
 
 > [!NOTE]
 > Voltar a uma versão anterior elimina os seus ficheiros pessoais e configurações.
