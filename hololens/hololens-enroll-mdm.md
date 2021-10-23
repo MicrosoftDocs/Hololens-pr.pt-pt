@@ -14,12 +14,12 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f466abe45a1a9ad676f8dd6a94244473c084be7
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034183"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202884"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscreva-se HoloLens no MDM
 
@@ -52,7 +52,7 @@ Uma vez que o dispositivo esteja matriculado no seu servidor MDM, a aplicação 
 
 ## <a name="auto-enrollment-in-mdm"></a>Inscrição automática em MDM
 
-Se a sua organização tiver uma [subscrição Azure Premium,](https://azure.microsoft.com/overview/)está a utilizar Azure Ative Directory (Azure AD) e uma solução MDM que aceita um token AD AZure para autenticação (atualmente, apenas suportado em Microsoft Intune e AirWatch), o seu administrador de TI pode configurar a Azure AD para permitir automaticamente a inscrição do MDM após a inscrição do utilizador com o seu AD Azure conta. [Saiba como configurar a inscrição em Ad Azure.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Se a sua organização tiver uma [subscrição Azure Premium,](https://azure.microsoft.com/overview/)está a utilizar Azure Ative Directory (Azure AD) e uma solução MDM que aceita um token AD AZure para autenticação (atualmente, apenas suportado em Microsoft Intune e AirWatch), o seu administrador de TI pode configurar a Azure AD para permitir automaticamente a inscrição do MDM após a inscrição do utilizador com o seu AD Azure conta. [Saiba como configurar a inscrição em Azure AD](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) e [a integração de diretórios ativos do Azure com o MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para obter informações detalhadas sobre os antecedentes.
 
 Quando a inscrição automática está ativada, não é necessária nenhuma inscrição manual extra. Quando o utilizador assina com uma conta AD Azure, o dispositivo é matriculado em MDM após completar a experiência de primeira execução.
 
@@ -67,6 +67,14 @@ Se o seu dispositivo foi matriculado com uma conta AD AZure ou Autopilot, não p
 Se o seu dispositivo foi matriculado a partir de uma conta MSA que adicionou uma conta de trabalho ou de uma conta Local que se inscreveu apenas na gestão do dispositivo, então pode desacordá-lo. Abra a menu Iniciar e, em seguida, selecione Definições o funcionamento do acesso à **aplicação**  ->  ou o botão  ->    ->  **Desconexão** da Contagem Escolar.
 
 ## <a name="enrollment-troubleshooting"></a>Resolução de problemas de inscrição
+
+### <a name="ensure-device-is-successfully-connected-to-internet-before-attempting-enrollment-post-oobe"></a>Certifique-se de que o dispositivo está ligado com sucesso à Internet antes de tentar registar o OOBE
+
+Uma vez que o utilizador tenha assinado, garanta a ligação à Internet navegando para qualquer website que tenha acesso à Internet no dispositivo.
+
+### <a name="ensure-that-azure-active-directory-aad-join-is-not-disabled-in-your-aad-tenant"></a>Certifique-se de que a Azure Ative Directory (AAD) não é desativada no seu inquilino AAD
+
+Consulte as [definições do seu dispositivo](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) para obter informações sobre as opções disponíveis no portal Azure.
 
 ### <a name="ensure-valid-license-is-assigned-to-the-user"></a>Garantir que a licença válida é atribuída ao utilizador
 
