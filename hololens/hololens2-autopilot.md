@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: piloto automático
 manager: sekerawa
-ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
-ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
+ms.openlocfilehash: 5ca7ad762e0fdbe448788926e7a6492cb7f2523d
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130202918"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351707"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para o HoloLens 2
 
@@ -320,10 +320,12 @@ A OOBE aguardará indefinidamente o download do perfil do Piloto Automático e s
 
 ![Vista no dispositivo para quando a política é aplicada no dispositivo.](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues-and-limitations"></a>Limitações e problemas conhecidos
+## <a name="troubleshooting"></a>Resolução de problemas
 
-### <a name="why-do-i-see-0x80180014-during-autopilot"></a>Por que vejo 0x80180014 durante o Piloto Automático?
+### <a name="issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot"></a>Problema - A inscrição do MDM falha com erro 0x80180014 código de erro durante o Autopilot.
 
+ **Sintomas**
+ 
 Este é um erro mostrado durante o processo autopiloto no dispositivo. Esta questão mostrada só se aplica quando um dispositivo HoloLens tiver feito o seguinte:
 
 1. Já passaram pelo Piloto Automático pelo menos uma vez.
@@ -333,7 +335,7 @@ A experiência é que a experiência do Autopilot falhará com um erro específi
 
 ![HoloLens Código de erro de falha do piloto automático](images/autopilot-0x80180014-failure.jpg)
 
-Que medidas devem ser tomadas para resolver este erro?
+**Passos de resolução de problemas**
 
 1. Siga os passos na importação e inscrição do [dispositivo Descodão](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) de Resolução de Problemas para remover o dispositivo do Intune. (O seu administrador Intune terá de executar esta tarefa)
 1. Uma vez concluído o passo 1, reinicie o dispositivo e inscreva-se.
@@ -342,19 +344,24 @@ Que medidas devem ser tomadas para resolver este erro?
 
 O AutoPilot deve então inscrever-se com sucesso.
 
-### <a name="troubleshooting"></a>Resolução de problemas
+### <a name="issue---autopilot-experience-did-not-start-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Problema - A experiência do piloto automático não começou, mesmo que o perfil autopiloto seja atribuído no Intune.
+
+**Sintomas**
+
+Por predefinição, HoloLens 2 espera 15 segundos para detetar o Autopilot depois de detetar a internet. Se não for detetado nenhum perfil de piloto automático dentro de 15 segundos, isso significa que o Autopilot não foi descoberto corretamente, e verá a página EULA.
+
+**Passos de resolução de problemas**
+
+1. Primeiro, verifique se o perfil do Piloto Automático é indicado no portal MDM, por exemplo, Intune. 
+1. Reinicie o seu dispositivo e tente de novo. Para mais informações, consulte [Questões e Limitações Conhecidas.](hololens2-autopilot.md#troubleshooting)
+
+### <a name="helpful-resources"></a>Recursos úteis
 
 Os seguintes artigos podem ser um recurso útil para você aprender mais informações e resolver problemas De piloto automático Problemas, no entanto estes artigos são baseados em Windows 10 Desktop e nem todas as informações podem ser aplicadas a HoloLens:
 
 - [Windows Autopilot - questões conhecidas](/mem/autopilot/known-issues)
 - [Resolução de problemas Windows problemas de inscrição de dispositivos em Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - Conflitos Políticos](/mem/autopilot/policy-conflicts)
-
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Porque é que não vi a experiência do Piloto Automático, apesar do perfil do Piloto Automático ser atribuído no Intune?
-
-Por predefinição, HoloLens 2 espera 15 segundos para detetar o Autopilot depois de detetar a internet. Se não for detetado nenhum perfil de piloto automático dentro de 15 segundos, isso significa que o Autopilot não foi descoberto corretamente, e verá a página EULA.
-
-Reinicie o seu dispositivo e tente de novo. Para mais informações, consulte [Questões e Limitações Conhecidas.](hololens2-autopilot.md#known-issues-and-limitations)
 
 ## <a name="feedback-and-support-for-autopilot"></a>Feedback e suporte para Autopilot
 

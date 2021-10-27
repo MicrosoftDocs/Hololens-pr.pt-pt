@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924364"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351660"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Pré-visualização de insider para Microsoft HoloLens
 
@@ -29,7 +29,26 @@ Bem-vindos às mais recentes construções de Insider Preview para HoloLens! É 
 
 ## <a name="windows-insider-release-notes"></a>Windows Notas de lançamento de insider
 
-Estamos entusiasmados por todas as nossas recentes funcionalidades do Insider terem vindo a público! Se quiser ler sobre estes, por favor, veja a página de [notas de lançamento](hololens-release-notes.md)
+O que há de novo e no horizonte para HoloLens? Confira estas novas atualizações que chegam a HoloLens!
+
+### <a name="colorblind-mode"></a>Modo colorblind
+
+Adicionado na build Insider 20348.1463
+
+O modo Colorblind é útil uma grande funcionalidade que torna HoloLens mais acessíveis. O novo modo colorblind pode ser encontrado na aplicação Definições sob **Definições**  ->  filtros Facilidade de **Acesso**  ->  **Color**. Vários filtros novos estão disponíveis. Aqui está um exemplo visual de alguns dos filtros disponíveis.
+
+| Desativado | Escala cinzenta | Tritanopia |
+|-----|-----------|------------|
+| ![Filtro de cor desligado](images/colorblind-off.png)   | ![Escala cinzenta de filtro de cor](images/colorblind-greyscale.png)         | ![Tritanopia do filtro de cor](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>Correções e melhorias
+
+- Corrigiu um problema conhecido em [que cada vez que a energia vai a 18%, o dispositivo desliga-se automaticamente](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
+- Melhorias no modo de plataforma móvel ao detetar a direção de descida.
+- Corrigi um problema em torno dos diálogos de atualização.
+- Versão atualizada do navegador Microsoft Edge caixa de entrada.
+- Corrigiu um problema em que os dados de diagnóstico opcionais não persistem na definição escolhida na página de definições de telemetria após um reboot.
+- Fixo e problema em que os códigos QR não foram reconhecidos quando foram rodados num ângulo de 45 graus em relação ao dispositivo.
 
 ## <a name="start-receiving-insider-builds"></a>Comece a receber construções insider
 

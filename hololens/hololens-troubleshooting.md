@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemas, bug, resolução de problemas, correção, ajuda, suporte, HoloLens, emulador
-ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: deed0d14b2567ae0a1fb2cde8ad1fbe3dbb20bb3
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034200"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351770"
 ---
 # <a name="device-troubleshooting"></a>Resolução de problemas do dispositivo
 
@@ -30,7 +30,7 @@ Este artigo descreve como resolver várias questões comuns HoloLens.
 <a id="list"></a>
 
 **Problemas Conhecidos**
-- [Cada vez que a energia vai para 18%, o dispositivo desliga-se automaticamente](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [Correção insider - Sempre que a energia vai para 18%, o dispositivo desliga-se automaticamente](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDrive Aplicação UWP não funciona para utilizadores AD Azure](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Por que vejo 0x80180014 durante o Piloto Automático?](#why-do-i-see-0x80180014-during-autopilot)
 - [0x80131500 de código de erro Microsoft Store](#microsoft-store-error-code-0x80131500)
@@ -67,6 +67,9 @@ Este artigo descreve como resolver várias questões comuns HoloLens.
 
 ## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Cada vez que a energia vai para 18%, o dispositivo desliga-se automaticamente
 
+> [!NOTE]
+> Existe uma correção para este problema disponível em [Windows Insiders.](hololens-insider.md)
+
 Há um problema conhecido em que quando o dispositivo atinge a bateria de 18%, irá desligar-se inesperadamente. Trata-se de um problema de software, não de hardware ou de bateria, por isso, por favor, não troquem dispositivos por isso. Se não tiver a certeza se o seu problema corresponde a este erro, por favor:
 
 1. Certifique-se de que os diagnósticos opcionais estão ativados nos seus dispositivos
@@ -96,7 +99,7 @@ Se estiver a passar por este problema, experimente um dos seguintes:
 
 Este erro é normalmente encontrado durante o reset do dispositivo e os fluxos de reutilização onde um dispositivo HoloLens passou pelo Autopilot pelo menos uma vez. Para resolver este problema, [elimine o dispositivo de Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) e volte a reiniciá-lo para completar o fluxo do Autopilot.
 
-Para mais informações, consulte os [passos de resolução de problemas na página do piloto automático.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+Para mais informações, consulte os [passos de resolução de problemas na página do piloto automático.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
 ## <a name="microsoft-store-error-code-0x80131500"></a>0x80131500 de código de erro Microsoft Store
 

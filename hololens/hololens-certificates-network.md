@@ -10,15 +10,15 @@ ms.localizationpriority: high
 ms.date: 9/15/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: yannisle
+manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
-ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
+ms.openlocfilehash: cf9e14ffbda01bb1fd9e788385f7b85884d1dc8c
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151676"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351622"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Preparar certificados e perfis de rede para HoloLens 2
 
@@ -45,13 +45,16 @@ Para mais informações, consulte [configurar um perfil de certificado para os s
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Implementar certificados e perfil Wi-Fi/VPN
 Para implementar certificados e perfis, siga estes passos:
+
 1.  Crie um perfil para cada um dos certificados Raiz e Intermediário (ver [Criar perfis de certificados fidedignos](/intune/protect/certificates-configure#create-trusted-certificate-profiles).) Cada um destes perfis deve ter uma descrição que inclua uma data de validade no formato DD/MM/YYYY. **Os perfis de certificado sem data de validade não serão implantados.**
-1.  Criar um perfil para cada certificado SCEP ou PKCS (ver [Criar um perfil de certificado SCEP ou criar um perfil de certificado PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Cada um destes perfis deve ter uma descrição que inclua uma data de validade no formato DD/MM/YYYY. **Os perfis de certificado sem data de validade não serão implantados.**
+
+2.  Criar um perfil para cada certificado SCEP ou PKCS (ver [Criar um perfil de certificado SCEP ou criar um perfil de certificado PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Cada um destes perfis deve ter uma descrição que inclua uma data de validade no formato DD/MM/YYYY. **Os perfis de certificado sem data de validade não serão implantados.**
 
     > [!NOTE]
     > Como o HoloLens 2 é considerado para muitos como um dispositivo partilhado, vários utilizadores por dispositivo, recomenda-se a implementação de certificados de Dispositivo em vez de certificados de Utilizador para Wi-Fi autenticação sempre que possível
 
 3.  Crie um perfil para cada rede de Wi-Fi corporativa (consulte [as definições de Wi-Fi para Windows 10 e dispositivos posteriores).](/intune/wi-fi-settings-windows) 
+
     > [!NOTE]
     > Recomenda-se que o perfil Wi-Fi seja [atribuído](/mem/intune/configuration/device-profile-assign) aos grupos de Dispositivos e não aos grupos do Utilizador, sempre que possível. 
 
@@ -60,11 +63,19 @@ Para implementar certificados e perfis, siga estes passos:
 
 4.  Crie um perfil para cada VPN corporativo (ver [Windows 10 e Windows configurações de dispositivo holográfico para adicionar ligações VPN utilizando o Intune).](/intune/vpn-settings-windows-10)
 
-## <a name="troubleshooting-certificates"></a>Certificados de resolução de problemas
+## <a name="troubleshooting"></a>Resolução de problemas
 
-No caso de necessitar de validar corretamente um certificado, utilize o [Gestor de Certificados](certificate-manager.md) no dispositivo para verificar se o seu certificado está presente.  
+### <a name="issue---unable-to-connect-with-network-using-certificate-based-authentication"></a>Problema - Não é possível ligar-se à rede utilizando a autenticação baseada em certificados ###
 
->[!WARNING]
-> Embora possa ver certificados implantados pelo MDM no Certificate Manager, não é possível desinstalá-los no Certificate Manager. Deve desinstalá-los através do MDM.
+**Sintomas**
 
+O dispositivo não estabelece a ligação de rede com a autenticação baseada em certificados.
 
+**Passos de resolução de problemas**
+
+1. No caso de necessitar de validar corretamente um certificado, utilize o [Gestor de Certificados](certificate-manager.md) no dispositivo para verificar se o seu certificado está presente.  
+
+    >[!WARNING]
+    > Embora possa ver certificados implantados pelo MDM no Certificate Manager, não é possível desinstalá-los no Certificate Manager. Deve desinstalá-los através do MDM.
+
+2. Apenas para o Intune, se o Protocolo de Inscrição de Certificados Simples (SCEP) estiver a ser utilizado para a implementação de certificados, certifique-se de que o URL do serviço de registo de dispositivos de rede (NDES) está acessível a partir do dispositivo. [Consulte os certificados SCEP no Intune](/mem/intune/protect/certificates-profile-scep) para obter informações relacionadas com a configuração. Se o CNAME estiver a ser utilizado em vez de um domínio totalmente qualificado para o servidor NDES, certifique-se de que está a ser resolvido corretamente digitando esse URL num navegador web no dispositivo.
